@@ -59,8 +59,20 @@ there's no macOS/Linux build path today.
 
 ### Option A: Download a build
 
-Grab the latest release from the [Releases](../../releases) page — a
-self-contained Windows executable with FFmpeg and VLC already bundled.
+Grab the latest release from the [Releases](../../releases) page — a Windows
+build you can run without installing Python. It bundles
+[yt-dlp](https://github.com/yt-dlp/yt-dlp) (which self-updates on use), so
+YouTube downloads work out of the box.
+
+**It does not bundle FFmpeg or VLC.** You must supply those yourself, or media
+processing fails with "command not found":
+
+- Install [FFmpeg](https://ffmpeg.org/download.html) and
+  [VLC](https://www.videolan.org/vlc/) and make sure each is on your system
+  `PATH`, **or**
+- Drop `ffmpeg.exe`, `ffprobe.exe`, and the VLC runtime DLLs into the `bin/`
+  folder next to `omni_describer.exe` in the extracted release. The app checks
+  `bin/` before falling back to `PATH`.
 
 ### Option B: Run from source
 
@@ -77,9 +89,14 @@ python run_app.py
 
 The app looks for `ffmpeg`/`ffprobe`/VLC in `audio_describer/bin/` first,
 falling back to your system `PATH`. Drop them in `audio_describer/bin/` if
-you don't want to rely on PATH — see
+you don't want to rely on PATH.
+
+YouTube downloads use [yt-dlp](https://github.com/yt-dlp/yt-dlp) — the
+`pip install` above installs it, so a source run needs no extra setup (the
+app calls it as a subprocess and self-updates it once per run via
+`yt-dlp -U`). See
 [THIRD_PARTY_LICENSES](THIRD_PARTY_LICENSES) for the licenses that apply if
-you redistribute a build with them included.
+you redistribute a build with these binaries included.
 
 ### Configuration
 

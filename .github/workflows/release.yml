@@ -98,10 +98,15 @@ jobs:
           # is what v2.0 shipped with and what the runtime expects.
           pip install "pyinstaller<6"
 
-      # build.spec bundles audio_describer/bin (FFmpeg/VLC), gitignored and absent in
-      # CI. Create it empty so the spec resolves. This build ships WITHOUT them.
-      - name: Create empty bin dir
-        run: New-Item -ItemType Directory -Force audio_describer/bin
+      # build.spec bundles audio_describer/bin, gitignored and absent in CI.
+      # Fetch the standalone yt-dlp.exe into it so YouTube downloads work out of
+      # the box; the app runs `yt-dlp -U` per session to keep it current, which
+      # only works with the standalone build (not a pip install). FFmpeg/VLC are
+      # NOT bundled — install them or drop them in bin/ (see the README).
+      - name: Fetch yt-dlp into bin dir
+        run: |
+          New-Item -ItemType Directory -Force audio_describer/bin
+          Invoke-WebRequest https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe -OutFile audio_describer/bin/yt-dlp.exe
 
       - name: Build main app
         run: pyinstaller build.spec
@@ -134,6 +139,7 @@ jobs:
           body: |
             Windows build of Omni Describer ${{ steps.version.outputs.tag }}.
 
-            Does not bundle FFmpeg or VLC — install them or drop the binaries in
+            Bundles yt-dlp (self-updates via `yt-dlp -U`). Does NOT bundle
+            FFmpeg or VLC — install them or drop the binaries in
             `audio_describer/bin/` (see the README). Third-party licenses apply if
             you redistribute a build that includes them (see THIRD_PARTY_LICENSES).
