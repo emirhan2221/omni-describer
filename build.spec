@@ -3,10 +3,17 @@
 
 # -*- mode: python ; coding: utf-8 -*-
 
-from PyInstaller.utils.hooks import collect_submodules
+from PyInstaller.utils.hooks import collect_submodules, collect_all
+
+# google.genai (the new SDK) is a namespace package with data files and lazily
+# imported submodules; collect_all grabs modules + data + binaries so the frozen
+# build can `from google import genai`. Missing this = "Gemini SDK could not be
+# loaded" at runtime.
+genai_datas, genai_binaries, genai_hiddenimports = collect_all('google.genai')
 
 # Part 1: Gather all the necessary Python modules.
 hidden_imports = [
+    *genai_hiddenimports,
     *collect_submodules('google.generativeai'),
     *collect_submodules('google.api_core'),
     *collect_submodules('google.auth'),
@@ -20,6 +27,7 @@ hidden_imports = [
 
 # Part 2: Gather all the necessary data files and binaries.
 added_files = [
+    *genai_datas,
     ('audio_describer/bin', 'bin'),
     ('audio_describer/notifs', 'notifs'),
     ('audio_describer/doc', 'doc'),
@@ -30,7 +38,7 @@ added_files = [
 a = Analysis(
     ['run_app.py'],
     pathex=[],
-    binaries=[],
+    binaries=genai_binaries,
     datas=added_files,
     hiddenimports=hidden_imports,
     hookspath=[],
