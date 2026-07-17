@@ -93,7 +93,10 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r audio_describer/requirements.txt
-          pip install pyinstaller
+          # Pin to PyInstaller 5.x: v6 nests bundled data in _internal/, but the app
+          # resolves doc/notifs/locale/bin next to the exe. v5's flat onedir layout
+          # is what v2.0 shipped with and what the runtime expects.
+          pip install "pyinstaller<6"
 
       # build.spec bundles audio_describer/bin (FFmpeg/VLC), gitignored and absent in
       # CI. Create it empty so the spec resolves. This build ships WITHOUT them.

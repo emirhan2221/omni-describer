@@ -78,8 +78,4 @@ coll = COLLECT(
     upx=True,
     upx_exclude=[],
     name='omni_describer_dist',
-    # PyInstaller 6 tucks bundled data into an _internal/ subfolder, but the app
-    # resolves doc/notifs/locale/bin next to the exe (config.get_app_root). Keep
-    # the old flat layout so those paths resolve without shipping _internal out.
-    contents_directory='.',
 )
