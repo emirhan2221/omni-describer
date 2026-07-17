@@ -1,0 +1,382 @@
+{
+  "original_file": "C:\\apps\\omnidescriber\\audio_describer\\locale\\fr\\LC_MESSAGES\\omni_describer.po",
+  "file_type": "GNU Gettext PO",
+  "review_entries": [
+    {
+      "msgid": "Could not determine video duration, skipping character glossary.",
+      "msgstr": "Video s\u00fcresi belirlenemedi, karakter s\u00f6zl\u00fc\u011f\u00fc atlan\u0131yor.",
+      "msgctxt": null,
+      "fuzzy": false,
+      "unit_id": "6",
+      "polib_flags": [],
+      "polib_previous_msgid": null
+    },
+    {
+      "msgid": "Video is long, splitting into chunks for character analysis...",
+      "msgstr": "Video uzun, karakter analizi i\u00e7in par\u00e7alara ayr\u0131l\u0131yor...",
+      "msgctxt": null,
+      "fuzzy": false,
+      "unit_id": "7",
+      "polib_flags": [],
+      "polib_previous_msgid": null
+    },
+    {
+      "msgid": "Glossary Chunking:",
+      "msgstr": "S\u00f6zl\u00fck Par\u00e7alama:",
+      "msgctxt": null,
+      "fuzzy": false,
+      "unit_id": "8",
+      "polib_flags": [],
+      "polib_previous_msgid": null
+    },
+    {
+      "msgid": "Chunk Pre-processing:",
+      "msgstr": "Par\u00e7a \u00d6n \u0130\u015fleme:",
+      "msgctxt": null,
+      "fuzzy": false,
+      "unit_id": "10",
+      "polib_flags": [],
+      "polib_previous_msgid": null
+    },
+    {
+      "msgid": "AI process stopped while generating glossary due to token limit. Try simplifying the video or adjusting settings.",
+      "msgstr": "Token s\u0131n\u0131r\u0131 nedeniyle s\u00f6zl\u00fck olu\u015fturulurken yapay zeka i\u015flemi durdu. Videoyu basitle\u015ftirmeyi veya ayarlar\u0131 de\u011fi\u015ftirmeyi deneyin.",
+      "msgctxt": null,
+      "fuzzy": false,
+      "unit_id": "30",
+      "polib_flags": [],
+      "polib_previous_msgid": null
+    },
+    {
+      "msgid": "N/A",
+      "msgstr": "N/A",
+      "msgctxt": null,
+      "fuzzy": false,
+      "unit_id": "62",
+      "polib_flags": [],
+      "polib_previous_msgid": null
+    },
+    {
+      "msgid": "MP3 Audio (Descriptions mixed with original video)",
+      "msgstr": "MP3 Ses (Orijinal video ile kar\u0131\u015f\u0131k a\u00e7\u0131klamalar)",
+      "msgctxt": null,
+      "fuzzy": false,
+      "unit_id": "146",
+      "polib_flags": [],
+      "polib_previous_msgid": null
+    },
+    {
+      "msgid": "SRT Subtitle File (Descriptions as subtitles)",
+      "msgstr": "SRT Altyaz\u0131 Dosyas\u0131 (A\u00e7\u0131klamalar altyaz\u0131 olarak)",
+      "msgctxt": null,
+      "fuzzy": false,
+      "unit_id": "147",
+      "polib_flags": [],
+      "polib_previous_msgid": null
+    },
+    {
+      "msgid": "Select Export Format",
+      "msgstr": "D\u0131\u015fa Aktarma Format\u0131 Se\u00e7in",
+      "msgctxt": null,
+      "fuzzy": false,
+      "unit_id": "149",
+      "polib_flags": [],
+      "polib_previous_msgid": null
+    },
+    {
+      "msgid": "OK",
+      "msgstr": "Tamam",
+      "msgctxt": null,
+      "fuzzy": false,
+      "unit_id": "165",
+      "polib_flags": [],
+      "polib_previous_msgid": null
+    },
+    {
+      "msgid": "Context of what just happened: {context}",
+      "msgstr": "Az \u00f6nce ne oldu\u011funu ba\u011flam\u0131: {context}",
+      "msgctxt": null,
+      "fuzzy": false,
+      "unit_id": "227",
+      "polib_flags": [
+        "python-brace-format"
+      ],
+      "polib_previous_msgid": null
+    },
+    {
+      "msgid": "Instructions",
+      "msgstr": "Talimatlar",
+      "msgctxt": null,
+      "fuzzy": false,
+      "unit_id": "261",
+      "polib_flags": [],
+      "polib_previous_msgid": null
+    },
+    {
+      "msgid": "Pause",
+      "msgstr": "Duraklat",
+      "msgctxt": null,
+      "fuzzy": false,
+      "unit_id": "282",
+      "polib_flags": [],
+      "polib_previous_msgid": null
+    },
+    {
+      "msgid": "Info",
+      "msgstr": "Bilgi",
+      "msgctxt": null,
+      "fuzzy": false,
+      "unit_id": "291",
+      "polib_flags": [],
+      "polib_previous_msgid": null
+    },
+    {
+      "msgid": "Total",
+      "msgstr": "Toplam",
+      "msgctxt": null,
+      "fuzzy": false,
+      "unit_id": "296",
+      "polib_flags": [],
+      "polib_previous_msgid": null
+    },
+    {
+      "msgid": "Arabic",
+      "msgstr": "Arap\u00e7a",
+      "msgctxt": null,
+      "fuzzy": false,
+      "unit_id": "326",
+      "polib_flags": [],
+      "polib_previous_msgid": null
+    },
+    {
+      "msgid": "French",
+      "msgstr": "Frans\u0131zca",
+      "msgctxt": null,
+      "fuzzy": false,
+      "unit_id": "329",
+      "polib_flags": [],
+      "polib_previous_msgid": null
+    },
+    {
+      "msgid": "Italian",
+      "msgstr": "\u0130talyanca",
+      "msgctxt": null,
+      "fuzzy": false,
+      "unit_id": "330",
+      "polib_flags": [],
+      "polib_previous_msgid": null
+    },
+    {
+      "msgid": "Portuguese",
+      "msgstr": "Portekizce",
+      "msgctxt": null,
+      "fuzzy": false,
+      "unit_id": "331",
+      "polib_flags": [],
+      "polib_previous_msgid": null
+    },
+    {
+      "msgid": "Test",
+      "msgstr": "Test",
+      "msgctxt": null,
+      "fuzzy": false,
+      "unit_id": "370",
+      "polib_flags": [],
+      "polib_previous_msgid": null
+    },
+    {
+      "msgid": "A Message from the Developer",
+      "msgstr": "Geli\u015ftiriciden Bir Mesaj",
+      "msgctxt": null,
+      "fuzzy": false,
+      "unit_id": "380",
+      "polib_flags": [],
+      "polib_previous_msgid": null
+    },
+    {
+      "msgid": "Updater component not found.",
+      "msgstr": "G\u00fcncelleyici bile\u015feni bulunamad\u0131.",
+      "msgctxt": null,
+      "fuzzy": false,
+      "unit_id": "385",
+      "polib_flags": [],
+      "polib_previous_msgid": null
+    },
+    {
+      "msgid": "Regular",
+      "msgstr": "Normal",
+      "msgctxt": null,
+      "fuzzy": false,
+      "unit_id": "388",
+      "polib_flags": [],
+      "polib_previous_msgid": null
+    },
+    {
+      "msgid": "Italic",
+      "msgstr": "\u0130talik",
+      "msgctxt": null,
+      "fuzzy": false,
+      "unit_id": "389",
+      "polib_flags": [],
+      "polib_previous_msgid": null
+    },
+    {
+      "msgid": "Bold",
+      "msgstr": "Kal\u0131n",
+      "msgctxt": null,
+      "fuzzy": false,
+      "unit_id": "390",
+      "polib_flags": [],
+      "polib_previous_msgid": null
+    },
+    {
+      "msgid": "AaBbYyZz01",
+      "msgstr": "AaBbYyZz01",
+      "msgctxt": null,
+      "fuzzy": false,
+      "unit_id": "391",
+      "polib_flags": [],
+      "polib_previous_msgid": null
+    },
+    {
+      "msgid": "Font",
+      "msgstr": "Yaz\u0131 Tipi",
+      "msgctxt": null,
+      "fuzzy": false,
+      "unit_id": "392",
+      "polib_flags": [],
+      "polib_previous_msgid": null
+    },
+    {
+      "msgid": "&Size:",
+      "msgstr": "&Boyut:",
+      "msgctxt": null,
+      "fuzzy": false,
+      "unit_id": "393",
+      "polib_flags": [],
+      "polib_previous_msgid": null
+    },
+    {
+      "msgid": "&Font:",
+      "msgstr": "&Yaz\u0131 Tipi:",
+      "msgctxt": null,
+      "fuzzy": false,
+      "unit_id": "394",
+      "polib_flags": [],
+      "polib_previous_msgid": null
+    },
+    {
+      "msgid": "Font st&yle:",
+      "msgstr": "Yaz\u0131 Tipi st&ili:",
+      "msgctxt": null,
+      "fuzzy": false,
+      "unit_id": "395",
+      "polib_flags": [],
+      "polib_previous_msgid": null
+    },
+    {
+      "msgid": "Effects",
+      "msgstr": "Efektler",
+      "msgctxt": null,
+      "fuzzy": false,
+      "unit_id": "396",
+      "polib_flags": [],
+      "polib_previous_msgid": null
+    },
+    {
+      "msgid": "Stri&keout",
+      "msgstr": "\u00dcst\u00fc \u00c7i&zili",
+      "msgctxt": null,
+      "fuzzy": false,
+      "unit_id": "397",
+      "polib_flags": [],
+      "polib_previous_msgid": null
+    },
+    {
+      "msgid": "&Underline",
+      "msgstr": "&Alt\u0131 \u00c7izili",
+      "msgctxt": null,
+      "fuzzy": false,
+      "unit_id": "398",
+      "polib_flags": [],
+      "polib_previous_msgid": null
+    },
+    {
+      "msgid": "Cancel",
+      "msgstr": "\u0130ptal",
+      "msgctxt": null,
+      "fuzzy": false,
+      "unit_id": "399",
+      "polib_flags": [],
+      "polib_previous_msgid": null
+    },
+    {
+      "msgid": "&Apply",
+      "msgstr": "&Uygula",
+      "msgctxt": null,
+      "fuzzy": false,
+      "unit_id": "400",
+      "polib_flags": [],
+      "polib_previous_msgid": null
+    },
+    {
+      "msgid": "Sample",
+      "msgstr": "\u00d6rnek",
+      "msgctxt": null,
+      "fuzzy": false,
+      "unit_id": "401",
+      "polib_flags": [],
+      "polib_previous_msgid": null
+    },
+    {
+      "msgid": "Bold Italic",
+      "msgstr": "Kal\u0131n \u0130talik",
+      "msgctxt": null,
+      "fuzzy": false,
+      "unit_id": "402",
+      "polib_flags": [],
+      "polib_previous_msgid": null
+    },
+    {
+      "msgid": "Ignoring self-update for {}. It will be updated on the next run.",
+      "msgstr": "G\u00fcncelleme ({}) yok say\u0131l\u0131yor. Bir sonraki \u00e7al\u0131\u015ft\u0131rmada g\u00fcncellenecektir.",
+      "msgctxt": null,
+      "fuzzy": false,
+      "unit_id": "403",
+      "polib_flags": [],
+      "polib_previous_msgid": null
+    },
+    {
+      "msgid": "Permission denied (Attempt {}/{}). The application might still be closing. Retrying in {} second...",
+      "msgstr": "\u0130zin reddedildi (Deneme {}/{}). Uygulama hala kapan\u0131yor olabilir. {} saniye sonra tekrar denenecek...",
+      "msgctxt": null,
+      "fuzzy": false,
+      "unit_id": "406",
+      "polib_flags": [],
+      "polib_previous_msgid": null
+    },
+    {
+      "msgid": "Failed to update after {} attempts. The application files are likely still in use.",
+      "msgstr": "{} denemeden sonra g\u00fcncellenemedi. Uygulama dosyalar\u0131 muhtemelen hala kullan\u0131mda.",
+      "msgctxt": null,
+      "fuzzy": false,
+      "unit_id": "408",
+      "polib_flags": [],
+      "polib_previous_msgid": null
+    },
+    {
+      "msgid": "Relaunching application...",
+      "msgstr": "Uygulama yeniden ba\u015flat\u0131l\u0131yor...",
+      "msgctxt": null,
+      "fuzzy": false,
+      "unit_id": "409",
+      "polib_flags": [],
+      "polib_previous_msgid": null
+    }
+  ],
+  "current_index": 0,
+  "highest_reviewed_index": 0,
+  "source_language": "en",
+  "target_language": "tr",
+  "exclusion_rules": []
+}

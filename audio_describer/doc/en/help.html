@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omni Describer - User Guide</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.7;
+            padding: 2em;
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+            border-bottom: 2px solid #aed6f1;
+            padding-bottom: 10px;
+        }
+        h1 { font-size: 2.8em; text-align: center; border-bottom: none; letter-spacing: -1px; }
+        h2 { font-size: 2.2em; margin-top: 2em; }
+        h3 { font-size: 1.6em; border-bottom: 1px solid #dee2e6; }
+        code {
+            background-color: #e8f6f3;
+            padding: 3px 6px;
+            border-radius: 5px;
+            font-family: "Courier New", Courier, monospace;
+            color: #117a65;
+        }
+        .container {
+            background-color: #fff;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        .key {
+            display: inline-block;
+            background-color: #f8f9fa;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            padding: 2px 8px;
+            font-size: 0.9em;
+            box-shadow: 1px 1px 1px #adb5bd;
+            margin: 0 2px;
+        }
+        .note {
+            background-color: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 1em;
+            margin: 1.5em 0;
+            border-radius: 5px;
+        }
+        .note strong { color: #856404; }
+        .best-practice {
+            background-color: #d4edda;
+            border-left: 5px solid #28a745;
+            padding: 1em;
+            margin: 1.5em 0;
+            border-radius: 5px;
+        }
+        .best-practice strong { color: #155724; }
+        .backstory {
+            background-color: #eaf2f8;
+            border-left: 5px solid #3498db;
+            padding: 1.5em;
+            margin: 2em 0;
+            border-radius: 8px;
+            font-style: italic;
+        }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 0.8em; }
+        a { color: #2980b9; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Omni Describer User Guide</h1>
+        <p style="text-align: center; font-size: 1.1em; color: #566573;">Giving a Voice to the Visual World with AI.</p>
+
+        <div class="note">
+            <strong>Important Notice:</strong> Omni Describer has transitioned to a web platform. The desktop app is now in maintenance mode. New features and improvements are focused on the web version at <a href="https://studio.binclusive.io">studio.binclusive.io</a>. The web platform requires no installation, no API keys, and works on all devices including Mac and mobile. The desktop app will remain available for those who prefer it.
+        </div>
+
+        <div class="backstory">
+            <p>It all started with my love for movies. When I realized how many details in my favorite scenes were lost without good audio description, an idea sparked: "Well, couldn't AI make this easier for us?" I dreamed of a tool that wouldn't just generate descriptions but would also give full control to the user. After months of intense work, countless trials, and overcoming many technical hurdles, I developed Omni Describer as the product of that dream.</p>
+        </div>
+
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="#whatis">What's in a Name?</a></li>
+            <li><a href="#requirements">System Requirements</a></li>
+            <li><a href="#setup">Getting Started: Setting Up Your API Keys</a></li>
+            <li><a href="#quickstart">Quick Start: Generating Your First Description</a></li>
+            <li><a href="#features">Main Features</a>
+                <ul>
+                    <li><a href="#player">The Described Video Player</a></li>
+                    <li><a href="#editing">Editing Descriptions: The Power to Refine</a></li>
+                    <li><a href="#prompts">Managing Prompt Presets</a></li>
+                    <li><a href="#askmore">Ask More About the Scene</a></li>
+                    <li><a href="#explorer">Scene Explorer</a></li>
+                    <li><a href="#exporting">Exporting Your Work</a></li>
+                </ul>
+            </li>
+            <li><a href="#advanced-settings">A Deep Dive into Settings</a></li>
+            <li><a href="#bestpractices">Tips and Tricks for the Best Results</a></li>
+            <li><a href="#faq">Frequently Asked Questions (FAQ)</a></li>
+            <li><a href="#shortcuts">Keyboard Shortcuts</a></li>
+            <li><a href="#contact">Acknowledgments, Contact, and Contributors</a></li>
+        </ul>
+
+        <h2 id="whatis">What's in a Name?</h2>
+        <p>The "Omni" in the name comes from Latin, meaning "all" or "everything." I chose this name because I didn't want the tool to serve just one purpose. Yes, Omni Describer primarily aims to make media accessible for blind and visually impaired individuals by creating audio descriptions. However, its purpose is not limited to that.</p>
+        <p>This is also an <strong>exploration tool</strong>. A film critic, a student, an artist, or anyone curious about visual details can use features like "Scene Explorer" or "Ask More" to delve into the layers of a video like never before. Omni Describer is a window to see the world through the "eyes" of AI and understand it differently. In short, it is "a describer for everything, for everyone."</p>
+        
+        <h2 id="requirements">System Requirements</h2>
+        <p>To get the best performance from Omni Describer, I recommend meeting the following minimum system requirements:</p>
+        <ul>
+            <li><strong>Operating System:</strong> Windows 10 or newer (64-bit).</li>
+            <li><strong>Memory (RAM):</strong> At least 4 GB of RAM.</li>
+            <li><strong>Storage:</strong> At least 500 MB of free disk space for the application and temporary files.</li>
+            <li><strong>Internet Connection:</strong> An active internet connection is required to connect to AI services (Google Gemini, OpenAI) and download videos.</li>
+            <li><strong>Screen Reader:</strong> For full accessibility, a screen reader like JAWS, NVDA, or Windows Narrator is recommended.</li>
+        </ul>
+
+        <h2 id="setup">Getting Started: Setting Up Your API Keys</h2>
+        <p>Omni Describer uses cloud-based AI services to analyze and voice descriptions. Therefore, you need to enter your own API keys before you can start.</p>
+        <ol>
+            <li><strong>Open Settings:</strong> Go to the <strong>File</strong> menu and select <strong>Settings...</strong> (or press <span class="key">Ctrl</span> + <span class="key">,</span>).</li>
+            <li><strong>AI Settings Tab:</strong>
+                <ul>
+                    <li><strong>Gemini API Key:</strong> This is mandatory for video analysis. Paste your key into the "Gemini API Key:" field. You can get a free API key from <a href="https://aistudio.google.com/app/apikey" target="_blank">Google AI Studio</a>.</li>
+                    <li><strong>OpenAI API Key (for TTS):</strong> This is required for high-quality text-to-speech. Paste your key into this field. You can still use the built-in Windows voices without this key, but OpenAI is recommended for the best results. You can get a key from the <a href="https://platform.openai.com/api-keys" target="_blank">OpenAI Platform</a>.</li>
+                </ul>
+            </li>
+            <li><strong>Save:</strong> Click <strong>Apply</strong> or <strong>OK</strong> to save your settings. You're now ready to go!</li>
+        </ol>
+        <div class="note">
+            <strong>Secure Storage:</strong> Your API keys are encrypted and stored securely on your computer in the application's settings file. They are never sent anywhere else except to connect directly to the respective AI services.
+        </div>
+
+        <h2 id="quickstart">Quick Start: Generating Your First Description</h2>
+        <p>Let's get started! Just follow these simple steps:</p>
+        <ol>
+            <li><strong>Choose a Video:</strong> Click a button like "Local Video File" on the main window or select your video source from the File menu.</li>
+            <li><strong>Select a Prompt (Optional):</strong> The dropdown menu lists pre-made instructions that guide the AI. For your first try, leaving it at "(No Preset Selected)" is a great starting point.</li>
+            <li><strong>Start Processing:</strong> The application will now begin analyzing your video. You can follow the progress in the "Status Log" at the bottom of the window. This may take a few minutes, depending on the length of the video.</li>
+        </ol>
+        <p>When the process is complete, the <strong>Described Video Player</strong> will open automatically, and you can start enjoying your newly described video!</p>
+
+        <h2 id="features">Main Features</h2>
+
+        <h3 id="player">The Described Video Player</h3>
+        <p>This is your personal, described movie theater. As the video plays, your <strong>installed screen reader</strong> (like JAWS or NVDA) will read the generated audio descriptions aloud at the correct moments.</p>
+        <ul>
+            <li><strong>Playback Controls:</strong> Use the Play/Pause, Rewind/Forward buttons, or the seek slider to navigate the video.</li>
+            <li><strong>Current Description Area:</strong> You can follow the text of the currently active description here.</li>
+            <li><strong>Edit and Refine:</strong> Click the "Edit Descriptions..." button to open a powerful editor for full control over your project.</li>
+            <li><strong>AI Token Usage:</strong> This area shows you how many AI "tokens" were used, helping you keep track of your API usage.</li>
+        </ul>
+
+        <h3 id="editing">Editing Descriptions: The Power to Refine</h3>
+        <p>The AI provides a fantastic starting point, but true quality comes from refinement. The "Edit Descriptions..." button in the player opens a powerful editor that gives you full control over every aspect of your project.</p>
+        <ul>
+            <li><strong>Select and Modify:</strong> Choose any description from the dropdown list at the top to load its details into the editor.</li>
+            <li><strong>Adjust Timestamps:</strong> Directly edit the <code>Start Time</code> and <code>End Time</code> fields. When you change the start time, the end time automatically shifts to preserve the description's duration. All times are validated to ensure they are within the bounds of your video.</li>
+            <li><strong>Rewrite Text:</strong> Freely edit the description text in the main text box to improve clarity, add detail, or correct inaccuracies.</li>
+            <li><strong>Add New Descriptions:</strong> Click the "Add New..." button to open a simple dialog where you can create a brand new description from scratch, setting its time and text.</li>
+            <li><strong>Delete Descriptions:</strong> Select a description and click the "Delete" button to permanently remove it.</li>
+        </ul>
+        <div class="note">
+            <strong>Save Your Work:</strong> Changes you make in the editor (adding, deleting, modifying) are instantly applied to your current session. When you are done, simply click the "Close" button to return to the player. Your updated list of descriptions will be used for playback and for any subsequent exports.
+        </div>
+        
+        <h3 id="prompts">Managing Prompt Presets</h3>
+        <p>Prompts are powerful instructions that determine what the AI focuses on. By changing the prompt, you can get descriptions in vastly different styles.</p>
+        <ul>
+            <li><strong>Selecting a Preset:</strong> Before processing a video, choose a preset from the dropdown menu on the main window.</li>
+            <li><strong>Managing Presets:</strong> Go to <strong>File -> Manage Prompt Presets...</strong>. Here you can Add, Edit, or Delete your own custom prompts. This is perfect for saving instructions you use frequently.</li>
+            <li><strong>Language-Specific:</strong> Your prompt presets are saved separately for each language you select in the Settings.</li>
+        </ul>
+
+        <h3 id="askmore">Ask More About the Scene</h3>
+        <p>Ever wonder what a character is holding or what a sign in the background says? This feature lets you ask anything that comes to mind about the scene.</p>
+        <ol>
+            <li>Pause the video at the moment you're curious about.</li>
+            <li>Click the <strong>Ask More...</strong> button.</li>
+            <li>Type your question in the "Your New Question:" field (e.g., "What color is the woman's hat?" or "What does the writing on the wall say?").</li>
+            <li>Select how many seconds of video the AI should analyze around the current time.</li>
+            <li>Click "Submit Question." The AI's answer will appear in the "Conversation History" area.</li>
+        </ol>
+
+        <h3 id="explorer">Scene Explorer</h3>
+        <p>Scene Explorer is an interactive way to understand the spatial layout of a scene. It puts you in a virtual room that you can navigate with your keyboard.</p>
+        <ol>
+            <li>Pause the video on a scene you want to explore in detail.</li>
+            <li>Click the <strong>Explore Scene...</strong> button, then click "Analyze Scene".</li>
+        </ol>
+        <p>You are now in the Scene Explorer. Use your keyboard to explore:</p>
+        <ul>
+            <li><span class="key">Arrow Keys</span>: Move your virtual position on a grid.</li>
+            <li><span class="key">D</span>: Provides a detailed description of the overall scene layout.</li>
+            <li><span class="key">L</span>: Announces a list of all objects in the scene.</li>
+            <li><span class="key">Shift</span> + <span class="key">L</span>: Switch to "Jump Mode" to select an object and go directly to it.</li>
+            <li><span class="key">Enter</span>: Get a detailed description of the nearest object.</li>
+            <li><span class="key">Escape</span>: Close the Scene Explorer.</li>
+        </ul>
+
+        <h3 id="exporting">Exporting Your Work</h3>
+        <p>Once you're happy with your descriptions, you can export them from the Player Window in different formats:</p>
+        <ul>
+            <li><strong>Export to .TXT:</strong> A simple text file with timestamps.</li>
+            <li><strong>Export to .SRT:</strong> A standard subtitle file you can use in video players like VLC.</li>
+            <li><strong>Export Audio (MP3):</strong> This is perhaps the most exciting feature. It voices your descriptions with the voice you selected in Settings (SAPI5 or OpenAI), mixes it with the original video audio, and automatically lowers the background sound during descriptions to create an MP3 file you can listen to anywhere.</li>
+        </ul>
+
+        <h2 id="advanced-settings">A Deep Dive into Settings</h2>
+        <p>The Settings window (<span class="key">Ctrl</span> + <span class="key">,</span>) gives you fine-grained control over Omni Describer's behavior.</p>
+
+        <h3>General Tab</h3>
+        <ul>
+            <li><strong>Allow descriptions to interrupt current speech:</strong> When checked, a new description will start speaking immediately, even if the previous one hasn't finished. Uncheck this to let each description finish completely before the next one starts. Useful for very fast-paced scenes.</li>
+        </ul>
+
+        <h3>AI Settings Tab</h3>
+        <ul>
+            <li><strong>Frame Rate for AI Analysis:</strong> Determines how many video frames per second are sent to the AI. A lower value (e.g., 5 FPS) can significantly reduce API costs and help avoid processing limits, but may cause the AI to miss very fast actions.</li>
+            <li><strong>Enable Video Chunking:</strong> For long videos (over 10-15 minutes), the AI can sometimes run out of processing capacity. This feature automatically splits the video into smaller parts, analyzes them sequentially, and stitches the results together. It is highly recommended for long-form content.</li>
+            <li><strong>Disable Safety Filters (Use with caution):</strong> This option may allow the AI to process content that it might normally flag as sensitive. However, this is not an absolute override. The output is still subject to the AI provider's core safety policies. Please remember that you are responsible for how you use this feature.</li>
+        </ul>
+
+        <h3>Audio Output Tab</h3>
+        <ul>
+            <li><strong>Text-to-Speech Engine:</strong>
+                <ul>
+                    <li><strong>SAPI5 (Windows Built-in):</strong> Uses voices that come with Windows or that you have installed. It does not require an additional API key. The app can access both modern 64-bit voices and legacy 32-bit voices. If you have older, favorite voices from past systems, choosing the "SAPI5 (32-bit Voices)" option will allow you to use them.</li>
+                    <li><strong>OpenAI TTS (High Quality):</strong> Produces more natural and fluent-sounding voices. Using this option requires a paid OpenAI account and API key. You can create and manage custom voice presets for OpenAI.</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <h2 id="bestpractices">Tips and Tricks for the Best Results</h2>
+        <p>Creating great audio descriptions is an art. While AI is an effective assistant, you'll get the best results when you guide it correctly.</p>
+        
+        <h3>The Power of Prompts: Your Director's Notes</h3>
+        <div class="note">
+            The application has a set of <strong>core rules</strong> it teaches the AI (like not talking over dialogue). Think of the <strong>Prompt Preset</strong> area on the main screen as the place where you provide your <strong>director's notes</strong> for that specific video. A good note helps the AI focus on a particular style or detail.
+        </div>
+        
+        <div class="best-practice">
+            <strong>Tip: The "Focus on Names" Prompt</strong><br>
+            In a video with many characters, you can create a custom prompt to prioritize name tracking:
+            <code>Your highest priority for this video is to identify and use the correct character names as soon as they are spoken.</code>
+        </div>
+        
+        <div class="best-practice">
+            <strong>Tip: The "Describe the Atmosphere" Prompt</strong><br>
+            For visually rich films, guide the AI to focus on the environment:
+            <code>Focus on describing the setting, atmosphere, and environmental details. Mention the lighting, colors, and the overall mood of the scene.</code>
+        </div>
+        
+        <h4>What to Avoid in Prompts</h4>
+        <p>Avoid instructions that contradict the AI's core principles (describing only visuals, not speaking over dialogue). Giving it a flawed instruction can cause poor results.</p>
+        <ul>
+            <li><strong>Bad Prompt:</strong> <code>"Tell me everything that happens."</code> This is too vague and can cause the AI to describe unimportant details.</li>
+            <li><strong>Bad Prompt:</strong> <code>"Tell me what the characters are saying."</code> This will cause it to violate the "visuals only" rule.</li>
+        </ul>
+        <p>In short: Use prompts to guide the AI's focus, not to change the fundamental rules of good audio description.</p>
+
+        <h2 id="faq">Frequently Asked Questions (FAQ)</h2>
+        <p><strong>Q: My API keys are not working. What should I do?</strong><br>
+        A: First, double-check that you have copied the entire key correctly. For OpenAI, ensure you have set up a payment method in your account, as their TTS service is not free. For Gemini, ensure the API is enabled in your Google Cloud project.</p>
+
+        <p><strong>Q: The process failed with a "MAX_TOKENS" error. What does this mean?</strong><br>
+        A: This means your video is too long or visually complex for the AI to process in a single pass. This is a capacity limit, not a content error. The best solution is to go to <strong>Settings -> AI Settings</strong> and enable <strong>"Video Chunking"</strong>. This will automatically split the video into smaller, more manageable parts for the AI.</p>
+
+        <p><strong>Q: The AI failed to generate descriptions because of "Safety Filters". What can I do?</strong><br>
+        A: This is a known issue where the AI's safety system can be overly cautious. You have a few options to try, in order: 1) Go to <strong>Settings -> AI Settings</strong> and enable <strong>"Disable Safety Filters"</strong> (this often helps). 2) If that fails, try reducing the "Frame Rate for AI Analysis" to send less data to the AI. 3) As a last resort, you can use the "Gemini Model Override" setting and enter <code>gemini-2.5-pro</code>. This model is more powerful and may handle sensitive content better, but it is slower and may be more expensive if you are on a paid API tier.</p>
+        
+        <p><strong>Q: Some of my old voices are missing from the SAPI5 list. Where did they go?</strong><br>
+        A: Modern Windows systems are 64-bit, but many classic, beloved text-to-speech voices were 32-bit. In Settings under the "Audio Output" tab, you will see separate engine choices for "SAPI5 (64-bit)" and "SAPI5 (32-bit)". To access your older voices, simply select the 32-bit engine.</p>
+
+        <p><strong>Q: Why does generating descriptions take so long?</strong><br>
+        A: The time depends on your video's length, your internet speed (for the upload to the AI), the selected frame rate, and the current load on the AI services. Using "Video Chunking" is highly recommended for long videos.</p>
+
+        <h2 id="shortcuts">Keyboard Shortcuts</h2>
+        <ul>
+            <li><span class="key">Ctrl</span> + <span class="key">O</span>: Open Local Video</li>
+            <li><span class="key">Ctrl</span> + <span class="key">U</span>: Open from Direct URL</li>
+            <li><span class="key">Ctrl</span> + <span class="key">Y</span>: Open from YouTube</li>
+            <li><span class="key">Ctrl</span> + <span class="key">,</span>: Open Settings</li>
+            <li><span class="key">F1</span>: View Help</li>
+        </ul>
+
+        <h2 id="contact">Acknowledgments, Contact, and Contributors</h2>
+        <p>Thank you so much for using Omni Describer! This application is a reflection of my desire to make visual media more accessible and enjoyable for everyone. Having users like you use this tool and provide feedback is the greatest motivation to continue developing it.</p>
+        
+        <h3>Feedback and Support</h3>
+        <p>Do you have a question, a bug report, or an idea for a new feature? I would love to hear from you! The best way to reach me is by email. Your feedback is invaluable for making Omni Describer even better.</p>
+        <ul>
+            <li><strong>Email:</strong> <a href="mailto:info@audioses.com">info@audioses.com</a></li>
+            <li><strong>Website:</strong> <a href="https://audioses.com" target="_blank">audioses.com</a></li>
+        </ul>
+    </div>
+</body>
+</html>

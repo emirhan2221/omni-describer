@@ -1,0 +1,10 @@
+Katkıda Bulunanlar
+
+Bu proje, harika araçlar geliştiren yazılımcıların ve değerli insanların desteği olmadan asla var olamazdı.
+
+ Özel Teşekkür: Nathan Tech'ten Nathan Smith çeşitli kütüphaneler, çalışma biçimleri ve genel anlamda yardımları için teşekkür ederim.
+ Beta Testçileri: Titiz testleri, hata raporları ve bu uygulamayı şekillendiren harika önerileri için Burak Yüksek Fatih Yüksek ve Oleh Khokhlov'a teşekkür ederim.
+ Çevirmenler: Rusça: Fatih Yüksek. İspanyolca: Annabel vazkez. Ukraynaca: Oleh Khokhlov. Fransızca: Renku Reiki. İtalyanca: Ambrogio Riili. Portekizce: Ângelo Abrantes. Arapça: Linku Loulou. Vietnamca: Nguyễn Anh Đức.
+ Teknoloji ve kütüphaneler: Omni Describer’a güç veren Google Gemini, FFmpeg gibi inanılmaz araçların geliştiricilerine ve projenin temelini oluşturan sayısız Python kütüphanesine.
+ Ve siz değerli kullanıcıya: Omni Betimleciyi kullandığınız ve geribildirimde bulunduğunuz için.
+  Omni Betimleyiciyi kullandığınız için teşekkür ederim.

@@ -1,0 +1,126 @@
+Not: Sadece bir kez dile getirilmiş ve başka hiçbir yerde önerilmemiş fikirler için, katkıda bulunan kişinin ismini özellikle belirterek teşekkür ediyorum. İletişim trafiği oldukça yoğun olduğu için tüm isimleri tek tek listelemem mümkün değil. Bu uygulamayı en iyi hale getirmek için katkıda bulunan herkese gönülden teşekkür ederim.
+
+v2.0 - Bakım Modu Sürümü
+
+Önemli Duyuru:
+Omni Betimleyici artık bakım modundadır. Uygulama, Binclusive ile ortaklaşa geliştirilen studio.binclusive.io adresindeki web platformuna taşınmıştır. Web platformu kurulum gerektirmez, API anahtarına ihtiyaç duymaz ve Mac ve mobil dahil tüm cihazlarda çalışır. Yeni özellikler ve iyileştirmeler web sürümüne odaklanacaktır. Masaüstü uygulama, tercih edenler için kullanılabilir ve işlevsel olmaya devam edecektir.
+
+Yeni Özellikler:
+Video işleme, geliştirilmiş yükleme sistemi sayesinde artık önemli ölçüde daha hızlı ve daha az internet kullanıyor.
+Kare hızı ayarları artık daha verimli şekilde işleniyor, bu sayede daha hızlı işleme ve daha iyi video kalitesi elde ediliyor.
+Yapay zeka kare hızı ayarına 1 FPS seçeneği eklendi, statik içerik için minimum maliyetle kullanışlı.
+Karakter sözlüğü artık video parçalama etkinleştirilmeden de kullanılabiliyor.
+Kolay erişim için Dosya menüsüne ve ana ekrana web platformu bağlantısı eklendi.
+Betimleme düzenleyicide bir betimleme seçildiğinde video oynatıcı artık o zaman damgasına atlıyor, böylece düzenleme sırasında sahneyi önizleyebilirsiniz.
+Betimleme düzenleyicisinde değişiklikleri kaydetmek için Ctrl+S klavye kısayolu eklendi.
+API hız sınırına ulaşıldığında otomatik yeniden deneme özelliği eklendi. Uygulama artık hemen başarısız olmak yerine 3 kereye kadar yeniden deneyecek.
+
+Hata Düzeltmeleri:
+Windows güncellemeleri veya donanım değişikliklerinden sonra uygulamanın çökmesine veya ayarların kaybolmasına neden olan kritik bir sorun düzeltildi. Ayarlarınız artık tüm sistemlerde güvenilir şekilde çalışmalıdır.
+Video işlenirken uygulamanın süresiz olarak takılmasına neden olabilecek bir sorun düzeltildi.
+Yapay zeka yanıtlarındaki küçük biçimlendirme farklılıkları nedeniyle bazı betimlemelerin sessizce kaybolmasına neden olan bir sorun düzeltildi.
+Hata mesajları iyileştirildi. Uygulama artık başlangıçta bir şeyler ters giderse sessizce çökmek yerine net bir uyarı gösterecek.
+Betimleme düzenleyicisinde "Değişiklikler kaydedildi", "Doğrulama Hatası" ve "Yeni Betimleme Ekle" pencere başlığı dahil olmak üzere birçok hatalı Türkçe çeviri düzeltildi.
+Betimleme düzenleyicisinde Ekle ve Kaydet düğmelerinin aynı kısayol tuşunu paylaşması sorunu giderildi.
+Uygulama genelindeki tüm belirsiz ve hatalı Türkçe çeviriler düzeltildi.
+
+v1.3.2
+bu güncelleme hata düzeltmeleri içermektedir
+Bazen betimleme düzenleyicisinde düzenlenen betimlemeler oynatıcı penceresinde düzgün okunmuyordu. Artık düzeltildi.
+yazılan özel promptların belli sistemlerde kullanılamamasına sebep olan bir sorun düzeltildi.
+çeviri iyileştirmeleri
+
+
+v1.3.1
+güncelleyici ve mp3 dışa aktarma ile ilgili düzeltmeler. Robin Christopherson'e günncelleyiciyle ilgili sağladığı geribildirim için teşekkürler.
+
+
+v1.3
+
+Bu sürüm, kullanıcı taleplerine göre bazı yeni özellikler ekler ve çeşitli hata düzeltmeleri içerir.
+
+Yeni Özellikler:
+
+Karakter sözlüğü kullanılan API gönderimlerinde maliyet optimizasyonları yapıldı.
+Betimleme düzenlerken, odak artık ekrandaki en yakın betimlemeye taşınıyor. Fikir için Olgun Yılmaz’a teşekkürler.
+Windows OneCore sesleri artık MP3 dışa aktarımlarında kullanılabiliyor.
+Karakter tanıma özelliği açıksa, betimleme düzenleme penceresinde tanınan karakterlerin açıklamalarını görebilirsiniz.
+Oynatıcı penceresinden çıkmaya çalıştığınızda artık onay isteyen bir uyarı çıkacak. Fikir için Enes Deniz’e teşekkürler.
+Doğrudan veya YouTube indirmelerinde girilen URL geçersizse, artık dosya indirme denemesi yapılmayacak. Fikir için Burak Yüksek’e teşekkürler.
+Fransızca dokümantasyon güncellendi.
+Vietnamca çeviri eklendi. Çeviriler için Nguyễn Anh Đức’e teşekkürler. 
+
+Hata Düzeltmeleri:
+
+Bazı kullanıcılar MP3 dışa aktarımlarında sorun yaşıyordu, bu problem giderildi.
+Bazı durumlarda video kalite ayarlarının gönderilen videolara uygulanmaması sorunu düzeltildi.
+Çeviri güncellemeleri.
+
+v1.21
+Bu güncelleme kritik hata düzeltmeleri içermektedir
+
+uygulamanın son sürümü medya oynatıcı olarak vlc kullanıyordu. Sistemlerinde vlc kurulu olmayan kullanıcılarda uygulamanın çömkesine neden olan bir sorun düzeltildi. Program gerekli vlc dosyalarını kopyalarken hata veriyormuş. Bana bu süreçte desteğini esirgemeyen herkese teşekkür ederim
+Bazı yeni eklenen çevirilerin betimleme oluşturmada kullanılmasına engel olan bir hata düzeltildi.
+Model optimizasyonları
+
+
+v1.2 
+
+Bu güncelleme, birkaç kritik hatayı düzeltir, yeni dil destekleri ekler ve kullanıcılar tarafından yoğun talep edilen bazı özellikleri içerir. Daha heyecan verici güncellemeler yolda!
+
+Yeni Özellikler:
+
+Artık SAPI seslerinin 32-bit sürümünü kullanabilirsiniz.
+Varsayılan ayarlar, daha iyi betimleme kalitesi için genel kullanıcıya göre daha optimize hale getirildi.
+Artık YouTube'dan video indirme özelliği daha kararlı. Artık "izin reddedildi" hatalarıyla karşılaşma olasılığınız daha düşük.
+Arka planda kullanılan medya oynatıcı motoru değiştirildi. Artık videoların düzgün yüklenmemesi ve oynatılamaması gibi sorunları yaşamanız çok daha az olası.
+Daha fazla video türü için destek eklendi.
+Oynatıcı penceresindeki ayrı dışa aktarma seçenekleri kaldırıldı. Ayarları daha kolay düzenleyebilmeniz için artık tek bir iletişim kutusunda birleştirildi.
+Metin (TXT) dışa aktarımları artık zaman damgaları olmadan, satır satır betimlemeler üretecek.
+Etkinleştirilirse, Sahne Gezgini'nde Karakter Sözlüğü özelliği kullanılacak. Bu, bir sahneyi gezerken karakter isimlerini almanızı sağlayabilir. Fikir için Engin Yılmaz'a teşekkürler.
+güvenlik sorunları yaygın olduğundan, betimleme sağlanmadığını belirten iletişim kutusunu daha açık hale getirdim. Artık program betimlemelerin neden üretilmediğini gösterecek.
+İtalyanca çevirisi eklendi. Çeviriler için Ambrogio Riili'ye teşekkürler.
+Program artık geriye dönük Gemini modelleriyle uyumlu. Bu, 2.5 gibi modellerin altındakileri de kullanabileceğiniz anlamına gelir (örneğin 2.0-flash). Fikir için Ambrogio Riili'ye teşekkürler.
+Önemli Not: Eski modelleri kullanmaya karar verirseniz, makul sonuçlar almak için her bir parça için yaklaşık 5 dakikalık parçalar kullanmanızı öneririm. 
+Kullanıcı klavuzu güncellendi
+Betimleme düzenleyici üzerinde güzel dokunuşlar yapıldı. Artık yeni betimlemeler ekleyebilir, mevcut olanları düzenleyebilir ve her birinin zaman damgalarını ayarlayabilirsiniz. Fikir için Burak Yüsek'e teşekkürler.
+Bazı mesajlar daha bilgilendirici hale getirildi. "Yapay zeka betimleme döndürmedi" yerine, artık sorunun ne olduğunu belirten daha ayrıntılı bir mesaj alacaksınız.
+Birkaç yeni ses bildirimi eklendi.
+Fransızca çevirisi eklendi. Çeviriler için Renku Reiki'ye teşekkürler.
+Arapça çevirisi eklendi. Çeviriler için Linku Loulou'ya teşekkürler.
+Portekizce çevirisi eklendi, çeviri için Ângelo Abrantes'e teşekkürler.
+Sahne Gezgini artık iki veya daha fazla nesneyi aynı koordinata sığdırmaya çalışmayacak.
+
+Hata Düzeltmeleri:
+
+Ses bölmenin doğru şekilde kullanılmasına engel olan kritik bir hata düzeltildi.
+Birkaç MP3 dışa aktarma ile ilgili sorun giderildi.
+Medya oynatıcıyı değiştirerek birçok medya oynatıcıyla ilgili sorunu düzelttiğimi düşünüyorum.
+Birkaç çeviri düzeltmesi yapıldı.
+YouTube indirme işlemlerindeki birkaç hata düzeltildi.
+Düzenlenen betimlemelerin dışa aktarımlarda kullanılmasını engelleyen bir hata düzeltildi.
+Çeşitli performans iyileştirmeleri yapıldı.
+Backend kodunda bazı iyileştirmeler yapıldı.
+Programın bir nedenden dolayı çökmesine neden olan bir sorun düzeltildi.
+Sahne Gezgini ile ilgili birkaç sorun giderildi.
+
+
+v1.1  
+Bu güncelleme bazı kritik düzeltmeler ve yeni bir özellik içermektedir  
+
+**Yeni Özellikler:* 
+Artık uygulamanın genel ayarlarında, ses oynatıcıda betimleme oynatılırken mevcut betimlemenin kesilmesini kapatabileceğiniz bir seçenek var. Ancak bu ayar mp3 dosyası dışa aktarılırken çalışmaz
+
+**Hata Düzeltmeleri:* 
+Eğer özel bir istem seçilmemişse istem metni görüntüleme alanı artık devre dışı bırakılacak  
+Youtube indirmelerinde indirme kalitesi en iyi seçeneği seçilince oluşan bir hata düzeltildi  
+
+Birkaç çeviri sorunu düzeltildi  
+Mp3'e dışa aktarma işlevinin kullanılmasını engelleyen kritik bir hata giderildi. Bu hatayı bildiren herkese teşekkür ederim. Burada isimleri tek tek hatırlayamadığım için listeleyemiyorum  
+Uygulama kapanırken tüm çalışan işlemlerin düzgün şekilde sonlandırılması sağlandı  
+Betimleme düzenleyicisinde sıralama artık betimlemeleri zamana göre yapacak.
+Windows 10 kullanan bazı kullanıcılar için belirli video formatlarının oynatılamaması sorunununu umarım düzelttim. Uygulama artık bu tür sorunları önlemek için tüm videoları standart mp4 formatına dönüştürecek
+Eğer belirtildiyse, uygulama kullanıcı istemdeki özel dil kullan talimatına daha dikkatli uymaya çalışacak. Bu kaliteyi artırmak için önceden biraz katıydı.
+
+v1.0  
+İlk sürüm

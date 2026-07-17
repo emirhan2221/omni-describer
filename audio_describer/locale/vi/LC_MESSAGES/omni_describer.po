@@ -1,0 +1,1722 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2025-08-12 11:57+0300\n"
+"PO-Revision-Date: 2025-08-21 18:19+0300\n"
+"Last-Translator: Gemini AI\n"
+"Language-Team: \n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.6\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: __app__real.py:55
+#, python-format
+msgid "Starting %(app_name)s v%(app_version)s"
+msgstr "Đang khởi động %(app_name)s v%(app_version)s"
+
+#: __app__real.py:74
+#, python-format
+msgid "%(app_name)s started."
+msgstr "%(app_name)s đã khởi động."
+
+#: __app__real.py:118
+#, python-format
+msgid "%s is shutting down."
+msgstr "Đang tắt %s."
+
+#: __app__real.py:121
+#, python-format
+msgid "%(app_name)s closed."
+msgstr "%(app_name)s đã đóng."
+
+#: config.py:50
+msgid "Describer"
+msgstr "Trình Mô Tả"
+
+#: core/audio_describer.py:26
+msgid "Performing pre-analysis to identify characters..."
+msgstr "Đang thực hiện phân tích sơ bộ để nhận dạng nhân vật..."
+
+#: core/audio_describer.py:32
+msgid "Could not determine video duration, skipping character glossary."
+msgstr "Không thể xác định thời lượng video, bỏ qua bảng chú giải nhân vật."
+
+#: core/audio_describer.py:50
+msgid "Video is long, splitting into chunks for character analysis..."
+msgstr "Video dài, đang chia thành các đoạn để phân tích nhân vật..."
+
+#: core/audio_describer.py:53
+msgid "Glossary Chunking:"
+msgstr "Chia đoạn cho Bảng chú giải:"
+
+#: core/audio_describer.py:58
+#, python-format
+msgid "Analyzing character chunk %d of %d..."
+msgstr "Đang phân tích đoạn nhân vật %d trên %d..."
+
+#: core/audio_describer.py:60
+msgid "Chunk Pre-processing:"
+msgstr "Tiền xử lý đoạn:"
+
+#: core/audio_describer.py:74
+msgid "Cleaning up temporary glossary chunks..."
+msgstr "Đang dọn dẹp các đoạn chú giải tạm thời..."
+
+#: core/audio_describer.py:79
+msgid "Character pre-analysis complete (merged from chunks)."
+msgstr "Hoàn tất phân tích sơ bộ nhân vật (đã hợp nhất từ các đoạn)."
+
+#: core/audio_describer.py:89
+msgid "Character pre-analysis complete."
+msgstr "Hoàn tất phân tích sơ bộ nhân vật."
+
+#: core/audio_describer.py:94
+msgid "Could not generate character glossary, proceeding without it."
+msgstr "Không thể tạo bảng chú giải nhân vật, sẽ tiếp tục mà không có nó."
+
+#: core/audio_describer.py:103
+#, python-format
+msgid "Error: Video file not found: %s"
+msgstr "Lỗi: Không tìm thấy tệp video: %s"
+
+#: core/audio_describer.py:112
+#, python-format
+msgid "Uploading video '%s'..."
+msgstr "Đang tải lên video '%s'..."
+
+#: core/audio_describer.py:114
+#, python-format
+msgid "Video upload initiated: %s. Waiting for processing..."
+msgstr "Đã bắt đầu tải lên video: %s. Đang chờ xử lý..."
+
+#: core/audio_describer.py:117 ui/main_window.py:240
+msgid "Video is ACTIVE."
+msgstr "Video đang HOẠT ĐỘNG."
+
+#: core/audio_describer.py:118
+#, python-format
+msgid "Video processing (attempt %d)... state: %s"
+msgstr "Đang xử lý video (lần thử %d)... trạng thái: %s"
+
+#: core/audio_describer.py:121
+#, python-format
+msgid "Video processing timed out or failed. Final state: %s"
+msgstr "Xử lý video đã hết thời gian chờ hoặc thất bại. Trạng thái cuối cùng: %s"
+
+#: core/audio_describer.py:125
+msgid "Video ready. Preparing AI request for descriptions..."
+msgstr "Video đã sẵn sàng. Đang chuẩn bị yêu cầu AI tạo mô tả..."
+
+#: core/audio_describer.py:132
+msgid "Requesting audio descriptions from AI..."
+msgstr "Đang yêu cầu mô tả âm thanh từ AI..."
+
+#: core/audio_describer.py:143
+msgid "Failed to parse timed descriptions from AI's JSON response."
+msgstr "Không thể phân tích cú pháp các mô tả theo thời gian từ phản hồi JSON của AI."
+
+#: core/audio_describer.py:145
+#, python-format
+msgid "Successfully parsed %d raw descriptions. Correcting timestamps and duplicates..."
+msgstr "Đã phân tích thành công %d mô tả thô. Đang sửa lại mốc thời gian và các mô tả trùng lặp..."
+
+#: core/audio_describer.py:149
+msgid "No descriptions remained after all post-processing."
+msgstr "Không còn mô tả nào sau khi hoàn tất hậu xử lý."
+
+#: core/audio_describer.py:154
+#, python-format
+msgid "Description generation failed: %s"
+msgstr "Tạo mô tả thất bại: %s"
+
+#: core/audio_describer.py:157
+#, python-format
+msgid "Cleaned up uploaded video file: %s"
+msgstr "Đã dọn dẹp tệp video đã tải lên: %s"
+
+#: core/audio_describer.py:178
+msgid "AI could not provide an answer."
+msgstr "AI không thể đưa ra câu trả lời."
+
+#: core/audio_describer.py:180
+#, python-format
+msgid "VQA request failed: %s"
+msgstr "Yêu cầu Hỏi-Đáp Video (VQA) thất bại: %s"
+
+#: core/audio_describer.py:202
+msgid "AI process stopped while generating glossary due to token limit. Try simplifying the video or adjusting settings."
+msgstr "Quá trình xử lý của AI đã dừng khi đang tạo bảng chú giải do giới hạn token. Hãy thử đơn giản hóa video hoặc điều chỉnh cài đặt."
+
+#: core/audio_describer.py:209
+#, python-format
+msgid "Failed to get structured data from AI: %s"
+msgstr "Không thể lấy dữ liệu có cấu trúc từ AI: %s"
+
+#: core/audio_describer.py:227
+#, python-format
+msgid "Invalid MM:SS string format: %s"
+msgstr "Định dạng chuỗi MM:SS không hợp lệ: %s"
+
+#: core/audio_describer.py:234
+msgid "Calculated total seconds is negative."
+msgstr "Tổng số giây được tính ra là số âm."
+
+#: core/audio_describer.py:238
+#, python-format
+msgid "Invalid MM:SS components in '%s': %s"
+msgstr "Các thành phần MM:SS không hợp lệ trong '%s': %s"
+
+#: core/audio_describer.py:248
+msgid "Skipping description due to invalid MM:SS format."
+msgstr "Bỏ qua mô tả do định dạng MM:SS không hợp lệ."
+
+#: core/audio_describer.py:255
+msgid "Ensuring minimum description duration..."
+msgstr "Đang đảm bảo thời lượng mô tả tối thiểu..."
+
+#: core/audio_describer.py:258
+#, python-format
+msgid "Timestamp correction complete. %(count)d descriptions processed, %(adjusted_count)d had timestamps adjusted."
+msgstr "Hoàn tất việc sửa mốc thời gian. Đã xử lý %(count)d mô tả, trong đó %(adjusted_count)d mô tả đã được điều chỉnh mốc thời gian."
+
+#: core/audio_describer.py:267
+#, python-format
+msgid "Removed %(count)d repetitive descriptions."
+msgstr "Đã xóa %(count)d mô tả lặp lại."
+
+#: core/audio_describer.py:349
+msgid "Not named"
+msgstr "Chưa đặt tên"
+
+#: core/gemini_helpers.py:73
+msgid "Google's Gemini SDK could not be loaded. This might be due to a compatibility issue or a corrupted installation."
+msgstr "Không thể tải SDK Gemini của Google. Điều này có thể do vấn đề tương thích hoặc cài đặt bị lỗi."
+
+#: core/gemini_helpers.py:77
+msgid "A critical error occurred while loading Google's Gemini SDK, which may be due to a system incompatibility."
+msgstr "Đã xảy ra lỗi nghiêm trọng khi tải SDK Gemini của Google, có thể do không tương thích hệ thống."
+
+#: core/gemini_helpers.py:116
+msgid "Gemini API Key is not configured in settings."
+msgstr "Khóa API Gemini chưa được cấu hình trong phần cài đặt."
+
+#: core/gemini_helpers.py:124
+#, python-format
+msgid "Failed to initialize Gemini Client: %s"
+msgstr "Khởi tạo Gemini Client thất bại: %s"
+
+#: core/gemini_helpers.py:210
+#, python-format
+msgid "AI request was blocked due to: %s"
+msgstr "Yêu cầu đến AI bị chặn vì: %s"
+
+#: core/gemini_helpers.py:216
+msgid "AI returned no answer or an invalid response structure."
+msgstr "AI không trả về câu trả lời hoặc cấu trúc phản hồi không hợp lệ."
+
+#: core/gemini_helpers.py:227
+msgid "AI process stopped because it reached its processing limit (MAX_TOKENS)."
+msgstr "Quá trình xử lý của AI đã dừng vì đạt đến giới hạn xử lý (MAX_TOKENS)."
+
+#: core/gemini_helpers.py:233
+#, python-format
+msgid "AI content generation was stopped. Reason: %s"
+msgstr "Việc tạo nội dung của AI đã bị dừng. Lý do: %s"
+
+#: core/gemini_helpers.py:238
+msgid "AI returned an empty response."
+msgstr "AI trả về một phản hồi trống."
+
+#: core/gemini_helpers.py:246 ui/ask_more_dialog.py:121 ui/main_window.py:240
+msgid "AI is thinking..."
+msgstr "AI đang suy nghĩ..."
+
+#: core/gemini_helpers.py:258
+#, python-format
+msgid "AI content generation was stopped due to: %s"
+msgstr "Việc tạo nội dung của AI đã bị dừng do: %s"
+
+#: core/video_processor.py:156
+#, python-format
+msgid "Splitting video into %d chunks..."
+msgstr "Đang chia video thành %d đoạn..."
+
+#: core/video_processor.py:177
+#, python-format
+msgid "Created chunk %d of %d..."
+msgstr "Đã tạo đoạn %d trên %d..."
+
+#: core/video_processor.py:183
+msgid "FFmpeg not found; using original video for AI."
+msgstr "Không tìm thấy FFmpeg; sẽ sử dụng video gốc cho AI."
+
+#: core/video_processor.py:194
+msgid "Pre-processing video for AI analysis..."
+msgstr "Đang tiền xử lý video để AI phân tích..."
+
+#: core/video_processor.py:221
+#, python-format
+msgid "Failed to pre-process video; using original. Error: %s"
+msgstr "Tiền xử lý video thất bại; sẽ sử dụng bản gốc. Lỗi: %s"
+
+#: core/video_processor.py:227
+msgid "Video pre-processing error; using original."
+msgstr "Lỗi tiền xử lý video; sẽ sử dụng bản gốc."
+
+#: core/video_processor.py:230
+msgid "Video pre-processing complete."
+msgstr "Hoàn tất tiền xử lý video."
+
+#: core/video_processor.py:234
+#, python-format
+msgid "Error during video pre-processing; using original. Error: %s"
+msgstr "Lỗi trong quá trình tiền xử lý video; sẽ sử dụng bản gốc. Lỗi: %s"
+
+#: core/video_processor.py:242
+#, python-format
+msgid "Video file not found: %s"
+msgstr "Không tìm thấy tệp video: %s"
+
+#: core/video_processor.py:250
+#, python-format
+msgid "Failed to download from direct URL %s: %s"
+msgstr "Tải xuống từ URL trực tiếp %s thất bại: %s"
+
+#: core/video_processor.py:273
+#, python-format
+msgid "Failed to download from YouTube URL %(url)s. Initial error: %(initial_error)s. Fallback attempt also failed: %(fallback_error)s"
+msgstr "Tải xuống từ URL YouTube %(url)s thất bại. Lỗi ban đầu: %(initial_error)s. Nỗ lực tải dự phòng cũng thất bại: %(fallback_error)s"
+
+#: core/youtube_downloader.py:147 core/youtube_downloader.py:221
+#, python-format
+msgid "yt-dlp executable not found. Expected at: %s"
+msgstr "Không tìm thấy tệp thực thi yt-dlp. Dự kiến tại: %s"
+
+#: core/youtube_downloader.py:171 core/youtube_downloader.py:201
+#: core/youtube_downloader.py:301 core/youtube_downloader.py:388
+msgid "N/A"
+msgstr "Không có"
+
+#: core/youtube_downloader.py:185
+msgid "yt-dlp returned no information for the video."
+msgstr "yt-dlp không trả về thông tin nào cho video."
+
+#: core/youtube_downloader.py:191
+msgid "yt-dlp command not found. Please ensure yt-dlp is installed and in your system PATH, or bundled correctly."
+msgstr "Không tìm thấy lệnh yt-dlp. Vui lòng đảm bảo yt-dlp đã được cài đặt và nằm trong PATH hệ thống, hoặc được đóng gói đúng cách."
+
+#: core/youtube_downloader.py:199
+msgid "Timeout fetching video information."
+msgstr "Hết thời gian chờ lấy thông tin video."
+
+#: core/youtube_downloader.py:205
+#, python-format
+msgid "Failed to parse video information from yt-dlp. Output: %s"
+msgstr "Không thể phân tích thông tin video từ yt-dlp. Kết quả: %s"
+
+#: core/youtube_downloader.py:211
+#, python-format
+msgid "Unexpected error fetching video info: %s"
+msgstr "Lỗi không mong muốn khi lấy thông tin video: %s"
+
+#: core/youtube_downloader.py:231
+#, python-format
+msgid "Cannot create download directory: %s"
+msgstr "Không thể tạo thư mục tải xuống: %s"
+
+#: core/youtube_downloader.py:246 core/youtube_downloader.py:254
+#: ui/settings_dialog.py:32
+msgid "Best Available"
+msgstr "Chất lượng Tốt nhất Hiện có"
+
+#: core/youtube_downloader.py:275
+msgid "Could not retrieve video info; cannot reliably predict output filename."
+msgstr "Không thể truy xuất thông tin video; không thể dự đoán chính xác tên tệp đầu ra."
+
+#: core/youtube_downloader.py:325
+#, python-format
+msgid "Download completed but output file not found. Check logs for details in %s."
+msgstr "Tải xuống hoàn tất nhưng không tìm thấy tệp đầu ra. Kiểm tra nhật ký để biết chi tiết trong %s."
+
+#: core/youtube_downloader.py:328
+#, python-format
+msgid "yt-dlp command not found. Please ensure yt-dlp is installed and in your system PATH, or bundled correctly at %s."
+msgstr "Không tìm thấy lệnh yt-dlp. Vui lòng đảm bảo yt-dlp đã được cài đặt và nằm trong PATH hệ thống, hoặc được đóng gói đúng cách tại %s."
+
+#: core/youtube_downloader.py:334
+#, python-format
+msgid "Timeout downloading video: %s"
+msgstr "Hết thời gian chờ tải video: %s"
+
+#: core/youtube_downloader.py:339
+#, python-format
+msgid "Unexpected error during download for %s: %s"
+msgstr "Lỗi không mong muốn trong quá trình tải xuống cho %s: %s"
+
+#: core/youtube_downloader.py:346
+msgid "Standalone test: config_model.app_settings seems empty, loading defaults for test."
+msgstr "Kiểm tra độc lập: có vẻ config_model.app_settings trống, đang tải các giá trị mặc định để kiểm tra."
+
+#: core/youtube_downloader.py:383
+#, python-format
+msgid ""
+"\n"
+"Fetching info for: %s"
+msgstr ""
+"\n"
+"Đang lấy thông tin cho: %s"
+
+#: core/youtube_downloader.py:388
+#, python-format
+msgid "Successfully fetched info for YouTube video: %s"
+msgstr "Đã lấy thành công thông tin cho video YouTube: %s"
+
+#: core/youtube_downloader.py:390
+#, python-format
+msgid "Failed to fetch info for %s"
+msgstr "Lấy thông tin cho %s thất bại"
+
+#: core/youtube_downloader.py:393
+#, python-format
+msgid ""
+"\n"
+"Attempting to download YouTube video: %s (Quality from settings: %s)"
+msgstr ""
+"\n"
+"Đang thử tải xuống video YouTube: %s (Chất lượng từ cài đặt: %s)"
+
+#: core/youtube_downloader.py:396
+#, python-format
+msgid "YouTube video downloaded successfully to: %s"
+msgstr "Đã tải xuống thành công video YouTube về: %s"
+
+#: core/youtube_downloader.py:397
+#, python-format
+msgid "File size: %s MB"
+msgstr "Kích thước tệp: %s MB"
+
+#: core/youtube_downloader.py:399
+#, python-format
+msgid "YouTube download failed or file not found at: %s"
+msgstr "Tải xuống từ YouTube thất bại hoặc không tìm thấy tệp tại: %s"
+
+#: core/youtube_downloader.py:403
+#, python-format
+msgid "A DownloaderError occurred during self-test: %s"
+msgstr "Đã xảy ra lỗi DownloaderError trong quá trình tự kiểm tra: %s"
+
+#: core/youtube_downloader.py:405
+#, python-format
+msgid "An unexpected error occurred during self-test: %s"
+msgstr "Một lỗi không mong muốn đã xảy ra trong quá trình tự kiểm tra: %s"
+
+#: core/youtube_downloader.py:408
+#, python-format
+msgid "Cleaning up test file: %s"
+msgstr "Đang dọn dẹp tệp kiểm tra: %s"
+
+#: core/youtube_downloader.py:411
+#, python-format
+msgid "Could not remove %s: %s"
+msgstr "Không thể xóa %s: %s"
+
+#: core/youtube_downloader.py:413
+msgid ""
+"\n"
+"Downloader self-test finished. Check console and app_log.txt for details."
+msgstr ""
+"\n"
+"Tự kiểm tra trình tải xuống đã hoàn tất. Kiểm tra console và app_log.txt để biết chi tiết."
+
+#: core/youtube_downloader.py:414
+#, python-format
+msgid "Temporary download directory used: %s"
+msgstr "Đã sử dụng thư mục tải xuống tạm thời: %s"
+
+#: core/youtube_downloader.py:415
+#, python-format
+msgid "yt-dlp command used: %s"
+msgstr "Lệnh yt-dlp đã sử dụng: %s"
+
+#: ui/add_edit_prompt_dialog.py:18 ui/add_edit_voice_dialog.py:16
+msgid "Preset Name:"
+msgstr "Tên Thiết lập sẵn:"
+
+#: ui/add_edit_prompt_dialog.py:21
+msgid "A short, descriptive name for the prompt preset."
+msgstr "Một tên ngắn, mang tính mô tả cho thiết lập sẵn của lời nhắc."
+
+#: ui/add_edit_prompt_dialog.py:25
+msgid "Prompt Text:"
+msgstr "Nội dung Lời nhắc:"
+
+#: ui/add_edit_prompt_dialog.py:28
+msgid "The full text of the prompt to be sent to the AI."
+msgstr "Toàn bộ văn bản của lời nhắc sẽ được gửi đến AI."
+
+#: ui/add_edit_prompt_dialog.py:40 ui/add_edit_voice_dialog.py:55
+msgid "&Save"
+msgstr "&Lưu"
+
+#: ui/add_edit_prompt_dialog.py:57
+msgid "Both a preset name and prompt text are required."
+msgstr "Yêu cầu phải có cả tên thiết lập sẵn và nội dung lời nhắc."
+
+#: ui/add_edit_prompt_dialog.py:57 ui/add_edit_voice_dialog.py:74
+#: ui/settings_dialog.py:223
+msgid "Input Required"
+msgstr "Yêu cầu Nhập liệu"
+
+#: ui/add_edit_voice_dialog.py:22
+msgid "Base OpenAI Voice:"
+msgstr "Giọng nói OpenAI Cơ bản:"
+
+#: ui/add_edit_voice_dialog.py:30 ui/settings_dialog.py:158
+msgid "Speed:"
+msgstr "Tốc độ:"
+
+#: ui/add_edit_voice_dialog.py:41
+msgid "Instructions (for Tone, Emotion, etc.):"
+msgstr "Hướng dẫn (về Tông giọng, Cảm xúc, v.v.):"
+
+#: ui/add_edit_voice_dialog.py:44
+msgid "Describe the desired tone. Example: 'Speak in a cheerful and positive tone.'"
+msgstr "Mô tả tông giọng mong muốn. Ví dụ: 'Nói với tông giọng vui vẻ và tích cực.'"
+
+#: ui/add_edit_voice_dialog.py:74
+msgid "A preset name is required."
+msgstr "Yêu cầu phải có tên thiết lập sẵn."
+
+#: ui/ask_more_dialog.py:33
+msgid "Ask More About Scene"
+msgstr "Hỏi thêm về Cảnh"
+
+#: ui/ask_more_dialog.py:44
+#, python-format
+msgid "Ask questions about the scene around %s."
+msgstr "Đặt câu hỏi về cảnh xung quanh mốc thời gian %s."
+
+#: ui/ask_more_dialog.py:47
+msgid "Conversation History:"
+msgstr "Lịch sử Hội thoại:"
+
+#: ui/ask_more_dialog.py:52
+msgid "Your New Question:"
+msgstr "Câu hỏi mới của bạn:"
+
+#: ui/ask_more_dialog.py:58
+msgid "Video Context Duration (seconds):"
+msgstr "Thời lượng ngữ cảnh Video (giây):"
+
+#: ui/ask_more_dialog.py:68
+msgid "&Submit Question"
+msgstr "&Gửi câu hỏi"
+
+#: ui/ask_more_dialog.py:72
+msgid "&Add to Descriptions"
+msgstr "&Thêm vào Mô tả"
+
+#: ui/ask_more_dialog.py:76 ui/edit_description_dialog.py:55
+#: ui/main_window.py:498 ui/manage_prompts_dialog.py:52
+msgid "Close"
+msgstr "Đóng"
+
+#: ui/ask_more_dialog.py:92
+msgid "Please enter a question."
+msgstr "Vui lòng nhập câu hỏi."
+
+#: ui/ask_more_dialog.py:92
+msgid "Question Required"
+msgstr "Yêu cầu Câu hỏi"
+
+#: ui/ask_more_dialog.py:95
+#, python-format
+msgid "You asked: %s"
+msgstr "Bạn đã hỏi: %s"
+
+#: ui/ask_more_dialog.py:109
+msgid "The description has been added to the main list."
+msgstr "Mô tả đã được thêm vào danh sách chính."
+
+#: ui/ask_more_dialog.py:109
+msgid "Description Added"
+msgstr "Đã thêm Mô tả"
+
+#: ui/ask_more_dialog.py:127
+msgid "AI Answer: "
+msgstr "Câu trả lời của AI: "
+
+#: ui/ask_more_dialog.py:129
+msgid "Error: "
+msgstr "Lỗi: "
+
+#: ui/edit_description_dialog.py:8
+msgid "Edit Audio Descriptions"
+msgstr "Chỉnh sửa Mô tả Âm thanh"
+
+#: ui/edit_description_dialog.py:20
+msgid "Select description to edit:"
+msgstr "Chọn mô tả để chỉnh sửa:"
+
+#: ui/edit_description_dialog.py:26
+msgid "Details"
+msgstr "Chi tiết"
+
+#: ui/edit_description_dialog.py:32 ui/edit_description_dialog.py:217
+msgid "Start Time (sec):"
+msgstr "Thời gian Bắt đầu (giây):"
+
+#: ui/edit_description_dialog.py:36 ui/edit_description_dialog.py:221
+msgid "End Time (sec):"
+msgstr "Thời gian Kết thúc (giây):"
+
+#: ui/edit_description_dialog.py:40 ui/edit_description_dialog.py:225
+msgid "Description Text:"
+msgstr "Nội dung Mô tả:"
+
+#: ui/edit_description_dialog.py:51
+msgid "&Add New..."
+msgstr "&Thêm mới..."
+
+#: ui/edit_description_dialog.py:52 ui/manage_prompts_dialog.py:51
+#: ui/manage_voices_dialog.py:38
+msgid "&Delete"
+msgstr "&Xóa"
+
+#: ui/edit_description_dialog.py:54
+msgid "&Save Changes"
+msgstr "&Lưu thay đổi"
+
+#: ui/edit_description_dialog.py:92
+msgid "(No descriptions available)"
+msgstr "(Không có mô tả nào)"
+
+#: ui/edit_description_dialog.py:142
+#, python-format
+msgid "Start time must be within the video duration (0 to %.2f sec)."
+msgstr "Thời gian bắt đầu phải nằm trong khoảng thời lượng của video (từ 0 đến %.2f giây)."
+
+#: ui/edit_description_dialog.py:148
+msgid "Invalid start time. Please enter a valid number."
+msgstr "Thời gian bắt đầu không hợp lệ. Vui lòng nhập một số hợp lệ."
+
+#: ui/edit_description_dialog.py:148 ui/edit_description_dialog.py:262
+msgid "Invalid Input"
+msgstr "Đầu vào không hợp lệ"
+
+#: ui/edit_description_dialog.py:160 ui/edit_description_dialog.py:257
+#, python-format
+msgid "Invalid time range. Times must be within the video duration (0 to %.2f sec) and end time must be after start time."
+msgstr "Khoảng thời gian không hợp lệ. Thời gian phải nằm trong khoảng thời lượng của video (từ 0 đến %.2f giây) và thời gian kết thúc phải sau thời gian bắt đầu."
+
+#: ui/edit_description_dialog.py:162 ui/edit_description_dialog.py:254
+msgid "Description text cannot be empty."
+msgstr "Nội dung mô tả không được để trống."
+
+#: ui/edit_description_dialog.py:174
+msgid "Changes saved."
+msgstr "Đã lưu thay đổi."
+
+#: ui/edit_description_dialog.py:174
+msgid "Success"
+msgstr "Thành công"
+
+#: ui/edit_description_dialog.py:177
+msgid "Validation Error"
+msgstr "Lỗi xác thực"
+
+#: ui/edit_description_dialog.py:184
+msgid "Are you sure you want to delete this description?"
+msgstr "Bạn có chắc chắn muốn xóa mô tả này không?"
+
+#: ui/edit_description_dialog.py:184 ui/manage_prompts_dialog.py:121
+#: ui/manage_voices_dialog.py:105
+msgid "Confirm Delete"
+msgstr "Xác nhận Xóa"
+
+#: ui/edit_description_dialog.py:210
+msgid "Add New Description"
+msgstr "Thêm Mô tả Mới"
+
+#: ui/edit_description_dialog.py:262
+msgid "Please enter valid numbers for times."
+msgstr "Vui lòng nhập số hợp lệ cho thời gian."
+
+#: ui/explore_scene_options_dialog.py:7
+msgid "Explore Scene Options"
+msgstr "Tùy chọn Khám phá Cảnh"
+
+#: ui/explore_scene_options_dialog.py:22
+msgid "Analysis Duration (seconds):"
+msgstr "Thời lượng Phân tích (giây):"
+
+#: ui/explore_scene_options_dialog.py:25
+msgid "The length of the video clip to analyze, in seconds."
+msgstr "Độ dài của đoạn video cần phân tích, tính bằng giây."
+
+#: ui/explore_scene_options_dialog.py:32
+msgid "Optional: Specific things to focus on:"
+msgstr "Tùy chọn: Những điều cụ thể cần tập trung vào:"
+
+#: ui/explore_scene_options_dialog.py:35
+msgid "Example: 'Focus on the expressions of the people' or 'Describe the text on any signs'"
+msgstr "Ví dụ: 'Tập trung vào biểu cảm của mọi người' hoặc 'Mô tả văn bản trên các biển báo'"
+
+#: ui/explore_scene_options_dialog.py:49
+msgid "&Analyze Scene"
+msgstr "&Phân tích Cảnh"
+
+#: ui/export_options_dialog.py:7
+msgid "Export Options"
+msgstr "Tùy chọn Xuất tệp"
+
+#: ui/export_options_dialog.py:16
+msgid "MP3 Audio (Descriptions mixed with original video)"
+msgstr "Âm thanh MP3 (Mô tả được trộn với video gốc)"
+
+#: ui/export_options_dialog.py:17
+msgid "SRT Subtitle File (Descriptions as subtitles)"
+msgstr "Tệp Phụ đề SRT (Mô tả dưới dạng phụ đề)"
+
+#: ui/export_options_dialog.py:18
+msgid "Plain Text File (.txt) (Descriptions line-by-line)"
+msgstr "Tệp Văn bản Thuần túy (.txt) (Mô tả theo từng dòng)"
+
+#: ui/export_options_dialog.py:26
+msgid "Select Export Format"
+msgstr "Chọn Định dạng Xuất tệp"
+
+#: ui/export_options_dialog.py:39
+msgid "&Continue"
+msgstr "&Tiếp tục"
+
+#: ui/file_dialogs.py:14
+msgid "Open Local Video File"
+msgstr "Mở Tệp Video từ Máy tính"
+
+#: ui/file_dialogs.py:16 ui/file_dialogs.py:39
+#, python-format
+msgid "%s dialog."
+msgstr "Hộp thoại %s."
+
+#: ui/file_dialogs.py:26
+msgid "File selection cancelled."
+msgstr "Đã hủy việc chọn tệp."
+
+#: ui/file_dialogs.py:30
+#, python-format
+msgid "File selected: %s"
+msgstr "Đã chọn tệp: %s"
+
+#: ui/file_dialogs.py:60 ui/file_dialogs.py:95
+msgid "URL input cancelled."
+msgstr "Đã hủy việc nhập URL."
+
+#: ui/file_dialogs.py:65
+msgid "URL entered."
+msgstr "Đã nhập URL."
+
+#: ui/file_dialogs.py:68
+msgid "No URL entered."
+msgstr "Chưa nhập URL."
+
+#: ui/file_dialogs.py:75
+msgid "Test Dialogs"
+msgstr "Kiểm tra Hộp thoại"
+
+#: ui/file_dialogs.py:89
+msgid "Enter YouTube URL"
+msgstr "Nhập URL YouTube"
+
+#: ui/file_dialogs.py:89
+msgid "Paste YouTube video link:"
+msgstr "Dán liên kết video YouTube:"
+
+#: ui/file_dialogs.py:92
+#, python-format
+msgid "Entered URL: %s"
+msgstr "URL đã nhập: %s"
+
+#: ui/license_dialog.py:11
+msgid "License Agreement"
+msgstr "Thỏa thuận Giấy phép"
+
+#: ui/license_dialog.py:23
+msgid "License and Terms of Use"
+msgstr "Giấy phép và Điều khoản Sử dụng"
+
+#: ui/license_dialog.py:32
+msgid "You have already agreed to these terms."
+msgstr "Bạn đã đồng ý với các điều khoản này."
+
+#: ui/license_dialog.py:47
+msgid "OK"
+msgstr "OK"
+
+#: ui/license_dialog.py:52
+msgid "Agree"
+msgstr "Đồng ý"
+
+#: ui/license_dialog.py:53
+msgid "Disagree"
+msgstr "Không đồng ý"
+
+#: ui/license_dialog.py:73
+msgid "License file could not be found. Please contact support."
+msgstr "Không tìm thấy tệp giấy phép. Vui lòng liên hệ hỗ trợ."
+
+#: ui/main_window.py:34
+msgid "Audio Describer"
+msgstr "Trình Mô tả Âm thanh"
+
+#: ui/main_window.py:57
+msgid "&Open Local Video...\tCtrl+O"
+msgstr "&Mở Video từ Máy tính...\tCtrl+O"
+
+#: ui/main_window.py:57
+msgid "Open a local video file"
+msgstr "Mở một tệp video từ máy tính"
+
+#: ui/main_window.py:58
+msgid "Open Video from &URL...\tCtrl+U"
+msgstr "Mở Video từ &URL...\tCtrl+U"
+
+#: ui/main_window.py:58
+msgid "Open a video from a direct URL"
+msgstr "Mở một video từ một URL trực tiếp"
+
+#: ui/main_window.py:59
+msgid "Open from &YouTube...\tCtrl+Y"
+msgstr "Mở từ &YouTube...\tCtrl+Y"
+
+#: ui/main_window.py:59
+msgid "Open a video from YouTube"
+msgstr "Mở một video từ YouTube"
+
+#: ui/main_window.py:61
+msgid "Manage &Prompt Presets..."
+msgstr "Quản lý &Thiết lập sẵn Lời nhắc..."
+
+#: ui/main_window.py:61
+msgid "Add, edit, or delete custom prompt presets"
+msgstr "Thêm, sửa hoặc xóa các thiết lập sẵn của lời nhắc tùy chỉnh"
+
+#: ui/main_window.py:63
+msgid "&Settings...\tCtrl+,"
+msgstr "&Cài đặt...\tCtrl+,"
+
+#: ui/main_window.py:63
+msgid "Configure application settings"
+msgstr "Cấu hình cài đặt ứng dụng"
+
+#: ui/main_window.py:65
+msgid "E&xit\tAlt+F4"
+msgstr "T&hoát\tAlt+F4"
+
+#: ui/main_window.py:65
+msgid "Exit the application"
+msgstr "Thoát ứng dụng"
+
+#: ui/main_window.py:66
+msgid "&File"
+msgstr "&Tệp"
+
+#: ui/main_window.py:69
+msgid "&View Help\tF1"
+msgstr "&Xem Trợ giúp\tF1"
+
+#: ui/main_window.py:69
+msgid "Open the help documentation"
+msgstr "Mở tài liệu trợ giúp"
+
+#: ui/main_window.py:70
+msgid "&Changelog"
+msgstr "&Nhật ký Thay đổi"
+
+#: ui/main_window.py:70
+msgid "View the application's changelog"
+msgstr "Xem nhật ký thay đổi của ứng dụng"
+
+#: ui/main_window.py:71
+msgid "Co&ntributors"
+msgstr "Người đó&ng góp"
+
+#: ui/main_window.py:71
+msgid "View the list of contributors"
+msgstr "Xem danh sách những người đóng góp"
+
+#: ui/main_window.py:72
+msgid "View &License"
+msgstr "Xem &Giấy phép"
+
+#: ui/main_window.py:72
+msgid "View the application's license agreement"
+msgstr "Xem thỏa thuận giấy phép của ứng dụng"
+
+#: ui/main_window.py:74
+msgid "&About..."
+msgstr "&Giới thiệu..."
+
+#: ui/main_window.py:74 ui/main_window.py:467
+#, python-format
+msgid "About %s"
+msgstr "Giới thiệu %s"
+
+#: ui/main_window.py:75
+msgid "&Help"
+msgstr "&Trợ giúp"
+
+#: ui/main_window.py:81
+msgid "Select a video source to begin:"
+msgstr "Chọn một nguồn video để bắt đầu:"
+
+#: ui/main_window.py:84
+msgid "&Local Video File"
+msgstr "Tệp Video &Nội bộ"
+
+#: ui/main_window.py:85
+msgid "Process a local video file"
+msgstr "Xử lý một tệp video nội bộ"
+
+#: ui/main_window.py:88
+msgid "Direct Video &URL"
+msgstr "&URL Video Trực tiếp"
+
+#: ui/main_window.py:89
+msgid "Process a video from a direct web URL"
+msgstr "Xử lý một video từ một URL web trực tiếp"
+
+#: ui/main_window.py:92
+msgid "&YouTube Video URL"
+msgstr "URL Video &YouTube"
+
+#: ui/main_window.py:93
+msgid "Process a video from a YouTube URL"
+msgstr "Xử lý một video từ một URL YouTube"
+
+#: ui/main_window.py:96
+msgid "Optional: Select a prompt preset to enhance generation:"
+msgstr "Tùy chọn: Chọn một thiết lập sẵn của lời nhắc để cải thiện việc tạo mô tả:"
+
+#: ui/main_window.py:100
+msgid "Select an optional prompt preset."
+msgstr "Chọn một thiết lập sẵn của lời nhắc (tùy chọn)."
+
+#: ui/main_window.py:104
+msgid "The full text of the selected prompt."
+msgstr "Toàn bộ văn bản của lời nhắc đã chọn."
+
+#: ui/main_window.py:111
+msgid "Status Log"
+msgstr "Nhật ký Trạng thái"
+
+#: ui/main_window.py:114
+msgid "Application status and processing messages."
+msgstr "Trạng thái ứng dụng và các thông báo xử lý."
+
+#: ui/main_window.py:120
+msgid "&Settings..."
+msgstr "&Cài đặt..."
+
+#: ui/main_window.py:121
+msgid "Open application settings"
+msgstr "Mở cài đặt ứng dụng"
+
+#: ui/main_window.py:124
+msgid "E&xit"
+msgstr "T&hoát"
+
+#: ui/main_window.py:131
+msgid "Ready"
+msgstr "Sẵn sàng"
+
+#: ui/main_window.py:171
+msgid "(No Preset Selected)"
+msgstr "(Chưa chọn Thiết lập sẵn)"
+
+#: ui/main_window.py:205
+msgid "Processing..."
+msgstr "Đang xử lý..."
+
+#: ui/main_window.py:206
+#, python-format
+msgid "%s%%"
+msgstr "%s%%"
+
+#: ui/main_window.py:211
+msgid "Preparing local file..."
+msgstr "Đang chuẩn bị tệp nội bộ..."
+
+#: ui/main_window.py:214
+msgid "Enter Direct Video URL"
+msgstr "Nhập URL Video Trực tiếp"
+
+#: ui/main_window.py:214
+msgid "Enter direct URL to video file (e.g., .mp4, .webm):"
+msgstr "Nhập URL trực tiếp đến tệp video (ví dụ: .mp4, .webm):"
+
+#: ui/main_window.py:216
+msgid "Downloading from URL..."
+msgstr "Đang tải xuống từ URL..."
+
+#: ui/main_window.py:219
+msgid "Enter YouTube Video URL"
+msgstr "Nhập URL Video YouTube"
+
+#: ui/main_window.py:219
+msgid "Enter YouTube video URL:"
+msgstr "Nhập URL video YouTube:"
+
+#: ui/main_window.py:222
+msgid "Downloading from YouTube..."
+msgstr "Đang tải xuống từ YouTube..."
+
+#: ui/main_window.py:241
+msgid "Successfully parsed"
+msgstr "Đã phân tích thành công"
+
+#: ui/main_window.py:241
+msgid "Timestamp correction complete"
+msgstr "Hoàn tất sửa mốc thời gian"
+
+#: ui/main_window.py:242
+msgid "Removed repetitive descriptions"
+msgstr "Đã xóa các mô tả lặp lại"
+
+#: ui/main_window.py:261
+msgid "Video processing or downloading failed."
+msgstr "Xử lý hoặc tải xuống video thất bại."
+
+#: ui/main_window.py:272
+msgid "Identifying characters..."
+msgstr "Đang nhận dạng nhân vật..."
+
+#: ui/main_window.py:277
+msgid "Splitting video into manageable chunks..."
+msgstr "Đang chia video thành các đoạn dễ quản lý..."
+
+#: ui/main_window.py:287
+#, python-format
+msgid "Processing chunk %d of %d..."
+msgstr "Đang xử lý đoạn %d trên %d..."
+
+#: ui/main_window.py:291
+#, python-brace-format
+msgid "Context of what just happened: {context}"
+msgstr "Ngữ cảnh của những gì vừa xảy ra: {context}"
+
+#: ui/main_window.py:311
+msgid "Asking AI to generate descriptions..."
+msgstr "Đang yêu cầu AI tạo mô tả..."
+
+#: ui/main_window.py:317
+msgid "AI processing failed to provide descriptions for an unknown reason."
+msgstr "Xử lý của AI đã thất bại trong việc cung cấp mô tả vì một lý do không xác định."
+
+#: ui/main_window.py:319
+msgid "Finalizing descriptions..."
+msgstr "Đang hoàn tất các mô tả..."
+
+#: ui/main_window.py:333
+msgid "Cleaning up temporary video chunks..."
+msgstr "Đang dọn dẹp các đoạn video tạm thời..."
+
+#: ui/main_window.py:346
+msgid "Unknown"
+msgstr "Không xác định"
+
+#: ui/main_window.py:347
+msgid "Content Generation Blocked"
+msgstr "Việc Tạo Nội dung bị Chặn"
+
+#: ui/main_window.py:349
+#, python-format
+msgid ""
+"The AI was unable to generate descriptions because its content safety filters were triggered.\n"
+"\n"
+"Reason: %s\n"
+"\n"
+"This can sometimes happen with content that is violent, sensitive, or complex. Here are some things you can try:\n"
+"\n"
+"1. Go to Settings -> AI Settings and enable 'Disable Safety Filters'. (Use with caution)\n"
+"2. Reduce the 'Frame Rate for AI Analysis' in settings to send less data to the AI.\n"
+"3. Try a different video if the issue persists."
+msgstr ""
+"AI không thể tạo mô tả vì bộ lọc an toàn nội dung đã được kích hoạt.\n"
+"\n"
+"Lý do: %s\n"
+"\n"
+"Điều này đôi khi có thể xảy ra với nội dung bạo lực, nhạy cảm hoặc phức tạp. Dưới đây là một số điều bạn có thể thử:\n"
+"\n"
+"1. Đi tới Cài đặt -> Cài đặt AI và bật 'Tắt Bộ lọc An toàn'. (Sử dụng một cách thận trọng)\n"
+"2. Giảm 'Tốc độ khung hình để AI phân tích' trong cài đặt để gửi ít dữ liệu hơn cho AI.\n"
+"3. Thử một video khác nếu sự cố vẫn tiếp diễn."
+
+#: ui/main_window.py:360
+msgid "Processing Limit Reached"
+msgstr "Đã đạt đến Giới hạn Xử lý"
+
+#: ui/main_window.py:362
+msgid ""
+"The AI stopped because the video is too long or complex to process in a single pass.\n"
+"\n"
+"This is a capacity limit, not a content safety issue. Here are the best ways to solve this:\n"
+"\n"
+"1. (Recommended) Go to Settings -> AI Settings and enable 'Video Chunking'. This will automatically split the video into manageable parts for the AI.\n"
+"2. Reduce the 'Frame Rate for AI Analysis' in settings to make the video simpler for the AI.\n"
+"3. If you are an advanced user, you can try specifying a more powerful model in the 'Gemini Model Override' setting."
+msgstr ""
+"AI đã dừng lại vì video quá dài hoặc phức tạp để xử lý trong một lần.\n"
+"\n"
+"Đây là giới hạn về khả năng xử lý, không phải là vấn đề an toàn nội dung. Dưới đây là những cách tốt nhất để giải quyết vấn đề này:\n"
+"\n"
+"1. (Khuyến nghị) Đi tới Cài đặt -> Cài đặt AI và bật 'Chia đoạn Video'. Thao tác này sẽ tự động chia video thành các phần mà AI có thể quản lý được.\n"
+"2. Giảm 'Tốc độ khung hình để AI phân tích' trong cài đặt để làm cho video đơn giản hơn đối với AI.\n"
+"3. Nếu bạn là người dùng nâng cao, bạn có thể thử chỉ định một mô hình mạnh hơn trong cài đặt 'Ghi đè Mô hình Gemini'."
+
+#: ui/main_window.py:372
+#, python-format
+msgid ""
+"An error occurred during processing:\n"
+"%s"
+msgstr ""
+"Đã xảy ra lỗi trong quá trình xử lý:\n"
+"%s"
+
+#: ui/main_window.py:374
+msgid "Processing Error"
+msgstr "Lỗi Xử lý"
+
+#: ui/main_window.py:384
+#, python-format
+msgid "Success! Generated %d audio descriptions."
+msgstr "Thành công! Đã tạo được %d mô tả âm thanh."
+
+#: ui/main_window.py:392
+#, python-format
+msgid "Error opening video player: %s"
+msgstr "Lỗi khi mở trình phát video: %s"
+
+#: ui/main_window.py:396
+msgid "Ready for next video."
+msgstr "Sẵn sàng cho video tiếp theo."
+
+#: ui/main_window.py:399
+msgid "Processing complete, but the AI did not generate any descriptions for this video."
+msgstr "Xử lý hoàn tất, nhưng AI không tạo ra bất kỳ mô tả nào cho video này."
+
+#: ui/main_window.py:401
+msgid "Processing Note"
+msgstr "Ghi chú Xử lý"
+
+#: ui/main_window.py:480
+msgid ""
+"An application to automatically generate audio descriptions for videos using Gemini AI.\n"
+"\n"
+"Developed with accessibility in mind."
+msgstr ""
+"Một ứng dụng tự động tạo mô tả âm thanh cho video bằng Gemini AI.\n"
+"\n"
+"Được phát triển với mục tiêu hỗ trợ tiếp cận."
+
+#: ui/main_window.py:484
+msgid "Contact:"
+msgstr "Liên hệ:"
+
+#: ui/main_window.py:489
+msgid "Visit Website"
+msgstr "Truy cập Trang web"
+
+#: ui/manage_prompts_dialog.py:12
+msgid "Manage Prompt Presets"
+msgstr "Quản lý Thiết lập sẵn Lời nhắc"
+
+#: ui/manage_prompts_dialog.py:31
+#, python-format
+msgid "Manage presets for the '%s' language."
+msgstr "Quản lý các thiết lập sẵn cho ngôn ngữ '%s'."
+
+#: ui/manage_prompts_dialog.py:36 ui/manage_voices_dialog.py:28
+msgid "Preset Name"
+msgstr "Tên Thiết lập sẵn"
+
+#: ui/manage_prompts_dialog.py:37
+msgid "Prompt Text"
+msgstr "Nội dung Lời nhắc"
+
+#: ui/manage_prompts_dialog.py:38
+msgid "List of saved prompt presets."
+msgstr "Danh sách các thiết lập sẵn của lời nhắc đã lưu."
+
+#: ui/manage_prompts_dialog.py:49 ui/manage_voices_dialog.py:36
+msgid "&Add..."
+msgstr "&Thêm..."
+
+#: ui/manage_prompts_dialog.py:50 ui/manage_voices_dialog.py:37
+msgid "&Edit..."
+msgstr "&Sửa..."
+
+#: ui/manage_prompts_dialog.py:95
+msgid "Add New Prompt"
+msgstr "Thêm Lời nhắc Mới"
+
+#: ui/manage_prompts_dialog.py:108
+msgid "Edit Prompt"
+msgstr "Chỉnh sửa Lời nhắc"
+
+#: ui/manage_prompts_dialog.py:121 ui/manage_voices_dialog.py:105
+#, python-format
+msgid "Are you sure you want to delete the preset '%s'?"
+msgstr "Bạn có chắc chắn muốn xóa thiết lập sẵn '%s' không?"
+
+#: ui/manage_voices_dialog.py:11
+msgid "Manage Voice Presets"
+msgstr "Quản lý Thiết lập sẵn Giọng nói"
+
+#: ui/manage_voices_dialog.py:24
+msgid "Create and manage voice personalities for OpenAI TTS."
+msgstr "Tạo và quản lý các đặc tính giọng nói cho OpenAI TTS."
+
+#: ui/manage_voices_dialog.py:29
+msgid "Base Voice"
+msgstr "Giọng nói Cơ bản"
+
+#: ui/manage_voices_dialog.py:30
+msgid "Speed"
+msgstr "Tốc độ"
+
+#: ui/manage_voices_dialog.py:31
+msgid "Instructions"
+msgstr "Hướng dẫn"
+
+#: ui/manage_voices_dialog.py:82
+msgid "Add New Voice Preset"
+msgstr "Thêm Thiết lập sẵn Giọng nói Mới"
+
+#: ui/manage_voices_dialog.py:94
+msgid "Edit Voice Preset"
+msgstr "Chỉnh sửa Thiết lập sẵn Giọng nói"
+
+#: ui/player_vqa.py:50 ui/player_vqa.py:135
+msgid "Cannot determine current video time."
+msgstr "Không thể xác định thời gian hiện tại của video."
+
+#: ui/player_vqa.py:50 ui/player_vqa.py:135 ui/settings_dialog.py:400
+#: utils/update_checker.py:68
+msgid "Error"
+msgstr "Lỗi"
+
+#: ui/player_vqa.py:137
+msgid "Analyzing Scene"
+msgstr "Đang Phân tích Cảnh"
+
+#: ui/player_vqa.py:137
+msgid "Extracting video clip for analysis..."
+msgstr "Đang trích xuất đoạn video để phân tích..."
+
+#: ui/player_window.py:114
+msgid "Video Player with Descriptions"
+msgstr "Trình phát Video với Mô tả"
+
+#: ui/player_window.py:135
+msgid "VLC library is not installed or could not be loaded. Playback will be unavailable."
+msgstr "Thư viện VLC chưa được cài đặt hoặc không thể tải. Chức năng phát lại sẽ không khả dụng."
+
+#: ui/player_window.py:161 ui/player_window.py:286
+msgid "Play"
+msgstr "Phát"
+
+#: ui/player_window.py:165
+msgid "Video progress slider"
+msgstr "Thanh trượt tiến độ video"
+
+#: ui/player_window.py:171
+#, python-format
+msgid "&Rewind %ss"
+msgstr "&Tua lại %ss"
+
+#: ui/player_window.py:173
+#, python-format
+msgid "&Forward %ss"
+msgstr "&Tua tới %ss"
+
+#: ui/player_window.py:176
+msgid "Vol:"
+msgstr "Âm lượng:"
+
+#: ui/player_window.py:184
+msgid "Current Audio Description:"
+msgstr "Mô tả Âm thanh Hiện tại:"
+
+#: ui/player_window.py:189
+msgid "AI Token Usage:"
+msgstr "Mức sử dụng Token của AI:"
+
+#: ui/player_window.py:196
+msgid "Explore Scene..."
+msgstr "Khám phá Cảnh..."
+
+#: ui/player_window.py:198
+msgid "Ask More..."
+msgstr "Hỏi thêm..."
+
+#: ui/player_window.py:200
+msgid "Edit Descriptions..."
+msgstr "Chỉnh sửa Mô tả..."
+
+#: ui/player_window.py:203
+msgid "Settings..."
+msgstr "Cài đặt..."
+
+#: ui/player_window.py:207
+msgid "Export..."
+msgstr "Xuất tệp..."
+
+#: ui/player_window.py:283
+msgid "Pause"
+msgstr "Tạm dừng"
+
+#: ui/player_window.py:289
+msgid "Replay"
+msgstr "Phát lại"
+
+#: ui/player_window.py:416
+msgid "Description added to main list."
+msgstr "Mô tả đã được thêm vào danh sách chính."
+
+#: ui/player_window.py:453
+msgid "Export Canceled"
+msgstr "Đã hủy Xuất tệp"
+
+#: ui/player_window.py:453
+msgid "Export Error"
+msgstr "Lỗi Xuất tệp"
+
+#: ui/player_window.py:454
+#, python-format
+msgid ""
+"Failed to export file:\n"
+"%s"
+msgstr ""
+"Xuất tệp thất bại:\n"
+"%s"
+
+#: ui/player_window.py:456
+#, python-format
+msgid ""
+"File successfully exported to:\n"
+"%s"
+msgstr ""
+"Tệp đã được xuất thành công tới:\n"
+"%s"
+
+#: ui/player_window.py:456
+msgid "Export Successful"
+msgstr "Xuất tệp Thành công"
+
+#: ui/player_window.py:460
+msgid "Please wait for the video to load before editing."
+msgstr "Vui lòng đợi video tải xong trước khi chỉnh sửa."
+
+#: ui/player_window.py:460
+msgid "Info"
+msgstr "Thông tin"
+
+#: ui/player_window.py:470
+msgid "Description list updated."
+msgstr "Danh sách mô tả đã được cập nhật."
+
+#: ui/player_window.py:512
+msgid "--- Character Glossary ---"
+msgstr "--- Bảng chú giải Nhân vật ---"
+
+#: ui/player_window.py:513 ui/player_window.py:522 ui/player_window.py:536
+msgid "Prompt"
+msgstr "Lời nhắc"
+
+#: ui/player_window.py:514 ui/player_window.py:523 ui/player_window.py:536
+msgid "Output"
+msgstr "Đầu ra"
+
+#: ui/player_window.py:515 ui/player_window.py:524
+msgid "Total"
+msgstr "Tổng cộng"
+
+#: ui/player_window.py:521
+msgid "--- Description Generation ---"
+msgstr "--- Tạo Mô tả ---"
+
+#: ui/player_window.py:530
+msgid "--- VQA (Ask More) ---"
+msgstr "--- Hỏi-Đáp Video (Hỏi thêm) ---"
+
+#: ui/player_window.py:536
+#, python-format
+msgid "Query %s Total"
+msgstr "Tổng truy vấn %s"
+
+#: ui/player_window.py:543
+msgid "GRAND TOTAL"
+msgstr "TỔNG CỘNG"
+
+#: ui/player_window.py:544
+msgid "Total Prompt"
+msgstr "Tổng Lời nhắc"
+
+#: ui/player_window.py:544
+msgid "Total Output"
+msgstr "Tổng Đầu ra"
+
+#: ui/player_window.py:547
+msgid "No AI token usage data available yet."
+msgstr "Chưa có dữ liệu về việc sử dụng token của AI."
+
+#: ui/scene_explorer_dialog.py:19
+msgid "No overall description was provided."
+msgstr "Không có mô tả tổng thể nào được cung cấp."
+
+#: ui/scene_explorer_dialog.py:37
+msgid "Scene Explorer"
+msgstr "Trình khám phá Cảnh"
+
+#: ui/scene_explorer_dialog.py:50
+msgid "An error occurred in the Scene Explorer."
+msgstr "Đã xảy ra lỗi trong Trình khám phá Cảnh."
+
+#: ui/scene_explorer_dialog.py:56
+msgid "Scene Explorer opened. Use arrow keys to move. Press D for scene description, L to list all objects, and Shift + L to enter jump mode. Escape to close."
+msgstr "Trình khám phá Cảnh đã mở. Sử dụng các phím mũi tên để di chuyển. Nhấn D để xem mô tả cảnh, L để liệt kê tất cả các đối tượng, và Shift + L để vào chế độ nhảy. Escape để đóng."
+
+#: ui/scene_explorer_dialog.py:117
+msgid "There are no objects to jump to."
+msgstr "Không có đối tượng nào để nhảy tới."
+
+#: ui/scene_explorer_dialog.py:122
+msgid "Jump mode. Use up and down arrows to select an object. Press Enter to jump, or Escape to exit jump mode."
+msgstr "Chế độ nhảy. Sử dụng mũi tên lên và xuống để chọn một đối tượng. Nhấn Enter để nhảy tới, hoặc Escape để thoát chế độ nhảy."
+
+#: ui/scene_explorer_dialog.py:127
+msgid "Exited jump mode. Now exploring."
+msgstr "Đã thoát chế độ nhảy. Bây giờ đang khám phá."
+
+#: ui/scene_explorer_dialog.py:132
+msgid "Unnamed Object"
+msgstr "Đối tượng không tên"
+
+#: ui/scene_explorer_dialog.py:143
+#, python-format
+msgid "Jumping to %s."
+msgstr "Đang nhảy tới %s."
+
+#: ui/scene_explorer_dialog.py:146
+msgid "Could not jump to this object as it has no coordinates."
+msgstr "Không thể nhảy tới đối tượng này vì nó không có tọa độ."
+
+#: ui/scene_explorer_dialog.py:153
+msgid "There are no objects in this scene."
+msgstr "Không có đối tượng nào trong cảnh này."
+
+#: ui/scene_explorer_dialog.py:156
+msgid "unlabeled object"
+msgstr "đối tượng không nhãn"
+
+#: ui/scene_explorer_dialog.py:157
+#, python-format
+msgid "Objects in this scene: %s"
+msgstr "Các đối tượng trong cảnh này: %s"
+
+#: ui/scene_explorer_dialog.py:167
+msgid "an object"
+msgstr "một đối tượng"
+
+#: ui/scene_explorer_dialog.py:191
+msgid "Unknown Object"
+msgstr "Đối tượng không xác định"
+
+#: ui/scene_explorer_dialog.py:193
+msgid "No further details available."
+msgstr "Không có chi tiết nào thêm."
+
+#: ui/scene_explorer_dialog.py:198
+msgid "Nothing to inspect here."
+msgstr "Không có gì để kiểm tra ở đây."
+
+#: ui/settings_dialog.py:30
+#, python-format
+msgid "%s Settings"
+msgstr "Cài đặt %s"
+
+#: ui/settings_dialog.py:33
+msgid "Short - Concise descriptions"
+msgstr "Ngắn - Mô tả súc tích"
+
+#: ui/settings_dialog.py:33
+msgid "Standard - Balanced detail (Default)"
+msgstr "Tiêu chuẩn - Chi tiết cân bằng (Mặc định)"
+
+#: ui/settings_dialog.py:33
+msgid "Detailed - Rich descriptions"
+msgstr "Chi tiết - Mô tả phong phú"
+
+#: ui/settings_dialog.py:36
+msgid "Auto-Detect on Startup"
+msgstr "Tự động phát hiện khi khởi động"
+
+#: ui/settings_dialog.py:37
+msgid "Arabic"
+msgstr "Tiếng Ả Rập"
+
+#: ui/settings_dialog.py:38
+msgid "English"
+msgstr "Tiếng Anh"
+
+#: ui/settings_dialog.py:39
+msgid "Spanish"
+msgstr "Tiếng Tây Ban Nha"
+
+#: ui/settings_dialog.py:40
+msgid "French"
+msgstr "Tiếng Pháp"
+
+#: ui/settings_dialog.py:41
+msgid "Italian"
+msgstr "Tiếng Ý"
+
+#: ui/settings_dialog.py:42
+msgid "Portuguese"
+msgstr "Tiếng Bồ Đào Nha"
+
+#: ui/settings_dialog.py:43
+msgid "Russian"
+msgstr "Tiếng Nga"
+
+#: ui/settings_dialog.py:44
+msgid "Türkçe"
+msgstr "Tiếng Thổ Nhĩ Kỳ"
+
+#: ui/settings_dialog.py:45
+msgid "Ukrainian"
+msgstr "Tiếng Ukraina"
+
+#: ui/settings_dialog.py:48
+msgid "Info (Default)"
+msgstr "Thông tin (Mặc định)"
+
+#: ui/settings_dialog.py:48
+msgid "Debug"
+msgstr "Gỡ lỗi"
+
+#: ui/settings_dialog.py:48
+msgid "Disabled"
+msgstr "Đã tắt"
+
+#: ui/settings_dialog.py:49
+msgid "No Change (Original FPS)"
+msgstr "Không đổi (FPS gốc)"
+
+#: ui/settings_dialog.py:49
+msgid "10 FPS (Good balance, lower cost)"
+msgstr "10 FPS (Cân bằng tốt, chi phí thấp hơn)"
+
+#: ui/settings_dialog.py:49
+msgid "5 FPS (Very low cost, may miss fast action)"
+msgstr "5 FPS (Chi phí rất thấp, có thể bỏ lỡ hành động nhanh)"
+
+#: ui/settings_dialog.py:49
+msgid "2 FPS (Extreme low cost, for static scenes)"
+msgstr "2 FPS (Chi phí cực thấp, dành cho các cảnh tĩnh)"
+
+#: ui/settings_dialog.py:52
+msgid "OpenAI TTS (High Quality)"
+msgstr "OpenAI TTS (Chất lượng cao)"
+
+#: ui/settings_dialog.py:54
+msgid "SAPI5 (64-bit Voices)"
+msgstr "SAPI5 (Giọng nói 64-bit)"
+
+#: ui/settings_dialog.py:56
+msgid "SAPI5 (32-bit Voices)"
+msgstr "SAPI5 (Giọng nói 32-bit)"
+
+#: ui/settings_dialog.py:79
+msgid "YouTube Video Download Quality:"
+msgstr "Chất lượng tải xuống Video YouTube:"
+
+#: ui/settings_dialog.py:82
+msgid "Application Language (Requires Restart):"
+msgstr "Ngôn ngữ Ứng dụng (Yêu cầu khởi động lại):"
+
+#: ui/settings_dialog.py:86
+msgid "Logging Level:"
+msgstr "Mức độ Ghi nhật ký:"
+
+#: ui/settings_dialog.py:90
+msgid "Allow descriptions to interrupt current speech"
+msgstr "Cho phép mô tả ngắt lời nói hiện tại"
+
+#: ui/settings_dialog.py:93
+msgid "General"
+msgstr "Chung"
+
+#: ui/settings_dialog.py:98
+msgid "Gemini API Key:"
+msgstr "Khóa API Gemini:"
+
+#: ui/settings_dialog.py:101
+msgid "OpenAI API Key (for TTS):"
+msgstr "Khóa API OpenAI (cho TTS):"
+
+#: ui/settings_dialog.py:105
+msgid "Frame Rate for AI Analysis:"
+msgstr "Tốc độ khung hình để AI phân tích:"
+
+#: ui/settings_dialog.py:109
+msgid "Description Verbosity:"
+msgstr "Độ chi tiết của Mô tả:"
+
+#: ui/settings_dialog.py:113
+msgid "Gemini Model Override:"
+msgstr "Ghi đè Mô hình Gemini:"
+
+#: ui/settings_dialog.py:116
+msgid "Temperature:"
+msgstr "Mức độ sáng tạo (Temperature):"
+
+#: ui/settings_dialog.py:119
+msgid "Send Video Only (No Audio) to AI"
+msgstr "Chỉ gửi Video (Không có Âm thanh) cho AI"
+
+#: ui/settings_dialog.py:121
+msgid "Disable Safety Filters (Use with caution)"
+msgstr "Tắt Bộ lọc An toàn (Sử dụng một cách thận trọng)"
+
+#: ui/settings_dialog.py:123
+msgid "Enable Video Chunking for Long Videos"
+msgstr "Bật tính năng Chia đoạn Video cho Video dài"
+
+#: ui/settings_dialog.py:125
+msgid "Enable Character Glossary Pre-Analysis"
+msgstr "Bật Phân tích sơ bộ Bảng chú giải Nhân vật"
+
+#: ui/settings_dialog.py:127
+msgid "Chunk Duration (seconds):"
+msgstr "Thời lượng Đoạn (giây):"
+
+#: ui/settings_dialog.py:132
+msgid "AI Settings"
+msgstr "Cài đặt AI"
+
+#: ui/settings_dialog.py:137
+msgid "Text-to-Speech Engine"
+msgstr "Cơ chế Chuyển văn bản thành giọng nói"
+
+#: ui/settings_dialog.py:140
+msgid "OpenAI TTS Settings"
+msgstr "Cài đặt OpenAI TTS"
+
+#: ui/settings_dialog.py:142
+msgid "Voice Preset:"
+msgstr "Thiết lập sẵn Giọng nói:"
+
+#: ui/settings_dialog.py:146
+msgid "Manage Voice Presets..."
+msgstr "Quản lý Thiết lập sẵn Giọng nói..."
+
+#: ui/settings_dialog.py:153
+msgid "SAPI5 Settings"
+msgstr "Cài đặt SAPI5"
+
+#: ui/settings_dialog.py:155
+msgid "Voice:"
+msgstr "Giọng nói:"
+
+#: ui/settings_dialog.py:166
+msgid "Test Voice"
+msgstr "Thử Giọng nói"
+
+#: ui/settings_dialog.py:168
+msgid "This is a test of the selected voice."
+msgstr "Đây là bản thử của giọng nói đã chọn."
+
+#: ui/settings_dialog.py:170
+msgid "Test"
+msgstr "Thử"
+
+#: ui/settings_dialog.py:174
+msgid "Original Audio Ducking (-dB, for MP3):"
+msgstr "Giảm âm thanh gốc (-dB, cho MP3):"
+
+#: ui/settings_dialog.py:178
+msgid "Audio Output"
+msgstr "Đầu ra Âm thanh"
+
+#: ui/settings_dialog.py:223
+msgid "Please enter some text to test."
+msgstr "Vui lòng nhập một đoạn văn bản để thử."
+
+#: ui/settings_dialog.py:255
+#, python-format
+msgid "Error testing voice: %s"
+msgstr "Lỗi khi thử giọng nói: %s"
+
+#: ui/settings_dialog.py:255
+msgid "Test Failed"
+msgstr "Thử nghiệm Thất bại"
+
+#: ui/settings_dialog.py:272
+msgid "SAPI5 (64-bit) Settings"
+msgstr "Cài đặt SAPI5 (64-bit)"
+
+#: ui/settings_dialog.py:275
+msgid "SAPI5 (32-bit) Settings"
+msgstr "Cài đặt SAPI5 (32-bit)"
+
+#: ui/settings_dialog.py:286
+msgid "(No voices found)"
+msgstr "(Không tìm thấy giọng nói nào)"
+
+#: ui/settings_dialog.py:400
+msgid "Could not save settings."
+msgstr "Không thể lưu cài đặt."
+
+#: utils/motm_checker.py:32
+msgid "A Message from the Developer"
+msgstr "Một Tin nhắn từ Nhà phát triển"
+
+#: utils/update_checker.py:34
+msgid ""
+"A new version ({}) is available. You have version {}.\n"
+"\n"
+"Would you like to download and install it now?"
+msgstr ""
+"Một phiên bản mới ({}) đã có sẵn. Bạn đang dùng phiên bản {}.\n"
+"\n"
+"Bạn có muốn tải xuống và cài đặt nó ngay bây giờ không?"
+
+#: utils/update_checker.py:36
+msgid "Update Available"
+msgstr "Có bản cập nhật"
+
+#: utils/update_checker.py:43
+msgid "Downloading Update"
+msgstr "Đang tải xuống Bản cập nhật"
+
+#: utils/update_checker.py:43
+msgid "Downloading..."
+msgstr "Đang tải xuống..."
+
+#: utils/update_checker.py:68
+msgid "Updater component not found."
+msgstr "Không tìm thấy thành phần cập nhật."
+
+#: utils/update_checker.py:89
+msgid "Failed to download or apply update: {}"
+msgstr "Tải xuống hoặc áp dụng bản cập nhật thất bại: {}"
+
+#: utils/update_checker.py:89
+msgid "Update Error"
+msgstr "Lỗi Cập nhật"

@@ -1,0 +1,29 @@
+v1.1
+
+Cette mise à jour contient des correctifs critiques et une nouvelle fonctionnalité.
+
+Nouvelles fonctionnalités :
+
+    Il y a maintenant un paramètre dans les réglages généraux de l'application qui vous permet de désactiver l'interruption de la parole pour le lecteur audio. Notez que cela ne fonctionne pas lors de l'exportation de fichiers MP3.
+
+Corrections de bugs :
+
+    Le champ d'affichage de l'invite est désormais désactivé lorsqu'aucune invite personnalisée n'est sélectionnée.
+
+    Correction d'un bug de téléchargement YouTube lorsque la qualité de téléchargement était réglée sur la meilleure.
+
+    Correction de quelques problèmes de traduction.
+
+    Correction d'un bug critique qui empêchait d'utiliser la fonction d'exportation en MP3. Merci à tous ceux qui l'ont signalé. Je ne peux pas citer de noms ici car je ne me souviens pas de chacun d'entre vous.
+
+    Correction de l'application pour qu'elle termine correctement toutes les opérations en cours lors de sa fermeture.
+
+    Le tri dans l'éditeur de description trie désormais les descriptions par heure.
+
+    Nous espérons avoir trouvé et corrigé un problème ennuyeux du lecteur vidéo pour les utilisateurs de Windows 10, où certains formats vidéo ne parvenaient pas à être lus. L'application convertira désormais toutes les vidéos en MP4 standard pour éviter ces problèmes.
+
+    L'application suivra désormais la sortie demandée par l'utilisateur dans l'invite. Auparavant, ce comportement était trop strict.
+
+v1.0
+
+Version initiale

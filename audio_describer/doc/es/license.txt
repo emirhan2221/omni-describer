@@ -1,0 +1,23 @@
+Licencia y Términos de Uso
+
+¡Gracias por usar Omni Describer! Al utilizar este software, aceptas los siguientes términos sencillos:
+
+1. Usa con responsabilidad
+   Esta herramienta está diseñada para ayudar a crear descripciones de audio para videos y otros contenidos. Por favor, úsala de manera ética y respeta los derechos de autor y los derechos de los demás.
+
+2. La IA puede ser inexacta
+   Las descripciones son generadas automáticamente por IA. A veces pueden estar equivocadas, incompletas, sesgadas o no tener sentido. Es tu responsabilidad revisar y decidir cómo usar el contenido generado.
+
+3. Sin garantía
+   Este software se proporciona “tal cual”. No garantizamos que esté libre de errores, sea perfecto o satisfaga completamente tus necesidades específicas.
+
+4. Sin responsabilidad
+   Los desarrolladores o colaboradores no pueden ser responsables por daños directos o indirectos, pérdida de datos, costos u otros problemas que puedan resultar del uso de este software. Lo usas completamente bajo tu propio riesgo.
+
+5. Compartir
+   Puedes compartir esta aplicación con otros, pero no puedes venderla ni reclamarla como tu propio trabajo. Por favor, incluye esta licencia al compartir.
+
+6. Sobre Google Gemini
+   Los videos son procesados usando los servicios de Google Gemini. Este procesamiento está sujeto a los términos de licencia y políticas de uso de Google. Debes leerlos antes de usar esta aplicación.
+
+Al hacer clic en “Aceptar”, confirmas que has leído, entendido y aceptado estos términos. Si no estás de acuerdo, por favor sal de la aplicación.

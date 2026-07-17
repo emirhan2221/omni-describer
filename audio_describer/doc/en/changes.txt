@@ -1,0 +1,116 @@
+Note: explicit credit is given to ideas that were presented once and were not suggested anywhere. Because I am unable to keep an entire list of names as the contact flow is huge. I would like to personally thank everyone who suggests additions to make this application to be the best.
+
+v2.0 - Maintenance Mode Release
+
+Important Notice:
+Omni Describer is now in maintenance mode. The application has transitioned to a web platform at studio.binclusive.io, developed in partnership with Binclusive. The web platform requires no installation, no API keys, and works on all devices. New features and improvements will be focused on the web version. The desktop app will remain available and functional for those who prefer it.
+
+New Features:
+Video processing is now significantly faster and uses less bandwidth thanks to an improved upload system.
+Frame rate settings are now handled more efficiently, resulting in faster processing and better video quality.
+Added 1 FPS option for AI frame rate setting, useful for static content at minimal cost.
+Character glossary can now be used without enabling video chunking.
+Added a link to the web platform in the File menu and main screen for easy access.
+Selecting a description in the editor now seeks the video player to that timestamp, making it easy to preview the scene while editing.
+Added Ctrl+S keyboard shortcut for saving changes in the description editor.
+Added automatic retry with exponential backoff when hitting API rate limits. The app will now retry up to 3 times instead of failing immediately.
+
+Bug Fixes:
+Fixed a critical issue where the app could crash or lose your settings after Windows updates or hardware changes. Your settings should now work reliably across all systems.
+Fixed an issue where the app could hang indefinitely while processing videos.
+Fixed an issue where some descriptions were silently lost due to minor formatting differences in AI responses.
+Improved error messages. The app will now show a clear warning if something goes wrong during startup instead of silently crashing.
+Fixed several incorrect Turkish translations in the description editor, including "Changes saved", "Validation Error", and "Add New Description" dialog title.
+Fixed Turkish keyboard shortcut conflicts in the description editor where Add and Save buttons shared the same accelerator key.
+Resolved all fuzzy/inaccurate Turkish translations throughout the application.
+
+v1.3.1
+this version includes a last minute fix to updater and mp3 exports. Mp3 exports will now default to bundled ffmpeg, and updater will now try to download the updater if it does not detect it in the application folder. Thank you Robin Christopherson for the updater bug report.
+
+v1.3
+this version introduces some requested features as well as some fixes
+
+Bug fixes
+some people were having issues with mp3 exports. They are now fixed.
+In certain times the video quality settings were not being applyed to the videos that are being sent, its now corrected.
+
+
+new features
+made some cost optimisations on api sends involving character glossery
+While editting descriptions, the focus will be moved to the closest description in the view, thank you Olgun Yılmaz for the idea
+Windows OneCore voices can now be used for mp3 exports.
+You can now see the descriptions for recognised characters in edit descriptions dialog if character recognission setting is on.
+The player will window will now prompt you if you would like to exit the player, Thank you Enes Deniz for the idea.
+Added url validation. If you enter an invalid url to direct or youtube downloads, it will not attempt to download the file. Thank you Burak Yüksek for the idea.
+Added Vietnamese translation. Thank you Nguyễn Anh Đức for the translations.
+
+
+v1.21
+this version introduces critical fixes
+
+bug fixes
+there was a major error regardling vlc library bundling which caused a complete crash of the app for certain users who do not have vlc player installed in their systems. The libraries are now bundled correctly.
+fixed a bug that prevented  new languages from being used in audio descriptions.
+Some more model optimisations.
+
+
+v1.2
+This update fixes some critical bugs, adds support for new languages as well as introduce some widely requested features. More exciting updates are on the way!
+
+
+New Features:
+You can now use 32Bit version of sapi voices
+Made the default settings more optimised for the general user for better description quality.
+Downloading from youtube is now more resilient. You are now less likely to encounter permission denied errors
+changed the backend media player engine. You are now very unlikely to get those moments where the video does not load propperly and the video cannot be played.
+Added support for more video typs.
+Removed the separate export options from the player window. They are now consolidated into 1 dialog for easier adjusting.
+Txt exports will now generate line by line descriptions without timestamps.
+If enabled, Character glossery option will be used in scene explorer. This may allow you to get the names of characters while browsing a scene. Thanks Engin Yılmaz for the idea.
+Since hitting the general safety setting is very common, I've made the dialog that states no descriptions provided to be more explicit. It will now list why no descriptions were generated.
+Added İtalian translation. Thank you Ambrogio Riili for translations.
+Program is now backwards compatible with existing gemini models. This means that you can now use models below 2.5 like 2.0-flash. Thanks for Ambrogio Riili for the idea.
+Important note: If you decide to use the older models, you must use chunking logic with around 5 minutes per chunk to get decent results.
+Updated documentation
+Gave a good touch on description editor. You can now add new descriptions, edit existing ones as well as adjust timestamps for each. Thank you Burak yüsek for the idea.
+Made some messages more informative. Instead of ai returned no description, you will now see more detailed message stating what the problem is.
+Added some more sound queues.
+Added French translation. Thanks for Renku Reiki.
+Added Arabic translation. Thanks for Linku Loulou.
+Added Portuguese translation, thanks for Ângelo Abrantes.
+Scene explorer will no longer try to fit two or more objects into a same coordinate
+
+bug fixes
+Fixed a critical bug in audio chunking that prevented it to be utilised propperly.
+Fixed a few mp3 export related issues.
+I believe I fixed a lot of media player related issues by changing the media player.
+A few translation corrections
+Fixed a few bugs in youtube downloading.
+Fixed a bug that prevented editted descriptions to not be used in exports.
+various performance fixes.
+Adjusted some of the backend settings code.
+Fixed an issue where the program crashed for a reason.
+Fixed sceveral issues with scene explorer
+
+
+
+
+v1.1
+This update contains some critical fixes and a new feature
+
+New Features:
+There is now a setting in the general settings of the app that allows you to turn off speech interrupting for the audio player. Note that this does not work when exporting mp3 files
+
+Bug Fixes:
+
+The prompt display field is now disabled when there is no custom prompt is selected.
+Fixed a Youtube download bug when the download quality is set to best
+Fixed a few translation issues
+Fixed a critical bug that prevented using the export to mp3 function. Thanks to everyone who reported this. I cannot list names here as I do not remember every single one of you
+Fixed the application so it will properly terminate all running operations when it shuts down
+Sorting in the description editor now sorts descriptions by time
+Hopefully found and fixed an annoying video player issue for those using Windows 10 where certain video formats failed to play. The app will now convert all videos into standard mp4 to prevent those issues
+The application will now follow the user's requested output in the user prompt. Previously this behavior was too strict
+
+v1.0
+initial release

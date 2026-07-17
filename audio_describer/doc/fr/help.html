@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omni Describer - Guide de l'Utilisateur</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.7;
+            padding: 2em;
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+            border-bottom: 2px solid #aed6f1;
+            padding-bottom: 10px;
+        }
+        h1 { font-size: 2.8em; text-align: center; border-bottom: none; letter-spacing: -1px; }
+        h2 { font-size: 2.2em; margin-top: 2em; }
+        h3 { font-size: 1.6em; border-bottom: 1px solid #dee2e6; }
+        code {
+            background-color: #e8f6f3;
+            padding: 3px 6px;
+            border-radius: 5px;
+            font-family: "Courier New", Courier, monospace;
+            color: #117a65;
+        }
+        .container {
+            background-color: #fff;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        .key {
+            display: inline-block;
+            background-color: #f8f9fa;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            padding: 2px 8px;
+            font-size: 0.9em;
+            box-shadow: 1px 1px 1px #adb5bd;
+            margin: 0 2px;
+        }
+        .note {
+            background-color: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 1em;
+            margin: 1.5em 0;
+            border-radius: 5px;
+        }
+        .note strong { color: #856404; }
+        .best-practice {
+            background-color: #d4edda;
+            border-left: 5px solid #28a745;
+            padding: 1em;
+            margin: 1.5em 0;
+            border-radius: 5px;
+        }
+        .best-practice strong { color: #155724; }
+        .backstory {
+            background-color: #eaf2f8;
+            border-left: 5px solid #3498db;
+            padding: 1.5em;
+            margin: 2em 0;
+            border-radius: 8px;
+            font-style: italic;
+        }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 0.8em; }
+        a { color: #2980b9; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Guide de l'Utilisateur d'Omni Describer</h1>
+        <p style="text-align: center; font-size: 1.1em; color: #566573;">Donner une Voix au Monde Visuel grâce à l'IA.</p>
+
+        <div class="backstory">
+            <p>Tout a commencé avec ma passion pour le cinéma. Quand j'ai réalisé combien de détails dans mes scènes préférées se perdaient sans une bonne audiodescription, une idée a germé : "Et si l'IA pouvait nous faciliter la tâche ?" J'ai rêvé d'un outil qui ne se contenterait pas de générer des descriptions, mais qui donnerait aussi un contrôle total à l'utilisateur. Après des mois de travail acharné, d'innombrables essais et de nombreux obstacles techniques surmontés, j'ai développé Omni Describer comme le fruit de ce rêve.</p>
+        </div>
+
+        <h2>Table des Matières</h2>
+        <ul>
+            <li><a href="#whatis">D'où vient le nom ?</a></li>
+            <li><a href="#requirements">Configuration Requise</a></li>
+            <li><a href="#setup">Pour commencer : Configurer vos clés API</a></li>
+            <li><a href="#quickstart">Démarrage rapide : Générer votre première description</a></li>
+            <li><a href="#features">Fonctionnalités Principales</a>
+                <ul>
+                    <li><a href="#player">Le Lecteur Vidéo Audiodécrit</a></li>
+                    <li><a href="#prompts">Gérer les Préréglages d'Instructions</a></li>
+                    <li><a href="#askmore">Poser des questions sur la scène</a></li>
+                    <li><a href="#explorer">Explorateur de Scène</a></li>
+                    <li><a href="#exporting">Exporter votre travail</a></li>
+                </ul>
+            </li>
+            <li><a href="#advanced-settings">Plongée dans les Paramètres Avancés</a></li>
+            <li><a href="#bestpractices">Conseils et Astuces pour les Meilleurs Résultats</a></li>
+            <li><a href="#faq">Foire Aux Questions (FAQ)</a></li>
+            <li><a href="#shortcuts">Raccourcis Clavier</a></li>
+            <li><a href="#contact">Remerciements, Contact et Contributeurs</a></li>
+        </ul>
+
+        <h2 id="whatis">D'où vient le nom ?</h2>
+        <p>Le "Omni" dans le nom vient du latin, signifiant "tout" ou "chaque chose". J'ai choisi ce nom car je ne voulais pas que l'outil ait un seul but. Oui, Omni Describer vise principalement à rendre les médias accessibles aux personnes aveugles et malvoyantes en créant des audiodescriptions. Cependant, son utilité ne s'arrête pas là.</p>
+        <p>C'est aussi un <strong>outil d'exploration</strong>. Un critique de cinéma, un étudiant, un artiste, ou toute personne curieuse des détails visuels peut utiliser des fonctionnalités comme "Explorateur de Scène" ou "Poser des questions" pour sonder les couches d'une vidéo comme jamais auparavant. Omni Describer est une fenêtre pour voir le monde à travers les "yeux" de l'IA et le comprendre différemment. En bref, c'est "un descripteur pour tout, pour tout le monde".</p>
+        
+        <h2 id="requirements">Configuration Requise</h2>
+        <p>Pour obtenir les meilleures performances d'Omni Describer, je recommande de respecter la configuration minimale suivante :</p>
+        <ul>
+            <li><strong>Système d'exploitation :</strong> Windows 10 ou plus récent (64-bit).</li>
+            <li><strong>Mémoire vive (RAM) :</strong> Au moins 4 Go de RAM.</li>
+            <li><strong>Espace de stockage :</strong> Au moins 500 Mo d'espace disque libre pour l'application et les fichiers temporaires.</li>
+            <li><strong>Connexion Internet :</strong> Une connexion internet active est requise pour se connecter aux services d'IA (Google Gemini, OpenAI) et télécharger les vidéos.</li>
+            <li><strong>Lecteur d'écran :</strong> Pour une accessibilité totale, un lecteur d'écran comme JAWS, NVDA ou le Narrateur Windows est recommandé.</li>
+        </ul>
+
+        <h2 id="setup">Pour commencer : Configurer vos clés API</h2>
+        <p>Omni Describer utilise des services d'IA basés sur le cloud pour analyser et vocaliser les descriptions. Par conséquent, vous devez saisir vos propres clés API avant de pouvoir commencer.</p>
+        <ol>
+            <li><strong>Ouvrir les Paramètres :</strong> Allez dans le menu <strong>Fichier</strong> et sélectionnez <strong>Paramètres...</strong> (ou appuyez sur <span class="key">Ctrl</span> + <span class="key">,</span>).</li>
+            <li><strong>Onglet Paramètres IA :</strong>
+                <ul>
+                    <li><strong>Clé API Gemini :</strong> Ceci est obligatoire pour l'analyse vidéo. Collez votre clé dans le champ "Clé API Gemini :". Vous pouvez obtenir une clé API gratuite depuis <a href="https://aistudio.google.com/app/apikey" target="_blank">Google AI Studio</a>.</li>
+                    <li><strong>Clé API OpenAI (pour TTS) :</strong> Ceci est requis pour la synthèse vocale de haute qualité. Collez votre clé dans ce champ. Vous pouvez toujours utiliser les voix intégrées de Windows sans cette clé, mais OpenAI est recommandé pour de meilleurs résultats. Vous pouvez obtenir une clé depuis la <a href="https://platform.openai.com/api-keys" target="_blank">Plateforme OpenAI</a>.</li>
+                </ul>
+            </li>
+            <li><strong>Enregistrer :</strong> Cliquez sur <strong>Appliquer</strong> ou <strong>OK</strong> pour sauvegarder vos paramètres. Vous êtes maintenant prêt !</li>
+        </ol>
+        <div class="note">
+            <strong>Veuillez noter :</strong> Vos clés API sont stockées en toute sécurité sur votre ordinateur dans le fichier de configuration de l'application et ne sont jamais envoyées ailleurs, sauf pour se connecter aux services d'IA respectifs.
+        </div>
+
+        <h2 id="quickstart">Démarrage rapide : Générer votre première description</h2>
+        <p>Commençons ! Suivez simplement ces étapes :</p>
+        <ol>
+            <li><strong>Choisissez une vidéo :</strong> Cliquez sur un bouton comme "Fichier vidéo local" sur la fenêtre principale ou sélectionnez votre source vidéo depuis le menu Fichier.</li>
+            <li><strong>Sélectionnez une instruction (Optionnel) :</strong> Le menu déroulant liste des instructions prédéfinies qui guident l'IA. Pour votre premier essai, "Description standard" est un excellent point de départ.</li>
+            <li><strong>Lancez le traitement :</strong> L'application va maintenant commencer à analyser votre vidéo. Vous pouvez suivre la progression dans le "Journal d'état" en bas de la fenêtre. Cela peut prendre quelques minutes, selon la durée de la vidéo.</li>
+        </ol>
+        <p>Lorsque le processus est terminé, le <strong>Lecteur Vidéo Audiodécrit</strong> s'ouvrira automatiquement, et vous pourrez commencer à profiter de votre vidéo nouvellement décrite !</p>
+
+        <h2 id="features">Fonctionnalités Principales</h2>
+
+        <h3 id="player">Le Lecteur Vidéo Audiodécrit</h3>
+        <p>C'est votre salle de cinéma personnelle et audiodécrite. Pendant que la vidéo se joue normalement, votre <strong>lecteur d'écran installé</strong> (comme JAWS ou NVDA) lira les descriptions générées aux moments appropriés.</p>
+        <ul>
+            <li><strong>Contrôles de lecture :</strong> Utilisez les boutons Lecture/Pause, Retour/Avance rapide, ou le curseur de recherche pour naviguer dans la vidéo.</li>
+            <li><strong>Zone de l'audiodescription actuelle :</strong> Vous pouvez suivre ici le texte de la description en cours.</li>
+            <li><strong>Modifier les descriptions :</strong> Si une description est inexacte, mal synchronisée ou si vous souhaitez la supprimer, cliquez sur le bouton "Modifier les descriptions..." pour la corriger ou la supprimer facilement.</li>
+            <li><strong>Utilisation des jetons IA :</strong> Cette zone vous indique combien de "jetons" IA ont été utilisés pendant le processus, vous aidant à suivre votre consommation API.</li>
+        </ul>
+
+        <h3 id="prompts">Gérer les Préréglages d'Instructions</h3>
+        <p>Les instructions (prompts) sont de puissantes directives qui déterminent sur quoi l'IA se concentre. En changeant l'instruction, vous pouvez obtenir des descriptions dans des styles très différents.</p>
+        <ul>
+            <li><strong>Sélectionner un préréglage :</strong> Avant de traiter une vidéo, choisissez un préréglage dans le menu déroulant sur la fenêtre principale.</li>
+            <li><strong>Gérer les préréglages :</strong> Allez dans <strong>Fichier -> Gérer les préréglages d'instructions...</strong>. Ici, vous pouvez Ajouter, Modifier ou Supprimer vos propres instructions personnalisées. C'est parfait pour sauvegarder les instructions que vous utilisez fréquemment.</li>
+            <li><strong>Spécifique à la langue :</strong> Vos préréglages d'instructions sont sauvegardés séparément pour chaque langue que vous sélectionnez dans les Paramètres.</li>
+        </ul>
+
+        <h3 id="askmore">Poser des questions sur la scène</h3>
+        <p>Vous vous êtes déjà demandé ce qu'un personnage tient ou ce qu'un panneau en arrière-plan dit ? Cette fonction vous permet de demander tout ce qui vous vient à l'esprit sur la scène.</p>
+        <ol>
+            <li>Mettez la vidéo en pause au moment qui vous intrigue.</li>
+            <li>Cliquez sur le bouton <strong>Poser une question...</strong>.</li>
+            <li>Tapez votre question dans le champ "Votre nouvelle question :" (par ex., "De quelle couleur est le chapeau de la femme ?" ou "Que dit l'inscription sur le mur ?").</li>
+            <li>Sélectionnez combien de secondes de vidéo l'IA doit analyser, à partir de la position actuelle du curseur.</li>
+            <li>Cliquez sur "Soumettre la question". La réponse de l'IA apparaîtra dans la zone "Historique de la conversation".</li>
+        </ol>
+
+        <h3 id="explorer">Explorateur de Scène</h3>
+        <p>L'Explorateur de Scène est une manière interactive de comprendre l'agencement spatial d'une scène. Il vous place dans une pièce virtuelle que vous pouvez parcourir avec votre clavier.</p>
+        <ol>
+            <li>Mettez la vidéo en pause sur une scène que vous voulez explorer en détail.</li>
+            <li>Cliquez sur le bouton <strong>Explorer la scène...</strong>, puis sur "Analyser la scène".</li>
+        </ol>
+        <p>Vous êtes maintenant dans l'Explorateur de Scène. Utilisez votre clavier pour explorer :</p>
+        <ul>
+            <li><span class="key">Touches fléchées</span> : Déplace votre position virtuelle sur une grille.</li>
+            <li><span class="key">D</span> : Fournit une description détaillée de l'agencement général de la scène.</li>
+            <li><span class="key">L</span> : Annonce une liste de tous les objets dans la scène.</li>
+            <li><span class="key">Maj</span> + <span class="key">L</span> : Passe en "Mode Saut" pour sélectionner un objet et s'y rendre directement.</li>
+            <li><span class="key">Entrée</span> : Obtient une description détaillée de l'objet le plus proche.</li>
+            <li><span class="key">Échap</span> : Ferme l'Explorateur de Scène.</li>
+        </ul>
+
+        <h3 id="exporting">Exporter votre travail</h3>
+        <p>Une fois que vous êtes satisfait de vos descriptions, vous pouvez les exporter depuis la fenêtre du Lecteur dans différents formats :</p>
+        <ul>
+            <li><strong>Exporter en .TXT :</strong> Un simple fichier texte avec les horodatages.</li>
+            <li><strong>Exporter en .SRT :</strong> Un fichier de sous-titres standard que vous pouvez utiliser dans des lecteurs vidéo comme VLC.</li>
+            <li><strong>Exporter l'audio (MP3) :</strong> C'est peut-être la fonctionnalité la plus excitante. Elle vocalise vos descriptions avec la voix que vous avez sélectionnée dans les Paramètres (SAPI5 ou OpenAI), la mélange avec l'audio original de la vidéo, et baisse automatiquement le son de fond pendant les descriptions pour créer un fichier MP3 que vous pouvez écouter n'importe où.</li>
+        </ul>
+
+        <h2 id="advanced-settings">Plongée dans les Paramètres Avancés</h2>
+        <p>La fenêtre des Paramètres (<span class="key">Ctrl</span> + <span class="key">,</span>) vous donne un contrôle précis sur le comportement d'Omni Describer.</p>
+
+        <h3>Onglet Paramètres IA</h3>
+        <ul>
+            <li><strong>Fréquence d'images pour l'analyse IA :</strong> Détermine le nombre d'images par seconde envoyées à l'IA. Une valeur plus basse (par ex., 5 FPS) peut réduire les coûts API mais augmente le risque de manquer des actions très rapides.</li>
+            <li><strong>Envoyer uniquement la vidéo (sans l'audio) à l'IA :</strong> C'est une option utile pour empêcher que l'audio de la vidéo (dialogues, musique, effets sonores) ne perturbe l'IA. Au lieu d'essayer de décrire une explosion qu'elle entend, l'IA se concentrera uniquement sur ce qui se passe visuellement.</li>
+            <li><strong>Désactiver les filtres de sécurité (À utiliser avec prudence) :</strong> Cette option peut permettre à l'IA de traiter du contenu et de générer des descriptions qu'elle pourrait normalement signaler comme sensibles. Cependant, ce n'est pas une dérogation absolue. Le résultat reste soumis aux politiques de sécurité fondamentales de Google, et il n'y a aucune garantie que tous les filtres seront contournés. Veuillez vous rappeler que vous êtes responsable de l'utilisation de cette fonctionnalité.</li>
+        </ul>
+
+        <h3>Onglet Sortie Audio</h3>
+        <ul>
+            <li><strong>Moteur de synthèse vocale :</strong>
+                <ul>
+                    <li><strong>SAPI5 (intégré à Windows) :</strong> Utilise les voix compatibles SAPI5 fournies avec Windows ou que vous avez installées. Il ne nécessite pas de clé API supplémentaire. La qualité audio variera en fonction de la qualité des voix installées sur votre système.</li>
+                    <li><strong>TTS OpenAI (Haute qualité) :</strong> Produit généralement des voix plus naturelles et fluides. L'utilisation de cette option nécessite une clé API OpenAI et un moyen de paiement associé à votre compte.</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <h2 id="bestpractices">Conseils et Astuces pour les Meilleurs Résultats</h2>
+        <p>Créer de bonnes audiodescriptions est un art. Bien que l'IA soit un assistant efficace dans cet art, vous obtiendrez les meilleurs résultats en la guidant correctement.</p>
+        
+        <h3>Le pouvoir des instructions : vos notes de réalisateur</h3>
+        <div class="note">
+            L'application a un ensemble de <strong>règles fondamentales</strong> qu'elle enseigne à l'IA (comme ne pas parler par-dessus les dialogues). Considérez la zone <strong>Préréglage d'Instruction</strong> sur l'écran principal comme l'endroit où vous fournissez vos <strong>notes de réalisateur</strong> pour cette vidéo spécifique. Une bonne note aide l'IA à se concentrer sur un style ou un détail particulier, tandis qu'une note vague peut entraîner des résultats inattendus.
+        </div>
+        
+        <h4>Quand (et comment) utiliser une instruction</h4>
+        <p>La plupart du temps, l'IA peut produire d'excellents résultats sans instruction spéciale, en se basant uniquement sur ses règles de base. Je recommande de n'utiliser cette fonctionnalité que lorsque vous avez un objectif précis en tête.</p>
+        
+        <div class="best-practice">
+            <strong>Astuce n°1 : L'instruction "Se concentrer sur les noms"</strong><br>
+            Dans une vidéo avec de nombreux personnages où les noms sont importants, l'IA peut parfois être trop hésitante à utiliser un nom. Pour prioriser le suivi des noms, vous pouvez créer une instruction personnalisée :
+            <code>Pour cette vidéo, votre plus haute priorité est d'identifier et d'utiliser les noms corrects des personnages dès qu'ils sont prononcés dans le dialogue. C'est plus important que d'être trop concis. Tout en vous concentrant sur cela, essayez de respecter toutes les autres règles du système du mieux que vous pouvez.</code>
+        </div>
+        
+        <div class="best-practice">
+            <strong>Astuce n°2 : L'instruction "Décrire l'atmosphère"</strong><br>
+            Dans les films visuellement riches où l'atmosphère est essentielle, vous pouvez guider l'IA pour qu'elle se concentre sur l'environnement :
+            <code>Concentrez-vous sur la description du décor, de l'atmosphère et des détails environnementaux. Pour créer un monde visuel riche, mentionnez l'éclairage, les couleurs et l'ambiance générale de la scène. Accordez moins d'importance aux mouvements mineurs des personnages, sauf s'ils sont cruciaux.</code>
+        </div>
+        
+        <h4>Ce qu'il faut éviter dans les instructions</h4>
+        <p>Pour de meilleurs résultats, il est important d'éviter les instructions qui contredisent les principes fondamentaux de l'IA. Comme l'IA essaie toujours de suivre les instructions, lui en donner une défectueuse peut lui faire mal interpréter la vidéo.</p>
+        <ul>
+            <li><strong>Mauvais exemple d'instruction :</strong> <code>"Dis-moi tout ce qui se passe."</code> Cela peut rendre l'IA trop peu sélective, l'amenant à se concentrer sur des détails sans importance comme "(le personnage parle)" au lieu d'actions significatives.</li>
+            <li><strong>Mauvais exemple d'instruction :</strong> <code>"Dis-moi ce que les personnages disent."</code> Cela peut lui faire violer la règle "décrire uniquement le visuel" et décrire le dialogue, comme "le personnage a dit de prendre ceci".</li>
+        </ul>
+        <p>En résumé : Utilisez les instructions non pas pour changer les règles fondamentales d'une bonne audiodescription, mais pour guider l'IA sur un point de mire spécifique.</p>
+
+        <h2 id="faq">Foire Aux Questions (FAQ)</h2>
+        <p><strong>Q : Mes clés API sont-elles sécurisées ?</strong><br>
+        R : Oui. Vos clés sont stockées uniquement sur votre ordinateur et ne sont jamais partagées avec quiconque, sauf pour se connecter aux services de Google/OpenAI.</p>
+        
+        <p><strong>Q : Pourquoi la génération des descriptions prend-elle autant de temps ?</strong><br>
+        R : Le temps dépend de la durée de votre vidéo, de votre vitesse internet (pour envoyer la vidéo à l'IA), de la fréquence d'images que vous avez sélectionnée, et de la charge actuelle sur les services d'IA. L'utilisation de la fonction "Activer la segmentation vidéo" est fortement recommandée pour les longues vidéos.</p>
+        
+        <p><strong>Q : Pourquoi l'IA n'a-t-elle pas décrit quelque chose que j'ai vu à l'écran ?</strong><br>
+        R : L'IA est entraînée à préférer le silence plutôt que de faire une erreur ou de parler par-dessus un dialogue. Vous pouvez utiliser la fonction "Poser une question..." pour vous renseigner sur des moments spécifiques ou sélectionner le niveau de verbosité "Détaillé" dans les Paramètres.</p>
+
+        <h2 id="shortcuts">Raccourcis Clavier</h2>
+        <ul>
+            <li><span class="key">Ctrl</span> + <span class="key">O</span> : Ouvrir une vidéo locale</li>
+            <li><span class="key">Ctrl</span> + <span class="key">U</span> : Ouvrir depuis une URL directe</li>
+            <li><span class="key">Ctrl</span> + <span class="key">Y</span> : Ouvrir depuis YouTube</li>
+            <li><span class="key">Ctrl</span> + <span class="key">,</span> : Ouvrir les Paramètres</li>
+            <li><span class="key">F1</span> : Afficher l'Aide</li>
+        </ul>
+
+        <h2 id="contact">Remerciements, Contact et Contributeurs</h2>
+        <p>Merci beaucoup d'utiliser Omni Describer ! Cette application est le reflet de mon désir de rendre les médias visuels plus accessibles et agréables pour tous. Avoir des utilisateurs comme vous qui utilisent cet outil et fournissent des retours est la plus grande motivation pour continuer à le développer.</p>
+        
+        <h3>Retours et Support</h3>
+        <p>Avez-vous une question, un rapport de bogue, ou une idée pour une nouvelle fonctionnalité ? J'adorerais avoir de vos nouvelles ! Le meilleur moyen de me contacter est par e-mail. Vos retours sont inestimables pour rendre Omni Describer encore meilleur.</p>
+        <ul>
+            <li><strong>E-mail :</strong> <a href="mailto:info@audioses.com">info [at] audioses [dot] com</a>. (Veuillez remplacer '[at]' par '@' et '[dot]' par '.' lors de l'envoi.)</li>
+            <li><strong>Site Web :</strong> <a href="https://audioses.com" target="_blank">audioses.com</a></li>
+        </ul>
+    </div>
+</body>
+</html>

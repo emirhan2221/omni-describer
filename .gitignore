@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Build / packaging output
+build/
+dist/
+*.dist/
+*.exe
+*.dll
+*.pyd
+*.spec.bak
+
+# Bundled runtime binaries (fetch your own; see README)
+audio_describer/bin/
+
+# Logs and runtime artifacts
+app_log.txt
+gemini_safety_log.txt
+*.log
+debug_ai_outputs/
+temp_processing/
+
+# User-local scratch/output files
+bb.txt
+bb.py
+bugs.txt
+text.txt
+output.txt
+help.txt
+combined_output.py
+
+# Editor / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db

@@ -1,0 +1,136 @@
+name: Release
+
+# Two ways to release, both auto-bump the version, build the Windows app, and
+# publish a GitHub Release whose assets the in-app updater pulls from:
+#   1. Actions tab -> "Run workflow" -> pick bump (patch/minor/major). It bumps
+#      APP_VERSION in config.py, commits it to main, tags it, builds and releases.
+#   2. Push a tag:  git tag v2.1.1 && git push origin v2.1.1
+# Assets are published under fixed names (omni_describer.zip, updater.exe) so the
+# updater's /latest/download/ URLs stay valid. A tag pushed by this workflow's own
+# token does not retrigger it (GitHub blocks GITHUB_TOKEN recursion) — no loop.
+on:
+  workflow_dispatch:
+    inputs:
+      bump:
+        description: 'Version bump'
+        type: choice
+        default: patch
+        options: [patch, minor, major]
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    if: github.repository_owner == 'audioses'  # forks don't publish
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+
+      - name: Resolve version
+        id: version
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ "${{ github.event_name }}" = "push" ]; then
+            tag="${GITHUB_REF_NAME}"          # tag push: use it verbatim
+            sync=false
+          else
+            latest=$(git tag -l 'v*' --sort=-v:refname | head -n1)
+            if [ -z "$latest" ]; then
+              # First release: seed from APP_VERSION so code and tag agree.
+              base=$(sed -nE 's/^APP_VERSION = "([^"]+)".*/\1/p' audio_describer/config.py)
+              IFS=. read -r a b c <<< "$base"; tag="v${a:-2}.${b:-0}.${c:-0}"
+            else
+              IFS=. read -r a b c <<< "${latest#v}"
+              case "${{ inputs.bump }}" in
+                major) tag="v$((a+1)).0.0" ;;
+                minor) tag="v$a.$((b+1)).0" ;;
+                *)     tag="v$a.$b.$((c+1))" ;;
+              esac
+            fi
+            if git rev-parse -q --verify "refs/tags/$tag" >/dev/null; then
+              echo "Tag $tag already exists; aborting." >&2   # guard: no clobber
+              exit 1
+            fi
+            sync=true
+          fi
+          ver="${tag#v}"
+          # Write the version into config.py so the built binary reports it.
+          sed -i -E "s/^APP_VERSION = \".*\"/APP_VERSION = \"$ver\"/" audio_describer/config.py
+          grep -q "APP_VERSION = \"$ver\"" audio_describer/config.py   # guard: edit landed
+          echo "tag=$tag"   >> "$GITHUB_OUTPUT"
+          echo "sync=$sync" >> "$GITHUB_OUTPUT"
+          echo "Release: $tag"
+
+      - name: Commit bump and tag
+        if: steps.version.outputs.sync == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # No-op when APP_VERSION already matches (e.g. the first release); still tag.
+          git commit -am "chore: release ${{ steps.version.outputs.tag }}" || echo "APP_VERSION unchanged; tagging current commit"
+          git tag -a "${{ steps.version.outputs.tag }}" -m "Omni Describer ${{ steps.version.outputs.tag }}"
+          git push origin HEAD:main
+          git push origin "${{ steps.version.outputs.tag }}"
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r audio_describer/requirements.txt
+          pip install pyinstaller
+
+      # build.spec bundles audio_describer/bin (FFmpeg/VLC), gitignored and absent in
+      # CI. Create it empty so the spec resolves. This build ships WITHOUT them.
+      - name: Create empty bin dir
+        run: New-Item -ItemType Directory -Force audio_describer/bin
+
+      - name: Build main app
+        run: pyinstaller build.spec
+
+      - name: Build helper executables
+        run: |
+          pyinstaller --onefile sapi32.py
+          pyinstaller --onefile updater.py
+          Copy-Item dist/sapi32.exe  dist/omni_describer_dist/ -Force
+          Copy-Item dist/updater.exe dist/omni_describer_dist/ -Force
+
+      # Fixed asset name so the updater's /latest/download/omni_describer.zip resolves.
+      - name: Package
+        shell: pwsh
+        run: |
+          Compress-Archive -Path dist/omni_describer_dist/* -DestinationPath omni_describer.zip
+          if (-not (Test-Path omni_describer.zip)) { throw "Package not produced" }
+
+      - name: Publish GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.version.outputs.tag }}
+          name: Omni Describer ${{ steps.version.outputs.tag }}
+          files: |
+            omni_describer.zip
+            dist/updater.exe
+          fail_on_unmatched_files: true
+          generate_release_notes: true
+          make_latest: true
+          body: |
+            Windows build of Omni Describer ${{ steps.version.outputs.tag }}.
+
+            Does not bundle FFmpeg or VLC — install them or drop the binaries in
+            `audio_describer/bin/` (see the README). Third-party licenses apply if
+            you redistribute a build that includes them (see THIRD_PARTY_LICENSES).

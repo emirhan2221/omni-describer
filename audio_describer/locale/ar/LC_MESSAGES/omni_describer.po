@@ -1,0 +1,1892 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2025-08-05 02:45+0300\n"
+"PO-Revision-Date: 2025-08-05 02:46+0300\n"
+"Last-Translator: Renku\n"
+"Language-Team: renkureiki@gmail.com\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.6\n"
+"X-Poedit-Basepath: ../../..\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: __app__real.py:55
+#, python-format
+msgid "Starting %(app_name)s v%(app_version)s"
+msgstr "بدء تشغيل %(app_name)s إصدار %(app_version)s"
+
+#: __app__real.py:74
+#, python-format
+msgid "%(app_name)s started."
+msgstr "تم بدء %(app_name)s."
+
+#: __app__real.py:118
+#, python-format
+msgid "%s is shutting down."
+msgstr "يتم الآن إغلاق %s."
+
+#: __app__real.py:121
+#, python-format
+msgid "%(app_name)s closed."
+msgstr "تم إغلاق %(app_name)s."
+
+#: config.py:50
+msgid "Describer"
+msgstr "الواصف"
+
+#: core/audio_describer.py:26
+msgid "Performing pre-analysis to identify characters..."
+msgstr "جارٍ إجراء تحليل مسبق لتحديد الشخصيات..."
+
+#: core/audio_describer.py:32
+msgid "Could not determine video duration, skipping character glossary."
+msgstr ""
+
+#: core/audio_describer.py:50
+msgid "Video is long, splitting into chunks for character analysis..."
+msgstr ""
+
+#: core/audio_describer.py:53
+msgid "Glossary Chunking:"
+msgstr ""
+
+#: core/audio_describer.py:58
+#, fuzzy, python-format
+#| msgid "Created chunk %d of %d..."
+msgid "Analyzing character chunk %d of %d..."
+msgstr "تم إنشاء المقطع %d من %d..."
+
+#: core/audio_describer.py:60
+msgid "Chunk Pre-processing:"
+msgstr ""
+
+#: core/audio_describer.py:74
+#, fuzzy
+#| msgid "Cleaning up temporary video chunks..."
+msgid "Cleaning up temporary glossary chunks..."
+msgstr "جارٍ تنظيف مقاطع الفيديو المؤقتة..."
+
+#: core/audio_describer.py:79
+#, fuzzy
+#| msgid "Character pre-analysis complete."
+msgid "Character pre-analysis complete (merged from chunks)."
+msgstr "اكتمل التحليل المسبق للشخصيات."
+
+#: core/audio_describer.py:89
+msgid "Character pre-analysis complete."
+msgstr "اكتمل التحليل المسبق للشخصيات."
+
+#: core/audio_describer.py:94
+msgid "Could not generate character glossary, proceeding without it."
+msgstr "تعذر إنشاء مسرد الشخصيات، سيتم المتابعة بدونه."
+
+#: core/audio_describer.py:103
+#, python-format
+msgid "Error: Video file not found: %s"
+msgstr "خطأ: ملف الفيديو غير موجود: %s"
+
+#: core/audio_describer.py:112
+#, python-format
+msgid "Uploading video '%s'..."
+msgstr "جارٍ تحميل الفيديو '%s'..."
+
+#: core/audio_describer.py:114
+#, python-format
+msgid "Video upload initiated: %s. Waiting for processing..."
+msgstr "بدأ تحميل الفيديو: %s. في انتظار المعالجة..."
+
+#: core/audio_describer.py:117 ui/main_window.py:240
+msgid "Video is ACTIVE."
+msgstr "الفيديو نشط."
+
+#: core/audio_describer.py:118
+#, python-format
+msgid "Video processing (attempt %d)... state: %s"
+msgstr "معالجة الفيديو (محاولة %d)... الحالة: %s"
+
+#: core/audio_describer.py:121
+#, python-format
+msgid "Video processing timed out or failed. Final state: %s"
+msgstr "انتهت مهلة معالجة الفيديو أو فشلت. الحالة النهائية: %s"
+
+#: core/audio_describer.py:125
+msgid "Video ready. Preparing AI request for descriptions..."
+msgstr "الفيديو جاهز. جارٍ تحضير طلب الذكاء الاصطناعي للأوصاف..."
+
+#: core/audio_describer.py:132
+msgid "Requesting audio descriptions from AI..."
+msgstr "جارٍ طلب الأوصاف الصوتية من الذكاء الاصطناعي..."
+
+#: core/audio_describer.py:143
+msgid "Failed to parse timed descriptions from AI's JSON response."
+msgstr "فشل تحليل الأوصاف المؤقتة من استجابة JSON للذكاء الاصطناعي."
+
+#: core/audio_describer.py:145
+#, python-format
+msgid ""
+"Successfully parsed %d raw descriptions. Correcting timestamps and "
+"duplicates..."
+msgstr "تم تحليل %d وصف أولي بنجاح. جارٍ تصحيح الطوابع الزمنية والتكرارات..."
+
+#: core/audio_describer.py:149
+msgid "No descriptions remained after all post-processing."
+msgstr "لم يتبق أي وصف بعد المعالجة اللاحقة."
+
+#: core/audio_describer.py:154
+#, python-format
+msgid "Description generation failed: %s"
+msgstr "فشل إنشاء الوصف: %s"
+
+#: core/audio_describer.py:157
+#, python-format
+msgid "Cleaned up uploaded video file: %s"
+msgstr "تم تنظيف ملف الفيديو الذي تم تحميله: %s"
+
+#: core/audio_describer.py:178
+msgid "AI could not provide an answer."
+msgstr "لم يتمكن الذكاء الاصطناعي من تقديم إجابة."
+
+#: core/audio_describer.py:180
+#, python-format
+msgid "VQA request failed: %s"
+msgstr "فشل طلب VQA: %s"
+
+#: core/audio_describer.py:202
+msgid ""
+"AI process stopped while generating glossary due to token limit. Try "
+"simplifying the video or adjusting settings."
+msgstr ""
+
+#: core/audio_describer.py:209
+#, python-format
+msgid "Failed to get structured data from AI: %s"
+msgstr "فشل الحصول على البيانات المنظمة من الذكاء الاصطناعي: %s"
+
+#: core/audio_describer.py:227
+#, python-format
+msgid "Invalid MM:SS string format: %s"
+msgstr "تنسيق سلسلة MM:SS غير صالح: %s"
+
+#: core/audio_describer.py:234
+msgid "Calculated total seconds is negative."
+msgstr "إجمالي الثواني المحسوب سالب."
+
+#: core/audio_describer.py:238
+#, python-format
+msgid "Invalid MM:SS components in '%s': %s"
+msgstr "مكونات MM:SS غير صالحة في '%s': %s"
+
+#: core/audio_describer.py:248
+msgid "Skipping description due to invalid MM:SS format."
+msgstr "تم تخطي الوصف بسبب تنسيق MM:SS غير صالح."
+
+#: core/audio_describer.py:255
+msgid "Ensuring minimum description duration..."
+msgstr "جارٍ ضمان الحد الأدنى لمدة الوصف..."
+
+#: core/audio_describer.py:258
+#, python-format
+msgid ""
+"Timestamp correction complete. %(count)d descriptions processed, "
+"%(adjusted_count)d had timestamps adjusted."
+msgstr ""
+"اكتمل تصحيح الطابع الزمني. تمت معالجة %(count)d وصف، وتم تعديل الطابع الزمني "
+"لـ %(adjusted_count)d وصف."
+
+#: core/audio_describer.py:267
+#, python-format
+msgid "Removed %(count)d repetitive descriptions."
+msgstr "تم حذف %(count)d وصف متكرر."
+
+#: core/audio_describer.py:349
+msgid "Not named"
+msgstr "بدون اسم"
+
+#: core/gemini_helpers.py:77
+msgid "Gemini SDK is not available. Check startup logs for errors."
+msgstr "SDK Gemini غير متوفر. تحقق من سجلات بدء التشغيل بحثًا عن الأخطاء."
+
+#: core/gemini_helpers.py:80
+msgid "Gemini API Key is not configured in settings."
+msgstr "مفتاح API Gemini غير مكون في الإعدادات."
+
+#: core/gemini_helpers.py:88
+#, python-format
+msgid "Failed to initialize Gemini Client: %s"
+msgstr "فشل تهيئة عميل Gemini: %s"
+
+#: core/gemini_helpers.py:178
+#, python-format
+msgid "AI request was blocked due to: %s"
+msgstr "تم حظر طلب الذكاء الاصطناعي للسبب التالي: %s"
+
+#: core/gemini_helpers.py:184
+msgid "AI returned no answer or an invalid response structure."
+msgstr "لم يُرجع الذكاء الاصطناعي أي إجابة أو بنية استجابة غير صالحة."
+
+#: core/gemini_helpers.py:195
+msgid "AI process stopped because it reached its processing limit (MAX_TOKENS)."
+msgstr "توقفت عملية الذكاء الاصطناعي لأنها وصلت إلى حد المعالجة (MAX_TOKENS)."
+
+#: core/gemini_helpers.py:201
+#, python-format
+msgid "AI content generation was stopped. Reason: %s"
+msgstr "تم إيقاف إنشاء المحتوى بواسطة الذكاء الاصطناعي. السبب: %s"
+
+#: core/gemini_helpers.py:206
+msgid "AI returned an empty response."
+msgstr "أعاد الذكاء الاصطناعي إجابة فارغة."
+
+#: core/gemini_helpers.py:214 ui/ask_more_dialog.py:121 ui/main_window.py:240
+msgid "AI is thinking..."
+msgstr "الذكاء الاصطناعي يفكر..."
+
+#: core/gemini_helpers.py:226
+#, python-format
+msgid "AI content generation was stopped due to: %s"
+msgstr "تم إيقاف إنشاء المحتوى بواسطة الذكاء الاصطناعي بسبب: %s"
+
+#: core/video_processor.py:156
+#, python-format
+msgid "Splitting video into %d chunks..."
+msgstr "جارٍ تقسيم الفيديو إلى %d مقطع..."
+
+#: core/video_processor.py:177
+#, python-format
+msgid "Created chunk %d of %d..."
+msgstr "تم إنشاء المقطع %d من %d..."
+
+#: core/video_processor.py:183
+msgid "FFmpeg not found; using original video for AI."
+msgstr "FFmpeg غير موجود؛ سيتم استخدام الفيديو الأصلي للذكاء الاصطناعي."
+
+#: core/video_processor.py:194
+msgid "Pre-processing video for AI analysis..."
+msgstr "جارٍ المعالجة المسبقة للفيديو لتحليله بواسطة الذكاء الاصطناعي..."
+
+#: core/video_processor.py:221
+#, python-format
+msgid "Failed to pre-process video; using original. Error: %s"
+msgstr "فشلت المعالجة المسبقة للفيديو؛ سيتم استخدام الفيديو الأصلي. خطأ: %s"
+
+#: core/video_processor.py:227
+msgid "Video pre-processing error; using original."
+msgstr "خطأ في المعالجة المسبقة للفيديو؛ سيتم استخدام الفيديو الأصلي."
+
+#: core/video_processor.py:230
+msgid "Video pre-processing complete."
+msgstr "اكتملت المعالجة المسبقة للفيديو."
+
+#: core/video_processor.py:234
+#, python-format
+msgid "Error during video pre-processing; using original. Error: %s"
+msgstr ""
+"خطأ أثناء المعالجة المسبقة للفيديو؛ سيتم استخدام الفيديو الأصلي. خطأ: %s"
+
+#: core/video_processor.py:242
+#, python-format
+msgid "Video file not found: %s"
+msgstr "ملف الفيديو غير موجود: %s"
+
+#: core/video_processor.py:250
+#, python-format
+msgid "Failed to download from direct URL %s: %s"
+msgstr "فشل التنزيل من الرابط المباشر %s: %s"
+
+#: core/video_processor.py:273
+#, python-format
+msgid ""
+"Failed to download from YouTube URL %(url)s. Initial error: "
+"%(initial_error)s. Fallback attempt also failed: %(fallback_error)s"
+msgstr ""
+"فشل التنزيل من رابط يوتيوب %(url)s. الخطأ الأولي: %(initial_error)s. فشلت "
+"محاولة الاحتياط أيضًا: %(fallback_error)s"
+
+#: core/youtube_downloader.py:147 core/youtube_downloader.py:221
+#, python-format
+msgid "yt-dlp executable not found. Expected at: %s"
+msgstr "لم يتم العثور على ملف yt-dlp القابل للتنفيذ. متوقع في: %s"
+
+#: core/youtube_downloader.py:171 core/youtube_downloader.py:201
+#: core/youtube_downloader.py:301 core/youtube_downloader.py:388
+msgid "N/A"
+msgstr "غير متاح"
+
+#: core/youtube_downloader.py:185
+msgid "yt-dlp returned no information for the video."
+msgstr "لم يُرجع yt-dlp أي معلومات للفيديو."
+
+#: core/youtube_downloader.py:191
+msgid ""
+"yt-dlp command not found. Please ensure yt-dlp is installed and in your "
+"system PATH, or bundled correctly."
+msgstr ""
+"أمر yt-dlp غير موجود. يرجى التأكد من تثبيت yt-dlp وأنه في مسار النظام الخاص "
+"بك، أو مدمج بشكل صحيح."
+
+#: core/youtube_downloader.py:199
+msgid "Timeout fetching video information."
+msgstr "انتهت مهلة جلب معلومات الفيديو."
+
+#: core/youtube_downloader.py:205
+#, python-format
+msgid "Failed to parse video information from yt-dlp. Output: %s"
+msgstr "فشل تحليل معلومات الفيديو من yt-dlp. الإخراج: %s"
+
+#: core/youtube_downloader.py:211
+#, python-format
+msgid "Unexpected error fetching video info: %s"
+msgstr "خطأ غير متوقع أثناء جلب معلومات الفيديو: %s"
+
+#: core/youtube_downloader.py:231
+#, python-format
+msgid "Cannot create download directory: %s"
+msgstr "لا يمكن إنشاء دليل التنزيل: %s"
+
+#: core/youtube_downloader.py:246 core/youtube_downloader.py:254
+#: ui/settings_dialog.py:32
+msgid "Best Available"
+msgstr "أفضل جودة متاحة"
+
+#: core/youtube_downloader.py:275
+msgid "Could not retrieve video info; cannot reliably predict output filename."
+msgstr ""
+"تعذر استرداد معلومات الفيديو؛ لا يمكن التنبؤ باسم ملف الإخراج بشكل موثوق."
+
+#: core/youtube_downloader.py:325
+#, python-format
+msgid ""
+"Download completed but output file not found. Check logs for details in %s."
+msgstr ""
+"اكتمل التنزيل ولكن لم يتم العثور على ملف الإخراج. تحقق من السجلات لمزيد من "
+"التفاصيل في %s."
+
+#: core/youtube_downloader.py:328
+#, python-format
+msgid ""
+"yt-dlp command not found. Please ensure yt-dlp is installed and in your "
+"system PATH, or bundled correctly at %s."
+msgstr ""
+"أمر yt-dlp غير موجود. يرجى التأكد من تثبيت yt-dlp وأنه في مسار النظام الخاص "
+"بك، أو مدمج بشكل صحيح في %s."
+
+#: core/youtube_downloader.py:334
+#, python-format
+msgid "Timeout downloading video: %s"
+msgstr "انتهت مهلة تنزيل الفيديو: %s"
+
+#: core/youtube_downloader.py:339
+#, python-format
+msgid "Unexpected error during download for %s: %s"
+msgstr "خطأ غير متوقع أثناء تنزيل %s: %s"
+
+#: core/youtube_downloader.py:346
+msgid ""
+"Standalone test: config_model.app_settings seems empty, loading defaults for "
+"test."
+msgstr ""
+"اختبار مستقل: يبدو أن config_model.app_settings فارغ، يتم تحميل القيم "
+"الافتراضية للاختبار."
+
+#: core/youtube_downloader.py:383
+#, python-format
+msgid ""
+"\n"
+"Fetching info for: %s"
+msgstr ""
+"\n"
+"جارٍ جلب المعلومات لـ: %s"
+
+#: core/youtube_downloader.py:388
+#, python-format
+msgid "Successfully fetched info for YouTube video: %s"
+msgstr "تم جلب المعلومات بنجاح لفيديو يوتيوب: %s"
+
+#: core/youtube_downloader.py:390
+#, python-format
+msgid "Failed to fetch info for %s"
+msgstr "فشل جلب المعلومات لـ %s"
+
+#: core/youtube_downloader.py:393
+#, python-format
+msgid ""
+"\n"
+"Attempting to download YouTube video: %s (Quality from settings: %s)"
+msgstr ""
+"\n"
+"محاولة تنزيل فيديو يوتيوب: %s (الجودة من الإعدادات: %s)"
+
+#: core/youtube_downloader.py:396
+#, python-format
+msgid "YouTube video downloaded successfully to: %s"
+msgstr "تم تنزيل فيديو يوتيوب بنجاح إلى: %s"
+
+#: core/youtube_downloader.py:397
+#, python-format
+msgid "File size: %s MB"
+msgstr "حجم الملف: %s ميجابايت"
+
+#: core/youtube_downloader.py:399
+#, python-format
+msgid "YouTube download failed or file not found at: %s"
+msgstr "فشل تنزيل يوتيوب أو لم يتم العثور على الملف في: %s"
+
+#: core/youtube_downloader.py:403
+#, python-format
+msgid "A DownloaderError occurred during self-test: %s"
+msgstr "حدث خطأ DownloaderError أثناء الاختبار الذاتي: %s"
+
+#: core/youtube_downloader.py:405
+#, python-format
+msgid "An unexpected error occurred during self-test: %s"
+msgstr "حدث خطأ غير متوقع أثناء الاختبار الذاتي: %s"
+
+#: core/youtube_downloader.py:408
+#, python-format
+msgid "Cleaning up test file: %s"
+msgstr "جارٍ تنظيف ملف الاختبار: %s"
+
+#: core/youtube_downloader.py:411
+#, python-format
+msgid "Could not remove %s: %s"
+msgstr "لا يمكن حذف %s: %s"
+
+#: core/youtube_downloader.py:413
+msgid ""
+"\n"
+"Downloader self-test finished. Check console and app_log.txt for details."
+msgstr ""
+"\n"
+"انتهى الاختبار الذاتي للمنزل. تحقق من وحدة التحكم و app_log.txt للحصول على "
+"التفاصيل."
+
+#: core/youtube_downloader.py:414
+#, python-format
+msgid "Temporary download directory used: %s"
+msgstr "تم استخدام دليل التنزيل المؤقت: %s"
+
+#: core/youtube_downloader.py:415
+#, python-format
+msgid "yt-dlp command used: %s"
+msgstr "أمر yt-dlp المستخدم: %s"
+
+#: ui/add_edit_prompt_dialog.py:18 ui/add_edit_voice_dialog.py:16
+msgid "Preset Name:"
+msgstr "اسم الإعداد المسبق:"
+
+#: ui/add_edit_prompt_dialog.py:21
+msgid "A short, descriptive name for the prompt preset."
+msgstr "اسم قصير وصفي للإعداد المسبق للتلقين."
+
+#: ui/add_edit_prompt_dialog.py:25
+msgid "Prompt Text:"
+msgstr "نص التلقين:"
+
+#: ui/add_edit_prompt_dialog.py:28
+msgid "The full text of the prompt to be sent to the AI."
+msgstr "النص الكامل للتلقين الذي سيتم إرساله إلى الذكاء الاصطناعي."
+
+#: ui/add_edit_prompt_dialog.py:40 ui/add_edit_voice_dialog.py:55
+msgid "&Save"
+msgstr "&حفظ"
+
+#: ui/add_edit_prompt_dialog.py:57
+msgid "Both a preset name and prompt text are required."
+msgstr "مطلوب اسم إعداد مسبق ونص تلقين."
+
+#: ui/add_edit_prompt_dialog.py:57 ui/add_edit_voice_dialog.py:74
+#: ui/settings_dialog.py:223
+msgid "Input Required"
+msgstr "الإدخال مطلوب"
+
+#: ui/add_edit_voice_dialog.py:22
+msgid "Base OpenAI Voice:"
+msgstr "صوت OpenAI الأساسي:"
+
+#: ui/add_edit_voice_dialog.py:30 ui/settings_dialog.py:158
+msgid "Speed:"
+msgstr "السرعة:"
+
+#: ui/add_edit_voice_dialog.py:41
+msgid "Instructions (for Tone, Emotion, etc.):"
+msgstr "التعليمات (للنبرة، العاطفة، إلخ):"
+
+#: ui/add_edit_voice_dialog.py:44
+msgid ""
+"Describe the desired tone. Example: 'Speak in a cheerful and positive tone.'"
+msgstr "صف النبرة المطلوبة. مثال: 'تحدث بنبرة مرحة وإيجابية.'"
+
+#: ui/add_edit_voice_dialog.py:74
+msgid "A preset name is required."
+msgstr "مطلوب اسم إعداد مسبق."
+
+#: ui/ask_more_dialog.py:33
+msgid "Ask More About Scene"
+msgstr "اسأل المزيد عن المشهد"
+
+#: ui/ask_more_dialog.py:44
+#, python-format
+msgid "Ask questions about the scene around %s."
+msgstr "اطرح أسئلة حول المشهد حوالي %s."
+
+#: ui/ask_more_dialog.py:47
+msgid "Conversation History:"
+msgstr "سجل المحادثة:"
+
+#: ui/ask_more_dialog.py:52
+msgid "Your New Question:"
+msgstr "سؤالك الجديد:"
+
+#: ui/ask_more_dialog.py:58
+msgid "Video Context Duration (seconds):"
+msgstr "مدة سياق الفيديو (ثوانٍ):"
+
+#: ui/ask_more_dialog.py:68
+msgid "&Submit Question"
+msgstr "&إرسال السؤال"
+
+#: ui/ask_more_dialog.py:72
+msgid "&Add to Descriptions"
+msgstr "&إضافة إلى الأوصاف"
+
+#: ui/ask_more_dialog.py:76 ui/edit_description_dialog.py:55
+#: ui/main_window.py:498 ui/manage_prompts_dialog.py:52
+msgid "Close"
+msgstr "إغلاق"
+
+#: ui/ask_more_dialog.py:92
+msgid "Please enter a question."
+msgstr "الرجاء إدخال سؤال."
+
+#: ui/ask_more_dialog.py:92
+msgid "Question Required"
+msgstr "السؤال مطلوب"
+
+#: ui/ask_more_dialog.py:95
+#, python-format
+msgid "You asked: %s"
+msgstr "لقد سألت: %s"
+
+#: ui/ask_more_dialog.py:109
+msgid "The description has been added to the main list."
+msgstr "تمت إضافة الوصف إلى القائمة الرئيسية."
+
+#: ui/ask_more_dialog.py:109
+msgid "Description Added"
+msgstr "تمت إضافة الوصف"
+
+#: ui/ask_more_dialog.py:127
+msgid "AI Answer: "
+msgstr "إجابة الذكاء الاصطناعي: "
+
+#: ui/ask_more_dialog.py:129
+msgid "Error: "
+msgstr "خطأ: "
+
+#: ui/edit_description_dialog.py:8
+msgid "Edit Audio Descriptions"
+msgstr "تعديل الأوصاف الصوتية"
+
+#: ui/edit_description_dialog.py:20
+msgid "Select description to edit:"
+msgstr "حدد الوصف المراد تعديله:"
+
+#: ui/edit_description_dialog.py:26
+msgid "Details"
+msgstr "التفاصيل"
+
+#: ui/edit_description_dialog.py:32 ui/edit_description_dialog.py:217
+msgid "Start Time (sec):"
+msgstr "وقت البدء (ثانية):"
+
+#: ui/edit_description_dialog.py:36 ui/edit_description_dialog.py:221
+msgid "End Time (sec):"
+msgstr "وقت الانتهاء (ثانية):"
+
+#: ui/edit_description_dialog.py:40 ui/edit_description_dialog.py:225
+msgid "Description Text:"
+msgstr "نص الوصف:"
+
+#: ui/edit_description_dialog.py:51
+msgid "&Add New..."
+msgstr "&إضافة جديد..."
+
+#: ui/edit_description_dialog.py:52 ui/manage_prompts_dialog.py:51
+#: ui/manage_voices_dialog.py:38
+msgid "&Delete"
+msgstr "&حذف"
+
+#: ui/edit_description_dialog.py:54
+msgid "&Save Changes"
+msgstr "&حفظ التغييرات"
+
+#: ui/edit_description_dialog.py:92
+msgid "(No descriptions available)"
+msgstr "(لا توجد أوصاف متاحة)"
+
+#: ui/edit_description_dialog.py:142
+#, python-format
+msgid "Start time must be within the video duration (0 to %.2f sec)."
+msgstr "يجب أن يكون وقت البدء ضمن مدة الفيديو (من 0 إلى %.2f ثانية)."
+
+#: ui/edit_description_dialog.py:148
+msgid "Invalid start time. Please enter a valid number."
+msgstr "وقت بدء غير صالح. يرجى إدخال رقم صالح."
+
+#: ui/edit_description_dialog.py:148 ui/edit_description_dialog.py:262
+msgid "Invalid Input"
+msgstr "إدخال غير صالح"
+
+#: ui/edit_description_dialog.py:160 ui/edit_description_dialog.py:257
+#, python-format
+msgid ""
+"Invalid time range. Times must be within the video duration (0 to %.2f sec) "
+"and end time must be after start time."
+msgstr ""
+"نطاق زمني غير صالح. يجب أن تكون الأوقات ضمن مدة الفيديو (من 0 إلى %.2f ثانية) "
+"ويجب أن يكون وقت الانتهاء بعد وقت البدء."
+
+#: ui/edit_description_dialog.py:162 ui/edit_description_dialog.py:254
+msgid "Description text cannot be empty."
+msgstr "لا يمكن أن يكون نص الوصف فارغًا."
+
+#: ui/edit_description_dialog.py:174
+msgid "Changes saved."
+msgstr "تم حفظ التغييرات."
+
+#: ui/edit_description_dialog.py:174
+msgid "Success"
+msgstr "نجاح"
+
+#: ui/edit_description_dialog.py:177
+msgid "Validation Error"
+msgstr "خطأ في التحقق"
+
+#: ui/edit_description_dialog.py:184
+msgid "Are you sure you want to delete this description?"
+msgstr "هل أنت متأكد أنك تريد حذف هذا الوصف؟"
+
+#: ui/edit_description_dialog.py:184 ui/manage_prompts_dialog.py:121
+#: ui/manage_voices_dialog.py:105
+msgid "Confirm Delete"
+msgstr "تأكيد الحذف"
+
+#: ui/edit_description_dialog.py:210
+msgid "Add New Description"
+msgstr "إضافة وصف جديد"
+
+#: ui/edit_description_dialog.py:262
+msgid "Please enter valid numbers for times."
+msgstr "الرجاء إدخال أرقام صالحة للأوقات."
+
+#: ui/explore_scene_options_dialog.py:7
+msgid "Explore Scene Options"
+msgstr "خيارات استكشاف المشهد"
+
+#: ui/explore_scene_options_dialog.py:22
+msgid "Analysis Duration (seconds):"
+msgstr "مدة التحليل (ثوانٍ):"
+
+#: ui/explore_scene_options_dialog.py:25
+msgid "The length of the video clip to analyze, in seconds."
+msgstr "طول مقطع الفيديو المراد تحليله، بالثواني."
+
+#: ui/explore_scene_options_dialog.py:32
+msgid "Optional: Specific things to focus on:"
+msgstr "اختياري: أشياء محددة للتركيز عليها:"
+
+#: ui/explore_scene_options_dialog.py:35
+msgid ""
+"Example: 'Focus on the expressions of the people' or 'Describe the text on "
+"any signs'"
+msgstr "مثال: 'التركيز على تعابير وجوه الناس' أو 'وصف النص على أي لافتات'"
+
+#: ui/explore_scene_options_dialog.py:49
+msgid "&Analyze Scene"
+msgstr "&تحليل المشهد"
+
+#: ui/export_options_dialog.py:7
+msgid "Export Options"
+msgstr "خيارات التصدير"
+
+#: ui/export_options_dialog.py:16
+msgid "MP3 Audio (Descriptions mixed with original video)"
+msgstr ""
+
+#: ui/export_options_dialog.py:17
+msgid "SRT Subtitle File (Descriptions as subtitles)"
+msgstr ""
+
+#: ui/export_options_dialog.py:18
+#, fuzzy
+#| msgid "Plain Text File (.txt)"
+msgid "Plain Text File (.txt) (Descriptions line-by-line)"
+msgstr "ملف نصي عادي (.txt)"
+
+#: ui/export_options_dialog.py:26
+msgid "Select Export Format"
+msgstr ""
+
+#: ui/export_options_dialog.py:39
+msgid "&Continue"
+msgstr "&متابعة"
+
+#: ui/file_dialogs.py:14
+msgid "Open Local Video File"
+msgstr "فتح ملف فيديو محلي"
+
+#: ui/file_dialogs.py:16 ui/file_dialogs.py:39
+#, python-format
+msgid "%s dialog."
+msgstr "مربع حوار %s."
+
+#: ui/file_dialogs.py:26
+msgid "File selection cancelled."
+msgstr "تم إلغاء اختيار الملف."
+
+#: ui/file_dialogs.py:30
+#, python-format
+msgid "File selected: %s"
+msgstr "الملف المحدد: %s"
+
+#: ui/file_dialogs.py:60 ui/file_dialogs.py:95
+msgid "URL input cancelled."
+msgstr "تم إلغاء إدخال الرابط."
+
+#: ui/file_dialogs.py:65
+msgid "URL entered."
+msgstr "تم إدخال الرابط."
+
+#: ui/file_dialogs.py:68
+msgid "No URL entered."
+msgstr "لم يتم إدخال أي رابط."
+
+#: ui/file_dialogs.py:75
+msgid "Test Dialogs"
+msgstr "مربعات حوار اختبارية"
+
+#: ui/file_dialogs.py:89
+msgid "Enter YouTube URL"
+msgstr "إدخال رابط يوتيوب"
+
+#: ui/file_dialogs.py:89
+msgid "Paste YouTube video link:"
+msgstr "الصق رابط فيديو يوتيوب:"
+
+#: ui/file_dialogs.py:92
+#, python-format
+msgid "Entered URL: %s"
+msgstr "الرابط المُدخل: %s"
+
+#: ui/license_dialog.py:11
+msgid "License Agreement"
+msgstr "اتفاقية الترخيص"
+
+#: ui/license_dialog.py:23
+msgid "License and Terms of Use"
+msgstr "الترخيص وشروط الاستخدام"
+
+#: ui/license_dialog.py:32
+msgid "You have already agreed to these terms."
+msgstr "لقد وافقت بالفعل على هذه الشروط."
+
+#: ui/license_dialog.py:47
+msgid "OK"
+msgstr "موافق"
+
+#: ui/license_dialog.py:52
+msgid "Agree"
+msgstr "أوافق"
+
+#: ui/license_dialog.py:53
+msgid "Disagree"
+msgstr "لا أوافق"
+
+#: ui/license_dialog.py:73
+msgid "License file could not be found. Please contact support."
+msgstr "تعذر العثور على ملف الترخيص. يرجى الاتصال بالدعم."
+
+#: ui/main_window.py:34
+msgid "Audio Describer"
+msgstr "واصف الصوت"
+
+#: ui/main_window.py:57
+msgid "&Open Local Video...\tCtrl+O"
+msgstr "&فتح فيديو محلي...\tCtrl+O"
+
+#: ui/main_window.py:57
+msgid "Open a local video file"
+msgstr "فتح ملف فيديو محلي"
+
+#: ui/main_window.py:58
+msgid "Open Video from &URL...\tCtrl+U"
+msgstr "فتح فيديو من &رابط...\tCtrl+U"
+
+#: ui/main_window.py:58
+msgid "Open a video from a direct URL"
+msgstr "فتح فيديو من رابط مباشر"
+
+#: ui/main_window.py:59
+msgid "Open from &YouTube...\tCtrl+Y"
+msgstr "فتح من &يوتيوب...\tCtrl+Y"
+
+#: ui/main_window.py:59
+msgid "Open a video from YouTube"
+msgstr "فتح فيديو من يوتيوب"
+
+#: ui/main_window.py:61
+msgid "Manage &Prompt Presets..."
+msgstr "إدارة إعدادات &التلقين المسبقة..."
+
+#: ui/main_window.py:61
+msgid "Add, edit, or delete custom prompt presets"
+msgstr "إضافة أو تعديل أو حذف إعدادات التلقين المسبقة المخصصة"
+
+#: ui/main_window.py:63
+msgid "&Settings...\tCtrl+,"
+msgstr "&الإعدادات...\tCtrl+,"
+
+#: ui/main_window.py:63
+msgid "Configure application settings"
+msgstr "تكوين إعدادات التطبيق"
+
+#: ui/main_window.py:65
+msgid "E&xit\tAlt+F4"
+msgstr "&خروج\tAlt+F4"
+
+#: ui/main_window.py:65
+msgid "Exit the application"
+msgstr "الخروج من التطبيق"
+
+#: ui/main_window.py:66
+msgid "&File"
+msgstr "&ملف"
+
+#: ui/main_window.py:69
+msgid "&View Help\tF1"
+msgstr "&عرض المساعدة\tF1"
+
+#: ui/main_window.py:69
+msgid "Open the help documentation"
+msgstr "فتح وثائق المساعدة"
+
+#: ui/main_window.py:70
+msgid "&Changelog"
+msgstr "&سجل التغييرات"
+
+#: ui/main_window.py:70
+msgid "View the application's changelog"
+msgstr "عرض سجل تغييرات التطبيق"
+
+#: ui/main_window.py:71
+msgid "Co&ntributors"
+msgstr "الم&ساهمون"
+
+#: ui/main_window.py:71
+msgid "View the list of contributors"
+msgstr "عرض قائمة المساهمين"
+
+#: ui/main_window.py:72
+msgid "View &License"
+msgstr "عرض &الترخيص"
+
+#: ui/main_window.py:72
+msgid "View the application's license agreement"
+msgstr "عرض اتفاقية ترخيص التطبيق"
+
+#: ui/main_window.py:74
+msgid "&About..."
+msgstr "&حول..."
+
+#: ui/main_window.py:74 ui/main_window.py:467
+#, python-format
+msgid "About %s"
+msgstr "حول %s"
+
+#: ui/main_window.py:75
+msgid "&Help"
+msgstr "&مساعدة"
+
+#: ui/main_window.py:81
+msgid "Select a video source to begin:"
+msgstr "حدد مصدر فيديو للبدء:"
+
+#: ui/main_window.py:84
+msgid "&Local Video File"
+msgstr "ملف &فيديو محلي"
+
+#: ui/main_window.py:85
+msgid "Process a local video file"
+msgstr "معالجة ملف فيديو محلي"
+
+#: ui/main_window.py:88
+msgid "Direct Video &URL"
+msgstr "رابط &فيديو مباشر"
+
+#: ui/main_window.py:89
+msgid "Process a video from a direct web URL"
+msgstr "معالجة فيديو من رابط ويب مباشر"
+
+#: ui/main_window.py:92
+msgid "&YouTube Video URL"
+msgstr "رابط فيديو &يوتيوب"
+
+#: ui/main_window.py:93
+msgid "Process a video from a YouTube URL"
+msgstr "معالجة فيديو من رابط يوتيوب"
+
+#: ui/main_window.py:96
+msgid "Optional: Select a prompt preset to enhance generation:"
+msgstr "اختياري: حدد إعدادًا مسبقًا للتلقين لتحسين الإنشاء:"
+
+#: ui/main_window.py:100
+msgid "Select an optional prompt preset."
+msgstr "حدد إعدادًا مسبقًا للتلقين اختياريًا."
+
+#: ui/main_window.py:104
+msgid "The full text of the selected prompt."
+msgstr "النص الكامل للتلقين المحدد."
+
+#: ui/main_window.py:111
+msgid "Status Log"
+msgstr "سجل الحالة"
+
+#: ui/main_window.py:114
+msgid "Application status and processing messages."
+msgstr "حالة التطبيق ورسائل المعالجة."
+
+#: ui/main_window.py:120
+msgid "&Settings..."
+msgstr "&الإعدادات..."
+
+#: ui/main_window.py:121
+msgid "Open application settings"
+msgstr "فتح إعدادات التطبيق"
+
+#: ui/main_window.py:124
+msgid "E&xit"
+msgstr "&خروج"
+
+#: ui/main_window.py:131
+msgid "Ready"
+msgstr "جاهز"
+
+#: ui/main_window.py:171
+msgid "(No Preset Selected)"
+msgstr "(لم يتم تحديد أي إعداد مسبق)"
+
+#: ui/main_window.py:205
+msgid "Processing..."
+msgstr "جارٍ المعالجة..."
+
+#: ui/main_window.py:206
+#, python-format
+msgid "%s%%"
+msgstr "%% %s"
+
+#: ui/main_window.py:211
+msgid "Preparing local file..."
+msgstr "جارٍ تحضير الملف المحلي..."
+
+#: ui/main_window.py:214
+msgid "Enter Direct Video URL"
+msgstr "أدخل رابط الفيديو المباشر"
+
+#: ui/main_window.py:214
+msgid "Enter direct URL to video file (e.g., .mp4, .webm):"
+msgstr "أدخل الرابط المباشر لملف الفيديو (مثال: .mp4, .webm):"
+
+#: ui/main_window.py:216
+msgid "Downloading from URL..."
+msgstr "جارٍ التنزيل من الرابط..."
+
+#: ui/main_window.py:219
+msgid "Enter YouTube Video URL"
+msgstr "أدخل رابط فيديو يوتيوب"
+
+#: ui/main_window.py:219
+msgid "Enter YouTube video URL:"
+msgstr "أدخل رابط فيديو يوتيوب:"
+
+#: ui/main_window.py:222
+msgid "Downloading from YouTube..."
+msgstr "جارٍ التنزيل من يوتيوب..."
+
+#: ui/main_window.py:241
+msgid "Successfully parsed"
+msgstr "تم التحليل بنجاح"
+
+#: ui/main_window.py:241
+msgid "Timestamp correction complete"
+msgstr "اكتمل تصحيح الطابع الزمني"
+
+#: ui/main_window.py:242
+#, fuzzy
+#| msgid "Removed %(count)d repetitive descriptions."
+msgid "Removed repetitive descriptions"
+msgstr "تم حذف %(count)d وصف متكرر."
+
+#: ui/main_window.py:261
+msgid "Video processing or downloading failed."
+msgstr "فشلت معالجة الفيديو أو تنزيله."
+
+#: ui/main_window.py:272
+msgid "Identifying characters..."
+msgstr "جارٍ تحديد الشخصيات..."
+
+#: ui/main_window.py:277
+#, fuzzy
+#| msgid "Splitting video into %d chunks..."
+msgid "Splitting video into manageable chunks..."
+msgstr "جارٍ تقسيم الفيديو إلى %d مقطع..."
+
+#: ui/main_window.py:287
+#, fuzzy, python-format
+#| msgid "Created chunk %d of %d..."
+msgid "Processing chunk %d of %d..."
+msgstr "تم إنشاء المقطع %d من %d..."
+
+#: ui/main_window.py:291
+#, python-brace-format
+msgid "Context of what just happened: {context}"
+msgstr ""
+
+#: ui/main_window.py:311
+msgid "Asking AI to generate descriptions..."
+msgstr "جارٍ الطلب من الذكاء الاصطناعي إنشاء أوصاف..."
+
+#: ui/main_window.py:317
+msgid "AI processing failed to provide descriptions for an unknown reason."
+msgstr "فشلت معالجة الذكاء الاصطناعي في تقديم أوصاف لسبب غير معروف."
+
+#: ui/main_window.py:319
+msgid "Finalizing descriptions..."
+msgstr "جارٍ وضع اللمسات الأخيرة على الأوصاف..."
+
+#: ui/main_window.py:333
+msgid "Cleaning up temporary video chunks..."
+msgstr "جارٍ تنظيف مقاطع الفيديو المؤقتة..."
+
+#: ui/main_window.py:346
+msgid "Unknown"
+msgstr "غير معروف"
+
+#: ui/main_window.py:347
+msgid "Content Generation Blocked"
+msgstr "تم حظر إنشاء المحتوى"
+
+#: ui/main_window.py:349
+#, python-format
+msgid ""
+"The AI was unable to generate descriptions because its content safety filters "
+"were triggered.\n"
+"\n"
+"Reason: %s\n"
+"\n"
+"This can sometimes happen with content that is violent, sensitive, or "
+"complex. Here are some things you can try:\n"
+"\n"
+"1. Go to Settings -> AI Settings and enable 'Disable Safety Filters'. (Use "
+"with caution)\n"
+"2. Reduce the 'Frame Rate for AI Analysis' in settings to send less data to "
+"the AI.\n"
+"3. Try a different video if the issue persists."
+msgstr ""
+"لم يتمكن الذكاء الاصطناعي من إنشاء أوصاف لأنه تم تفعيل مرشحات أمان المحتوى "
+"الخاصة به.\n"
+"\n"
+"السبب: %s\n"
+"\n"
+"يمكن أن يحدث هذا أحيانًا مع المحتوى العنيف أو الحساس أو المعقد. إليك بعض "
+"الأشياء التي يمكنك تجربتها:\n"
+"\n"
+"1. اذهب إلى الإعدادات -> إعدادات الذكاء الاصطناعي وقم بتمكين 'تعطيل مرشحات "
+"الأمان'. (استخدم بحذر)\n"
+"2. قلل 'معدل الإطارات لتحليل الذكاء الاصطناعي' في الإعدادات لإرسال بيانات أقل "
+"إلى الذكاء الاصطناعي.\n"
+"3. جرب فيديو آخر إذا استمرت المشكلة."
+
+#: ui/main_window.py:360
+msgid "Processing Limit Reached"
+msgstr "تم الوصول إلى حد المعالجة"
+
+#: ui/main_window.py:362
+msgid ""
+"The AI stopped because the video is too long or complex to process in a "
+"single pass.\n"
+"\n"
+"This is a capacity limit, not a content safety issue. Here are the best ways "
+"to solve this:\n"
+"\n"
+"1. (Recommended) Go to Settings -> AI Settings and enable 'Video Chunking'. "
+"This will automatically split the video into manageable parts for the AI.\n"
+"2. Reduce the 'Frame Rate for AI Analysis' in settings to make the video "
+"simpler for the AI.\n"
+"3. If you are an advanced user, you can try specifying a more powerful model "
+"in the 'Gemini Model Override' setting."
+msgstr ""
+"توقف الذكاء الاصطناعي لأن الفيديو طويل جدًا أو معقد جدًا بحيث لا يمكن معالجته "
+"دفعة واحدة.\n"
+"\n"
+"هذا حد للسعة، وليس مشكلة تتعلق بسلامة المحتوى. إليك أفضل الطرق لحل هذه "
+"المشكلة:\n"
+"\n"
+"1. (موصى به) اذهب إلى الإعدادات -> إعدادات الذكاء الاصطناعي وقم بتمكين 'تقسيم "
+"الفيديو'. سيؤدي هذا إلى تقسيم الفيديو تلقائيًا إلى أجزاء يمكن للذكاء الاصطناعي "
+"إدارتها.\n"
+"2. قلل 'معدل الإطارات لتحليل الذكاء الاصطناعي' في الإعدادات لتبسيط الفيديو "
+"للذكاء الاصطناعي.\n"
+"3. إذا كنت مستخدمًا متقدمًا، يمكنك محاولة تحديد نموذج أقوى في إعداد 'تجاوز طراز "
+"Gemini'."
+
+#: ui/main_window.py:372
+#, python-format
+msgid ""
+"An error occurred during processing:\n"
+"%s"
+msgstr ""
+"حدث خطأ أثناء المعالجة:\n"
+"%s"
+
+#: ui/main_window.py:374
+msgid "Processing Error"
+msgstr "خطأ في المعالجة"
+
+#: ui/main_window.py:384
+#, python-format
+msgid "Success! Generated %d audio descriptions."
+msgstr "نجاح! تم إنشاء %d وصف صوتي."
+
+#: ui/main_window.py:392
+#, python-format
+msgid "Error opening video player: %s"
+msgstr "خطأ عند فتح مشغل الفيديو: %s"
+
+#: ui/main_window.py:396
+msgid "Ready for next video."
+msgstr "جاهز للفيديو التالي."
+
+#: ui/main_window.py:399
+msgid ""
+"Processing complete, but the AI did not generate any descriptions for this "
+"video."
+msgstr "اكتملت المعالجة، لكن الذكاء الاصطناعي لم ينشئ أي أوصاف لهذا الفيديو."
+
+#: ui/main_window.py:401
+msgid "Processing Note"
+msgstr "ملاحظة المعالجة"
+
+#: ui/main_window.py:480
+msgid ""
+"An application to automatically generate audio descriptions for videos using "
+"Gemini AI.\n"
+"\n"
+"Developed with accessibility in mind."
+msgstr ""
+"تطبيق لإنشاء أوصاف صوتية للفيديوهات تلقائيًا باستخدام ذكاء Gemini الاصطناعي.\n"
+"\n"
+"تم تطويره مع مراعاة إمكانية الوصول."
+
+#: ui/main_window.py:484
+msgid "Contact:"
+msgstr "للتواصل:"
+
+#: ui/main_window.py:489
+msgid "Visit Website"
+msgstr "زيارة الموقع"
+
+#: ui/manage_prompts_dialog.py:12
+msgid "Manage Prompt Presets"
+msgstr "إدارة إعدادات التلقين المسبقة"
+
+#: ui/manage_prompts_dialog.py:31
+#, python-format
+msgid "Manage presets for the '%s' language."
+msgstr "إدارة الإعدادات المسبقة للغة '%s'."
+
+#: ui/manage_prompts_dialog.py:36 ui/manage_voices_dialog.py:28
+msgid "Preset Name"
+msgstr "اسم الإعداد المسبق"
+
+#: ui/manage_prompts_dialog.py:37
+msgid "Prompt Text"
+msgstr "نص التلقين"
+
+#: ui/manage_prompts_dialog.py:38
+msgid "List of saved prompt presets."
+msgstr "قائمة إعدادات التلقين المسبقة المحفوظة."
+
+#: ui/manage_prompts_dialog.py:49 ui/manage_voices_dialog.py:36
+msgid "&Add..."
+msgstr "&إضافة..."
+
+#: ui/manage_prompts_dialog.py:50 ui/manage_voices_dialog.py:37
+msgid "&Edit..."
+msgstr "&تعديل..."
+
+#: ui/manage_prompts_dialog.py:95
+msgid "Add New Prompt"
+msgstr "إضافة تلقين جديد"
+
+#: ui/manage_prompts_dialog.py:108
+msgid "Edit Prompt"
+msgstr "تعديل التلقين"
+
+#: ui/manage_prompts_dialog.py:121 ui/manage_voices_dialog.py:105
+#, python-format
+msgid "Are you sure you want to delete the preset '%s'?"
+msgstr "هل أنت متأكد أنك تريد حذف الإعداد المسبق '%s'؟"
+
+#: ui/manage_voices_dialog.py:11
+msgid "Manage Voice Presets"
+msgstr "إدارة إعدادات الصوت المسبقة"
+
+#: ui/manage_voices_dialog.py:24
+msgid "Create and manage voice personalities for OpenAI TTS."
+msgstr "إنشاء وإدارة شخصيات صوتية لـ OpenAI TTS."
+
+#: ui/manage_voices_dialog.py:29
+msgid "Base Voice"
+msgstr "الصوت الأساسي"
+
+#: ui/manage_voices_dialog.py:30
+msgid "Speed"
+msgstr "السرعة"
+
+#: ui/manage_voices_dialog.py:31
+msgid "Instructions"
+msgstr "التعليمات"
+
+#: ui/manage_voices_dialog.py:82
+msgid "Add New Voice Preset"
+msgstr "إضافة إعداد صوتي مسبق جديد"
+
+#: ui/manage_voices_dialog.py:94
+msgid "Edit Voice Preset"
+msgstr "تعديل إعداد الصوت المسبق"
+
+#: ui/player_vqa.py:50 ui/player_vqa.py:135
+msgid "Cannot determine current video time."
+msgstr "لا يمكن تحديد الوقت الحالي للفيديو."
+
+#: ui/player_vqa.py:50 ui/player_vqa.py:135 ui/settings_dialog.py:400
+#: utils/update_checker.py:68
+msgid "Error"
+msgstr "خطأ"
+
+#: ui/player_vqa.py:137
+msgid "Analyzing Scene"
+msgstr "تحليل المشهد"
+
+#: ui/player_vqa.py:137
+msgid "Extracting video clip for analysis..."
+msgstr "استخراج مقطع الفيديو للتحليل..."
+
+#: ui/player_window.py:36
+msgid "Video Player with Descriptions"
+msgstr "مشغل فيديو مع أوصاف"
+
+#: ui/player_window.py:57
+msgid "VLC library is not installed. Playback will be unavailable."
+msgstr "مكتبة VLC غير مثبتة. لن يكون التشغيل متاحًا."
+
+#: ui/player_window.py:83 ui/player_window.py:208
+msgid "Play"
+msgstr "تشغيل"
+
+#: ui/player_window.py:87
+msgid "Video progress slider"
+msgstr "شريط تمرير تقدم الفيديو"
+
+#: ui/player_window.py:93
+#, python-format
+msgid "&Rewind %ss"
+msgstr "&ترجيع %s ثانية"
+
+#: ui/player_window.py:95
+#, python-format
+msgid "&Forward %ss"
+msgstr "&تقديم %s ثانية"
+
+#: ui/player_window.py:98
+msgid "Vol:"
+msgstr "الصوت:"
+
+#: ui/player_window.py:106
+msgid "Current Audio Description:"
+msgstr "الوصف الصوتي الحالي:"
+
+#: ui/player_window.py:111
+msgid "AI Token Usage:"
+msgstr "استخدام رموز الذكاء الاصطناعي:"
+
+#: ui/player_window.py:118
+msgid "Explore Scene..."
+msgstr "استكشاف المشهد..."
+
+#: ui/player_window.py:120
+msgid "Ask More..."
+msgstr "اسأل المزيد..."
+
+#: ui/player_window.py:122
+msgid "Edit Descriptions..."
+msgstr "تعديل الأوصاف..."
+
+#: ui/player_window.py:125
+msgid "Settings..."
+msgstr "الإعدادات..."
+
+#: ui/player_window.py:129
+msgid "Export..."
+msgstr "تصدير..."
+
+#: ui/player_window.py:205
+msgid "Pause"
+msgstr "إيقاف مؤقت"
+
+#: ui/player_window.py:211
+msgid "Replay"
+msgstr "إعادة التشغيل"
+
+#: ui/player_window.py:338
+msgid "Description added to main list."
+msgstr "تمت إضافة الوصف إلى القائمة الرئيسية."
+
+#: ui/player_window.py:375
+msgid "Export Canceled"
+msgstr "تم إلغاء التصدير"
+
+#: ui/player_window.py:375
+msgid "Export Error"
+msgstr "خطأ في التصدير"
+
+#: ui/player_window.py:376
+#, python-format
+msgid ""
+"Failed to export file:\n"
+"%s"
+msgstr ""
+"فشل تصدير الملف:\n"
+"%s"
+
+#: ui/player_window.py:378
+#, python-format
+msgid ""
+"File successfully exported to:\n"
+"%s"
+msgstr ""
+"تم تصدير الملف بنجاح إلى:\n"
+"%s"
+
+#: ui/player_window.py:378
+msgid "Export Successful"
+msgstr "تم التصدير بنجاح"
+
+#: ui/player_window.py:382
+msgid "Please wait for the video to load before editing."
+msgstr "يرجى الانتظار حتى يتم تحميل الفيديو قبل التعديل."
+
+#: ui/player_window.py:382
+msgid "Info"
+msgstr "معلومات"
+
+#: ui/player_window.py:392
+msgid "Description list updated."
+msgstr "تم تحديث قائمة الأوصاف."
+
+#: ui/player_window.py:434
+msgid "--- Character Glossary ---"
+msgstr "--- مسرد الشخصيات ---"
+
+#: ui/player_window.py:435 ui/player_window.py:444 ui/player_window.py:458
+msgid "Prompt"
+msgstr "تلقين"
+
+#: ui/player_window.py:436 ui/player_window.py:445 ui/player_window.py:458
+msgid "Output"
+msgstr "إخراج"
+
+#: ui/player_window.py:437 ui/player_window.py:446
+msgid "Total"
+msgstr "الإجمالي"
+
+#: ui/player_window.py:443
+msgid "--- Description Generation ---"
+msgstr "--- إنشاء الوصف ---"
+
+#: ui/player_window.py:452
+msgid "--- VQA (Ask More) ---"
+msgstr "--- VQA (اسأل المزيد) ---"
+
+#: ui/player_window.py:458
+#, python-format
+msgid "Query %s Total"
+msgstr "إجمالي الاستعلام %s"
+
+#: ui/player_window.py:465
+msgid "GRAND TOTAL"
+msgstr "المجموع الكلي"
+
+#: ui/player_window.py:466
+msgid "Total Prompt"
+msgstr "إجمالي التلقين"
+
+#: ui/player_window.py:466
+msgid "Total Output"
+msgstr "إجمالي الإخراج"
+
+#: ui/player_window.py:469
+msgid "No AI token usage data available yet."
+msgstr "لا توجد بيانات متاحة عن استخدام رموز الذكاء الاصطناعي حتى الآن."
+
+#: ui/scene_explorer_dialog.py:19
+msgid "No overall description was provided."
+msgstr "لم يتم تقديم وصف شامل."
+
+#: ui/scene_explorer_dialog.py:37
+msgid "Scene Explorer"
+msgstr "مستكشف المشهد"
+
+#: ui/scene_explorer_dialog.py:50
+msgid "An error occurred in the Scene Explorer."
+msgstr "حدث خطأ في مستكشف المشهد."
+
+#: ui/scene_explorer_dialog.py:56
+msgid ""
+"Scene Explorer opened. Use arrow keys to move. Press D for scene description, "
+"L to list all objects, and Shift + L to enter jump mode. Escape to close."
+msgstr ""
+"تم فتح مستكشف المشهد. استخدم مفاتيح الأسهم للتنقل. اضغط على D لوصف المشهد، L "
+"لسرد جميع الكائنات، و Shift + L للدخول إلى وضع القفز. اضغط على Escape للإغلاق."
+
+#: ui/scene_explorer_dialog.py:117
+msgid "There are no objects to jump to."
+msgstr "لا توجد كائنات للقفز إليها."
+
+#: ui/scene_explorer_dialog.py:122
+msgid ""
+"Jump mode. Use up and down arrows to select an object. Press Enter to jump, "
+"or Escape to exit jump mode."
+msgstr ""
+"وضع القفز. استخدم أسهم الأعلى والأسفل لتحديد كائن. اضغط على Enter للقفز، أو "
+"Escape للخروج من وضع القفز."
+
+#: ui/scene_explorer_dialog.py:127
+msgid "Exited jump mode. Now exploring."
+msgstr "تم الخروج من وضع القفز. جارٍ الاستكشاف الآن."
+
+#: ui/scene_explorer_dialog.py:132
+msgid "Unnamed Object"
+msgstr "كائن بدون اسم"
+
+#: ui/scene_explorer_dialog.py:143
+#, python-format
+msgid "Jumping to %s."
+msgstr "القفز إلى %s."
+
+#: ui/scene_explorer_dialog.py:146
+msgid "Could not jump to this object as it has no coordinates."
+msgstr "لا يمكن القفز إلى هذا الكائن لأنه لا يحتوي على إحداثيات."
+
+#: ui/scene_explorer_dialog.py:153
+msgid "There are no objects in this scene."
+msgstr "لا توجد كائنات في هذا المشهد."
+
+#: ui/scene_explorer_dialog.py:156
+msgid "unlabeled object"
+msgstr "كائن غير مصنف"
+
+#: ui/scene_explorer_dialog.py:157
+#, python-format
+msgid "Objects in this scene: %s"
+msgstr "الكائنات في هذا المشهد: %s"
+
+#: ui/scene_explorer_dialog.py:167
+msgid "an object"
+msgstr "كائن"
+
+#: ui/scene_explorer_dialog.py:191
+msgid "Unknown Object"
+msgstr "كائن غير معروف"
+
+#: ui/scene_explorer_dialog.py:193
+msgid "No further details available."
+msgstr "لا تتوفر تفاصيل أخرى."
+
+#: ui/scene_explorer_dialog.py:198
+msgid "Nothing to inspect here."
+msgstr "لا يوجد شيء لتفقده هنا."
+
+#: ui/settings_dialog.py:30
+#, python-format
+msgid "%s Settings"
+msgstr "إعدادات %s"
+
+#: ui/settings_dialog.py:33
+msgid "Short - Concise descriptions"
+msgstr "قصيرة - أوصاف موجزة"
+
+#: ui/settings_dialog.py:33
+msgid "Standard - Balanced detail (Default)"
+msgstr "قياسية - تفاصيل متوازنة (افتراضي)"
+
+#: ui/settings_dialog.py:33
+msgid "Detailed - Rich descriptions"
+msgstr "مفصلة - أوصاف غنية"
+
+#: ui/settings_dialog.py:36
+msgid "Auto-Detect on Startup"
+msgstr "كشف تلقائي عند بدء التشغيل"
+
+#: ui/settings_dialog.py:37
+msgid "Arabic"
+msgstr ""
+
+#: ui/settings_dialog.py:38
+msgid "English"
+msgstr "الإنجليزية"
+
+#: ui/settings_dialog.py:39
+msgid "Spanish"
+msgstr "الإسبانية"
+
+#: ui/settings_dialog.py:40
+msgid "French"
+msgstr ""
+
+#: ui/settings_dialog.py:41
+msgid "Italian"
+msgstr ""
+
+#: ui/settings_dialog.py:42
+msgid "Portuguese"
+msgstr ""
+
+#: ui/settings_dialog.py:43
+msgid "Russian"
+msgstr "الروسية"
+
+#: ui/settings_dialog.py:44
+msgid "Türkçe"
+msgstr "التركية"
+
+#: ui/settings_dialog.py:45
+msgid "Ukrainian"
+msgstr "الأوكرانية"
+
+#: ui/settings_dialog.py:48
+msgid "Info (Default)"
+msgstr "معلومات (افتراضي)"
+
+#: ui/settings_dialog.py:48
+msgid "Debug"
+msgstr "تصحيح"
+
+#: ui/settings_dialog.py:48
+msgid "Disabled"
+msgstr "معطل"
+
+#: ui/settings_dialog.py:49
+msgid "No Change (Original FPS)"
+msgstr "بدون تغيير (معدل الإطارات الأصلي)"
+
+#: ui/settings_dialog.py:49
+msgid "10 FPS (Good balance, lower cost)"
+msgstr "10 إطارات في الثانية (توازن جيد، تكلفة أقل)"
+
+#: ui/settings_dialog.py:49
+msgid "5 FPS (Very low cost, may miss fast action)"
+msgstr "5 إطارات في الثانية (تكلفة منخفضة جدًا، قد يفوتك الحركة السريعة)"
+
+#: ui/settings_dialog.py:49
+msgid "2 FPS (Extreme low cost, for static scenes)"
+msgstr "2 إطار في الثانية (تكلفة منخفضة للغاية، للمشاهد الثابتة)"
+
+#: ui/settings_dialog.py:52
+msgid "OpenAI TTS (High Quality)"
+msgstr "OpenAI TTS (جودة عالية)"
+
+#: ui/settings_dialog.py:54
+msgid "SAPI5 (64-bit Voices)"
+msgstr "SAPI5 (أصوات 64 بت)"
+
+#: ui/settings_dialog.py:56
+msgid "SAPI5 (32-bit Voices)"
+msgstr "SAPI5 (أصوات 32 بت)"
+
+#: ui/settings_dialog.py:79
+msgid "YouTube Video Download Quality:"
+msgstr "جودة تنزيل فيديوهات يوتيوب:"
+
+#: ui/settings_dialog.py:82
+msgid "Application Language (Requires Restart):"
+msgstr "لغة التطبيق (تتطلب إعادة التشغيل):"
+
+#: ui/settings_dialog.py:86
+msgid "Logging Level:"
+msgstr "مستوى التسجيل:"
+
+#: ui/settings_dialog.py:90
+msgid "Allow descriptions to interrupt current speech"
+msgstr "السماح للأوصاف بمقاطعة الكلام الحالي"
+
+#: ui/settings_dialog.py:93
+msgid "General"
+msgstr "عام"
+
+#: ui/settings_dialog.py:98
+msgid "Gemini API Key:"
+msgstr "مفتاح API Gemini:"
+
+#: ui/settings_dialog.py:101
+msgid "OpenAI API Key (for TTS):"
+msgstr "مفتاح API OpenAI (لـ TTS):"
+
+#: ui/settings_dialog.py:105
+msgid "Frame Rate for AI Analysis:"
+msgstr "معدل الإطارات لتحليل الذكاء الاصطناعي:"
+
+#: ui/settings_dialog.py:109
+msgid "Description Verbosity:"
+msgstr "تفصيل الوصف:"
+
+#: ui/settings_dialog.py:113
+msgid "Gemini Model Override:"
+msgstr "تجاوز طراز Gemini:"
+
+#: ui/settings_dialog.py:116
+msgid "Temperature:"
+msgstr "درجة الحرارة:"
+
+#: ui/settings_dialog.py:119
+msgid "Send Video Only (No Audio) to AI"
+msgstr "إرسال الفيديو فقط (بدون صوت) إلى الذكاء الاصطناعي"
+
+#: ui/settings_dialog.py:121
+msgid "Disable Safety Filters (Use with caution)"
+msgstr "تعطيل مرشحات الأمان (استخدم بحذر)"
+
+#: ui/settings_dialog.py:123
+msgid "Enable Video Chunking for Long Videos"
+msgstr "تمكين تقسيم الفيديو للفيديوهات الطويلة"
+
+#: ui/settings_dialog.py:125
+msgid "Enable Character Glossary Pre-Analysis"
+msgstr "تمكين التحليل المسبق لمسرد الشخصيات"
+
+#: ui/settings_dialog.py:127
+msgid "Chunk Duration (seconds):"
+msgstr "مدة المقطع (ثوانٍ):"
+
+#: ui/settings_dialog.py:132
+msgid "AI Settings"
+msgstr "إعدادات الذكاء الاصطناعي"
+
+#: ui/settings_dialog.py:137
+msgid "Text-to-Speech Engine"
+msgstr "محرك تحويل النص إلى كلام"
+
+#: ui/settings_dialog.py:140
+msgid "OpenAI TTS Settings"
+msgstr "إعدادات OpenAI TTS"
+
+#: ui/settings_dialog.py:142
+msgid "Voice Preset:"
+msgstr "إعداد الصوت المسبق:"
+
+#: ui/settings_dialog.py:146
+msgid "Manage Voice Presets..."
+msgstr "إدارة إعدادات الصوت المسبقة..."
+
+#: ui/settings_dialog.py:153
+msgid "SAPI5 Settings"
+msgstr "إعدادات SAPI5"
+
+#: ui/settings_dialog.py:155
+msgid "Voice:"
+msgstr "الصوت:"
+
+#: ui/settings_dialog.py:166
+msgid "Test Voice"
+msgstr "اختبار الصوت"
+
+#: ui/settings_dialog.py:168
+msgid "This is a test of the selected voice."
+msgstr "هذا اختبار للصوت المحدد."
+
+#: ui/settings_dialog.py:170
+msgid "Test"
+msgstr "اختبار"
+
+#: ui/settings_dialog.py:174
+msgid "Original Audio Ducking (-dB, for MP3):"
+msgstr "خفض الصوت الأصلي (-ديسيبل، لـ MP3):"
+
+#: ui/settings_dialog.py:178
+msgid "Audio Output"
+msgstr "إخراج الصوت"
+
+#: ui/settings_dialog.py:223
+msgid "Please enter some text to test."
+msgstr "الرجاء إدخال نص للاختبار."
+
+#: ui/settings_dialog.py:255
+#, python-format
+msgid "Error testing voice: %s"
+msgstr "خطأ أثناء اختبار الصوت: %s"
+
+#: ui/settings_dialog.py:255
+msgid "Test Failed"
+msgstr "فشل الاختبار"
+
+#: ui/settings_dialog.py:272
+msgid "SAPI5 (64-bit) Settings"
+msgstr "إعدادات SAPI5 (64 بت)"
+
+#: ui/settings_dialog.py:275
+msgid "SAPI5 (32-bit) Settings"
+msgstr "إعدادات SAPI5 (32 بت)"
+
+#: ui/settings_dialog.py:286
+msgid "(No voices found)"
+msgstr "(لم يتم العثور على أصوات)"
+
+#: ui/settings_dialog.py:400
+msgid "Could not save settings."
+msgstr "تعذر حفظ الإعدادات."
+
+#: utils/motm_checker.py:32
+msgid "A Message from the Developer"
+msgstr ""
+
+#: utils/update_checker.py:34
+msgid ""
+"A new version ({}) is available. You have version {}.\n"
+"\n"
+"Would you like to download and install it now?"
+msgstr ""
+"إصدار جديد ({}) متاح. لديك الإصدار {}.\n"
+"\n"
+"هل ترغب في تنزيله وتثبيته الآن؟"
+
+#: utils/update_checker.py:36
+msgid "Update Available"
+msgstr "التحديث متوفر"
+
+#: utils/update_checker.py:43
+msgid "Downloading Update"
+msgstr "جارٍ تنزيل التحديث"
+
+#: utils/update_checker.py:43
+#, fuzzy
+#| msgid "Downloading from URL..."
+msgid "Downloading..."
+msgstr "جارٍ التنزيل من الرابط..."
+
+#: utils/update_checker.py:68
+msgid "Updater component not found."
+msgstr ""
+
+#: utils/update_checker.py:89
+msgid "Failed to download or apply update: {}"
+msgstr "فشل تنزيل أو تطبيق التحديث: {}"
+
+#: utils/update_checker.py:89
+msgid "Update Error"
+msgstr "خطأ في التحديث"
+
+#~ msgid "AI did not return a successful response for descriptions."
+#~ msgstr "لم يُرجع الذكاء الاصطناعي استجابة ناجحة للأوصاف."
+
+#~ msgid "AI returned an empty text response for descriptions."
+#~ msgstr "أعاد الذكاء الاصطناعي استجابة نصية فارغة للأوصاف."
+
+#~ msgid "AI returned an empty or invalid response for JSON request."
+#~ msgstr "أعاد الذكاء الاصطناعي استجابة فارغة أو غير صالحة لطلب JSON."
+
+#~ msgid "AI returned an empty text part for JSON request."
+#~ msgstr "أعاد الذكاء الاصطناعي جزءًا نصيًا فارغًا لطلب JSON."
+
+#~ msgid "Export Category"
+#~ msgstr "فئة التصدير"
+
+#~ msgid "Audio/Video"
+#~ msgstr "صوت/فيديو"
+
+#~ msgid "Text"
+#~ msgstr "نص"
+
+#~ msgid "Audio/Video Options"
+#~ msgstr "خيارات الصوت/الفيديو"
+
+#~ msgid "MP3 (Audio)"
+#~ msgstr "MP3 (صوت)"
+
+#~ msgid "MP4 (Video)"
+#~ msgstr "MP4 (فيديو)"
+
+#~ msgid "Descriptions Only (Audio)"
+#~ msgstr "الأوصاف فقط (صوت)"
+
+#~ msgid "Format"
+#~ msgstr "التنسيق"
+
+#~ msgid "Duck Original Audio (Standard)"
+#~ msgstr "خفض الصوت الأصلي (قياسي)"
+
+#~ msgid "Sequential (Pause and Insert Description)"
+#~ msgstr "متسلسل (إيقاف مؤقت وإدراج الوصف)"
+
+#~ msgid "Mixing Style"
+#~ msgstr "نمط المزج"
+
+#~ msgid "Speed up long descriptions to fit"
+#~ msgstr "تسريع الأوصاف الطويلة لتناسبها"
+
+#~ msgid ""
+#~ "If a description is too long for the available silence, speed it up to try "
+#~ "and make it fit."
+#~ msgstr ""
+#~ "إذا كان الوصف طويلاً جدًا بالنسبة للصمت المتاح، فسيتم تسريعه لمحاولة ملاءمته."
+
+#~ msgid "Maximum speed-up:"
+#~ msgstr "أقصى تسريع:"
+
+#~ msgid "With Pauses Between Descriptions"
+#~ msgstr "مع فواصل بين الأوصاف"
+
+#~ msgid "No Pauses (One Continuous Track)"
+#~ msgstr "بدون فواصل (مسار مستمر واحد)"
+
+#~ msgid "Descriptions Style"
+#~ msgstr "نمط الأوصاف"
+
+#~ msgid "Text Options"
+#~ msgstr "خيارات النص"
+
+#~ msgid "SRT Subtitle File"
+#~ msgstr "ملف ترجمة SRT"
+
+#~ msgid "File Type"
+#~ msgstr "نوع الملف"
+
+#~ msgid "With Timestamps"
+#~ msgstr "مع طوابع زمنية"
+
+#~ msgid "Line-by-Line (descriptions only)"
+#~ msgstr "سطر بسطر (الأوصاف فقط)"
+
+#~ msgid "Paragraph Style (descriptions only)"
+#~ msgstr "نمط الفقرة (الأوصاف فقط)"
+
+#~ msgid "Text File Style"
+#~ msgstr "نمط الملف النصي"
+
+#~ msgid "Downloading new version, please wait..."
+#~ msgstr "جارٍ تنزيل الإصدار الجديد، يرجى الانتظار..."
+
+#~ msgid "something whent wrong while updating."
+#~ msgstr "حدث خطأ ما أثناء التحديث."

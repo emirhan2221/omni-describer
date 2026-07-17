@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omni Describer - Hướng dẫn Sử dụng</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.7;
+            padding: 2em;
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+            border-bottom: 2px solid #aed6f1;
+            padding-bottom: 10px;
+        }
+        h1 { font-size: 2.8em; text-align: center; border-bottom: none; letter-spacing: -1px; }
+        h2 { font-size: 2.2em; margin-top: 2em; }
+        h3 { font-size: 1.6em; border-bottom: 1px solid #dee2e6; }
+        code {
+            background-color: #e8f6f3;
+            padding: 3px 6px;
+            border-radius: 5px;
+            font-family: "Courier New", Courier, monospace;
+            color: #117a65;
+        }
+        .container {
+            background-color: #fff;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        .key {
+            display: inline-block;
+            background-color: #f8f9fa;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            padding: 2px 8px;
+            font-size: 0.9em;
+            box-shadow: 1px 1px 1px #adb5bd;
+            margin: 0 2px;
+        }
+        .note {
+            background-color: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 1em;
+            margin: 1.5em 0;
+            border-radius: 5px;
+        }
+        .note strong { color: #856404; }
+        .best-practice {
+            background-color: #d4edda;
+            border-left: 5px solid #28a745;
+            padding: 1em;
+            margin: 1.5em 0;
+            border-radius: 5px;
+        }
+        .best-practice strong { color: #155724; }
+        .backstory {
+            background-color: #eaf2f8;
+            border-left: 5px solid #3498db;
+            padding: 1.5em;
+            margin: 2em 0;
+            border-radius: 8px;
+            font-style: italic;
+        }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 0.8em; }
+        a { color: #2980b9; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hướng dẫn Sử dụng Omni Describer</h1>
+        <p style="text-align: center; font-size: 1.1em; color: #566573;">Mang lại Giọng nói cho Thế giới Hình ảnh bằng AI.</p>
+
+        <div class="backstory">
+            <p>Tất cả bắt đầu từ tình yêu của tôi dành cho điện ảnh. Khi tôi nhận ra có biết bao chi tiết trong những cảnh phim yêu thích của mình bị bỏ lỡ nếu không có mô tả âm thanh tốt, một ý tưởng đã lóe lên: "Chà, liệu AI có thể làm điều này dễ dàng hơn cho chúng ta không?" Tôi đã mơ về một công cụ không chỉ tạo ra mô tả mà còn trao toàn quyền kiểm soát cho người dùng. Sau nhiều tháng làm việc cật lực, vô số lần thử nghiệm và vượt qua nhiều rào cản kỹ thuật, tôi đã phát triển Omni Describer như là sản phẩm của giấc mơ đó.</p>
+        </div>
+
+        <h2>Mục lục</h2>
+        <ul>
+            <li><a href="#whatis">Ý nghĩa của Tên gọi?</a></li>
+            <li><a href="#requirements">Yêu cầu Hệ thống</a></li>
+            <li><a href="#setup">Bắt đầu: Thiết lập Khóa API của bạn</a></li>
+            <li><a href="#quickstart">Khởi động nhanh: Tạo Mô tả Đầu tiên của bạn</a></li>
+            <li><a href="#features">Các Tính năng Chính</a>
+                <ul>
+                    <li><a href="#player">Trình phát Video có Mô tả</a></li>
+                    <li><a href="#editing">Chỉnh sửa Mô tả: Sức mạnh Tinh chỉnh</a></li>
+                    <li><a href="#prompts">Quản lý Thiết lập sẵn Lời nhắc</a></li>
+                    <li><a href="#askmore">Hỏi thêm về Cảnh</a></li>
+                    <li><a href="#explorer">Trình khám phá Cảnh</a></li>
+                    <li><a href="#exporting">Xuất tệp Công việc của bạn</a></li>
+                </ul>
+            </li>
+            <li><a href="#advanced-settings">Tìm hiểu sâu về Cài đặt</a></li>
+            <li><a href="#bestpractices">Mẹo và Thủ thuật để có Kết quả Tốt nhất</a></li>
+            <li><a href="#faq">Câu hỏi Thường gặp (FAQ)</a></li>
+            <li><a href="#shortcuts">Phím tắt</a></li>
+            <li><a href="#contact">Lời cảm ơn, Liên hệ và Người đóng góp</a></li>
+        </ul>
+
+        <h2 id="whatis">Ý nghĩa của Tên gọi?</h2>
+        <p>"Omni" trong tên gọi bắt nguồn từ tiếng Latin, có nghĩa là "tất cả" hoặc "mọi thứ". Tôi chọn cái tên này vì tôi không muốn công cụ chỉ phục vụ một mục đích duy nhất. Vâng, Omni Describer chủ yếu nhằm mục đích giúp người mù và người khiếm thị tiếp cận phương tiện truyền thông bằng cách tạo ra các mô tả âm thanh. Tuy nhiên, mục đích của nó không chỉ giới hạn ở đó.</p>
+        <p>Đây còn là một <strong>công cụ khám phá</strong>. Một nhà phê bình phim, một sinh viên, một nghệ sĩ, hay bất kỳ ai tò mò về các chi tiết hình ảnh đều có thể sử dụng các tính năng như "Trình khám phá Cảnh" hoặc "Hỏi thêm" để đi sâu vào các lớp của một video theo cách chưa từng có. Omni Describer là một cửa sổ để nhìn thế giới qua "đôi mắt" của AI và hiểu nó một cách khác biệt. Tóm lại, đây là "một trình mô tả cho mọi thứ, cho mọi người."</p>
+        
+        <h2 id="requirements">Yêu cầu Hệ thống</h2>
+        <p>Để có được hiệu suất tốt nhất từ Omni Describer, tôi khuyên bạn nên đáp ứng các yêu cầu hệ thống tối thiểu sau:</p>
+        <ul>
+            <li><strong>Hệ điều hành:</strong> Windows 10 hoặc mới hơn (64-bit).</li>
+            <li><strong>Bộ nhớ (RAM):</strong> Ít nhất 4 GB RAM.</li>
+            <li><strong>Dung lượng lưu trữ:</strong> Ít nhất 500 MB dung lượng đĩa trống cho ứng dụng và các tệp tạm thời.</li>
+            <li><strong>Kết nối Internet:</strong> Cần có kết nối internet hoạt động để kết nối với các dịch vụ AI (Google Gemini, OpenAI) và tải xuống video.</li>
+            <li><strong>Trình đọc màn hình:</strong> Để có khả năng tiếp cận đầy đủ, bạn nên sử dụng một trình đọc màn hình như JAWS, NVDA hoặc Windows Narrator.</li>
+        </ul>
+
+        <h2 id="setup">Bắt đầu: Thiết lập Khóa API của bạn</h2>
+        <p>Omni Describer sử dụng các dịch vụ AI trên nền tảng đám mây để phân tích và đọc các mô tả. Do đó, bạn cần nhập khóa API của riêng mình trước khi có thể bắt đầu.</p>
+        <ol>
+            <li><strong>Mở Cài đặt:</strong> Đi tới menu <strong>Tệp</strong> và chọn <strong>Cài đặt...</strong> (hoặc nhấn <span class="key">Ctrl</span> + <span class="key">,</span>).</li>
+            <li><strong>Tab Cài đặt AI:</strong>
+                <ul>
+                    <li><strong>Khóa API Gemini:</strong> Đây là yêu cầu bắt buộc để phân tích video. Dán khóa của bạn vào trường "Khóa API Gemini:". Bạn có thể nhận khóa API miễn phí từ <a href="https://aistudio.google.com/app/apikey" target="_blank">Google AI Studio</a>.</li>
+                    <li><strong>Khóa API OpenAI (cho TTS):</strong> Đây là yêu cầu để có giọng nói chuyển văn bản thành giọng nói chất lượng cao. Dán khóa của bạn vào trường này. Bạn vẫn có thể sử dụng các giọng nói tích hợp sẵn của Windows mà không cần khóa này, nhưng OpenAI được khuyến nghị để có kết quả tốt nhất. Bạn có thể lấy khóa từ <a href="https://platform.openai.com/api-keys" target="_blank">Nền tảng OpenAI</a>.</li>
+                </ul>
+            </li>
+            <li><strong>Lưu:</strong> Nhấp vào <strong>Áp dụng</strong> hoặc <strong>OK</strong> để lưu cài đặt của bạn. Bây giờ bạn đã sẵn sàng!</li>
+        </ol>
+        <div class="note">
+            <strong>Lưu trữ An toàn:</strong> Các khóa API của bạn được mã hóa và lưu trữ an toàn trên máy tính của bạn trong tệp cài đặt của ứng dụng. Chúng không bao giờ được gửi đi bất kỳ đâu ngoại trừ việc kết nối trực tiếp đến các dịch vụ AI tương ứng.
+        </div>
+
+        <h2 id="quickstart">Khởi động nhanh: Tạo Mô tả Đầu tiên của bạn</h2>
+        <p>Hãy bắt đầu nào! Chỉ cần làm theo các bước đơn giản sau:</p>
+        <ol>
+            <li><strong>Chọn một Video:</strong> Nhấp vào một nút như "Tệp Video từ Máy tính" trên cửa sổ chính hoặc chọn nguồn video của bạn từ menu Tệp.</li>
+            <li><strong>Chọn một Lời nhắc (Tùy chọn):</strong> Menu thả xuống liệt kê các hướng dẫn được tạo sẵn để chỉ dẫn AI. Đối với lần thử đầu tiên, để ở mức "(Chưa chọn Thiết lập sẵn)" là một điểm khởi đầu tuyệt vời.</li>
+            <li><strong>Bắt đầu Xử lý:</strong> Ứng dụng bây giờ sẽ bắt đầu phân tích video của bạn. Bạn có thể theo dõi tiến trình trong "Nhật ký Trạng thái" ở cuối cửa sổ. Quá trình này có thể mất vài phút, tùy thuộc vào độ dài của video.</li>
+        </ol>
+        <p>Khi quá trình hoàn tất, <strong>Trình phát Video có Mô tả</strong> sẽ tự động mở ra, và bạn có thể bắt đầu thưởng thức video vừa được mô tả của mình!</p>
+
+        <h2 id="features">Các Tính năng Chính</h2>
+
+        <h3 id="player">Trình phát Video có Mô tả</h3>
+        <p>Đây là rạp chiếu phim có mô tả cá nhân của bạn. Khi video phát, <strong>trình đọc màn hình đã cài đặt</strong> của bạn (như JAWS hoặc NVDA) sẽ đọc to các mô tả âm thanh được tạo ra vào đúng thời điểm.</p>
+        <ul>
+            <li><strong>Điều khiển Phát lại:</strong> Sử dụng các nút Phát/Tạm dừng, Tua lại/Tua tới, hoặc thanh trượt tìm kiếm để điều hướng video.</li>
+            <li><strong>Khu vực Mô tả Hiện tại:</strong> Bạn có thể theo dõi văn bản của mô tả đang hoạt động tại đây.</li>
+            <li><strong>Chỉnh sửa và Tinh chỉnh:</strong> Nhấp vào nút "Chỉnh sửa Mô tả..." để mở một trình soạn thảo mạnh mẽ cho toàn quyền kiểm soát dự án của bạn.</li>
+            <li><strong>Mức sử dụng Token của AI:</strong> Khu vực này cho bạn thấy bao nhiêu "token" AI đã được sử dụng, giúp bạn theo dõi việc sử dụng API của mình.</li>
+        </ul>
+
+        <h3 id="editing">Chỉnh sửa Mô tả: Sức mạnh Tinh chỉnh</h3>
+        <p>AI cung cấp một điểm khởi đầu tuyệt vời, nhưng chất lượng thực sự đến từ sự tinh chỉnh. Nút "Chỉnh sửa Mô tả..." trong trình phát sẽ mở ra một trình soạn thảo mạnh mẽ cho phép bạn kiểm soát hoàn toàn mọi khía cạnh của dự án.</p>
+        <ul>
+            <li><strong>Chọn và Sửa đổi:</strong> Chọn bất kỳ mô tả nào từ danh sách thả xuống ở trên cùng để tải chi tiết của nó vào trình soạn thảo.</li>
+            <li><strong>Điều chỉnh Mốc thời gian:</strong> Chỉnh sửa trực tiếp các trường <code>Thời gian Bắt đầu</code> và <code>Thời gian Kết thúc</code>. Khi bạn thay đổi thời gian bắt đầu, thời gian kết thúc sẽ tự động dịch chuyển để giữ nguyên thời lượng của mô tả. Tất cả thời gian đều được xác thực để đảm bảo chúng nằm trong giới hạn của video.</li>
+            <li><strong>Viết lại Văn bản:</strong> Tự do chỉnh sửa văn bản mô tả trong hộp văn bản chính để cải thiện sự rõ ràng, thêm chi tiết hoặc sửa chữa những điểm không chính xác.</li>
+            <li><strong>Thêm Mô tả Mới:</strong> Nhấp vào nút "Thêm mới..." để mở một hộp thoại đơn giản nơi bạn có thể tạo một mô tả hoàn toàn mới từ đầu, thiết lập thời gian và văn bản của nó.</li>
+            <li><strong>Xóa Mô tả:</strong> Chọn một mô tả và nhấp vào nút "Xóa" để loại bỏ nó vĩnh viễn.</li>
+        </ul>
+        <div class="note">
+            <strong>Lưu Công việc của bạn:</strong> Những thay đổi bạn thực hiện trong trình soạn thảo (thêm, xóa, sửa đổi) được áp dụng ngay lập tức cho phiên làm việc hiện tại của bạn. Khi bạn hoàn tất, chỉ cần nhấp vào nút "Đóng" để quay lại trình phát. Danh sách mô tả đã cập nhật của bạn sẽ được sử dụng để phát lại và cho bất kỳ lần xuất tệp nào sau đó.
+        </div>
+        
+        <h3 id="prompts">Quản lý Thiết lập sẵn Lời nhắc</h3>
+        <p>Lời nhắc là những hướng dẫn mạnh mẽ quyết định AI sẽ tập trung vào điều gì. Bằng cách thay đổi lời nhắc, bạn có thể nhận được các mô tả theo những phong cách khác nhau rõ rệt.</p>
+        <ul>
+            <li><strong>Chọn một Thiết lập sẵn:</strong> Trước khi xử lý video, hãy chọn một thiết lập sẵn từ menu thả xuống trên cửa sổ chính.</li>
+            <li><strong>Quản lý Thiết lập sẵn:</strong> Đi tới <strong>Tệp -> Quản lý Thiết lập sẵn Lời nhắc...</strong>. Tại đây bạn có thể Thêm, Sửa hoặc Xóa các lời nhắc tùy chỉnh của riêng mình. Điều này hoàn hảo để lưu các hướng dẫn bạn thường xuyên sử dụng.</li>
+            <li><strong>Dành riêng cho Ngôn ngữ:</strong> Các thiết lập sẵn lời nhắc của bạn được lưu riêng cho mỗi ngôn ngữ bạn chọn trong Cài đặt.</li>
+        </ul>
+
+        <h3 id="askmore">Hỏi thêm về Cảnh</h3>
+        <p>Bạn đã bao giờ tự hỏi một nhân vật đang cầm gì hay một tấm biển ở hậu cảnh ghi gì chưa? Tính năng này cho phép bạn hỏi bất cứ điều gì bạn nghĩ đến về cảnh đó.</p>
+        <ol>
+            <li>Tạm dừng video tại thời điểm bạn tò mò.</li>
+            <li>Nhấp vào nút <strong>Hỏi thêm...</strong>.</li>
+            <li>Nhập câu hỏi của bạn vào trường "Câu hỏi mới của bạn:" (ví dụ: "Chiếc mũ của người phụ nữ màu gì?" hoặc "Chữ viết trên tường nói gì?").</li>
+            <li>Chọn số giây video mà AI nên phân tích xung quanh thời điểm hiện tại.</li>
+            <li>Nhấp vào "Gửi câu hỏi." Câu trả lời của AI sẽ xuất hiện trong khu vực "Lịch sử Hội thoại".</li>
+        </ol>
+
+        <h3 id="explorer">Trình khám phá Cảnh</h3>
+        <p>Trình khám phá Cảnh là một cách tương tác để hiểu bố cục không gian của một cảnh. Nó đặt bạn vào một căn phòng ảo mà bạn có thể điều hướng bằng bàn phím.</p>
+        <ol>
+            <li>Tạm dừng video ở một cảnh bạn muốn khám phá chi tiết.</li>
+            <li>Nhấp vào nút <strong>Khám phá Cảnh...</strong>, sau đó nhấp vào "Phân tích Cảnh".</li>
+        </ol>
+        <p>Bây giờ bạn đang ở trong Trình khám phá Cảnh. Sử dụng bàn phím để khám phá:</p>
+        <ul>
+            <li><span class="key">Các phím Mũi tên</span>: Di chuyển vị trí ảo của bạn trên một lưới.</li>
+            <li><span class="key">D</span>: Cung cấp một mô tả chi tiết về bố cục tổng thể của cảnh.</li>
+            <li><span class="key">L</span>: Thông báo danh sách tất cả các đối tượng trong cảnh.</li>
+            <li><span class="key">Shift</span> + <span class="key">L</span>: Chuyển sang "Chế độ Nhảy" để chọn một đối tượng và đi thẳng đến đó.</li>
+            <li><span class="key">Enter</span>: Nhận mô tả chi tiết về đối tượng gần nhất.</li>
+            <li><span class="key">Escape</span>: Đóng Trình khám phá Cảnh.</li>
+        </ul>
+
+        <h3 id="exporting">Xuất tệp Công việc của bạn</h3>
+        <p>Khi bạn đã hài lòng với các mô tả của mình, bạn có thể xuất chúng từ Cửa sổ Trình phát ở các định dạng khác nhau:</p>
+        <ul>
+            <li><strong>Xuất ra .TXT:</strong> Một tệp văn bản đơn giản với các mốc thời gian.</li>
+            <li><strong>Xuất ra .SRT:</strong> Một tệp phụ đề tiêu chuẩn bạn có thể sử dụng trong các trình phát video như VLC.</li>
+            <li><strong>Xuất Âm thanh (MP3):</strong> Đây có lẽ là tính năng thú vị nhất. Nó đọc các mô tả của bạn bằng giọng nói bạn đã chọn trong Cài đặt (SAPI5 hoặc OpenAI), trộn nó với âm thanh video gốc và tự động giảm nhỏ âm thanh nền trong khi có mô tả để tạo ra một tệp MP3 bạn có thể nghe ở bất cứ đâu.</li>
+        </ul>
+
+        <h2 id="advanced-settings">Tìm hiểu sâu về Cài đặt</h2>
+        <p>Cửa sổ Cài đặt (<span class="key">Ctrl</span> + <span class="key">,</span>) cho phép bạn kiểm soát chi tiết hành vi của Omni Describer.</p>
+
+        <h3>Tab Chung</h3>
+        <ul>
+            <li><strong>Cho phép mô tả ngắt lời nói hiện tại:</strong> Khi được chọn, một mô tả mới sẽ bắt đầu nói ngay lập tức, ngay cả khi mô tả trước đó chưa kết thúc. Bỏ chọn mục này để mỗi mô tả kết thúc hoàn toàn trước khi mô tả tiếp theo bắt đầu. Hữu ích cho các cảnh có nhịp độ rất nhanh.</li>
+        </ul>
+
+        <h3>Tab Cài đặt AI</h3>
+        <ul>
+            <li><strong>Tốc độ khung hình để AI phân tích:</strong> Xác định số lượng khung hình video mỗi giây được gửi đến AI. Giá trị thấp hơn (ví dụ: 5 FPS) có thể giảm đáng kể chi phí API và giúp tránh các giới hạn xử lý, nhưng có thể khiến AI bỏ lỡ các hành động rất nhanh.</li>
+            <li><strong>Bật tính năng Chia đoạn Video:</strong> Đối với các video dài (hơn 10-15 phút), AI đôi khi có thể hết khả năng xử lý. Tính năng này tự động chia video thành các phần nhỏ hơn, phân tích chúng tuần tự và ghép các kết quả lại với nhau. Nó rất được khuyến nghị cho nội dung dạng dài.</li>
+            <li><strong>Tắt Bộ lọc An toàn (Sử dụng một cách thận trọng):</strong> Tùy chọn này có thể cho phép AI xử lý nội dung mà nó thường có thể gắn cờ là nhạy cảm. Tuy nhiên, đây không phải là một sự ghi đè tuyệt đối. Đầu ra vẫn tuân theo các chính sách an toàn cốt lõi của nhà cung cấp AI. Xin hãy nhớ rằng bạn chịu trách nhiệm về cách bạn sử dụng tính năng này.</li>
+        </ul>
+
+        <h3>Tab Đầu ra Âm thanh</h3>
+        <ul>
+            <li><strong>Cơ chế Chuyển văn bản thành giọng nói:</strong>
+                <ul>
+                    <li><strong>SAPI5 (Tích hợp sẵn của Windows):</strong> Sử dụng các giọng nói đi kèm với Windows hoặc bạn đã cài đặt. Nó không yêu cầu khóa API bổ sung. Ứng dụng có thể truy cập cả giọng nói 64-bit hiện đại và giọng nói 32-bit cũ. Nếu bạn có các giọng nói cũ, yêu thích từ các hệ thống trước, việc chọn tùy chọn "SAPI5 (Giọng nói 32-bit)" sẽ cho phép bạn sử dụng chúng.</li>
+                    <li><strong>OpenAI TTS (Chất lượng cao):</strong> Tạo ra các giọng nói tự nhiên và trôi chảy hơn. Sử dụng tùy chọn này yêu cầu tài khoản OpenAI trả phí và khóa API. Bạn có thể tạo và quản lý các thiết lập sẵn giọng nói tùy chỉnh cho OpenAI.</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <h2 id="bestpractices">Mẹo và Thủ thuật để có Kết quả Tốt nhất</h2>
+        <p>Tạo ra các mô tả âm thanh tuyệt vời là một nghệ thuật. Mặc dù AI là một trợ lý hiệu quả, bạn sẽ nhận được kết quả tốt nhất khi bạn hướng dẫn nó một cách chính xác.</p>
+        
+        <h3>Sức mạnh của Lời nhắc: Ghi chú của Đạo diễn</h3>
+        <div class="note">
+            Ứng dụng có một bộ <strong>quy tắc cốt lõi</strong> mà nó dạy cho AI (như không nói chồng lên lời thoại). Hãy coi khu vực <strong>Thiết lập sẵn Lời nhắc</strong> trên màn hình chính là nơi bạn cung cấp <strong>ghi chú của đạo diễn</strong> cho video cụ thể đó. Một ghi chú tốt sẽ giúp AI tập trung vào một phong cách hoặc chi tiết cụ thể.
+        </div>
+        
+        <div class="best-practice">
+            <strong>Mẹo: Lời nhắc "Tập trung vào Tên"</strong><br>
+            Trong một video có nhiều nhân vật, bạn có thể tạo một lời nhắc tùy chỉnh để ưu tiên việc theo dõi tên:
+            <code>Ưu tiên cao nhất của bạn cho video này là xác định và sử dụng đúng tên nhân vật ngay khi chúng được nói ra.</code>
+        </div>
+        
+        <div class="best-practice">
+            <strong>Mẹo: Lời nhắc "Mô tả Không khí"</strong><br>
+            Đối với các bộ phim có hình ảnh phong phú, hãy hướng dẫn AI tập trung vào môi trường:
+            <code>Tập trung vào việc mô tả bối cảnh, không khí và các chi tiết môi trường. Đề cập đến ánh sáng, màu sắc và tâm trạng chung của cảnh.</code>
+        </div>
+        
+        <h4>Những điều cần tránh trong Lời nhắc</h4>
+        <p>Tránh các hướng dẫn mâu thuẫn với các nguyên tắc cốt lõi của AI (chỉ mô tả hình ảnh, không nói chồng lên lời thoại). Việc đưa ra một hướng dẫn sai lầm có thể gây ra kết quả kém.</p>
+        <ul>
+            <li><strong>Lời nhắc Tồi:</strong> <code>"Hãy cho tôi biết mọi thứ xảy ra."</code> Điều này quá mơ hồ và có thể khiến AI mô tả những chi tiết không quan trọng.</li>
+            <li><strong>Lời nhắc Tồi:</strong> <code>"Hãy cho tôi biết các nhân vật đang nói gì."</code> Điều này sẽ khiến nó vi phạm quy tắc "chỉ hình ảnh".</li>
+        </ul>
+        <p>Tóm lại: Sử dụng lời nhắc để định hướng sự tập trung của AI, chứ không phải để thay đổi các quy tắc cơ bản của một mô tả âm thanh tốt.</p>
+
+        <h2 id="faq">Câu hỏi Thường gặp (FAQ)</h2>
+        <p><strong>H: Khóa API của tôi không hoạt động. Tôi nên làm gì?</strong><br>
+        Đ: Đầu tiên, hãy kiểm tra lại xem bạn đã sao chép toàn bộ khóa một cách chính xác chưa. Đối với OpenAI, hãy đảm bảo bạn đã thiết lập phương thức thanh toán trong tài khoản của mình, vì dịch vụ TTS của họ không miễn phí. Đối với Gemini, hãy đảm bảo API đã được bật trong dự án Google Cloud của bạn.</p>
+
+        <p><strong>H: Quá trình xử lý thất bại với lỗi "MAX_TOKENS". Điều này có nghĩa là gì?</strong><br>
+        Đ: Điều này có nghĩa là video của bạn quá dài hoặc phức tạp về mặt hình ảnh để AI xử lý trong một lần. Đây là một giới hạn về khả năng xử lý, không phải là lỗi nội dung. Giải pháp tốt nhất là đi tới <strong>Cài đặt -> Cài đặt AI</strong> và bật <strong>"Chia đoạn Video"</strong>. Thao tác này sẽ tự động chia video thành các phần nhỏ hơn, dễ quản lý hơn cho AI.</p>
+
+        <p><strong>H: AI không thể tạo mô tả vì "Bộ lọc An toàn". Tôi có thể làm gì?</strong><br>
+        Đ: Đây là một vấn đề đã biết, trong đó hệ thống an toàn của AI có thể quá thận trọng. Bạn có một vài lựa chọn để thử, theo thứ tự: 1) Đi tới <strong>Cài đặt -> Cài đặt AI</strong> và bật <strong>"Tắt Bộ lọc An toàn"</strong> (điều này thường hữu ích). 2) Nếu cách đó không thành công, hãy thử giảm "Tốc độ khung hình để AI phân tích" để gửi ít dữ liệu hơn cho AI. 3) Là phương án cuối cùng, bạn có thể sử dụng cài đặt "Ghi đè Mô hình Gemini" và nhập <code>gemini-2.5-pro</code>. Mô hình này mạnh hơn và có thể xử lý nội dung nhạy cảm tốt hơn, nhưng nó chậm hơn và có thể đắt hơn nếu bạn đang ở bậc API trả phí.</p>
+        
+        <p><strong>H: Một số giọng nói cũ của tôi bị thiếu trong danh sách SAPI5. Chúng đã đi đâu?</strong><br>
+        Đ: Các hệ thống Windows hiện đại là 64-bit, nhưng nhiều giọng nói chuyển văn bản thành giọng nói cổ điển, được yêu thích là 32-bit. Trong Cài đặt, dưới tab "Đầu ra Âm thanh", bạn sẽ thấy các lựa chọn cơ chế riêng biệt cho "SAPI5 (64-bit)" và "SAPI5 (32-bit)". Để truy cập các giọng nói cũ hơn của mình, chỉ cần chọn cơ chế 32-bit.</p>
+
+        <p><strong>H: Tại sao việc tạo mô tả lại mất nhiều thời gian như vậy?</strong><br>
+        Đ: Thời gian phụ thuộc vào độ dài video của bạn, tốc độ internet của bạn (để tải lên cho AI), tốc độ khung hình đã chọn và tải hiện tại trên các dịch vụ AI. Việc sử dụng "Chia đoạn Video" rất được khuyến nghị cho các video dài.</p>
+
+        <h2 id="shortcuts">Phím tắt</h2>
+        <ul>
+            <li><span class="key">Ctrl</span> + <span class="key">O</span>: Mở Video từ Máy tính</li>
+            <li><span class="key">Ctrl</span> + <span class="key">U</span>: Mở từ URL Trực tiếp</li>
+            <li><span class="key">Ctrl</span> + <span class="key">Y</span>: Mở từ YouTube</li>
+            <li><span class="key">Ctrl</span> + <span class="key">,</span>: Mở Cài đặt</li>
+            <li><span class="key">F1</span>: Xem Trợ giúp</li>
+        </ul>
+
+        <h2 id="contact">Lời cảm ơn, Liên hệ và Người đóng góp</h2>
+        <p>Cảm ơn bạn rất nhiều vì đã sử dụng Omni Describer! Ứng dụng này là sự phản ánh mong muốn của tôi trong việc làm cho phương tiện truyền thông hình ảnh trở nên dễ tiếp cận và thú vị hơn cho mọi người. Việc có những người dùng như bạn sử dụng công cụ này và cung cấp phản hồi là động lực lớn nhất để tiếp tục phát triển nó.</p>
+        
+        <h3>Phản hồi và Hỗ trợ</h3>
+        <p>Bạn có câu hỏi, báo cáo lỗi, hay ý tưởng cho một tính năng mới? Tôi rất muốn nghe từ bạn! Cách tốt nhất để liên lạc với tôi là qua email. Phản hồi của bạn là vô giá để làm cho Omni Describer trở nên tốt hơn nữa.</p>
+        <ul>
+            <li><strong>Email:</strong> <a href="mailto:info@audioses.com">info@audioses.com</a></li>
+            <li><strong>Trang web:</strong> <a href="https://audioses.com" target="_blank">audioses.com</a></li>
+        </ul>
+    </div>
+</body>
+</html>

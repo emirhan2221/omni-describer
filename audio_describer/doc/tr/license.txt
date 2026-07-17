@@ -1,0 +1,22 @@
+Omni Betimleyici'yi kullandığınız için teşekkür ederim! Bu yazılımı kullanarak aşağıdaki basit koşulları kabul etmiş olursunuz:
+
+1. Sorumlu Kullanın
+   Bu araç, video ve içerikler için sesli betimleme oluşturmanıza yardımcı olmak için tasarlanmıştır. Lütfen telif haklarına ve başkalarının haklarına saygılı ve etik şekilde kullanın.
+
+2. Yapay Zekâ Hatalı Olabilir
+   Üretilen betimlemeler yapay zekâ tarafından otomatik olarak oluşturulur. Bazen hatalı, eksik, taraflı veya anlamsız olabilir. Üretilen içeriği gözden geçirmek ve uygun şekilde kullanmak tamamen sizin sorumluluğunuzdadır.
+
+3. Garanti Yoktur
+   Bu yazılım “olduğu gibi” sunulmaktadır. Hatasız, kusursuz ya da özel ihtiyaçlarınıza tamamen uygun olacağı garanti edilmez.
+
+4. Sorumluluk Kabul Edilmez
+   Uygulama geliştiricisi ve katkıda bulunanlar; doğrudan veya dolaylı herhangi bir zarardan, veri kaybından, maliyetlerden veya diğer sorunlardan sorumlu tutulamaz. Yazılımı tamamen kendi riskinizle kullanırsınız.
+
+5. Paylaşım
+   Bu uygulamayı başkalarıyla paylaşabilirsiniz; ancak satamaz veya kendi eserinizmiş gibi gösteremezsiniz. Paylaşırken bu lisansı da eklemeniz gerekir.
+
+6. Google Gemini Hakkında
+   Videolar, Google Gemini hizmetleri tarafından işlenmektedir. Bu işlem Google’ın lisans koşullarına ve kullanım politikalarına tabidir. Google’ın kendi şartlarını da ayrıca okumanız gerekmektedir.
+
+“Kabul Ediyorum” butonuna tıklayarak bu koşulları okuduğunuzu, anladığınızı ve kabul ettiğinizi onaylamış olursunuz. Kabul etmiyorsanız lütfen uygulamadan çıkın.
+

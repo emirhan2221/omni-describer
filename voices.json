@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Narrator - Standard",
+        "base_voice": "alloy",
+        "speed": 1.0,
+        "instructions": "Speak in a clear, neutral, and steady narration voice."
+    },
+    {
+        "name": "Narrator - Fast",
+        "base_voice": "alloy",
+        "speed": 1.2,
+        "instructions": "Speak in a clear and neutral tone, but at a slightly faster pace."
+    },
+    {
+        "name": "Character - Energetic",
+        "base_voice": "nova",
+        "speed": 1.1,
+        "instructions": "Speak in a cheerful and positive tone, with a youthful energy."
+    },
+    {
+        "name": "Character - Deliberate",
+        "base_voice": "onyx",
+        "speed": 0.85,
+        "instructions": "Speak in a deep, resonant, and serious tone. Pace the words slowly."
+    },
+    {
+        "name": "Whisper",
+        "base_voice": "shimmer",
+        "speed": 0.9,
+        "instructions": "Speak in a soft, quiet whisper."
+    }
+]

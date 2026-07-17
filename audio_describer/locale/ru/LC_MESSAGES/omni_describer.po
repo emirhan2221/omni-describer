@@ -1,0 +1,1917 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2025-07-15 03:14+0300\n"
+"PO-Revision-Date: 2025-07-15 03:15+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.6\n"
+"X-Poedit-Basepath: ../../../..\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: dist\n"
+
+#: audio_describer/__app__real.py:74
+#, python-format
+msgid "Starting %(app_name)s v%(app_version)s"
+msgstr "Запуск %(app_name)s v%(app_version)s"
+
+#: audio_describer/__app__real.py:90
+#, python-format
+msgid "%(app_name)s started."
+msgstr "%(app_name)s запущен."
+
+#: audio_describer/__app__real.py:107
+#, python-format
+msgid "%s is shutting down."
+msgstr "%s завершает работу."
+
+#: audio_describer/__app__real.py:110
+#, python-format
+msgid "%(app_name)s closed."
+msgstr "Приложение %(app_name)s закрыто."
+
+#: audio_describer/config.py:50
+msgid "Describer"
+msgstr "Описатель"
+
+#: audio_describer/core/audio_describer.py:66
+msgid "Gemini SDK is not available. Check startup logs for errors."
+msgstr "SDK Gemini недоступен. Проверьте журналы запуска на наличие ошибок."
+
+#: audio_describer/core/audio_describer.py:69
+msgid "Gemini API Key is not configured in settings."
+msgstr "API-ключ Gemini не настроен в параметрах."
+
+#: audio_describer/core/audio_describer.py:77
+#, python-format
+msgid "Failed to initialize Gemini Client: %s"
+msgstr "Не удалось инициализировать клиент Gemini: %s"
+
+#: audio_describer/core/audio_describer.py:118
+#, python-format
+msgid "Invalid MM:SS string format: %s"
+msgstr "Неверный формат строки ММ:СС: %s"
+
+#: audio_describer/core/audio_describer.py:126
+msgid "Calculated total seconds is negative."
+msgstr "Рассчитанное общее количество секунд негативное."
+
+#: audio_describer/core/audio_describer.py:130
+#, python-format
+msgid "Invalid MM:SS components in '%s': %s"
+msgstr "Неверные компоненты ММ:СС в '%s': %s"
+
+#: audio_describer/core/audio_describer.py:153
+msgid "Skipping description due to invalid MM:SS format."
+msgstr "Описание пропущено из-за неверного формата ММ:СС."
+
+#: audio_describer/core/audio_describer.py:170
+msgid "Ensuring minimum description duration..."
+msgstr "Обеспечение минимальной длительности описания..."
+
+#: audio_describer/core/audio_describer.py:181
+#, python-format
+msgid ""
+"Timestamp correction complete. %(count)d descriptions processed, "
+"%(adjusted_count)d had timestamps adjusted."
+msgstr ""
+"Коррекция временных меток завершена. Обработано описаний: %(count)d, "
+"скорректировано временных меток: %(adjusted_count)d."
+
+#: audio_describer/core/audio_describer.py:205
+#, python-format
+msgid "Removed %(count)d repetitive descriptions."
+msgstr "Удалено %(count)d повторяющихся описаний."
+
+#: audio_describer/core/audio_describer.py:292
+#, python-format
+msgid "AI request was blocked: %s"
+msgstr "Запрос к ИИ заблокирован: %s"
+
+#: audio_describer/core/audio_describer.py:298
+msgid "AI returned no answer or an invalid response structure."
+msgstr "ИИ не вернул ответ или вернул ответ с неверной структурой."
+
+#: audio_describer/core/audio_describer.py:305
+msgid "AI response structure is missing content or parts."
+msgstr "В структуре ответа ИИ отсутствует содержимое или его части."
+
+#: audio_describer/core/audio_describer.py:313
+#: audio_describer/ui/ask_more_dialog.py:121
+msgid "AI is thinking..."
+msgstr "ИИ думает..."
+
+#: audio_describer/core/audio_describer.py:324
+msgid ""
+"AI content generation was stopped due to safety reasons (candidate level)."
+msgstr ""
+"Генерация контента ИИ остановлена по соображениям безопасности (уровень "
+"кандидата)."
+
+#: audio_describer/core/audio_describer.py:372
+msgid "Performing pre-analysis to identify characters..."
+msgstr "Выполнение предварительного анализа для идентификации персонажей..."
+
+#: audio_describer/core/audio_describer.py:395
+msgid "Character pre-analysis complete."
+msgstr "Предварительный анализ персонажей завершен."
+
+#: audio_describer/core/audio_describer.py:403
+msgid "Could not generate character glossary, proceeding without it."
+msgstr "Не удалось создать глоссарий персонажей, продолжение работы без него."
+
+#: audio_describer/core/audio_describer.py:413
+#, python-format
+msgid "Error: Video file not found: %s"
+msgstr "Ошибка: видеофайл не найден: %s"
+
+#: audio_describer/core/audio_describer.py:425
+#, python-format
+msgid "Uploading video '%s'..."
+msgstr "Загрузка видео '%s'..."
+
+#: audio_describer/core/audio_describer.py:427
+#, python-format
+msgid "Video upload initiated: %s. Waiting for processing..."
+msgstr "Начата загрузка видео: %s. Ожидание обработки..."
+
+#: audio_describer/core/audio_describer.py:431
+msgid "Video is ACTIVE."
+msgstr "Видео АКТИВНО."
+
+#: audio_describer/core/audio_describer.py:433
+#, python-format
+msgid "Video processing (attempt %d)... state: %s"
+msgstr "Обработка видео (попытка %d)... состояние: %s"
+
+#: audio_describer/core/audio_describer.py:437
+#, python-format
+msgid "Video processing timed out or failed. Final state: %s"
+msgstr ""
+"Время обработки видео истекло или произошла ошибка. Конечное состояние: %s"
+
+#: audio_describer/core/audio_describer.py:444
+msgid "Video ready. Preparing AI request for descriptions..."
+msgstr "Видео готово. Подготовка запроса описаний к ИИ..."
+
+#: audio_describer/core/audio_describer.py:504
+msgid "Not named"
+msgstr "Без имени"
+
+#: audio_describer/core/audio_describer.py:529
+msgid "Requesting audio descriptions from AI..."
+msgstr "Запрос аудиоописаний у ИИ..."
+
+#: audio_describer/core/audio_describer.py:541
+msgid "AI did not return a successful response for descriptions."
+msgstr "ИИ не вернул успешный ответ для описаний."
+
+#: audio_describer/core/audio_describer.py:545
+msgid "AI returned an empty text response for descriptions."
+msgstr "ИИ вернул пустой текстовый ответ для описаний."
+
+#: audio_describer/core/audio_describer.py:552
+msgid "Failed to parse timed descriptions from AI's JSON response."
+msgstr "Не удалось разобрать описания с временными метками из JSON-ответа ИИ."
+
+#: audio_describer/core/audio_describer.py:556
+#, python-format
+msgid ""
+"Successfully parsed %d raw descriptions. Correcting timestamps and "
+"duplicates..."
+msgstr ""
+"Успешно разобрано %d сырых описаний. Исправление временных меток и "
+"дубликатов..."
+
+#: audio_describer/core/audio_describer.py:562
+msgid "No descriptions remained after all post-processing."
+msgstr "После всей постобработки не осталось описаний."
+
+#: audio_describer/core/audio_describer.py:570
+#, python-format
+msgid "Description generation failed: %s"
+msgstr "Ошибка генерации описания: %s"
+
+#: audio_describer/core/audio_describer.py:580
+#, python-format
+msgid "Cleaned up uploaded video file: %s"
+msgstr "Загруженный видеофайл очищен: %s"
+
+#: audio_describer/core/audio_describer.py:615
+msgid "AI could not provide an answer."
+msgstr "ИИ не смог предоставить ответ."
+
+#: audio_describer/core/audio_describer.py:620
+#, python-format
+msgid "VQA request failed: %s"
+msgstr "Ошибка запроса VQA: %s"
+
+#: audio_describer/core/audio_describer.py:654
+msgid "AI returned an empty or invalid response for JSON request."
+msgstr "ИИ вернул пустой или неверный ответ для JSON-запроса."
+
+#: audio_describer/core/audio_describer.py:658
+msgid "AI returned an empty text part for JSON request."
+msgstr "ИИ вернул пустую текстовую часть для JSON-запроса."
+
+#: audio_describer/core/audio_describer.py:663
+#, python-format
+msgid "Failed to get structured data from AI: %s"
+msgstr "Не удалось получить структурированные данные от ИИ: %s"
+
+#: audio_describer/core/video_processor.py:135
+#, python-format
+msgid "Splitting video into %d chunks..."
+msgstr "Разделение видео на %d фрагментов..."
+
+#: audio_describer/core/video_processor.py:156
+#, python-format
+msgid "Created chunk %d of %d..."
+msgstr "Создан фрагмент %d из %d..."
+
+#: audio_describer/core/video_processor.py:162
+msgid "FFmpeg not found; using original video for AI."
+msgstr "FFmpeg не найден; используется оригинальное видео для ИИ."
+
+#: audio_describer/core/video_processor.py:173
+msgid "Pre-processing video for AI analysis..."
+msgstr "Предварительная обработка видео для анализа ИИ..."
+
+#: audio_describer/core/video_processor.py:200
+#, python-format
+msgid "Failed to pre-process video; using original. Error: %s"
+msgstr ""
+"Не удалось выполнить предварительную обработку видео; используется оригинал. "
+"Ошибка: %s"
+
+#: audio_describer/core/video_processor.py:206
+msgid "Video pre-processing error; using original."
+msgstr "Ошибка предварительной обработки видео; используется оригинал."
+
+#: audio_describer/core/video_processor.py:209
+msgid "Video pre-processing complete."
+msgstr "Предварительная обработка видео завершена."
+
+#: audio_describer/core/video_processor.py:213
+#, python-format
+msgid "Error during video pre-processing; using original. Error: %s"
+msgstr ""
+"Ошибка во время предварительной обработки видео; используется оригинал. "
+"Ошибка: %s"
+
+#: audio_describer/core/video_processor.py:221
+#, python-format
+msgid "Video file not found: %s"
+msgstr "Видеофайл не найден: %s"
+
+#: audio_describer/core/video_processor.py:229
+#, python-format
+msgid "Failed to download from direct URL %s: %s"
+msgstr "Не удалось скачать по прямой ссылке %s: %s"
+
+#: audio_describer/core/video_processor.py:239
+#, python-format
+msgid "Failed to download from YouTube URL %s: %s"
+msgstr "Не удалось скачать с YouTube URL %s: %s"
+
+#: audio_describer/core/youtube_downloader.py:147
+#: audio_describer/core/youtube_downloader.py:224
+#, python-format
+msgid "yt-dlp executable not found. Expected at: %s"
+msgstr "исполняемый файл yt-dlp не найден. Ожидаемый путь: %s"
+
+#: audio_describer/core/youtube_downloader.py:171
+#: audio_describer/core/youtube_downloader.py:201
+#: audio_describer/core/youtube_downloader.py:334
+#: audio_describer/core/youtube_downloader.py:461
+msgid "N/A"
+msgstr "Н/Д"
+
+#: audio_describer/core/youtube_downloader.py:185
+msgid "yt-dlp returned no information for the video."
+msgstr "yt-dlp не вернул информацию о видео."
+
+#: audio_describer/core/youtube_downloader.py:191
+msgid ""
+"yt-dlp command not found. Please ensure yt-dlp is installed and in your "
+"system PATH, or bundled correctly."
+msgstr ""
+"команда yt-dlp не найдена. Убедитесь, что yt-dlp установлен и находится в "
+"системной переменной PATH, или правильно включен в сборку."
+
+#: audio_describer/core/youtube_downloader.py:199
+msgid "Timeout fetching video information."
+msgstr "Время ожидания получения информации о видео истекло."
+
+#: audio_describer/core/youtube_downloader.py:205
+#, python-format
+msgid "Failed to parse video information from yt-dlp. Output: %s"
+msgstr "Не удалось разобрать информацию о видео от yt-dlp. Вывод: %s"
+
+#: audio_describer/core/youtube_downloader.py:211
+#, python-format
+msgid "Unexpected error fetching video info: %s"
+msgstr "Неожиданная ошибка при получении информации о видео: %s"
+
+#: audio_describer/core/youtube_downloader.py:236
+#, python-format
+msgid "Cannot create download directory: %s"
+msgstr "Не удается создать каталог для загрузки: %s"
+
+#: audio_describer/core/youtube_downloader.py:289
+msgid "Could not retrieve video info; cannot reliably predict output filename."
+msgstr ""
+"Не удалось получить информацию о видео; невозможно надежно предсказать имя "
+"выходного файла."
+
+#: audio_describer/core/youtube_downloader.py:377
+#, python-format
+msgid ""
+"Download completed but output file not found. Check logs for details in %s."
+msgstr ""
+"Загрузка завершена, но выходной файл не найден. Проверьте логи для получения "
+"подробностей в %s."
+
+#: audio_describer/core/youtube_downloader.py:381
+#, python-format
+msgid ""
+"yt-dlp command not found. Please ensure yt-dlp is installed and in your "
+"system PATH, or bundled correctly at %s."
+msgstr ""
+"команда yt-dlp не найдена. Убедитесь, что yt-dlp установлен и находится в "
+"системной переменной PATH, или правильно включен в сборку по пути %s."
+
+#: audio_describer/core/youtube_downloader.py:389
+#, python-format
+msgid "Timeout downloading video: %s"
+msgstr "Время ожидания загрузки видео истекло: %s"
+
+#: audio_describer/core/youtube_downloader.py:396
+#, python-format
+msgid "Unexpected error during download for %s: %s"
+msgstr "Неожиданная ошибка во время загрузки для %s: %s"
+
+#: audio_describer/core/youtube_downloader.py:410
+msgid ""
+"Standalone test: config_model.app_settings seems empty, loading defaults for "
+"test."
+msgstr ""
+"Автономный тест: config_model.app_settings пуст, загрузка настроек по "
+"умолчанию для теста."
+
+#: audio_describer/core/youtube_downloader.py:454
+#, python-format
+msgid ""
+"\n"
+"Fetching info for: %s"
+msgstr ""
+"\n"
+"Получение информации для: %s"
+
+#: audio_describer/core/youtube_downloader.py:461
+#, python-format
+msgid "Successfully fetched info for YouTube video: %s"
+msgstr "Информация для видео с YouTube успешно получена: %s"
+
+#: audio_describer/core/youtube_downloader.py:464
+#, python-format
+msgid "Failed to fetch info for %s"
+msgstr "Не удалось получить информацию для %s"
+
+#: audio_describer/core/youtube_downloader.py:469
+#, python-format
+msgid ""
+"\n"
+"Attempting to download YouTube video: %s (Quality from settings: %s)"
+msgstr ""
+"\n"
+"Попытка загрузки видео с YouTube: %s (Качество из настроек: %s)"
+
+#: audio_describer/core/youtube_downloader.py:473
+#, python-format
+msgid "YouTube video downloaded successfully to: %s"
+msgstr "Видео с YouTube успешно загружено в: %s"
+
+#: audio_describer/core/youtube_downloader.py:475
+#, python-format
+msgid "File size: %s MB"
+msgstr "Размер файла: %s МБ"
+
+#: audio_describer/core/youtube_downloader.py:478
+#, python-format
+msgid "YouTube download failed or file not found at: %s"
+msgstr "Загрузка с YouTube не удалась или файл не найден по пути: %s"
+
+#: audio_describer/core/youtube_downloader.py:491
+#, python-format
+msgid "A DownloaderError occurred during self-test: %s"
+msgstr "Во время самопроверки произошла ошибка DownloaderError: %s"
+
+#: audio_describer/core/youtube_downloader.py:494
+#, python-format
+msgid "An unexpected error occurred during self-test: %s"
+msgstr "Во время самопроверки произошла неожиданная ошибка: %s"
+
+#: audio_describer/core/youtube_downloader.py:499
+#, python-format
+msgid "Cleaning up test file: %s"
+msgstr "Очистка тестового файла: %s"
+
+#: audio_describer/core/youtube_downloader.py:503
+#, python-format
+msgid "Could not remove %s: %s"
+msgstr "Не удалось удалить %s: %s"
+
+#: audio_describer/core/youtube_downloader.py:510
+msgid ""
+"\n"
+"Downloader self-test finished. Check console and app_log.txt for details."
+msgstr ""
+"\n"
+"Самопроверка загрузчика завершена. Проверьте консоль и app_log.txt для "
+"получения подробностей."
+
+#: audio_describer/core/youtube_downloader.py:512
+#, python-format
+msgid "Temporary download directory used: %s"
+msgstr "Использован временный каталог для загрузки: %s"
+
+#: audio_describer/core/youtube_downloader.py:514
+#, python-format
+msgid "yt-dlp command used: %s"
+msgstr "использована команда yt-dlp: %s"
+
+#: audio_describer/ui/add_edit_prompt_dialog.py:18
+#: audio_describer/ui/add_edit_voice_dialog.py:16
+msgid "Preset Name:"
+msgstr "Имя шаблона:"
+
+#: audio_describer/ui/add_edit_prompt_dialog.py:21
+msgid "A short, descriptive name for the prompt preset."
+msgstr "Краткое, описательное имя для шаблона запроса."
+
+#: audio_describer/ui/add_edit_prompt_dialog.py:25
+msgid "Prompt Text:"
+msgstr "Текст запроса:"
+
+#: audio_describer/ui/add_edit_prompt_dialog.py:28
+msgid "The full text of the prompt to be sent to the AI."
+msgstr "Полный текст запроса, который будет отправлен ИИ."
+
+#: audio_describer/ui/add_edit_prompt_dialog.py:40
+#: audio_describer/ui/add_edit_voice_dialog.py:55
+msgid "&Save"
+msgstr "&Сохранить"
+
+#: audio_describer/ui/add_edit_prompt_dialog.py:57
+msgid "Both a preset name and prompt text are required."
+msgstr "Требуется указать как имя шаблона, так и текст запроса."
+
+#: audio_describer/ui/add_edit_prompt_dialog.py:57
+#: audio_describer/ui/add_edit_voice_dialog.py:74
+#: audio_describer/ui/settings_dialog.py:223
+msgid "Input Required"
+msgstr "Требуется ввод"
+
+#: audio_describer/ui/add_edit_voice_dialog.py:22
+msgid "Base OpenAI Voice:"
+msgstr "Базовый голос OpenAI:"
+
+#: audio_describer/ui/add_edit_voice_dialog.py:30
+#: audio_describer/ui/settings_dialog.py:157
+msgid "Speed:"
+msgstr "Скорость:"
+
+#: audio_describer/ui/add_edit_voice_dialog.py:41
+msgid "Instructions (for Tone, Emotion, etc.):"
+msgstr "Инструкции (для тона, эмоций и т. д.):"
+
+#: audio_describer/ui/add_edit_voice_dialog.py:44
+msgid ""
+"Describe the desired tone. Example: 'Speak in a cheerful and positive tone.'"
+msgstr "Опишите желаемый тон. Пример: 'Говорите веселым и позитивным тоном'."
+
+#: audio_describer/ui/add_edit_voice_dialog.py:74
+msgid "A preset name is required."
+msgstr "Требуется имя шаблона."
+
+#: audio_describer/ui/ask_more_dialog.py:33
+msgid "Ask More About Scene"
+msgstr "Уточнить детали сцены"
+
+#: audio_describer/ui/ask_more_dialog.py:44
+#, python-format
+msgid "Ask questions about the scene around %s."
+msgstr "Задайте вопросы о сцене вокруг %s."
+
+#: audio_describer/ui/ask_more_dialog.py:47
+msgid "Conversation History:"
+msgstr "История диалога:"
+
+#: audio_describer/ui/ask_more_dialog.py:52
+msgid "Your New Question:"
+msgstr "Ваш новый вопрос:"
+
+#: audio_describer/ui/ask_more_dialog.py:58
+msgid "Video Context Duration (seconds):"
+msgstr "Длительность контекста видео (секунды):"
+
+#: audio_describer/ui/ask_more_dialog.py:68
+msgid "&Submit Question"
+msgstr "&Отправить вопрос"
+
+#: audio_describer/ui/ask_more_dialog.py:72
+msgid "&Add to Descriptions"
+msgstr "&Добавить в описания"
+
+#: audio_describer/ui/ask_more_dialog.py:76
+#: audio_describer/ui/main_window.py:429
+#: audio_describer/ui/manage_prompts_dialog.py:52
+msgid "Close"
+msgstr "Закрыть"
+
+#: audio_describer/ui/ask_more_dialog.py:92
+msgid "Please enter a question."
+msgstr "Пожалуйста, введите вопрос."
+
+#: audio_describer/ui/ask_more_dialog.py:92
+msgid "Question Required"
+msgstr "Требуется вопрос"
+
+#: audio_describer/ui/ask_more_dialog.py:95
+#, python-format
+msgid "You asked: %s"
+msgstr "Вы спросили: %s"
+
+#: audio_describer/ui/ask_more_dialog.py:109
+msgid "The description has been added to the main list."
+msgstr "Описание добавлено в основной список."
+
+#: audio_describer/ui/ask_more_dialog.py:109
+msgid "Description Added"
+msgstr "Описание добавлено"
+
+#: audio_describer/ui/ask_more_dialog.py:127
+msgid "AI Answer: "
+msgstr "Ответ ИИ: "
+
+#: audio_describer/ui/ask_more_dialog.py:129
+msgid "Error: "
+msgstr "Ошибка: "
+
+#: audio_describer/ui/edit_description_dialog.py:35
+msgid "Edit Audio Description"
+msgstr "Редактировать аудиоописание"
+
+#: audio_describer/ui/edit_description_dialog.py:44
+msgid "Select description to edit:"
+msgstr "Выберите описание для редактирования:"
+
+#: audio_describer/ui/edit_description_dialog.py:58
+msgid "Description text:"
+msgstr "Текст описания:"
+
+#: audio_describer/ui/edit_description_dialog.py:68
+#: audio_describer/ui/manage_prompts_dialog.py:51
+#: audio_describer/ui/manage_voices_dialog.py:38
+msgid "&Delete"
+msgstr "&Удалить"
+
+#: audio_describer/ui/edit_description_dialog.py:69
+msgid "&Save Changes"
+msgstr "&Сохранить изменения"
+
+#: audio_describer/ui/edit_description_dialog.py:104
+msgid "(No descriptions available)"
+msgstr "(Нет доступных описаний)"
+
+#: audio_describer/ui/edit_description_dialog.py:118
+#, python-format
+msgid "[%(start).1fs - %(end).1fs] %(preview)s"
+msgstr "[%(start).1fs - %(end).1fs] %(preview)s"
+
+#: audio_describer/ui/edit_description_dialog.py:145
+msgid "<Select a description from the list above to edit>"
+msgstr "<Выберите описание из списка выше, чтобы отредактировать его>"
+
+#: audio_describer/ui/edit_description_dialog.py:174
+msgid "Are you sure you want to delete this description?"
+msgstr "Вы уверены, что хотите удалить это описание?"
+
+#: audio_describer/ui/edit_description_dialog.py:175
+#: audio_describer/ui/manage_prompts_dialog.py:121
+#: audio_describer/ui/manage_voices_dialog.py:105
+msgid "Confirm Delete"
+msgstr "Подтвердите удаление"
+
+#: audio_describer/ui/explore_scene_options_dialog.py:7
+msgid "Explore Scene Options"
+msgstr "Параметры исследования сцены"
+
+#: audio_describer/ui/explore_scene_options_dialog.py:22
+msgid "Analysis Duration (seconds):"
+msgstr "Длительность анализа (секунды):"
+
+#: audio_describer/ui/explore_scene_options_dialog.py:25
+msgid "The length of the video clip to analyze, in seconds."
+msgstr "Длина видеофрагмента для анализа в секундах."
+
+#: audio_describer/ui/explore_scene_options_dialog.py:32
+msgid "Optional: Specific things to focus on:"
+msgstr "Необязательно: на чем сфокусироваться:"
+
+#: audio_describer/ui/explore_scene_options_dialog.py:35
+msgid ""
+"Example: 'Focus on the expressions of the people' or 'Describe the text on "
+"any signs'"
+msgstr ""
+"Пример: 'Сфокусируйся на выражениях лиц людей' или 'Опиши текст на любых "
+"знаках'"
+
+#: audio_describer/ui/explore_scene_options_dialog.py:49
+msgid "&Analyze Scene"
+msgstr "&Анализировать сцену"
+
+#: audio_describer/ui/file_dialogs.py:14
+msgid "Open Local Video File"
+msgstr "Открыть локальный видеофайл"
+
+#: audio_describer/ui/file_dialogs.py:16 audio_describer/ui/file_dialogs.py:39
+#, python-format
+msgid "%s dialog."
+msgstr "Диалог %s."
+
+#: audio_describer/ui/file_dialogs.py:26
+msgid "File selection cancelled."
+msgstr "Выбор файла отменен."
+
+#: audio_describer/ui/file_dialogs.py:30
+#, python-format
+msgid "File selected: %s"
+msgstr "Выбран файл: %s"
+
+#: audio_describer/ui/file_dialogs.py:60 audio_describer/ui/file_dialogs.py:95
+msgid "URL input cancelled."
+msgstr "Ввод URL отменен."
+
+#: audio_describer/ui/file_dialogs.py:65
+msgid "URL entered."
+msgstr "URL введен."
+
+#: audio_describer/ui/file_dialogs.py:68
+msgid "No URL entered."
+msgstr "URL не введен."
+
+#: audio_describer/ui/file_dialogs.py:75
+msgid "Test Dialogs"
+msgstr "Тестовые диалоги"
+
+#: audio_describer/ui/file_dialogs.py:89
+msgid "Enter YouTube URL"
+msgstr "Введите URL YouTube"
+
+#: audio_describer/ui/file_dialogs.py:89
+msgid "Paste YouTube video link:"
+msgstr "Вставьте ссылку на видео YouTube:"
+
+#: audio_describer/ui/file_dialogs.py:92
+#, python-format
+msgid "Entered URL: %s"
+msgstr "Введенный URL: %s"
+
+#: audio_describer/ui/license_dialog.py:11
+msgid "License Agreement"
+msgstr "Лицензионное соглашение"
+
+#: audio_describer/ui/license_dialog.py:23
+msgid "License and Terms of Use"
+msgstr "Лицензия и условия использования"
+
+#: audio_describer/ui/license_dialog.py:32
+msgid "You have already agreed to these terms."
+msgstr "Вы уже согласились с этими условиями."
+
+#: audio_describer/ui/license_dialog.py:47
+msgid "OK"
+msgstr "OK"
+
+#: audio_describer/ui/license_dialog.py:52
+msgid "Agree"
+msgstr "Согласен"
+
+#: audio_describer/ui/license_dialog.py:53
+msgid "Disagree"
+msgstr "Не согласен"
+
+#: audio_describer/ui/license_dialog.py:73
+msgid "License file could not be found. Please contact support."
+msgstr "Файл лицензии не найден. Пожалуйста, свяжитесь со службой поддержки."
+
+#: audio_describer/ui/main_window.py:34
+msgid "Audio Describer"
+msgstr "Аудиоописатель"
+
+#: audio_describer/ui/main_window.py:57
+msgid "&Open Local Video...\tCtrl+O"
+msgstr "&Открыть локальное видео...\tCtrl+O"
+
+#: audio_describer/ui/main_window.py:57
+msgid "Open a local video file"
+msgstr "Открыть локальный видеофайл"
+
+#: audio_describer/ui/main_window.py:58
+msgid "Open Video from &URL...\tCtrl+U"
+msgstr "Открыть видео по &URL...\tCtrl+U"
+
+#: audio_describer/ui/main_window.py:58
+msgid "Open a video from a direct URL"
+msgstr "Открыть видео по прямой ссылке"
+
+#: audio_describer/ui/main_window.py:59
+msgid "Open from &YouTube...\tCtrl+Y"
+msgstr "Открыть с &YouTube...\tCtrl+Y"
+
+#: audio_describer/ui/main_window.py:59
+msgid "Open a video from YouTube"
+msgstr "Открыть видео с YouTube"
+
+#: audio_describer/ui/main_window.py:61
+msgid "Manage &Prompt Presets..."
+msgstr "Управление &шаблонами запросов..."
+
+#: audio_describer/ui/main_window.py:61
+msgid "Add, edit, or delete custom prompt presets"
+msgstr "Добавлять, редактировать или удалять пользовательские шаблоны запросов"
+
+#: audio_describer/ui/main_window.py:63
+msgid "&Settings...\tCtrl+,"
+msgstr "&Настройки...\tCtrl+,"
+
+#: audio_describer/ui/main_window.py:63
+msgid "Configure application settings"
+msgstr "Настроить параметры приложения"
+
+#: audio_describer/ui/main_window.py:65
+msgid "E&xit\tAlt+F4"
+msgstr "В&ыход\tAlt+F4"
+
+#: audio_describer/ui/main_window.py:65
+msgid "Exit the application"
+msgstr "Выйти из приложения"
+
+#: audio_describer/ui/main_window.py:66
+msgid "&File"
+msgstr "&Файл"
+
+#: audio_describer/ui/main_window.py:69
+msgid "&View Help\tF1"
+msgstr "&Справка\tF1"
+
+#: audio_describer/ui/main_window.py:69
+msgid "Open the help documentation"
+msgstr "Открыть справочную документацию"
+
+#: audio_describer/ui/main_window.py:70
+msgid "&Changelog"
+msgstr "&Журнал изменений"
+
+#: audio_describer/ui/main_window.py:70
+msgid "View the application's changelog"
+msgstr "Просмотреть журнал изменений приложения"
+
+#: audio_describer/ui/main_window.py:71
+msgid "Co&ntributors"
+msgstr "&Участники"
+
+#: audio_describer/ui/main_window.py:71
+msgid "View the list of contributors"
+msgstr "Просмотреть список участников"
+
+#: audio_describer/ui/main_window.py:72
+msgid "View &License"
+msgstr "Просмотр &лицензии"
+
+#: audio_describer/ui/main_window.py:72
+msgid "View the application's license agreement"
+msgstr "Просмотреть лицензионное соглашение приложения"
+
+#: audio_describer/ui/main_window.py:74
+msgid "&About..."
+msgstr "&О программе..."
+
+#: audio_describer/ui/main_window.py:74 audio_describer/ui/main_window.py:398
+#, python-format
+msgid "About %s"
+msgstr "О программе %s"
+
+#: audio_describer/ui/main_window.py:75
+msgid "&Help"
+msgstr "&Справка"
+
+#: audio_describer/ui/main_window.py:81
+msgid "Select a video source to begin:"
+msgstr "Выберите источник видео для начала:"
+
+#: audio_describer/ui/main_window.py:84
+msgid "&Local Video File"
+msgstr "&Локальный видеофайл"
+
+#: audio_describer/ui/main_window.py:85
+msgid "Process a local video file"
+msgstr "Обработать локальный видеофайл"
+
+#: audio_describer/ui/main_window.py:88
+msgid "Direct Video &URL"
+msgstr "Прямой &URL видео"
+
+#: audio_describer/ui/main_window.py:89
+msgid "Process a video from a direct web URL"
+msgstr "Обработать видео по прямой веб-ссылке"
+
+#: audio_describer/ui/main_window.py:92
+msgid "&YouTube Video URL"
+msgstr "URL видео с &YouTube"
+
+#: audio_describer/ui/main_window.py:93
+msgid "Process a video from a YouTube URL"
+msgstr "Обработать видео по ссылке с YouTube"
+
+#: audio_describer/ui/main_window.py:96
+msgid "Optional: Select a prompt preset to enhance generation:"
+msgstr "Необязательно: выберите шаблон запроса для улучшения генерации:"
+
+#: audio_describer/ui/main_window.py:100
+msgid "Select an optional prompt preset."
+msgstr "Выберите необязательный шаблон запроса."
+
+#: audio_describer/ui/main_window.py:104
+msgid "The full text of the selected prompt."
+msgstr "Полный текст выбранного запроса."
+
+#: audio_describer/ui/main_window.py:111
+msgid "Status Log"
+msgstr "Журнал состояний"
+
+#: audio_describer/ui/main_window.py:114
+msgid "Application status and processing messages."
+msgstr "Сообщения о состоянии приложения и обработке."
+
+#: audio_describer/ui/main_window.py:120
+msgid "&Settings..."
+msgstr "&Настройки..."
+
+#: audio_describer/ui/main_window.py:121
+msgid "Open application settings"
+msgstr "Открыть настройки приложения"
+
+#: audio_describer/ui/main_window.py:124
+msgid "E&xit"
+msgstr "В&ыход"
+
+#: audio_describer/ui/main_window.py:132
+msgid "Ready"
+msgstr "Готово"
+
+#: audio_describer/ui/main_window.py:178
+msgid "(No Preset Selected)"
+msgstr "(Шаблон не выбран)"
+
+#: audio_describer/ui/main_window.py:209
+msgid "Processing..."
+msgstr "Обработка..."
+
+#: audio_describer/ui/main_window.py:210
+#, python-format
+msgid "%s%%"
+msgstr "%s%%"
+
+#: audio_describer/ui/main_window.py:216
+msgid "Preparing local file..."
+msgstr "Подготовка локального файла..."
+
+#: audio_describer/ui/main_window.py:219
+msgid "Enter Direct Video URL"
+msgstr "Введите прямой URL видео"
+
+#: audio_describer/ui/main_window.py:219
+msgid "Enter direct URL to video file (e.g., .mp4, .webm):"
+msgstr "Введите прямой URL к видеофайлу (например, .mp4, .webm):"
+
+#: audio_describer/ui/main_window.py:221
+msgid "Downloading from URL..."
+msgstr "Загрузка по URL..."
+
+#: audio_describer/ui/main_window.py:224
+msgid "Enter YouTube Video URL"
+msgstr "Введите URL видео с YouTube"
+
+#: audio_describer/ui/main_window.py:224
+msgid "Enter YouTube video URL:"
+msgstr "Введите URL видео с YouTube:"
+
+#: audio_describer/ui/main_window.py:227
+msgid "Downloading from YouTube..."
+msgstr "Загрузка с YouTube..."
+
+#: audio_describer/ui/main_window.py:255
+msgid "Video processing or downloading failed."
+msgstr "Ошибка обработки или загрузки видео."
+
+#: audio_describer/ui/main_window.py:262
+msgid "Identifying characters..."
+msgstr "Идентификация персонажей..."
+
+#: audio_describer/ui/main_window.py:274
+msgid "Note: Video chunking is an experimental feature."
+msgstr ""
+"Примечание: разделение видео на фрагменты является экспериментальной "
+"функцией."
+
+#: audio_describer/ui/main_window.py:278
+msgid "Asking AI to generate descriptions..."
+msgstr "Запрос генерации описаний у ИИ..."
+
+#: audio_describer/ui/main_window.py:283
+msgid "AI processing failed to provide descriptions."
+msgstr "Обработка ИИ не смогла предоставить описания."
+
+#: audio_describer/ui/main_window.py:285
+msgid "Finalizing descriptions..."
+msgstr "Завершение обработки описаний..."
+
+#: audio_describer/ui/main_window.py:304
+#, python-format
+msgid ""
+"An error occurred during processing:\n"
+"%s"
+msgstr ""
+"Произошла ошибка во время обработки:\n"
+"%s"
+
+#: audio_describer/ui/main_window.py:306
+msgid "Processing Error"
+msgstr "Ошибка обработки"
+
+#: audio_describer/ui/main_window.py:315
+#, python-format
+msgid "Success! Generated %d audio descriptions."
+msgstr "Успешно! Сгенерировано %d аудиоописаний."
+
+#: audio_describer/ui/main_window.py:323
+#, python-format
+msgid "Error opening video player: %s"
+msgstr "Ошибка открытия видеоплеера: %s"
+
+#: audio_describer/ui/main_window.py:327
+msgid "Ready for next video."
+msgstr "Готово к следующему видео."
+
+#: audio_describer/ui/main_window.py:330
+msgid ""
+"Processing complete, but the AI did not generate any descriptions for this "
+"video."
+msgstr "Обработка завершена, но ИИ не сгенерировал описаний для этого видео."
+
+#: audio_describer/ui/main_window.py:332
+msgid "Processing Note"
+msgstr "Примечание по обработке"
+
+#: audio_describer/ui/main_window.py:411
+msgid ""
+"An application to automatically generate audio descriptions for videos using "
+"Gemini AI.\n"
+"\n"
+"Developed with accessibility in mind."
+msgstr ""
+"Приложение для автоматической генерации аудиоописаний к видео с "
+"использованием Gemini AI.\n"
+"\n"
+"Разработано с учетом доступности."
+
+#: audio_describer/ui/main_window.py:415
+msgid "Contact:"
+msgstr "Контакт:"
+
+#: audio_describer/ui/main_window.py:420
+msgid "Visit Website"
+msgstr "Посетить веб-сайт"
+
+#: audio_describer/ui/manage_prompts_dialog.py:12
+msgid "Manage Prompt Presets"
+msgstr "Управление шаблонами запросов"
+
+#: audio_describer/ui/manage_prompts_dialog.py:31
+#, python-format
+msgid "Manage presets for the '%s' language."
+msgstr "Управление шаблонами для языка '%s'."
+
+#: audio_describer/ui/manage_prompts_dialog.py:36
+#: audio_describer/ui/manage_voices_dialog.py:28
+msgid "Preset Name"
+msgstr "Имя шаблона"
+
+#: audio_describer/ui/manage_prompts_dialog.py:37
+msgid "Prompt Text"
+msgstr "Текст запроса"
+
+#: audio_describer/ui/manage_prompts_dialog.py:38
+msgid "List of saved prompt presets."
+msgstr "Список сохраненных шаблонов запросов."
+
+#: audio_describer/ui/manage_prompts_dialog.py:49
+#: audio_describer/ui/manage_voices_dialog.py:36
+msgid "&Add..."
+msgstr "&Добавить..."
+
+#: audio_describer/ui/manage_prompts_dialog.py:50
+#: audio_describer/ui/manage_voices_dialog.py:37
+msgid "&Edit..."
+msgstr "&Редактировать..."
+
+#: audio_describer/ui/manage_prompts_dialog.py:95
+msgid "Add New Prompt"
+msgstr "Добавить новый запрос"
+
+#: audio_describer/ui/manage_prompts_dialog.py:108
+msgid "Edit Prompt"
+msgstr "Редактировать запрос"
+
+#: audio_describer/ui/manage_prompts_dialog.py:121
+#: audio_describer/ui/manage_voices_dialog.py:105
+#, python-format
+msgid "Are you sure you want to delete the preset '%s'?"
+msgstr "Вы уверены, что хотите удалить шаблон '%s'?"
+
+#: audio_describer/ui/manage_voices_dialog.py:11
+msgid "Manage Voice Presets"
+msgstr "Управление шаблонами голосов"
+
+#: audio_describer/ui/manage_voices_dialog.py:24
+msgid "Create and manage voice personalities for OpenAI TTS."
+msgstr "Создание и управление голосовыми персонажами для OpenAI TTS."
+
+#: audio_describer/ui/manage_voices_dialog.py:29
+msgid "Base Voice"
+msgstr "Базовый голос"
+
+#: audio_describer/ui/manage_voices_dialog.py:30
+msgid "Speed"
+msgstr "Скорость"
+
+#: audio_describer/ui/manage_voices_dialog.py:31
+msgid "Instructions"
+msgstr "Инструкции"
+
+#: audio_describer/ui/manage_voices_dialog.py:82
+msgid "Add New Voice Preset"
+msgstr "Добавить новый шаблон голоса"
+
+#: audio_describer/ui/manage_voices_dialog.py:94
+msgid "Edit Voice Preset"
+msgstr "Редактировать шаблон голоса"
+
+#: audio_describer/ui/player_export.py:69
+#: audio_describer/ui/player_export.py:113
+msgid "No descriptions to export."
+msgstr "Нет описаний для экспорта."
+
+#: audio_describer/ui/player_export.py:69
+#: audio_describer/ui/player_export.py:89
+#: audio_describer/ui/player_export.py:113
+msgid "Export Note"
+msgstr "Примечание по экспорту"
+
+#: audio_describer/ui/player_export.py:74
+msgid "Save Descriptions as TXT"
+msgstr "Сохранить описания как TXT"
+
+#: audio_describer/ui/player_export.py:74
+msgid "Text files (*.txt)|*.txt"
+msgstr "Текстовые файлы (*.txt)|*.txt"
+
+#: audio_describer/ui/player_export.py:80
+#, python-format
+msgid ""
+"Audio Descriptions for: %s\n"
+"-------------------------------------------------\n"
+"\n"
+msgstr ""
+"Аудиоописания для: %s\n"
+"-------------------------------------------------\n"
+"\n"
+
+#: audio_describer/ui/player_export.py:83
+#, python-format
+msgid ""
+"Descriptions exported to:\n"
+"%s"
+msgstr ""
+"Описания экспортированы в:\n"
+"%s"
+
+#: audio_describer/ui/player_export.py:83
+#: audio_describer/ui/player_export.py:106
+msgid "Export Successful"
+msgstr "Экспорт успешен"
+
+#: audio_describer/ui/player_export.py:85
+#: audio_describer/ui/player_export.py:109
+#, python-format
+msgid "Error saving file: %s"
+msgstr "Ошибка сохранения файла: %s"
+
+#: audio_describer/ui/player_export.py:85
+#: audio_describer/ui/player_export.py:109
+msgid "Export Error"
+msgstr "Ошибка экспорта"
+
+#: audio_describer/ui/player_export.py:89
+msgid "No descriptions available to export."
+msgstr "Нет доступных описаний для экспорта."
+
+#: audio_describer/ui/player_export.py:94
+msgid "Save Descriptions as SRT"
+msgstr "Сохранить описания как SRT"
+
+#: audio_describer/ui/player_export.py:94
+msgid "SRT Subtitles (*.srt)|*.srt"
+msgstr "Субтитры SRT (*.srt)|*.srt"
+
+#: audio_describer/ui/player_export.py:105
+#, python-format
+msgid ""
+"Descriptions successfully exported to:\n"
+"%s"
+msgstr ""
+"Описания успешно экспортированы в:\n"
+"%s"
+
+#: audio_describer/ui/player_export.py:115
+msgid "No TTS engines are available. MP3 export is disabled."
+msgstr "TTS-движки недоступны. Экспорт MP3 отключен."
+
+#: audio_describer/ui/player_export.py:115
+msgid "TTS Engine Missing"
+msgstr "Отсутствует TTS-движок"
+
+#: audio_describer/ui/player_export.py:117
+msgid ""
+"Pydub audio library not found.\n"
+"MP3 export with ducking is disabled."
+msgstr ""
+"Аудиобиблиотека Pydub не найдена.\n"
+"Экспорт в MP3 с приглушением звука отключен."
+
+#: audio_describer/ui/player_export.py:117
+msgid "Pydub Library Missing"
+msgstr "Отсутствует библиотека Pydub"
+
+#: audio_describer/ui/player_export.py:119
+msgid "FFmpeg not found. It is required for MP3 export."
+msgstr "FFmpeg не найден. Он необходим для экспорта в MP3."
+
+#: audio_describer/ui/player_export.py:119
+msgid "FFmpeg Not Found"
+msgstr "FFmpeg не найден"
+
+#: audio_describer/ui/player_export.py:123
+msgid "Save Described Audio as MP3"
+msgstr "Сохранить аудио с описанием как MP3"
+
+#: audio_describer/ui/player_export.py:123
+msgid "MP3 Audio (*.mp3)|*.mp3"
+msgstr "Аудио MP3 (*.mp3)|*.mp3"
+
+#: audio_describer/ui/player_export.py:129
+msgid "Exporting Audio to MP3"
+msgstr "Экспорт аудио в MP3"
+
+#: audio_describer/ui/player_export.py:129
+msgid "Starting..."
+msgstr "Начало..."
+
+#: audio_describer/ui/player_export.py:152
+msgid "Extracting original audio..."
+msgstr "Извлечение оригинального аудио..."
+
+#: audio_describer/ui/player_export.py:157
+#, python-format
+msgid "FFmpeg failed to extract audio to WAV: %s"
+msgstr "FFmpeg не удалось извлечь аудио в WAV: %s"
+
+#: audio_describer/ui/player_export.py:161
+#, python-format
+msgid "Synthesizing description %d of %d..."
+msgstr "Синтез описания %d из %d..."
+
+#: audio_describer/ui/player_export.py:165
+#, python-format
+msgid "Failed to synthesize description #%d."
+msgstr "Не удалось синтезировать описание #%d."
+
+#: audio_describer/ui/player_export.py:173
+msgid "Correcting description overlaps..."
+msgstr "Исправление перекрытий описаний..."
+
+#: audio_describer/ui/player_export.py:191
+msgid "Mixing audio tracks..."
+msgstr "Сведение аудиодорожек..."
+
+#: audio_describer/ui/player_export.py:255
+msgid "Saving to MP3..."
+msgstr "Сохранение в MP3..."
+
+#: audio_describer/ui/player_vqa.py:43 audio_describer/ui/player_vqa.py:124
+msgid "Cannot determine current video time."
+msgstr "Невозможно определить текущее время видео."
+
+#: audio_describer/ui/player_vqa.py:43 audio_describer/ui/player_vqa.py:124
+#: audio_describer/ui/settings_dialog.py:367
+#: audio_describer/utils/update_checker.py:94
+msgid "Error"
+msgstr "Ошибка"
+
+#: audio_describer/ui/player_vqa.py:126
+msgid "Analyzing Scene"
+msgstr "Анализ сцены"
+
+#: audio_describer/ui/player_vqa.py:126
+msgid "Extracting video clip for analysis..."
+msgstr "Извлечение видеофрагмента для анализа..."
+
+#: audio_describer/ui/player_window.py:32
+msgid "Video Player with Descriptions"
+msgstr "Видеоплеер с описаниями"
+
+#: audio_describer/ui/player_window.py:58
+#, python-format
+msgid ""
+"Unable to load video: %s\n"
+"Ensure format is supported."
+msgstr ""
+"Не удалось загрузить видео: %s\n"
+"Убедитесь, что формат поддерживается."
+
+#: audio_describer/ui/player_window.py:58
+msgid "Error Loading Video"
+msgstr "Ошибка загрузки видео"
+
+#: audio_describer/ui/player_window.py:75
+#: audio_describer/ui/player_window.py:274
+msgid "Play"
+msgstr "Воспроизвести"
+
+#: audio_describer/ui/player_window.py:79
+msgid "Video progress slider"
+msgstr "Ползунок прогресса видео"
+
+#: audio_describer/ui/player_window.py:85
+#, python-format
+msgid "&Rewind %ss"
+msgstr "&Перемотать на %ss назад"
+
+#: audio_describer/ui/player_window.py:87
+#, python-format
+msgid "&Forward %ss"
+msgstr "&Вперед на %ss"
+
+#: audio_describer/ui/player_window.py:90
+msgid "Vol:"
+msgstr "Громк:"
+
+#: audio_describer/ui/player_window.py:98
+msgid "Current Audio Description:"
+msgstr "Текущее аудиоописание:"
+
+#: audio_describer/ui/player_window.py:103
+msgid "AI Token Usage:"
+msgstr "Использование токенов ИИ:"
+
+#: audio_describer/ui/player_window.py:110
+msgid "Explore Scene..."
+msgstr "Исследовать сцену..."
+
+#: audio_describer/ui/player_window.py:112
+msgid "Ask More..."
+msgstr "Спросить еще..."
+
+#: audio_describer/ui/player_window.py:114
+msgid "Edit Descriptions..."
+msgstr "Редактировать описания..."
+
+#: audio_describer/ui/player_window.py:117
+msgid "Settings..."
+msgstr "Настройки..."
+
+#: audio_describer/ui/player_window.py:121
+msgid "Export to .TXT"
+msgstr "Экспорт в .TXT"
+
+#: audio_describer/ui/player_window.py:123
+msgid "Export to .SRT"
+msgstr "Экспорт в .SRT"
+
+#: audio_describer/ui/player_window.py:125
+msgid "Export Audio (MP3)"
+msgstr "Экспорт аудио (MP3)"
+
+#: audio_describer/ui/player_window.py:179
+msgid "MP3 Export Canceled"
+msgstr "Экспорт в MP3 отменен"
+
+#: audio_describer/ui/player_window.py:179
+msgid "MP3 Export Error"
+msgstr "Ошибка экспорта MP3"
+
+#: audio_describer/ui/player_window.py:180
+#, python-format
+msgid ""
+"Failed to export MP3:\n"
+"%s"
+msgstr ""
+"Не удалось экспортировать MP3:\n"
+"%s"
+
+#: audio_describer/ui/player_window.py:182
+#, python-format
+msgid ""
+"Described audio successfully exported to:\n"
+"%s"
+msgstr ""
+"Аудио с описанием успешно экспортировано в:\n"
+"%s"
+
+#: audio_describer/ui/player_window.py:182
+msgid "MP3 Export Successful"
+msgstr "Экспорт MP3 успешен"
+
+#: audio_describer/ui/player_window.py:194
+msgid "Description saved."
+msgstr "Описание сохранено."
+
+#: audio_describer/ui/player_window.py:208
+msgid "Description deleted."
+msgstr "Описание удалено."
+
+#: audio_describer/ui/player_window.py:256
+msgid "Video is not ready. Please wait."
+msgstr "Видео не готово. Пожалуйста, подождите."
+
+#: audio_describer/ui/player_window.py:256
+msgid "Playback Issue"
+msgstr "Проблема с воспроизведением"
+
+#: audio_describer/ui/player_window.py:263
+msgid "Could not start playback."
+msgstr "Не удалось начать воспроизведение."
+
+#: audio_describer/ui/player_window.py:263
+msgid "Playback Error"
+msgstr "Ошибка воспроизведения"
+
+#: audio_describer/ui/player_window.py:266
+msgid "Pause"
+msgstr "Пауза"
+
+#: audio_describer/ui/player_window.py:279
+msgid "Replay"
+msgstr "Повторить"
+
+#: audio_describer/ui/player_window.py:394
+msgid "Description added to main list."
+msgstr "Описание добавлено в основной список."
+
+#: audio_describer/ui/player_window.py:429
+msgid "--- Character Glossary ---"
+msgstr "--- Глоссарий персонажей ---"
+
+#: audio_describer/ui/player_window.py:430
+#: audio_describer/ui/player_window.py:439
+#: audio_describer/ui/player_window.py:453
+msgid "Prompt"
+msgstr "Запрос"
+
+#: audio_describer/ui/player_window.py:431
+#: audio_describer/ui/player_window.py:440
+#: audio_describer/ui/player_window.py:453
+msgid "Output"
+msgstr "Вывод"
+
+#: audio_describer/ui/player_window.py:432
+#: audio_describer/ui/player_window.py:441
+msgid "Total"
+msgstr "Всего"
+
+#: audio_describer/ui/player_window.py:438
+msgid "--- Description Generation ---"
+msgstr "--- Генерация описаний ---"
+
+#: audio_describer/ui/player_window.py:447
+msgid "--- VQA (Ask More) ---"
+msgstr "--- VQA (Задать еще) ---"
+
+#: audio_describer/ui/player_window.py:453
+#, python-format
+msgid "Query %s Total"
+msgstr "Запрос %s Всего"
+
+#: audio_describer/ui/player_window.py:460
+msgid "GRAND TOTAL"
+msgstr "ИТОГО"
+
+#: audio_describer/ui/player_window.py:461
+msgid "Total Prompt"
+msgstr "Всего запросов"
+
+#: audio_describer/ui/player_window.py:461
+msgid "Total Output"
+msgstr "Всего вывода"
+
+#: audio_describer/ui/player_window.py:464
+msgid "No AI token usage data available yet."
+msgstr "Данные об использовании токенов ИИ пока недоступны."
+
+#: audio_describer/ui/scene_explorer_dialog.py:19
+msgid "No overall description was provided."
+msgstr "Общее описание не предоставлено."
+
+#: audio_describer/ui/scene_explorer_dialog.py:37
+msgid "Scene Explorer"
+msgstr "Исследователь сцены"
+
+#: audio_describer/ui/scene_explorer_dialog.py:50
+msgid "An error occurred in the Scene Explorer."
+msgstr "Произошла ошибка в Исследователе сцены."
+
+#: audio_describer/ui/scene_explorer_dialog.py:56
+msgid ""
+"Scene Explorer opened. Use arrow keys to move. Press D for scene "
+"description, L to list all objects, and Shift + L to enter jump mode. Escape "
+"to close."
+msgstr ""
+"Исследователь сцены открыт. Используйте стрелки для перемещения. Нажмите D "
+"для описания сцены, L для списка всех объектов и Shift + L для входа в режим "
+"перехода. Escape для закрытия."
+
+#: audio_describer/ui/scene_explorer_dialog.py:117
+msgid "There are no objects to jump to."
+msgstr "Нет объектов для перехода."
+
+#: audio_describer/ui/scene_explorer_dialog.py:122
+msgid ""
+"Jump mode. Use up and down arrows to select an object. Press Enter to jump, "
+"or Escape to exit jump mode."
+msgstr ""
+"Режим перехода. Используйте стрелки вверх и вниз для выбора объекта. Нажмите "
+"Enter для перехода или Escape для выхода из режима."
+
+#: audio_describer/ui/scene_explorer_dialog.py:127
+msgid "Exited jump mode. Now exploring."
+msgstr "Выход из режима перехода. Теперь в режиме исследования."
+
+#: audio_describer/ui/scene_explorer_dialog.py:132
+msgid "Unnamed Object"
+msgstr "Безымянный объект"
+
+#: audio_describer/ui/scene_explorer_dialog.py:143
+#, python-format
+msgid "Jumping to %s."
+msgstr "Переход к %s."
+
+#: audio_describer/ui/scene_explorer_dialog.py:146
+msgid "Could not jump to this object as it has no coordinates."
+msgstr "Не удалось перейти к этому объекту, так как у него нет координат."
+
+#: audio_describer/ui/scene_explorer_dialog.py:153
+msgid "There are no objects in this scene."
+msgstr "В этой сцене нет объектов."
+
+#: audio_describer/ui/scene_explorer_dialog.py:156
+msgid "unlabeled object"
+msgstr "объект без метки"
+
+#: audio_describer/ui/scene_explorer_dialog.py:157
+#, python-format
+msgid "Objects in this scene: %s"
+msgstr "Объекты в этой сцене: %s"
+
+#: audio_describer/ui/scene_explorer_dialog.py:167
+msgid "an object"
+msgstr "объект"
+
+#: audio_describer/ui/scene_explorer_dialog.py:191
+msgid "Unknown Object"
+msgstr "Неизвестный объект"
+
+#: audio_describer/ui/scene_explorer_dialog.py:193
+msgid "No further details available."
+msgstr "Дополнительные сведения отсутствуют."
+
+#: audio_describer/ui/scene_explorer_dialog.py:198
+msgid "Nothing to inspect here."
+msgstr "Здесь нечего осматривать."
+
+#: audio_describer/ui/settings_dialog.py:34
+#, python-format
+msgid "%s Settings"
+msgstr "Настройки %s"
+
+#: audio_describer/ui/settings_dialog.py:36
+msgid "Best Available"
+msgstr "Наилучшее доступное"
+
+#: audio_describer/ui/settings_dialog.py:37
+msgid "Short - Concise descriptions"
+msgstr "Кратко - Лаконичные описания"
+
+#: audio_describer/ui/settings_dialog.py:37
+msgid "Standard - Balanced detail (Default)"
+msgstr "Стандартно - Сбалансированная детализация (По умолчанию)"
+
+#: audio_describer/ui/settings_dialog.py:37
+msgid "Detailed - Rich descriptions"
+msgstr "Подробно - Насыщенные описания"
+
+#: audio_describer/ui/settings_dialog.py:41
+msgid "Auto-Detect on Startup"
+msgstr "Автоопределение при запуске"
+
+#: audio_describer/ui/settings_dialog.py:42
+msgid "English"
+msgstr ""
+
+#: audio_describer/ui/settings_dialog.py:43
+msgid "Spanish"
+msgstr "Испанский"
+
+#: audio_describer/ui/settings_dialog.py:44
+msgid "Russian"
+msgstr "Русский"
+
+#: audio_describer/ui/settings_dialog.py:45
+msgid "Türkçe"
+msgstr "Турецкий"
+
+#: audio_describer/ui/settings_dialog.py:46
+msgid "Ukrainian"
+msgstr "Украинский"
+
+#: audio_describer/ui/settings_dialog.py:49
+msgid "Info (Default)"
+msgstr "Инфо (По умолчанию)"
+
+#: audio_describer/ui/settings_dialog.py:49
+msgid "Debug"
+msgstr "Отладка"
+
+#: audio_describer/ui/settings_dialog.py:49
+msgid "Disabled"
+msgstr "Отключено"
+
+#: audio_describer/ui/settings_dialog.py:50
+msgid "No Change (Original FPS)"
+msgstr "Без изменений (Исходная частота кадров)"
+
+#: audio_describer/ui/settings_dialog.py:50
+msgid "10 FPS (Good balance, lower cost)"
+msgstr "10 кадров в секунду (Хороший баланс, ниже стоимость)"
+
+#: audio_describer/ui/settings_dialog.py:50
+msgid "5 FPS (Very low cost, may miss fast action)"
+msgstr ""
+"5 кадров в секунду (Очень низкая стоимость, может пропустить быстрое "
+"действие)"
+
+#: audio_describer/ui/settings_dialog.py:50
+msgid "2 FPS (Extreme low cost, for static scenes)"
+msgstr "2 кадра в секунду (Крайне низкая стоимость, для статичных сцен)"
+
+#: audio_describer/ui/settings_dialog.py:51
+msgid "SAPI5 (Windows Built-in)"
+msgstr "SAPI5 (Встроенный в Windows)"
+
+#: audio_describer/ui/settings_dialog.py:51
+msgid "OpenAI TTS (High Quality)"
+msgstr "OpenAI TTS (Высокое качество)"
+
+#: audio_describer/ui/settings_dialog.py:75
+msgid "YouTube Video Download Quality:"
+msgstr "Качество загрузки видео с YouTube:"
+
+#: audio_describer/ui/settings_dialog.py:78
+msgid "Application Language (Requires Restart):"
+msgstr "Язык приложения (требуется перезапуск):"
+
+#: audio_describer/ui/settings_dialog.py:82
+msgid "Logging Level:"
+msgstr "Уровень логирования:"
+
+#: audio_describer/ui/settings_dialog.py:88
+msgid "Allow descriptions to interrupt current speech"
+msgstr "Разрешить описаниям прерывать текущую речь"
+
+#: audio_describer/ui/settings_dialog.py:92
+msgid "General"
+msgstr "Общие"
+
+#: audio_describer/ui/settings_dialog.py:97
+msgid "Gemini API Key:"
+msgstr "API-ключ Gemini:"
+
+#: audio_describer/ui/settings_dialog.py:100
+msgid "OpenAI API Key (for TTS):"
+msgstr "API-ключ OpenAI (для TTS):"
+
+#: audio_describer/ui/settings_dialog.py:104
+msgid "Frame Rate for AI Analysis:"
+msgstr "Частота кадров для анализа ИИ:"
+
+#: audio_describer/ui/settings_dialog.py:108
+msgid "Description Verbosity:"
+msgstr "Детализация описания:"
+
+#: audio_describer/ui/settings_dialog.py:112
+msgid "Gemini Model Override:"
+msgstr "Переопределение модели Gemini:"
+
+#: audio_describer/ui/settings_dialog.py:115
+msgid "Temperature:"
+msgstr "Температура:"
+
+#: audio_describer/ui/settings_dialog.py:118
+msgid "Send Video Only (No Audio) to AI"
+msgstr "Отправлять ИИ только видео (без звука)"
+
+#: audio_describer/ui/settings_dialog.py:120
+msgid "Disable Safety Filters (Use with caution)"
+msgstr "Отключить фильтры безопасности (использовать с осторожностью)"
+
+#: audio_describer/ui/settings_dialog.py:122
+msgid "Enable Video Chunking for Long Videos"
+msgstr "Включить разделение на фрагменты для длинных видео"
+
+#: audio_describer/ui/settings_dialog.py:124
+msgid "Enable Character Glossary Pre-Analysis"
+msgstr "Включить предварительный анализ глоссария персонажей"
+
+#: audio_describer/ui/settings_dialog.py:126
+msgid "Chunk Duration (seconds):"
+msgstr "Длительность фрагмента (секунды):"
+
+#: audio_describer/ui/settings_dialog.py:131
+msgid "AI Settings"
+msgstr "Настройки ИИ"
+
+#: audio_describer/ui/settings_dialog.py:136
+msgid "Text-to-Speech Engine"
+msgstr "Движок преобразования текста в речь"
+
+#: audio_describer/ui/settings_dialog.py:139
+msgid "OpenAI TTS Settings"
+msgstr "Настройки OpenAI TTS"
+
+#: audio_describer/ui/settings_dialog.py:141
+msgid "Voice Preset:"
+msgstr "Шаблон голоса:"
+
+#: audio_describer/ui/settings_dialog.py:145
+msgid "Manage Voice Presets..."
+msgstr "Управление шаблонами голосов..."
+
+#: audio_describer/ui/settings_dialog.py:150
+msgid "SAPI5 Settings"
+msgstr "Настройки SAPI5"
+
+#: audio_describer/ui/settings_dialog.py:152
+msgid "Voice:"
+msgstr "Голос:"
+
+#: audio_describer/ui/settings_dialog.py:153
+msgid "(No SAPI5 voices found)"
+msgstr "(Голоса SAPI5 не найдены)"
+
+#: audio_describer/ui/settings_dialog.py:164
+msgid "Test Voice"
+msgstr "Проверить голос"
+
+#: audio_describer/ui/settings_dialog.py:166
+msgid "This is a test of the selected voice."
+msgstr "Это тест выбранного голоса."
+
+#: audio_describer/ui/settings_dialog.py:168
+msgid "Test"
+msgstr "Тест"
+
+#: audio_describer/ui/settings_dialog.py:172
+msgid "Original Audio Ducking (-dB, for MP3):"
+msgstr "Приглушение оригинального аудио (-дБ, для MP3):"
+
+#: audio_describer/ui/settings_dialog.py:176
+msgid "Audio Output"
+msgstr "Аудиовывод"
+
+#: audio_describer/ui/settings_dialog.py:223
+msgid "Please enter some text to test."
+msgstr "Пожалуйста, введите текст для тестирования."
+
+#: audio_describer/ui/settings_dialog.py:255
+#, python-format
+msgid "Error testing voice: %s"
+msgstr "Ошибка при тестировании голоса: %s"
+
+#: audio_describer/ui/settings_dialog.py:255
+msgid "Test Failed"
+msgstr "Тест не удался"
+
+#: audio_describer/ui/settings_dialog.py:367
+msgid "Could not save settings."
+msgstr "Не удалось сохранить настройки."
+
+#: audio_describer/utils/update_checker.py:43
+msgid ""
+"A new version ({}) is available. You have version {}.\n"
+"\n"
+"Would you like to download and install it now?"
+msgstr ""
+"Доступна новая версия ({}). У вас установлена версия {}.\n"
+"\n"
+"Хотите скачать и установить ее сейчас?"
+
+#: audio_describer/utils/update_checker.py:46
+msgid "Update Available"
+msgstr "Доступно обновление"
+
+#: audio_describer/utils/update_checker.py:59
+msgid "Downloading Update"
+msgstr "Загрузка обновления"
+
+#: audio_describer/utils/update_checker.py:60
+msgid "Downloading new version, please wait..."
+msgstr "Загрузка новой версии, пожалуйста, подождите..."
+
+#: audio_describer/utils/update_checker.py:94
+msgid "something whent wrong while updating."
+msgstr "что-то пошло не так во время обновления."
+
+#: audio_describer/utils/update_checker.py:110
+msgid "Failed to download or apply update: {}"
+msgstr "Не удалось скачать или применить обновление: {}"
+
+#: audio_describer/utils/update_checker.py:110
+msgid "Update Error"
+msgstr "Ошибка обновления"
+
+#~ msgid "English (Default)"
+#~ msgstr "Английский (По умолчанию)"
+
+#, python-format
+#~ msgid "AI answer: %s"
+#~ msgstr "Ответ ИИ: %s"
+
+#~ msgid "Choose an audio description from the list to modify its text."
+#~ msgstr "Выберите аудиоописание из списка, чтобы изменить его текст."
+
+#~ msgid ""
+#~ "List of available audio descriptions. Use arrow keys to navigate, then "
+#~ "Tab to edit."
+#~ msgstr ""
+#~ "Список доступных аудиоописаний. Используйте стрелки для навигации, затем "
+#~ "Tab для редактирования."
+
+#~ msgid "Editable text of the selected audio description."
+#~ msgstr "Редактируемый текст выбранного аудиоописания."
+
+#~ msgid "Save the modified description text."
+#~ msgstr "Сохранить измененный текст описания."
+
+#~ msgid "Close this dialog without saving changes."
+#~ msgstr "Закрыть это диалоговое окно без сохранения изменений."
+
+#~ msgid "No valid description is currently selected for editing."
+#~ msgstr "Для редактирования не выбрано допустимое описание."
+
+#~ msgid "Selection Error"
+#~ msgstr "Ошибка выбора"
+
+#~ msgid ""
+#~ "Speech synthesis library (pyttsx3) not found.\n"
+#~ "MP3 export function is disabled."
+#~ msgstr ""
+#~ "Библиотека синтеза речи (pyttsx3) не найдена.\n"
+#~ "Функция экспорта в MP3 отключена."
+
+#~ msgid "Finalizing and exporting MP3..."
+#~ msgstr "Завершение и экспорт в MP3..."
+
+#~ msgid "MP3 export complete!"
+#~ msgstr "Экспорт в MP3 завершен!"
+
+#~ msgid "Cancelled"
+#~ msgstr "Отменено"
+
+#, python-format
+#~ msgid "An unexpected error occurred: %s"
+#~ msgstr "Произошла непредвиденная ошибка: %s"
+
+#~ msgid "FFmpeg not found; using original video audio for AI."
+#~ msgstr "FFmpeg не найден; используется оригинальная аудиодорожка для ИИ."
+
+#, python-format
+#~ msgid "Original video for silencing not found: %s"
+#~ msgstr "Оригинальное видео для заглушения не найдено: %s"
+
+#~ msgid "Creating silenced video copy for AI..."
+#~ msgstr "Создание копии видео без звука для ИИ..."
+
+#~ msgid "Failed to create silenced video; using original."
+#~ msgstr "Не удалось создать видео без звука; используется оригинал."
+
+#~ msgid "Silenced video creation error; using original."
+#~ msgstr "Ошибка создания видео без звука; используется оригинал."
+
+#~ msgid "Silenced video copy created for AI."
+#~ msgstr "Копия видео без звука для ИИ создана."
+
+#~ msgid "Error creating silenced video; using original."
+#~ msgstr "Ошибка создания видео без звука; используется оригинал."
+
+#~ msgid "Splitting video into smaller parts..."
+#~ msgstr "Разделение видео на более мелкие части..."
+
+#~ msgid "Analyzing video segment {} of {}..."
+#~ msgstr "Анализ сегмента видео {} из {}..."
+
+#~ msgid "Glossary Pre-Analysis Tokens (Prompt/Output/Total): {}/{}/{}"
+#~ msgstr ""
+#~ "Токены предварительного анализа глоссария (Запрос/Ответ/Всего): {}/{}/{}"
+
+#~ msgid "Description Generation Total (Prompt/Output/Total): {}/{}/{}"
+#~ msgstr "Всего токенов на генерацию описаний (Запрос/Ответ/Всего): {}/{}/{}"
+
+#~ msgid "No description generation token usage data."
+#~ msgstr "Нет данных об использовании токенов для генерации описаний."
+
+#~ msgid "VQA Query {}: Prompt/Output/Total: {}/{}/{}"
+#~ msgstr "VQA-запрос {}: Запрос/Ответ/Всего: {}/{}/{}"
+
+#~ msgid "Your Gemini API Key:"
+#~ msgstr "Ваш API-ключ Gemini:"
+
+#~ msgid "Audio Description Verbosity:"
+#~ msgstr "Детализация аудиоописания:"
+
+#~ msgid "Model Override (blank for default):"
+#~ msgstr "Переопределение модели (пусто для значения по умолчанию):"
+
+#~ msgid "Temperature (0.0-1.0):"
+#~ msgstr "Температура (0.0-1.0):"
+
+#~ msgid "Splits long videos into smaller parts for more reliable analysis."
+#~ msgstr ""
+#~ "Разделяет длинные видео на более мелкие части для более надежного анализа."
+
+#~ msgid ""
+#~ "The length of each video chunk in seconds. Shorter can be better for very "
+#~ "complex scenes."
+#~ msgstr ""
+#~ "Длина каждого фрагмента видео в секундах. Меньшая длительность может быть "
+#~ "лучше для очень сложных сцен."
+
+#~ msgid ""
+#~ "Performs an initial pass to identify characters, which can improve naming "
+#~ "consistency in descriptions. Only applies if chunking is enabled."
+#~ msgstr ""
+#~ "Выполняет начальный проход для идентификации персонажей, что может "
+#~ "улучшить согласованность имен в описаниях. Применяется только если "
+#~ "включено разделение на фрагменты."
+
+#~ msgid "Gemini AI"
+#~ msgstr "Gemini AI"
+
+#~ msgid "Spoken Description Voice (SAPI5):"
+#~ msgstr "Голос для озвучивания описаний (SAPI5):"
+
+#~ msgid "(No SAPI5 voices or pyttsx3 error)"
+#~ msgstr "(Нет голосов SAPI5 или ошибка pyttsx3)"
+
+#~ msgid "Voice Speed (Relative):"
+#~ msgstr "Скорость голоса (относительная):"
+
+#~ msgid "Voice Volume (0-100%):"
+#~ msgstr "Громкость голоса (0-100%):"
+
+#~ msgid "Audio Output (MP3)"
+#~ msgstr "Вывод аудио (MP3)"
+
+#~ msgid "Temperature must be a number between 0.0 and 1.0."
+#~ msgstr "Температура должна быть числом от 0.0 до 1.0."
+
+#~ msgid "Invalid Input"
+#~ msgstr "Неверный ввод"
+
+#~ msgid "Temperature must be a valid number."
+#~ msgstr "Температура должна быть допустимым числом."

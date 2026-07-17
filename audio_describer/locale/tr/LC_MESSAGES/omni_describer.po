@@ -1,0 +1,2600 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2025-08-21 02:03+0300\n"
+"PO-Revision-Date: 2025-08-21 11:24+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: tr_TR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.6\n"
+"X-Poedit-Basepath: ../../../..\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: dist\n"
+
+#: audio_describer/__app__real.py:55
+#, python-format
+msgid "Starting %(app_name)s v%(app_version)s"
+msgstr "%(app_name)s v%(app_version)s başlatılıyor"
+
+#: audio_describer/__app__real.py:74
+#, python-format
+msgid "%(app_name)s started."
+msgstr "%(app_name)s başlatıldı."
+
+#: audio_describer/__app__real.py:118
+#, python-format
+msgid "%s is shutting down."
+msgstr "%s kapatılıyor."
+
+#: audio_describer/__app__real.py:121
+#, python-format
+msgid "%(app_name)s closed."
+msgstr "%(app_name)s kapatıldı."
+
+#: audio_describer/config.py:50
+msgid "Describer"
+msgstr "Betimleyici"
+
+#: audio_describer/core/audio_describer.py:34
+#, python-format
+msgid "Error: Video file not found: %s"
+msgstr "Hata: Video dosyası bulunamadı: %s"
+
+#: audio_describer/core/audio_describer.py:43
+#, python-format
+msgid "Uploading video '%s'..."
+msgstr "'%s' videosu yükleniyor..."
+
+#: audio_describer/core/audio_describer.py:45
+#, python-format
+msgid "Video upload initiated: %s. Waiting for processing..."
+msgstr "Video yüklemesi başlatıldı: %s. İşlenmesi bekleniyor..."
+
+#: audio_describer/core/audio_describer.py:49
+#: audio_describer/ui/main_window.py:250
+msgid "Video is ACTIVE."
+msgstr "Video durumu: AKTİF."
+
+#: audio_describer/core/audio_describer.py:51
+#, python-format
+msgid "Video processing (attempt %d)... state: %s"
+msgstr "Video işleniyor (deneme %d)... durum: %s"
+
+#: audio_describer/core/audio_describer.py:55
+#, python-format
+msgid "Video processing timed out or failed. Final state: %s"
+msgstr "Video işleme zaman aşımına uğradı veya başarısız oldu. Son durum: %s"
+
+#: audio_describer/core/audio_describer.py:61
+msgid "Video ready. Preparing unified AI request..."
+msgstr "Video hazır. Birleşik yapay zeka isteği hazırlanıyor..."
+
+#: audio_describer/core/audio_describer.py:68
+msgid "Requesting descriptions and glossary from AI..."
+msgstr "Yapay zekadan sesli betimlemeler ve karakter tanımları isteniyor..."
+
+#: audio_describer/core/audio_describer.py:81
+msgid "Failed to parse timed descriptions from AI's JSON response."
+msgstr ""
+"Yapay zekanın JSON yanıtından zamanlanmış betimlemeler ayrıştırılamadı."
+
+#: audio_describer/core/audio_describer.py:84
+msgid "Failed to parse character glossary from AI's JSON response."
+msgstr ""
+"Yapay zekanın JSON yanıtından karakter sözlüğü ayrıştırılamadı."
+
+#: audio_describer/core/audio_describer.py:86
+#, python-format
+msgid ""
+"Successfully parsed %d raw descriptions. Correcting timestamps and "
+"duplicates..."
+msgstr ""
+"%d ham betimleme başarıyla ayrıştırıldı. Zaman damgaları ve tekrarlar "
+"düzeltiliyor..."
+
+#: audio_describer/core/audio_describer.py:91
+msgid "No descriptions remained after all post-processing."
+msgstr "İşlemlerin ardından geriye betimleme kalmadı."
+
+#: audio_describer/core/audio_describer.py:96
+#, python-format
+msgid "Unified generation failed: %s"
+msgstr "Birleşik üretim başarısız oldu: %s"
+
+#: audio_describer/core/audio_describer.py:103
+#, python-format
+msgid "Cleaned up uploaded video file: %s"
+msgstr "Yüklenen video dosyası temizlendi: %s"
+
+#: audio_describer/core/audio_describer.py:133
+msgid "AI could not provide an answer."
+msgstr "Yapay zeka bir yanıt veremedi."
+
+#: audio_describer/core/audio_describer.py:135
+#, python-format
+msgid "VQA request failed: %s"
+msgstr "ek istek başarısız oldu. Hata: %s"
+
+#: audio_describer/core/audio_describer.py:157
+msgid ""
+"AI process stopped while generating glossary due to token limit. Try "
+"simplifying the video or adjusting settings."
+msgstr ""
+"Token sınırı nedeniyle sözlük oluşturulurken yapay zeka işlemi durduruldu. "
+"Videoyu basitleştirmeyi veya ayarları değiştirmeyi deneyin."
+
+#: audio_describer/core/audio_describer.py:164
+#, python-format
+msgid "Failed to get structured data from AI: %s"
+msgstr "Yapay zekadan yapılandırılmış veri alınamadı: %s"
+
+#: audio_describer/core/audio_describer.py:182
+#, python-format
+msgid "Invalid MM:SS string format: %s"
+msgstr "Geçersiz DD:SS zaman biçimi: %s"
+
+#: audio_describer/core/audio_describer.py:189
+msgid "Calculated total seconds is negative."
+msgstr "Hesaplanan toplam saniye değeri negatif."
+
+#: audio_describer/core/audio_describer.py:193
+#, python-format
+msgid "Invalid MM:SS components in '%s': %s"
+msgstr "'%s' içinde geçersiz DD:SS bileşenleri: %s"
+
+#: audio_describer/core/audio_describer.py:203
+msgid "Skipping description due to invalid MM:SS format."
+msgstr "Geçersiz DD:SS biçimi nedeniyle betimleme atlanıyor."
+
+#: audio_describer/core/audio_describer.py:210
+msgid "Ensuring minimum description duration..."
+msgstr "Yapay zekadan sesli betimlemeler isteniyor..."
+
+#: audio_describer/core/audio_describer.py:213
+#, python-format
+msgid ""
+"Timestamp correction complete. %(count)d descriptions processed, "
+"%(adjusted_count)d had timestamps adjusted."
+msgstr ""
+"Zaman damgası düzeltmesi tamamlandı. %(count)d betimleme işlendi, "
+"%(adjusted_count)d tanesinin zamanı ayarlandı."
+
+#: audio_describer/core/audio_describer.py:222
+#, python-format
+msgid "Removed %(count)d repetitive descriptions."
+msgstr "%(count)d adet tekrarlayan betimleme kaldırıldı."
+
+#: audio_describer/core/audio_describer.py:251
+msgid "Warning: 'audio_descriptions' key was not a list."
+msgstr "Uyarı: 'audio_descriptions' anahtarı liste değildi."
+
+#: audio_describer/core/audio_describer.py:256
+msgid "Warning: 'character_glossary' key was not a list."
+msgstr "Uyarı: 'character_glossary' anahtarı liste değildi."
+
+#: audio_describer/core/audio_describer.py:262
+#, python-format
+msgid "Error: Could not decode the AI's JSON response: %s"
+msgstr "Hata: Yapay zekanın JSON yanıtı çözülemedi: %s"
+
+#: audio_describer/core/audio_describer.py:274
+msgid "Successfully parsed a fallback JSON object."
+msgstr "Yedek JSON nesnesi başarıyla ayrıştırıldı."
+
+#: audio_describer/core/audio_describer.py:277
+msgid "Fallback JSON parsing also failed."
+msgstr "Yedek JSON ayrıştırma da başarısız oldu."
+
+#: audio_describer/core/gemini_helpers.py:117
+msgid "Gemini API Key is not configured in settings."
+msgstr "Gemini api anahtarı ayarlanmamış."
+
+#: audio_describer/core/gemini_helpers.py:125
+#, python-format
+msgid "Failed to initialize Gemini Client: %s"
+msgstr "Gemini İstemcisi başlatılamadı: %s"
+
+#: audio_describer/core/gemini_helpers.py
+#, python-format
+msgid "Rate limit hit (attempt %(attempt)d/%(max)d). Retrying in %(delay)d seconds..."
+msgstr "Hız sınırına ulaşıldı (deneme %(attempt)d/%(max)d). %(delay)d saniye sonra tekrar denenecek..."
+
+#: audio_describer/core/gemini_helpers.py
+#, python-format
+msgid "Failed after %d retries."
+msgstr "%d deneme sonrasında başarısız oldu."
+
+#: audio_describer/core/gemini_helpers.py:211
+#, python-format
+msgid "AI request was blocked due to: %s"
+msgstr "Yapay zeka isteği %s nedeni ötürü engellendi"
+
+#: audio_describer/core/gemini_helpers.py:217
+msgid "AI returned no answer or an invalid response structure."
+msgstr "Yapay zeka yanıt vermedi veya geçersiz bir yanıt yapısı döndürdü."
+
+#: audio_describer/core/gemini_helpers.py:228
+msgid ""
+"AI process stopped because it reached its processing limit (MAX_TOKENS)."
+msgstr "İşleme sınırı (MAX_TOKENS) aşıldığı için yapay zeka işlemi durduruldu."
+
+#: audio_describer/core/gemini_helpers.py:234
+#, python-format
+msgid "AI content generation was stopped. Reason: %s"
+msgstr "Yapay zeka içerik üretimi %s neden ötürü durduruldu"
+
+#: audio_describer/core/gemini_helpers.py:239
+msgid "AI returned an empty response."
+msgstr "Yapay zeka boş bir yanıt döndürdü."
+
+#: audio_describer/core/gemini_helpers.py:247
+#: audio_describer/ui/ask_more_dialog.py:121
+#: audio_describer/ui/main_window.py:250
+msgid "AI is thinking..."
+msgstr "Yapay zeka düşünüyor..."
+
+#: audio_describer/core/gemini_helpers.py:259
+#, python-format
+msgid "AI content generation was stopped due to: %s"
+msgstr ""
+"Yapay zeka içerik üretimi, güvenlik politikaları nedeniyle durduruldu: %s"
+
+#: audio_describer/core/video_processor.py:156
+#, python-format
+msgid "Splitting video into %d chunks..."
+msgstr "Video %d parçaya bölünüyor..."
+
+#: audio_describer/core/video_processor.py:177
+#, python-format
+msgid "Created chunk %d of %d..."
+msgstr "Parça oluşturuldu: %d / %d..."
+
+#: audio_describer/core/video_processor.py:183
+msgid "FFmpeg not found; using original video for AI."
+msgstr ""
+"FFmpeg bulunamadı. Yapay zeka için orijinal videonun sesi kullanılıyor."
+
+#: audio_describer/core/video_processor.py:194
+msgid "Pre-processing video for AI analysis..."
+msgstr "Analiz için video çıkarılıyor..."
+
+#: audio_describer/core/video_processor.py:221
+#, python-format
+msgid "Failed to pre-process video; using original. Error: %s"
+msgstr "Sessiz video oluşturulamadı; orijinali kullanılıyor. Hata: %s"
+
+#: audio_describer/core/video_processor.py:227
+msgid "Video pre-processing error; using original."
+msgstr "Video ön analizinde hata. Orijinal video kullanılıyor."
+
+#: audio_describer/core/video_processor.py:230
+msgid "Video pre-processing complete."
+msgstr "Video ön analizi tamamlandı."
+
+#: audio_describer/core/video_processor.py:234
+#, python-format
+msgid "Error during video pre-processing; using original. Error: %s"
+msgstr "Sessiz video oluşturulamadı; orijinali kullanılıyor. Hata: %s"
+
+#: audio_describer/core/video_processor.py:242
+#, python-format
+msgid "Video file not found: %s"
+msgstr "Video dosyası bulunamadı: %s"
+
+#: audio_describer/core/video_processor.py:250
+#, python-format
+msgid "Failed to download from direct URL %s: %s"
+msgstr "%s indirmesi doğrudan indirilebilir adresten başarısız oldu: %s"
+
+#: audio_describer/core/video_processor.py:273
+#, python-format
+msgid ""
+"Failed to download from YouTube URL %(url)s. Initial error: "
+"%(initial_error)s. Fallback attempt also failed: %(fallback_error)s"
+msgstr ""
+"YouTube URL'sinden %(url)s indirilemedi. İlk hata: %(initial_error)s. Yedek "
+"denemesi de başarısız oldu: %(fallback_error)s"
+
+#: audio_describer/core/youtube_downloader.py:147
+#: audio_describer/core/youtube_downloader.py:221
+#, python-format
+msgid "yt-dlp executable not found. Expected at: %s"
+msgstr "yt-dlp uygulaması bulunamadı. Beklenen konum: %s"
+
+#: audio_describer/core/youtube_downloader.py:171
+#: audio_describer/core/youtube_downloader.py:201
+#: audio_describer/core/youtube_downloader.py:301
+#: audio_describer/core/youtube_downloader.py:388
+msgid "N/A"
+msgstr "Yok"
+
+#: audio_describer/core/youtube_downloader.py:185
+msgid "yt-dlp returned no information for the video."
+msgstr "yt-dlp video için herhangi bir bilgi döndürmedi."
+
+#: audio_describer/core/youtube_downloader.py:191
+msgid ""
+"yt-dlp command not found. Please ensure yt-dlp is installed and in your "
+"system PATH, or bundled correctly."
+msgstr ""
+"yt-dlp komutu bulunamadı. Lütfen yt-dlp'nin kurulu ve sistem yolunda tanımlı "
+"olduğundan veya doğru şekilde paketlendiğinden emin olun."
+
+#: audio_describer/core/youtube_downloader.py:199
+msgid "Timeout fetching video information."
+msgstr "Video bilgileri alınırken zaman aşımı."
+
+#: audio_describer/core/youtube_downloader.py:205
+#, python-format
+msgid "Failed to parse video information from yt-dlp. Output: %s"
+msgstr "Yt-dlp'den gelen video bilgileri ayrıştırılamadı. Çıktı: %s"
+
+#: audio_describer/core/youtube_downloader.py:211
+#, python-format
+msgid "Unexpected error fetching video info: %s"
+msgstr "Video bilgileri alınırken beklenmedik hata: %s"
+
+#: audio_describer/core/youtube_downloader.py:231
+#, python-format
+msgid "Cannot create download directory: %s"
+msgstr "İndirme dizini oluşturulamıyor: %s"
+
+#: audio_describer/core/youtube_downloader.py:246
+#: audio_describer/core/youtube_downloader.py:254
+#: audio_describer/ui/settings_dialog.py:33
+msgid "Best Available"
+msgstr "Mevcut En İyi"
+
+#: audio_describer/core/youtube_downloader.py:275
+msgid "Could not retrieve video info; cannot reliably predict output filename."
+msgstr ""
+"Video bilgileri alınamadı; çıktı dosya adı güvenilir bir şekilde tahmin "
+"edilemiyor."
+
+#: audio_describer/core/youtube_downloader.py:325
+#, python-format
+msgid ""
+"Download completed but output file not found. Check logs for details in %s."
+msgstr ""
+"İndirme tamamlandı ancak çıktı dosyası bulunamadı. Ayrıntılar için %s "
+"dizinindeki günlükleri kontrol edin."
+
+#: audio_describer/core/youtube_downloader.py:328
+#, python-format
+msgid ""
+"yt-dlp command not found. Please ensure yt-dlp is installed and in your "
+"system PATH, or bundled correctly at %s."
+msgstr ""
+"yt-dlp komutu bulunamadı. Lütfen yt-dlp'nin kurulu ve sistem yolunda tanımlı "
+"olduğundan veya %s konumunda doğru şekilde paketlendiğinden emin olun."
+
+#: audio_describer/core/youtube_downloader.py:334
+#, python-format
+msgid "Timeout downloading video: %s"
+msgstr "Video indirilirken zaman aşımı: %s"
+
+#: audio_describer/core/youtube_downloader.py:339
+#, python-format
+msgid "Unexpected error during download for %s: %s"
+msgstr "%s indirilirken beklenmedik hata: %s"
+
+#: audio_describer/core/youtube_downloader.py:346
+msgid ""
+"Standalone test: config_model.app_settings seems empty, loading defaults for "
+"test."
+msgstr ""
+"Bağımsız test: config_model.app_settings boş görünüyor, test için "
+"varsayılanlar yükleniyor."
+
+#: audio_describer/core/youtube_downloader.py:383
+#, python-format
+msgid ""
+"\n"
+"Fetching info for: %s"
+msgstr ""
+"\n"
+"Bilgiler alınıyor: %s"
+
+#: audio_describer/core/youtube_downloader.py:388
+#, python-format
+msgid "Successfully fetched info for YouTube video: %s"
+msgstr "YouTube videosu için bilgiler başarıyla alındı: %s"
+
+#: audio_describer/core/youtube_downloader.py:390
+#, python-format
+msgid "Failed to fetch info for %s"
+msgstr "%s için bilgi alınamadı"
+
+#: audio_describer/core/youtube_downloader.py:393
+#, python-format
+msgid ""
+"\n"
+"Attempting to download YouTube video: %s (Quality from settings: %s)"
+msgstr ""
+"\n"
+"YouTube videosu indiriliyor: %s (Ayarlardaki Kalite: %s)"
+
+#: audio_describer/core/youtube_downloader.py:396
+#, python-format
+msgid "YouTube video downloaded successfully to: %s"
+msgstr "YouTube videosu başarıyla indirildi: %s"
+
+#: audio_describer/core/youtube_downloader.py:397
+#, python-format
+msgid "File size: %s MB"
+msgstr "Dosya boyutu: %s MB"
+
+#: audio_describer/core/youtube_downloader.py:399
+#, python-format
+msgid "YouTube download failed or file not found at: %s"
+msgstr "YouTube indirmesi başarısız oldu veya dosya bulunamadı: %s"
+
+#: audio_describer/core/youtube_downloader.py:403
+#, python-format
+msgid "A DownloaderError occurred during self-test: %s"
+msgstr "Otomatik test sırasında bir İndirici Hatası oluştu: %s"
+
+#: audio_describer/core/youtube_downloader.py:405
+#, python-format
+msgid "An unexpected error occurred during self-test: %s"
+msgstr "Otomatik test sırasında beklenmedik bir hata oluştu: %s"
+
+#: audio_describer/core/youtube_downloader.py:408
+#, python-format
+msgid "Cleaning up test file: %s"
+msgstr "Test dosyası temizleniyor: %s"
+
+#: audio_describer/core/youtube_downloader.py:411
+#, python-format
+msgid "Could not remove %s: %s"
+msgstr "%s kaldırılamadı: %s"
+
+#: audio_describer/core/youtube_downloader.py:413
+msgid ""
+"\n"
+"Downloader self-test finished. Check console and app_log.txt for details."
+msgstr ""
+"\n"
+"İndirici otomatik testi tamamlandı. Ayrıntılar için konsolu ve app_log.txt "
+"dosyasını kontrol edin."
+
+#: audio_describer/core/youtube_downloader.py:414
+#, python-format
+msgid "Temporary download directory used: %s"
+msgstr "Geçici indirme dizini kullanıldı: %s"
+
+#: audio_describer/core/youtube_downloader.py:415
+#, python-format
+msgid "yt-dlp command used: %s"
+msgstr "kullanılan yt-dlp komutu: %s"
+
+#: audio_describer/ui/add_edit_prompt_dialog.py:18
+#: audio_describer/ui/add_edit_voice_dialog.py:16
+msgid "Preset Name:"
+msgstr "Hazır Ayar Adı:"
+
+#: audio_describer/ui/add_edit_prompt_dialog.py:21
+msgid "A short, descriptive name for the prompt preset."
+msgstr "Hazır istem için kısa, açıklayıcı bir ad."
+
+#: audio_describer/ui/add_edit_prompt_dialog.py:25
+msgid "Prompt Text:"
+msgstr "İstem Metni:"
+
+#: audio_describer/ui/add_edit_prompt_dialog.py:28
+msgid "The full text of the prompt to be sent to the AI."
+msgstr "Yapay zekaya gönderilecek istemin tam metni."
+
+#: audio_describer/ui/add_edit_prompt_dialog.py:40
+#: audio_describer/ui/add_edit_voice_dialog.py:55
+msgid "&Save"
+msgstr "&Kaydet"
+
+#: audio_describer/ui/add_edit_prompt_dialog.py:57
+msgid "Both a preset name and prompt text are required."
+msgstr "Hem hazır ayar adı hem de istem metni girilmesi zorunludur."
+
+#: audio_describer/ui/add_edit_prompt_dialog.py:57
+#: audio_describer/ui/add_edit_voice_dialog.py:74
+#: audio_describer/ui/settings_dialog.py:227
+msgid "Input Required"
+msgstr "Giriş Gerekli"
+
+#: audio_describer/ui/add_edit_voice_dialog.py:22
+msgid "Base OpenAI Voice:"
+msgstr "OpenAi konuşma sesi:"
+
+#: audio_describer/ui/add_edit_voice_dialog.py:30
+#: audio_describer/ui/settings_dialog.py:162
+msgid "Speed:"
+msgstr "Konuşma hızı:"
+
+#: audio_describer/ui/add_edit_voice_dialog.py:41
+msgid "Instructions (for Tone, Emotion, etc.):"
+msgstr "Ton, duygu için istem:"
+
+#: audio_describer/ui/add_edit_voice_dialog.py:44
+msgid ""
+"Describe the desired tone. Example: 'Speak in a cheerful and positive tone.'"
+msgstr "İstenilen tonu açıklayın. Örneğin neşeli bir tonda konuş."
+
+#: audio_describer/ui/add_edit_voice_dialog.py:74
+msgid "A preset name is required."
+msgstr "Hazar ayar adı gereklidir."
+
+#: audio_describer/ui/ask_more_dialog.py:33
+msgid "Ask More About Scene"
+msgstr "Sahne Hakkında Daha Fazla Sor"
+
+#: audio_describer/ui/ask_more_dialog.py:44
+#, python-format
+msgid "Ask questions about the scene around %s."
+msgstr "%s civarındaki sahne hakkında sorular sorun."
+
+#: audio_describer/ui/ask_more_dialog.py:47
+msgid "Conversation History:"
+msgstr "Sohbet Geçmişi:"
+
+#: audio_describer/ui/ask_more_dialog.py:52
+msgid "Your New Question:"
+msgstr "Yeni Sorunuz:"
+
+#: audio_describer/ui/ask_more_dialog.py:58
+msgid "Video Context Duration (seconds):"
+msgstr "Video Bağlam Süresi (saniye):"
+
+#: audio_describer/ui/ask_more_dialog.py:68
+msgid "&Submit Question"
+msgstr "Soruyu &Gönder"
+
+#: audio_describer/ui/ask_more_dialog.py:72
+msgid "&Add to Descriptions"
+msgstr "Betimlemelere &Ekle"
+
+#: audio_describer/ui/ask_more_dialog.py:76
+#: audio_describer/ui/edit_description_dialog.py:90
+#: audio_describer/ui/main_window.py:530
+#: audio_describer/ui/manage_prompts_dialog.py:52
+msgid "Close"
+msgstr "Kapat"
+
+#: audio_describer/ui/ask_more_dialog.py:92
+msgid "Please enter a question."
+msgstr "Lütfen bir soru girin."
+
+#: audio_describer/ui/ask_more_dialog.py:92
+msgid "Question Required"
+msgstr "Soru Gerekli"
+
+#: audio_describer/ui/ask_more_dialog.py:95
+#, python-format
+msgid "You asked: %s"
+msgstr "Soru: %s"
+
+#: audio_describer/ui/ask_more_dialog.py:109
+msgid "The description has been added to the main list."
+msgstr "Betimleme ana listeye eklendi."
+
+#: audio_describer/ui/ask_more_dialog.py:109
+msgid "Description Added"
+msgstr "Betimleme Eklendi"
+
+#: audio_describer/ui/ask_more_dialog.py:127
+msgid "AI Answer: "
+msgstr "Cevap: "
+
+#: audio_describer/ui/ask_more_dialog.py:129
+msgid "Error: "
+msgstr "Hata: "
+
+#: audio_describer/ui/edit_description_dialog.py:9
+msgid "Edit Audio Descriptions"
+msgstr "Sesli Betimlemeleri Düzenle"
+
+#: audio_describer/ui/edit_description_dialog.py:27
+msgid "Select description to edit:"
+msgstr "Düzenlenecek betimlemeyi seçin:"
+
+#: audio_describer/ui/edit_description_dialog.py:33
+msgid "Details"
+msgstr "Detaylar"
+
+#: audio_describer/ui/edit_description_dialog.py:39
+#: audio_describer/ui/edit_description_dialog.py:268
+msgid "Start Time (sec):"
+msgstr "Başlangıç Zamanı (sn):"
+
+#: audio_describer/ui/edit_description_dialog.py:43
+#: audio_describer/ui/edit_description_dialog.py:272
+msgid "End Time (sec):"
+msgstr "Bitiş Zamanı (sn):"
+
+#: audio_describer/ui/edit_description_dialog.py:47
+#: audio_describer/ui/edit_description_dialog.py:276
+msgid "Description Text:"
+msgstr "Betimleme:"
+
+#: audio_describer/ui/edit_description_dialog.py:56
+msgid "Descriptions"
+msgstr "Betimlemeler"
+
+#: audio_describer/ui/edit_description_dialog.py:63
+msgid "ID"
+msgstr "Kimlik"
+
+#: audio_describer/ui/edit_description_dialog.py:64
+msgid "Name"
+msgstr "Ad"
+
+#: audio_describer/ui/edit_description_dialog.py:65
+msgid "Description"
+msgstr "Betimleme "
+
+#: audio_describer/ui/edit_description_dialog.py:71
+msgid "Not named"
+msgstr "İsimsiz"
+
+#: audio_describer/ui/edit_description_dialog.py:80
+msgid "Characters"
+msgstr "Karakterler"
+
+#: audio_describer/ui/edit_description_dialog.py:86
+msgid "&Add New..."
+msgstr "Yeni &Ekle..."
+
+#: audio_describer/ui/edit_description_dialog.py:87
+#: audio_describer/ui/manage_prompts_dialog.py:51
+#: audio_describer/ui/manage_voices_dialog.py:38
+msgid "&Delete"
+msgstr "&Sil"
+
+#: audio_describer/ui/edit_description_dialog.py:89
+msgid "&Save Changes"
+msgstr "&Değişiklikleri Kaydet"
+
+#: audio_describer/ui/edit_description_dialog.py:143
+msgid "(No descriptions available)"
+msgstr "(Mevcut betimleme yok)"
+
+#: audio_describer/ui/edit_description_dialog.py:193
+#, python-format
+msgid "Start time must be within the video duration (0 to %.2f sec)."
+msgstr "Başlangıç zamanı video süresi içinde olmalıdır (0 ile %.2f sn arası)."
+
+#: audio_describer/ui/edit_description_dialog.py:199
+msgid "Invalid start time. Please enter a valid number."
+msgstr "Geçersiz başlangıç zamanı. Lütfen geçerli bir sayı girin."
+
+#: audio_describer/ui/edit_description_dialog.py:199
+#: audio_describer/ui/edit_description_dialog.py:313
+msgid "Invalid Input"
+msgstr "Geçersiz Giriş"
+
+#: audio_describer/ui/edit_description_dialog.py:211
+#: audio_describer/ui/edit_description_dialog.py:308
+#, python-format
+msgid ""
+"Invalid time range. Times must be within the video duration (0 to %.2f sec) "
+"and end time must be after start time."
+msgstr ""
+"Geçersiz zaman aralığı. Zamanlar video süresi içinde olmalı (0 ile %.2f sn "
+"arası) ve bitiş zamanı başlangıç zamanından sonra olmalıdır."
+
+#: audio_describer/ui/edit_description_dialog.py:213
+#: audio_describer/ui/edit_description_dialog.py:305
+msgid "Description text cannot be empty."
+msgstr "Betimleme metni boş olamaz."
+
+#: audio_describer/ui/edit_description_dialog.py:225
+msgid "Changes saved."
+msgstr "Değişiklikler kaydedildi."
+
+#: audio_describer/ui/edit_description_dialog.py:225
+msgid "Success"
+msgstr "Başarılı"
+
+#: audio_describer/ui/edit_description_dialog.py:228
+msgid "Validation Error"
+msgstr "Doğrulama Hatası"
+
+#: audio_describer/ui/edit_description_dialog.py:235
+msgid "Are you sure you want to delete this description?"
+msgstr "Bu betimlemeyi silmek istediğinizden emin misiniz?"
+
+#: audio_describer/ui/edit_description_dialog.py:235
+#: audio_describer/ui/manage_prompts_dialog.py:121
+#: audio_describer/ui/manage_voices_dialog.py:105
+msgid "Confirm Delete"
+msgstr "Silmeyi Onayla"
+
+#: audio_describer/ui/edit_description_dialog.py:261
+msgid "Add New Description"
+msgstr "Yeni Betimleme Ekle"
+
+#: audio_describer/ui/edit_description_dialog.py:313
+msgid "Please enter valid numbers for times."
+msgstr "Lütfen geçerli sayı girin"
+
+#: audio_describer/ui/explore_scene_options_dialog.py:7
+msgid "Explore Scene Options"
+msgstr "Sahne Seçeneklerini Keşfet"
+
+#: audio_describer/ui/explore_scene_options_dialog.py:22
+msgid "Analysis Duration (seconds):"
+msgstr "Analiz Süresi (saniye):"
+
+#: audio_describer/ui/explore_scene_options_dialog.py:25
+msgid "The length of the video clip to analyze, in seconds."
+msgstr "Analiz edilecek video klibinin saniye cinsinden uzunluğu."
+
+#: audio_describer/ui/explore_scene_options_dialog.py:32
+msgid "Optional: Specific things to focus on:"
+msgstr "İsteğe Bağlı: Odaklanılacak özel konular:"
+
+#: audio_describer/ui/explore_scene_options_dialog.py:35
+msgid ""
+"Example: 'Focus on the expressions of the people' or 'Describe the text on "
+"any signs'"
+msgstr ""
+"Örnek: 'İnsanların yüz ifadelerine odaklan' veya 'Tabelalardaki metinleri "
+"betimle'"
+
+#: audio_describer/ui/explore_scene_options_dialog.py:49
+msgid "&Analyze Scene"
+msgstr "Sahneyi &Analiz Et"
+
+#: audio_describer/ui/export_options_dialog.py:7
+msgid "Export Options"
+msgstr "çıktı seçenekleri"
+
+#: audio_describer/ui/export_options_dialog.py:16
+msgid "MP3 Audio (Descriptions mixed with original video)"
+msgstr "MP3 Ses (Orijinal video ile karışık betimlemeler)"
+
+#: audio_describer/ui/export_options_dialog.py:17
+msgid "SRT Subtitle File (Descriptions as subtitles)"
+msgstr "SRT Altyazı Dosyası (Betimlemeler altyazı olarak)"
+
+#: audio_describer/ui/export_options_dialog.py:18
+msgid "Plain Text File (.txt) (Descriptions line-by-line)"
+msgstr "Metin Dosyaları (*.txt betimlemeler satır satır)"
+
+#: audio_describer/ui/export_options_dialog.py:26
+msgid "Select Export Format"
+msgstr "Dışa Aktarma Formatı Seçin"
+
+#: audio_describer/ui/export_options_dialog.py:39
+msgid "&Continue"
+msgstr "Devam Et"
+
+#: audio_describer/ui/file_dialogs.py:38
+msgid "Open Local Video File"
+msgstr "Yerel Video Dosyası Aç"
+
+#: audio_describer/ui/file_dialogs.py:40 audio_describer/ui/file_dialogs.py:62
+#, python-format
+msgid "%s dialog."
+msgstr "%s penceresi."
+
+#: audio_describer/ui/file_dialogs.py:50
+msgid "File selection cancelled."
+msgstr "Dosya seçimi iptal edildi."
+
+#: audio_describer/ui/file_dialogs.py:54
+#, python-format
+msgid "File selected: %s"
+msgstr "%s doyası seçildi"
+
+#: audio_describer/ui/file_dialogs.py:72 audio_describer/ui/file_dialogs.py:125
+msgid "URL input cancelled."
+msgstr "Adres girişi iptal edildi."
+
+#: audio_describer/ui/file_dialogs.py:78
+msgid "No URL entered."
+msgstr "Adres girilmedi."
+
+#: audio_describer/ui/file_dialogs.py:82
+msgid "URL entered."
+msgstr "Adres girildi."
+
+#: audio_describer/ui/file_dialogs.py:85
+msgid "Invalid URL"
+msgstr "Geçersiz Adres"
+
+#: audio_describer/ui/file_dialogs.py:88
+msgid ""
+"The YouTube URL you entered does not appear to be valid.\n"
+"\n"
+"Please use a valid format, such as:\n"
+"youtube.com/watch?v=VIDEO_ID\n"
+"youtu.be/VIDEO_ID"
+msgstr ""
+"Girdiğiniz YouTubeadresi geçerli görünmüyor.\n"
+"\n"
+"Lütfen aşağıdaki gibi geçerli bir biçim kullanın:\n"
+"youtube.com/watch?v=VIDEO_ID\n"
+"youtu.be/VIDEO_ID"
+
+#: audio_describer/ui/file_dialogs.py:95
+msgid ""
+"The URL you entered does not appear to be valid.\n"
+"\n"
+"Please check the format (e.g., it should start with 'http://' or 'https://')."
+msgstr ""
+"Girdiğiniz adres geçerli görünmüyor.\n"
+"\n"
+"Lütfen biçimi kontrol edin (örn. 'http://' veya 'https://' ile başlamalıdır)."
+
+#: audio_describer/ui/file_dialogs.py:105
+msgid "Test Dialogs"
+msgstr "Test Pencereleri"
+
+#: audio_describer/ui/file_dialogs.py:119
+msgid "Enter YouTube URL"
+msgstr "YouTube adresi Girin"
+
+#: audio_describer/ui/file_dialogs.py:119
+msgid "Paste YouTube video link:"
+msgstr "YouTube video bağlantısını yapıştırın:"
+
+#: audio_describer/ui/file_dialogs.py:122
+#, python-format
+msgid "Entered URL: %s"
+msgstr "Girilen adres: %s"
+
+#: audio_describer/ui/license_dialog.py:11
+msgid "License Agreement"
+msgstr "Lisans Anlaşması"
+
+#: audio_describer/ui/license_dialog.py:23
+msgid "License and Terms of Use"
+msgstr "Lisans ve Kullanım Koşulları"
+
+#: audio_describer/ui/license_dialog.py:32
+msgid "You have already agreed to these terms."
+msgstr "Bu koşulları kabul ettiniz."
+
+#: audio_describer/ui/license_dialog.py:47
+msgid "OK"
+msgstr "Tamam"
+
+#: audio_describer/ui/license_dialog.py:52
+msgid "Agree"
+msgstr "Kabul Et"
+
+#: audio_describer/ui/license_dialog.py:53
+msgid "Disagree"
+msgstr "Kabul Etme"
+
+#: audio_describer/ui/license_dialog.py:73
+msgid "License file could not be found. Please contact support."
+msgstr "Lisans dosyası bulunamadı."
+
+#: audio_describer/ui/main_window.py:34
+msgid "Audio Describer"
+msgstr "Sesli Betimleyici"
+
+#: audio_describer/ui/main_window.py:57
+msgid "&Open Local Video...\tCtrl+O"
+msgstr "Y&erel Video Aç...\tCtrl+Y"
+
+#: audio_describer/ui/main_window.py:57
+msgid "Open a local video file"
+msgstr "Yerel bir video dosyası aç"
+
+#: audio_describer/ui/main_window.py:58
+msgid "Open Video from &URL...\tCtrl+U"
+msgstr "D&oğrudan indirilebilir Video Aç...\tCtrl+D"
+
+#: audio_describer/ui/main_window.py:58
+msgid "Open a video from a direct URL"
+msgstr "Doğrudan bir URL'den video aç"
+
+#: audio_describer/ui/main_window.py:59
+msgid "Open from &YouTube...\tCtrl+Y"
+msgstr "Yo&uTube'den aç\tCtrl+U"
+
+#: audio_describer/ui/main_window.py:59
+msgid "Open a video from YouTube"
+msgstr "Bir YouTube videosu açın"
+
+#: audio_describer/ui/main_window.py:61
+msgid "Manage &Prompt Presets..."
+msgstr "Hazır &İstemleri Yönet..."
+
+#: audio_describer/ui/main_window.py:61
+msgid "Add, edit, or delete custom prompt presets"
+msgstr "Özel hazır istemler ekleyin, düzenleyin veya silin"
+
+#: audio_describer/ui/main_window.py:63
+msgid "&Settings...\tCtrl+,"
+msgstr "&Ayarlar...\tCtrl+,"
+
+#: audio_describer/ui/main_window.py:63
+msgid "Configure application settings"
+msgstr "Uygulama ayarlarını yapılandır"
+
+#: audio_describer/ui/main_window.py:65
+msgid "E&xit\tAlt+F4"
+msgstr "Çı&kış\tAlt+F4"
+
+#: audio_describer/ui/main_window.py:65
+msgid "Exit the application"
+msgstr "Uygulamadan çıkın"
+
+#: audio_describer/ui/main_window.py:66
+msgid "&File"
+msgstr "&Dosya"
+
+#: audio_describer/ui/main_window.py:69
+msgid "&View Help\tF1"
+msgstr "&Yardımı Görüntüle\tF1"
+
+#: audio_describer/ui/main_window.py:69
+msgid "Open the help documentation"
+msgstr "Yardım dosyasını açar"
+
+#: audio_describer/ui/main_window.py:70
+msgid "&Changelog"
+msgstr "Değişiklik listesi"
+
+#: audio_describer/ui/main_window.py:70
+msgid "View the application's changelog"
+msgstr "Uygulamada neler yeni"
+
+#: audio_describer/ui/main_window.py:71
+msgid "Co&ntributors"
+msgstr "Ka&tkıda Bulunanlar"
+
+#: audio_describer/ui/main_window.py:71
+msgid "View the list of contributors"
+msgstr "Katkıda bululanların listesini görüntüle"
+
+#: audio_describer/ui/main_window.py:72
+msgid "View &License"
+msgstr "Lisans anlaşmasını aç"
+
+#: audio_describer/ui/main_window.py:72
+msgid "View the application's license agreement"
+msgstr "Uygulama lisans koşulları"
+
+#: audio_describer/ui/main_window.py:74
+msgid "&About..."
+msgstr "&Hakkında..."
+
+#: audio_describer/ui/main_window.py:74 audio_describer/ui/main_window.py:499
+#, python-format
+msgid "About %s"
+msgstr "%s Hakkında"
+
+#: audio_describer/ui/main_window.py:75
+msgid "&Help"
+msgstr "&Yardım"
+
+#: audio_describer/ui/main_window.py:81
+msgid "Select a video source to begin:"
+msgstr "Başlamak için bir video seçin:"
+
+#: audio_describer/ui/main_window.py:84
+msgid "&Local Video File"
+msgstr "&Yerel Video Dosyası"
+
+#: audio_describer/ui/main_window.py:85
+msgid "Process a local video file"
+msgstr "Yerel bir video dosyasını işle"
+
+#: audio_describer/ui/main_window.py:88
+msgid "Direct Video &URL"
+msgstr "&Doğrudan indirilebilir Video adresi"
+
+#: audio_describer/ui/main_window.py:89
+msgid "Process a video from a direct web URL"
+msgstr "Doğrudan indirilebilir adresten video işle"
+
+#: audio_describer/ui/main_window.py:92
+msgid "&YouTube Video URL"
+msgstr "Yo&uTube Video Adresi"
+
+#: audio_describer/ui/main_window.py:93
+msgid "Process a video from a YouTube URL"
+msgstr "Youtube adresinden video işle"
+
+#: audio_describer/ui/main_window.py:96
+msgid "Optional: Select a prompt preset to enhance generation:"
+msgstr "İsteğe Bağlı: Daha iyi sonuçlar için bir hazır istem seçin:"
+
+#: audio_describer/ui/main_window.py:100
+msgid "Select an optional prompt preset."
+msgstr "İsteğe bağlı bir hazır istem seçin."
+
+#: audio_describer/ui/main_window.py:104
+msgid "The full text of the selected prompt."
+msgstr "Seçili istemin tam metni."
+
+#: audio_describer/ui/main_window.py:111
+msgid "Status Log"
+msgstr "Uygulama günlüğü"
+
+#: audio_describer/ui/main_window.py:114
+msgid "Application status and processing messages."
+msgstr "Uygulama durumu ve günlük mesajları."
+
+#: audio_describer/ui/main_window.py:120
+msgid "&Settings..."
+msgstr "&Ayarlar..."
+
+#: audio_describer/ui/main_window.py:121
+msgid "Open application settings"
+msgstr "Uygulama ayarlarını aç"
+
+#: audio_describer/ui/main_window.py:124
+msgid "E&xit"
+msgstr "Ç&ıkış"
+
+#: audio_describer/ui/main_window.py:131
+msgid "Ready"
+msgstr "Hazır"
+
+#: audio_describer/ui/main_window.py:171
+msgid "(No Preset Selected)"
+msgstr "(Hazır İstem Seçilmedi)"
+
+#: audio_describer/ui/main_window.py:205
+msgid "Processing..."
+msgstr "İşleniyor..."
+
+#: audio_describer/ui/main_window.py:206
+#, python-format
+msgid "%s%%"
+msgstr "%%%s"
+
+#: audio_describer/ui/main_window.py:211
+msgid "Preparing local file..."
+msgstr "Yerel dosya hazırlanıyor..."
+
+#: audio_describer/ui/main_window.py:216
+msgid "Enter Direct Video URL"
+msgstr "Doğrudan İndirilebilir Video Adresi Girin"
+
+#: audio_describer/ui/main_window.py:217
+msgid "Enter direct URL to video file (e.g., .mp4, .webm):"
+msgstr "Video dosyasına doğrudan indirilebilir adres girin (ör: .mp4, .webm):"
+
+#: audio_describer/ui/main_window.py:221
+msgid "Downloading from URL..."
+msgstr "Doğrudan indirilebilir adresten indiriliyor..."
+
+#: audio_describer/ui/main_window.py:226
+msgid "Enter YouTube Video URL"
+msgstr "YouTube Video Adresi Girin"
+
+#: audio_describer/ui/main_window.py:227
+msgid "Enter a valid YouTube video URL:"
+msgstr "Geçerli bir youtube adresi girin:"
+
+#: audio_describer/ui/main_window.py:232
+msgid "Downloading from YouTube..."
+msgstr "YouTube'dan indiriliyor..."
+
+#: audio_describer/ui/main_window.py:251
+msgid "Successfully parsed"
+msgstr "Başarıyla ayrıştırıldı"
+
+#: audio_describer/ui/main_window.py:251
+msgid "Timestamp correction complete"
+msgstr "Zaman damgası düzeltmesi tamamlandı"
+
+#: audio_describer/ui/main_window.py:252
+msgid "Removed repetitive descriptions"
+msgstr "Tekrarlayan betimlemeler kaldırıldı"
+
+#: audio_describer/ui/main_window.py:271
+msgid "Video processing or downloading failed."
+msgstr "Video işleme veya indirme başarısız oldu."
+
+#: audio_describer/ui/main_window.py:287
+msgid "Splitting video into manageable chunks..."
+msgstr "Video parçalara bölünüyor..."
+
+#: audio_describer/ui/main_window.py:297 audio_describer/ui/main_window.py:321
+msgid "Asking AI to generate descriptions and glossary..."
+msgstr "Yapay zekadan betimlemeler ve karakter sözlüğü isteniyor..."
+
+#: audio_describer/ui/main_window.py:297 audio_describer/ui/main_window.py:323
+msgid "Asking AI to generate descriptions..."
+msgstr "Yapay zekadan betimlemeler isteniyor..."
+
+#: audio_describer/ui/main_window.py:330
+msgid "AI processing failed to provide descriptions for an unknown reason."
+msgstr ""
+"Yapay zeka işleme sonucunda bilinmeyen nedenden ötürü betimleme sağlanamadı."
+
+#: audio_describer/ui/main_window.py:332
+msgid "Finalizing descriptions..."
+msgstr "Betimlemeler düzenleniyor..."
+
+#: audio_describer/ui/main_window.py:347
+msgid "Cleaning up temporary video chunks..."
+msgstr "Geçici video parçaları temizleniyor..."
+
+#: audio_describer/ui/main_window.py:360
+msgid "Unknown"
+msgstr "Bilinmeyen"
+
+#: audio_describer/ui/main_window.py:361
+msgid "Content Generation Blocked"
+msgstr "İçerik Üretimi Engellendi"
+
+#: audio_describer/ui/main_window.py:363
+#, python-format
+msgid ""
+"The AI was unable to generate descriptions because its content safety "
+"filters were triggered.\n"
+"\n"
+"Reason: %s\n"
+"\n"
+"This can sometimes happen with content that is violent, sensitive, or "
+"complex. Here are some things you can try:\n"
+"\n"
+"1. Go to Settings -> AI Settings and enable 'Disable Safety Filters'. (Use "
+"with caution)\n"
+"2. Reduce the 'Frame Rate for AI Analysis' in settings to send less data to "
+"the AI.\n"
+"3. Try a different video if the issue persists."
+msgstr ""
+"Yapay zeka, içerik güvenlik filtreleri tetiklendiği için betimleme "
+"oluşturamadı.\n"
+"\n"
+"Neden: %s\n"
+"\n"
+"Bu bazen şiddet içeren, hassas veya karmaşık içeriklerde olabilir. "
+"Deneyebileceğiniz bazı şeyler şunlardır:\n"
+"\n"
+"1. Ayarlar -> Yapay Zeka Ayarları'na gidin ve 'Güvenlik Filtrelerini Devre "
+"Dışı Bırak' seçeneğini etkinleştirin. (Dikkatli kullanın)\n"
+"2. Yapay Zeka için daha az veri göndermek üzere ayarlarınızdaki 'Yapay Zeka "
+"Analizi İçin Kare Hızı'nı azaltın.\n"
+"3. Sorun devam ederse farklı bir model veya video deneyin."
+
+#: audio_describer/ui/main_window.py:374
+msgid "Processing Limit Reached"
+msgstr "İşlem kapasitesine ulaşıldı"
+
+#: audio_describer/ui/main_window.py:376
+msgid ""
+"The AI stopped because the video is too long or complex to process in a "
+"single pass.\n"
+"\n"
+"This is a capacity limit, not a content safety issue. Here are the best ways "
+"to solve this:\n"
+"\n"
+"1. (Recommended) Go to Settings -> AI Settings and enable 'Video Chunking'. "
+"This will automatically split the video into manageable parts for the AI.\n"
+"2. Reduce the 'Frame Rate for AI Analysis' in settings to make the video "
+"simpler for the AI.\n"
+"3. If you are an advanced user, you can try specifying a more powerful model "
+"in the 'Gemini Model Override' setting."
+msgstr ""
+"Yapay zeka, video tek geçişte işlenemeyecek kadar uzun veya karmaşık olduğu "
+"için durduruldu.\n"
+"\n"
+"Bu bir kapasite sınırı, içerik güvenliği sorunu değildir. Bunu çözmenin en "
+"iyi yolları şunlardır:\n"
+"\n"
+"1. (Önerilen) Ayarlar -> Yapay Zeka Ayarları'na gidin ve 'Video Parçalama' "
+"seçeneğini etkinleştirin. Bu, videoyu yapay zeka için yönetilebilir "
+"parçalara otomatik olarak ayıracaktır.\n"
+"2. Videoyu yapay zeka için daha basit hale getirmek üzere ayarlarınızdaki "
+"'Yapay Zeka Analizi İçin Kare Hızı'nı azaltın.\n"
+"3. Gelişmiş bir kullanıcıysanız, 'Gemini Modeli Geçersiz Kılma' ayarında "
+"daha güçlü bir model belirlemeyi deneyebilirsiniz."
+
+#: audio_describer/ui/main_window.py:386
+#, python-format
+msgid ""
+"An error occurred during processing:\n"
+"%s"
+msgstr "İşleme sırasında hata oluştu: %s"
+
+#: audio_describer/ui/main_window.py:388
+msgid "Processing Error"
+msgstr "İşleme Hatası"
+
+#: audio_describer/ui/main_window.py:398
+#, python-format
+msgid "Success! Generated %d audio descriptions."
+msgstr "Başarılı. %d betimleme oluşturuldu."
+
+#: audio_describer/ui/main_window.py:400
+#, python-format
+msgid "Identified %d characters."
+msgstr "%d karakter tanındı"
+
+#: audio_describer/ui/main_window.py:409
+#, python-format
+msgid "Error opening video player: %s"
+msgstr "Video oynatıcı açılamadı: %s"
+
+#: audio_describer/ui/main_window.py:413
+msgid "Ready for next video."
+msgstr "Sonraki video için hazır."
+
+#: audio_describer/ui/main_window.py:416
+msgid ""
+"Processing complete, but the AI did not generate any descriptions for this "
+"video."
+msgstr "İşleme tamamlandı, ancak hiçbir betimleme üretilmedi."
+
+#: audio_describer/ui/main_window.py:418
+msgid "Processing Note"
+msgstr "İşlem Notu"
+
+#: audio_describer/ui/main_window.py:484
+msgid "Are you sure you want to exit?"
+msgstr "Çıkmak istediğinizden emin misiniz?"
+
+#: audio_describer/ui/main_window.py:485
+msgid "Confirm Exit"
+msgstr "Çıkmayı Onayla"
+
+#: audio_describer/ui/main_window.py:512
+msgid ""
+"An application to automatically generate audio descriptions for videos using "
+"Gemini AI.\n"
+"\n"
+"Developed with accessibility in mind."
+msgstr ""
+"Gemini AI kullanarak videolar için otomatik sesli betimlemeler üreten bir "
+"uygulama."
+
+#: audio_describer/ui/main_window.py:516
+msgid "Contact:"
+msgstr "İletişim için:"
+
+#: audio_describer/ui/main_window.py:521
+msgid "Visit Website"
+msgstr "Websitesini ziyaret et"
+
+#: audio_describer/ui/manage_prompts_dialog.py:12
+msgid "Manage Prompt Presets"
+msgstr "Hazır İstemleri Yönet"
+
+#: audio_describer/ui/manage_prompts_dialog.py:31
+#, python-format
+msgid "Manage presets for the '%s' language."
+msgstr "'%s' dili için hazır istemleri yönetin."
+
+#: audio_describer/ui/manage_prompts_dialog.py:36
+#: audio_describer/ui/manage_voices_dialog.py:28
+msgid "Preset Name"
+msgstr "Hazır İstem Adı"
+
+#: audio_describer/ui/manage_prompts_dialog.py:37
+msgid "Prompt Text"
+msgstr "İstem Metni"
+
+#: audio_describer/ui/manage_prompts_dialog.py:38
+msgid "List of saved prompt presets."
+msgstr "Kaydedilmiş hazır istemlerin listesi."
+
+#: audio_describer/ui/manage_prompts_dialog.py:49
+#: audio_describer/ui/manage_voices_dialog.py:36
+msgid "&Add..."
+msgstr "&Ekle..."
+
+#: audio_describer/ui/manage_prompts_dialog.py:50
+#: audio_describer/ui/manage_voices_dialog.py:37
+msgid "&Edit..."
+msgstr "&Düzenle..."
+
+#: audio_describer/ui/manage_prompts_dialog.py:95
+msgid "Add New Prompt"
+msgstr "Yeni İstem Ekle"
+
+#: audio_describer/ui/manage_prompts_dialog.py:108
+msgid "Edit Prompt"
+msgstr "İstemi Düzenle"
+
+#: audio_describer/ui/manage_prompts_dialog.py:121
+#: audio_describer/ui/manage_voices_dialog.py:105
+#, python-format
+msgid "Are you sure you want to delete the preset '%s'?"
+msgstr "'%s' adlı hazır istemi silmek istediğinizden emin misiniz?"
+
+#: audio_describer/ui/manage_voices_dialog.py:11
+msgid "Manage OpenAI Voice Presets"
+msgstr "Openai hazır ses istemlerini ayarla"
+
+#: audio_describer/ui/manage_voices_dialog.py:24
+msgid "Create and manage voice personalities for OpenAI TTS."
+msgstr "Openai TTS için ses kişilikleri oluştur ve yönet."
+
+#: audio_describer/ui/manage_voices_dialog.py:29
+msgid "Base Voice"
+msgstr "Temel ses"
+
+#: audio_describer/ui/manage_voices_dialog.py:30
+msgid "Speed"
+msgstr "Konuşma hızı"
+
+#: audio_describer/ui/manage_voices_dialog.py:31
+msgid "Instructions"
+msgstr "Yönergeler"
+
+#: audio_describer/ui/manage_voices_dialog.py:82
+msgid "Add New Voice Preset"
+msgstr "Yeni hazır ayarı ekle"
+
+#: audio_describer/ui/manage_voices_dialog.py:94
+msgid "Edit Voice Preset"
+msgstr "Ses hazır ayarını düzenle"
+
+#: audio_describer/ui/player_vqa.py:52 audio_describer/ui/player_vqa.py:137
+msgid "Cannot determine current video time."
+msgstr "Mevcut video zamanı belirlenemiyor."
+
+#: audio_describer/ui/player_vqa.py:52 audio_describer/ui/player_vqa.py:137
+#: audio_describer/ui/settings_dialog.py:434
+#: audio_describer/utils/update_checker.py:68
+msgid "Error"
+msgstr "Hata"
+
+#: audio_describer/ui/player_vqa.py:139
+msgid "Analyzing Scene"
+msgstr "Sahne Analiz Ediliyor"
+
+#: audio_describer/ui/player_vqa.py:139
+msgid "Extracting video clip for analysis..."
+msgstr "Analiz için video klibi çıkarılıyor..."
+
+#: audio_describer/ui/player_window.py:115
+msgid "Video Player with Descriptions"
+msgstr "Betimlemeli Video Oynatıcı"
+
+#: audio_describer/ui/player_window.py:136
+msgid ""
+"VLC library is not installed or could not be loaded. Playback will be "
+"unavailable."
+msgstr ""
+"VLC kütüphanesi yüklü değil veya yüklenemedi. Oynatma kullanılamayacaktır."
+
+#: audio_describer/ui/player_window.py:162
+#: audio_describer/ui/player_window.py:287
+msgid "Play"
+msgstr "Oynat"
+
+#: audio_describer/ui/player_window.py:166
+msgid "Video progress slider"
+msgstr "Video göstergesi"
+
+#: audio_describer/ui/player_window.py:172
+#, python-format
+msgid "&Rewind %ss"
+msgstr "%s sn &Geri Sar"
+
+#: audio_describer/ui/player_window.py:174
+#, python-format
+msgid "&Forward %ss"
+msgstr "%s sn &İleri Sar"
+
+#: audio_describer/ui/player_window.py:177
+msgid "Vol:"
+msgstr "Ses:"
+
+#: audio_describer/ui/player_window.py:185
+msgid "Current Audio Description:"
+msgstr "Mevcut Sesli Betimleme:"
+
+#: audio_describer/ui/player_window.py:190
+msgid "AI Token Usage:"
+msgstr "Yapay Zeka Jeton Kullanımı:"
+
+#: audio_describer/ui/player_window.py:197
+msgid "Explore Scene..."
+msgstr "Sahneyi Keşfet..."
+
+#: audio_describer/ui/player_window.py:199
+msgid "Ask More..."
+msgstr "Daha Fazla Sor..."
+
+#: audio_describer/ui/player_window.py:201
+msgid "Edit Descriptions..."
+msgstr "Betimlemeleri Düzenle..."
+
+#: audio_describer/ui/player_window.py:204
+msgid "Settings..."
+msgstr "&Ayarlar..."
+
+#: audio_describer/ui/player_window.py:208
+msgid "Export..."
+msgstr "Dışa aktar"
+
+#: audio_describer/ui/player_window.py:284
+msgid "Pause"
+msgstr "Duraklat"
+
+#: audio_describer/ui/player_window.py:290
+msgid "Replay"
+msgstr "Tekrar Oynat"
+
+#: audio_describer/ui/player_window.py:361
+msgid "Are you sure you want to close the player?"
+msgstr "Oynatıcıyı kapatmak istediğinizden emin misiniz?"
+
+#: audio_describer/ui/player_window.py:362
+msgid "Confirm Close"
+msgstr "Çıkmayı onayla."
+
+#: audio_describer/ui/player_window.py:432
+msgid "Description added to main list."
+msgstr "Betimleme ana listeye eklendi."
+
+#: audio_describer/ui/player_window.py:469
+msgid "Export Canceled"
+msgstr "Dışa aktarma iptal edildi"
+
+#: audio_describer/ui/player_window.py:469
+msgid "Export Error"
+msgstr "Dışa Aktarma Hatası"
+
+#: audio_describer/ui/player_window.py:470
+#, python-format
+msgid ""
+"Failed to export file:\n"
+"%s"
+msgstr "çıktı alınamadı. Hata: %s"
+
+#: audio_describer/ui/player_window.py:472
+#, python-format
+msgid ""
+"File successfully exported to:\n"
+"%s"
+msgstr ""
+"Dosya başarıyla şuraya aktarıldı:\n"
+"%s"
+
+#: audio_describer/ui/player_window.py:472
+msgid "Export Successful"
+msgstr "Dışa Aktarma Başarılı"
+
+#: audio_describer/ui/player_window.py:476
+msgid "Please wait for the video to load before editing."
+msgstr "Lütfen düzenlemeden önce videonun yüklenmesini bekleyin."
+
+#: audio_describer/ui/player_window.py:476
+msgid "Info"
+msgstr "Bilgi"
+
+#: audio_describer/ui/player_window.py:488
+msgid "Description list updated."
+msgstr "Betimleme listesi güncellendi."
+
+#: audio_describer/ui/player_window.py:551
+msgid "--- Character Glossary ---"
+msgstr "Karakter Sözlüğü"
+
+#: audio_describer/ui/player_window.py:552
+#: audio_describer/ui/player_window.py:561
+#: audio_describer/ui/player_window.py:575
+msgid "Prompt"
+msgstr "İstem"
+
+#: audio_describer/ui/player_window.py:553
+#: audio_describer/ui/player_window.py:562
+#: audio_describer/ui/player_window.py:575
+msgid "Output"
+msgstr "Çıktı"
+
+#: audio_describer/ui/player_window.py:554
+#: audio_describer/ui/player_window.py:563
+msgid "Total"
+msgstr "Toplam"
+
+#: audio_describer/ui/player_window.py:560
+msgid "--- Description Generation ---"
+msgstr "Betimleme üretimi ----"
+
+#: audio_describer/ui/player_window.py:569
+msgid "--- VQA (Ask More) ---"
+msgstr "--- daha fazla sor ---"
+
+#: audio_describer/ui/player_window.py:575
+#, python-format
+msgid "Query %s Total"
+msgstr "Sorgu %s Toplam"
+
+#: audio_describer/ui/player_window.py:582
+msgid "GRAND TOTAL"
+msgstr "Toplam"
+
+#: audio_describer/ui/player_window.py:583
+msgid "Total Prompt"
+msgstr "Toplam istem"
+
+#: audio_describer/ui/player_window.py:583
+msgid "Total Output"
+msgstr "Total çıktı"
+
+#: audio_describer/ui/player_window.py:586
+msgid "No AI token usage data available yet."
+msgstr "Henüz yapay zeka jeton kullanım verisi mevcut değil."
+
+#: audio_describer/ui/scene_explorer_dialog.py:19
+msgid "No overall description was provided."
+msgstr "Genel bir betimleme sağlanmadı."
+
+#: audio_describer/ui/scene_explorer_dialog.py:37
+msgid "Scene Explorer"
+msgstr "Sahne Gezgini"
+
+#: audio_describer/ui/scene_explorer_dialog.py:50
+msgid "An error occurred in the Scene Explorer."
+msgstr "Sahne Gezgini'nde bir hata oluştu."
+
+#: audio_describer/ui/scene_explorer_dialog.py:56
+msgid ""
+"Scene Explorer opened. Use arrow keys to move. Press D for scene "
+"description, L to list all objects, and Shift + L to enter jump mode. Escape "
+"to close."
+msgstr ""
+"Sahne Gezgini açıldı. Hareket etmek için ok tuşlarını kullanın. Sahne "
+"betimlemesi için D'ye, tüm nesneleri listelemek için L'ye ve hızlı git "
+"moduna girmek için Shift + L'ye basın. Kapatmak için Escape'e basın."
+
+#: audio_describer/ui/scene_explorer_dialog.py:117
+msgid "There are no objects to jump to."
+msgstr "Gidilecek nesne yok."
+
+#: audio_describer/ui/scene_explorer_dialog.py:122
+msgid ""
+"Jump mode. Use up and down arrows to select an object. Press Enter to jump, "
+"or Escape to exit jump mode."
+msgstr ""
+"Hızlı taşı modu. Bir nesne seçmek için yukarı ve aşağı ok tuşlarını "
+"kullanın.  Nesneye hızlıca gitmek için Enter'a,  çıkmak için Escape'e basın."
+
+#: audio_describer/ui/scene_explorer_dialog.py:127
+msgid "Exited jump mode. Now exploring."
+msgstr "Hızlı taşı modundan çıkıldı. Keşfediliyor."
+
+#: audio_describer/ui/scene_explorer_dialog.py:132
+msgid "Unnamed Object"
+msgstr "İsimsiz Nesne"
+
+#: audio_describer/ui/scene_explorer_dialog.py:143
+#, python-format
+msgid "Jumping to %s."
+msgstr "%s konumuna gidiliyor."
+
+#: audio_describer/ui/scene_explorer_dialog.py:146
+msgid "Could not jump to this object as it has no coordinates."
+msgstr "Koordinatları olmadığı için bu nesneye atlanamadı."
+
+#: audio_describer/ui/scene_explorer_dialog.py:153
+msgid "There are no objects in this scene."
+msgstr "Bu sahnede hiç nesne yok."
+
+#: audio_describer/ui/scene_explorer_dialog.py:156
+msgid "unlabeled object"
+msgstr "etiketsiz nesne"
+
+#: audio_describer/ui/scene_explorer_dialog.py:157
+#, python-format
+msgid "Objects in this scene: %s"
+msgstr "Sahnedekiler: %s"
+
+#: audio_describer/ui/scene_explorer_dialog.py:167
+msgid "an object"
+msgstr "bir nesne"
+
+#: audio_describer/ui/scene_explorer_dialog.py:191
+msgid "Unknown Object"
+msgstr "Bilinmeyen Nesne"
+
+#: audio_describer/ui/scene_explorer_dialog.py:193
+msgid "No further details available."
+msgstr "Daha fazla ayrıntı mevcut değil."
+
+#: audio_describer/ui/scene_explorer_dialog.py:198
+msgid "Nothing to inspect here."
+msgstr "Burada incelenecek bir şey yok."
+
+#: audio_describer/ui/settings_dialog.py:31
+#, python-format
+msgid "%s Settings"
+msgstr "%s Ayarları"
+
+#: audio_describer/ui/settings_dialog.py:34
+msgid "Short - Concise descriptions"
+msgstr "Kısa - Özlü betimlemeler"
+
+#: audio_describer/ui/settings_dialog.py:34
+msgid "Standard - Balanced detail (Default)"
+msgstr "Standart - Dengeli ayrıntı (Varsayılan)"
+
+#: audio_describer/ui/settings_dialog.py:34
+msgid "Detailed - Rich descriptions"
+msgstr "Ayrıntılı - Zengin betimlemeler"
+
+#: audio_describer/ui/settings_dialog.py:37
+msgid "Auto-Detect on Startup"
+msgstr "Başlangıçta Dili otomatik algıla"
+
+#: audio_describer/ui/settings_dialog.py:38
+msgid "Arabic"
+msgstr "Arapça"
+
+#: audio_describer/ui/settings_dialog.py:39
+msgid "English"
+msgstr "İngilizce"
+
+#: audio_describer/ui/settings_dialog.py:40
+msgid "Spanish"
+msgstr "İspanyolca"
+
+#: audio_describer/ui/settings_dialog.py:41
+msgid "French"
+msgstr "Fransızca"
+
+#: audio_describer/ui/settings_dialog.py:42
+msgid "Italian"
+msgstr "İtalyanca"
+
+#: audio_describer/ui/settings_dialog.py:43
+msgid "Portuguese"
+msgstr "Portekizce"
+
+#: audio_describer/ui/settings_dialog.py:44
+msgid "Russian"
+msgstr "Rusça"
+
+#: audio_describer/ui/settings_dialog.py:45
+msgid "Türkçe"
+msgstr "Türkçe"
+
+#: audio_describer/ui/settings_dialog.py:46
+msgid "Ukrainian"
+msgstr "Ukraynaca"
+
+#: audio_describer/ui/settings_dialog.py:47
+msgid "Vietnamese"
+msgstr ""
+
+#: audio_describer/ui/settings_dialog.py:50
+msgid "Info (Default)"
+msgstr "Bilgi (varsayılan)"
+
+#: audio_describer/ui/settings_dialog.py:50
+msgid "Debug"
+msgstr "Hata ayıklama"
+
+#: audio_describer/ui/settings_dialog.py:50
+msgid "Disabled"
+msgstr "Devre dışı"
+
+#: audio_describer/ui/settings_dialog.py:51
+msgid "No Change (Original FPS)"
+msgstr "Değişiklik yok, (fps sabit)"
+
+#: audio_describer/ui/settings_dialog.py:51
+msgid "10 FPS (Good balance, lower cost)"
+msgstr "10 fps (dengeli, düşük fiyat)"
+
+#: audio_describer/ui/settings_dialog.py:51
+msgid "5 FPS (Very low cost, may miss fast action)"
+msgstr "5 fps (daha düşük fiyat, hızlı sahneleri kaçırabilir)"
+
+#: audio_describer/ui/settings_dialog.py:51
+msgid "2 FPS (Extreme low cost, for static scenes)"
+msgstr "2 fps (çok az maliyetli, sabit videolar)"
+
+#: audio_describer/ui/settings_dialog.py:54
+msgid "OpenAI TTS (High Quality)"
+msgstr "OpenAi TTS (yüksek kalite)"
+
+#: audio_describer/ui/settings_dialog.py:56
+msgid "SAPI5 (64-bit Voices)"
+msgstr "SAPI5 (64-bit Sesler)"
+
+#: audio_describer/ui/settings_dialog.py:58
+msgid "SAPI5 (32-bit Voices)"
+msgstr "SAPI5 (32-bit Sesler)"
+
+#: audio_describer/ui/settings_dialog.py:60
+msgid "Windows OneCore (Modern Voices)"
+msgstr "Windows OneCore (Modern Sesler)"
+
+#: audio_describer/ui/settings_dialog.py:83
+msgid "YouTube Video Download Quality:"
+msgstr "YouTube Video İndirme Kalitesi:"
+
+#: audio_describer/ui/settings_dialog.py:86
+msgid "Application Language (Requires Restart):"
+msgstr "Uygulama Dili (Yeniden Başlatma Gerektirir):"
+
+#: audio_describer/ui/settings_dialog.py:90
+msgid "Logging Level:"
+msgstr "Günlük tutma seviyesi:"
+
+#: audio_describer/ui/settings_dialog.py:94
+msgid "Allow descriptions to interrupt current speech"
+msgstr "Yeni betimlemeler mevcut konuşmayı kesip hemen okunsun"
+
+#: audio_describer/ui/settings_dialog.py:97
+msgid "General"
+msgstr "Genel"
+
+#: audio_describer/ui/settings_dialog.py:102
+msgid "Gemini API Key:"
+msgstr "Gemini API Anahtarı:"
+
+#: audio_describer/ui/settings_dialog.py:105
+msgid "OpenAI API Key (for TTS):"
+msgstr "TTS için OpenAi api anahtarı:"
+
+#: audio_describer/ui/settings_dialog.py:109
+msgid "Frame Rate for AI Analysis:"
+msgstr "Analiz için kare hızı:"
+
+#: audio_describer/ui/settings_dialog.py:113
+msgid "Description Verbosity:"
+msgstr "Sesli Betimleme Detay Seviyesi:"
+
+#: audio_describer/ui/settings_dialog.py:117
+msgid "Gemini Model Override:"
+msgstr "Gemini modeli:"
+
+#: audio_describer/ui/settings_dialog.py:120
+msgid "Temperature:"
+msgstr "Sıcaklık:"
+
+#: audio_describer/ui/settings_dialog.py:123
+msgid "Send Video Only (No Audio) to AI"
+msgstr "Yapay Zekaya Videoyu Ses Olmadan Gönder"
+
+#: audio_describer/ui/settings_dialog.py:125
+msgid "Disable Safety Filters (Use with caution)"
+msgstr "Güvenlik Filtrelerini Kapat (Dikkatli kullanın)"
+
+#: audio_describer/ui/settings_dialog.py:127
+msgid "Enable Video Chunking for Long Videos"
+msgstr "Uzun Videolar için Parçalama Özelliğini Etkinleştir"
+
+#: audio_describer/ui/settings_dialog.py:129
+msgid "Enable Character Glossary Pre-Analysis"
+msgstr "Karakter Sözlüğü Ön Analizini Etkinleştir"
+
+#: audio_describer/ui/settings_dialog.py:131
+msgid "Chunk Duration (seconds):"
+msgstr "Parça Süresi (saniye):"
+
+#: audio_describer/ui/settings_dialog.py:136
+msgid "AI Settings"
+msgstr "Yapay Zeka Ayarları"
+
+#: audio_describer/ui/settings_dialog.py:141
+msgid "Text-to-Speech Engine"
+msgstr "Metinden sese motoru"
+
+#: audio_describer/ui/settings_dialog.py:144
+msgid "OpenAI TTS Settings"
+msgstr "OpenAI TTS ayarları"
+
+#: audio_describer/ui/settings_dialog.py:146
+msgid "Voice Preset:"
+msgstr "Ses hazır ayarı:"
+
+#: audio_describer/ui/settings_dialog.py:150
+msgid "Manage Voice Presets..."
+msgstr "Hazır ses ayarlarını yönet."
+
+#: audio_describer/ui/settings_dialog.py:157
+msgid "SAPI5 Settings"
+msgstr "Sapi5 ayarları"
+
+#: audio_describer/ui/settings_dialog.py:159
+msgid "Voice:"
+msgstr "Ses:"
+
+#: audio_describer/ui/settings_dialog.py:170
+msgid "Test Voice"
+msgstr "Konuşmacıyı Test Et"
+
+#: audio_describer/ui/settings_dialog.py:172
+msgid "This is a test of the selected voice."
+msgstr "test edilecek metin"
+
+#: audio_describer/ui/settings_dialog.py:174
+msgid "Test"
+msgstr "Test"
+
+#: audio_describer/ui/settings_dialog.py:178
+msgid "Original Audio Ducking (-dB, for MP3):"
+msgstr "Orijinal Ses Azaltma (-dB, MP3 için):"
+
+#: audio_describer/ui/settings_dialog.py:182
+msgid "Audio Output"
+msgstr "Ses Çıkışı"
+
+#: audio_describer/ui/settings_dialog.py:227
+msgid "Please enter some text to test."
+msgstr "Sesi test etmek için metin girin."
+
+#: audio_describer/ui/settings_dialog.py:261
+#, python-format
+msgid "Error testing voice: %s"
+msgstr "Ses testi alınırken hata oluştu: %s"
+
+#: audio_describer/ui/settings_dialog.py:261
+msgid "Test Failed"
+msgstr "Test başarısız oldu"
+
+#: audio_describer/ui/settings_dialog.py:278
+msgid "SAPI5 (64-bit) Settings"
+msgstr "Sapi64 bit  ayarları"
+
+#: audio_describer/ui/settings_dialog.py:281
+msgid "SAPI5 (32-bit) Settings"
+msgstr "Sapi32 bit ayarları"
+
+#: audio_describer/ui/settings_dialog.py:284
+msgid "Windows OneCore Settings"
+msgstr "Windows OneCore Ayarları"
+
+#: audio_describer/ui/settings_dialog.py:295
+msgid "(No voices found)"
+msgstr "ses bulunamadı."
+
+#: audio_describer/ui/settings_dialog.py:434
+msgid "Could not save settings."
+msgstr "Ayarlar kaydedilemedi."
+
+#: audio_describer/utils/motm_checker.py:32
+msgid "A Message from the Developer"
+msgstr "Geliştiricinin mesajı"
+
+#: audio_describer/utils/update_checker.py:34
+msgid ""
+"A new version ({}) is available. You have version {}.\n"
+"\n"
+"Would you like to download and install it now?"
+msgstr ""
+"Yeni sürüm ({}) mevcut. Mevcut sürüm {}.\n"
+"Güncellemek ister misiniz?"
+
+#: audio_describer/utils/update_checker.py:36
+msgid "Update Available"
+msgstr "Güncelleme mevcut"
+
+#: audio_describer/utils/update_checker.py:43
+msgid "Downloading Update"
+msgstr "Güncelleme indiriliyor"
+
+#: audio_describer/utils/update_checker.py:43
+msgid "Downloading..."
+msgstr "indiriliyor"
+
+#: audio_describer/utils/update_checker.py:68
+msgid "Updater component not found."
+msgstr "güncelleyici bulunamadı."
+
+#: audio_describer/utils/update_checker.py:89
+msgid "Failed to download or apply update: {}"
+msgstr "Güncelleme indirilemedi veya kurulamadı. {}"
+
+#: audio_describer/utils/update_checker.py:89
+msgid "Update Error"
+msgstr "Güncelleme hatası"
+
+#: newupdater.py:58
+msgid "Ignoring self-update for {}. It will be updated on the next run."
+msgstr ""
+"{} için kendi kendine güncellemeyi yok sayıyor. Bir sonraki çalıştırmada "
+"güncellenecektir."
+
+#: newupdater.py:74
+msgid "Cleaning up update files..."
+msgstr "güncelleme dosyası temizleniyor: %s"
+
+#: updaterorg.py:51
+msgid "Extraction successful."
+msgstr "Çıkarma başarılı."
+
+#: updaterorg.py:56
+msgid ""
+"Permission denied (Attempt {}/{}). The application might still be closing. "
+"Retrying in {} second..."
+msgstr ""
+"İzin reddedildi (Deneme {}/{}). Uygulama hala kapanıyor olabilir. {} saniye "
+"sonra tekrar denenecek..."
+
+#: updaterorg.py:61
+msgid "An unexpected error occurred during extraction: {}"
+msgstr "dışa aktarmada beklenmedik bir hata oluştu: %s"
+
+#: updaterorg.py:66
+msgid ""
+"Failed to update after {} attempts. The application files are likely still "
+"in use."
+msgstr ""
+"{} denemeden sonra güncellenemedi. Uygulama dosyaları büyük olasılıkla hala "
+"kullanımda."
+
+#: updaterorg.py:74
+msgid "Relaunching application..."
+msgstr "Uygulama yeniden başlatılıyor..."
+
+#, python-format
+#~ msgid "Processing chunk %d of %d..."
+#~ msgstr "Parça işleniyor: %d / %d..."
+
+#~ msgid "Yes"
+#~ msgstr "Evet"
+
+#~ msgid "No"
+#~ msgstr "Hayır"
+
+#~ msgid "Exit"
+#~ msgstr "Çıkış"
+
+#~ msgid "Performing pre-analysis to identify characters..."
+#~ msgstr "Karakterleri belirlemek için ön analiz yapılıyor..."
+
+#~ msgid "Could not determine video duration, skipping character glossary."
+#~ msgstr "Video süresi belirlenemedi, karakter sözlüğü atlanıyor."
+
+#~ msgid "Video is long, splitting into chunks for character analysis..."
+#~ msgstr "Video uzun, karakter analizi için parçalara ayrılıyor..."
+
+#~ msgid "Glossary Chunking:"
+#~ msgstr "Sözlük Parçalama:"
+
+#, python-format
+#~ msgid "Analyzing character chunk %d of %d..."
+#~ msgstr "karakter sözlük parçalarından %d den %d işleniyor"
+
+#~ msgid "Chunk Pre-processing:"
+#~ msgstr "Parça Ön İşleme:"
+
+#, fuzzy
+#~ msgid "Cleaning up temporary glossary chunks..."
+#~ msgstr "Geçici video parçaları temizleniyor..."
+
+#, fuzzy
+#~ msgid "Character pre-analysis complete (merged from chunks)."
+#~ msgstr "Karakter ön analizi tamamlandı."
+
+#~ msgid "Character pre-analysis complete."
+#~ msgstr "Karakter ön analizi tamamlandı."
+
+#~ msgid "Could not generate character glossary, proceeding without it."
+#~ msgstr "Karakter sözlüğü oluşturulamadı, bu adım atlanarak devam ediliyor."
+
+#, fuzzy
+#~ msgid "Gemini SDK is not available. Check startup logs for errors."
+#~ msgstr "Gemini bulunamadı. "
+
+#, python-brace-format
+#~ msgid "Context of what just happened: {context}"
+#~ msgstr "Az önce olanların bağlamı: {context}"
+
+#~ msgid "AI did not return a successful response for descriptions."
+#~ msgstr "Yapay zeka, betimlemeler için başarılı bir yanıt döndürmedi."
+
+#~ msgid "AI returned an empty text response for descriptions."
+#~ msgstr "Yapay zeka, betimlemeler için boş bir metin yanıtı döndürdü."
+
+#~ msgid "AI returned an empty or invalid response for JSON request."
+#~ msgstr ""
+#~ "Yapay zeka, betimlemeler için boş bir metin yanıtı döndürdü. Günvenlik "
+#~ "filtresine takılmış olabilir."
+
+#~ msgid "AI returned an empty text part for JSON request."
+#~ msgstr "Yapay zeka, betimlemeler için boş yanıt gönderdi."
+
+#, fuzzy
+#~ msgid "Export Category"
+#~ msgstr "Dışa Aktarma Notu"
+
+#, fuzzy
+#~ msgid "Descriptions Only (Audio)"
+#~ msgstr "Betimleme Eklendi"
+
+#, fuzzy
+#~ msgid "Speed up long descriptions to fit"
+#~ msgstr "Düzenlenecek betimlemeyi seçin:"
+
+#, fuzzy
+#~ msgid "With Pauses Between Descriptions"
+#~ msgstr "Betimlemeli Video Oynatıcı"
+
+#~ msgid "Downloading new version, please wait..."
+#~ msgstr "Yeni sürüm indiriliyor, lütfen bekleyin."
+
+#~ msgid "something whent wrong while updating."
+#~ msgstr "güncellerken bir şeyler ters gitti."
+
+#, python-format
+#~ msgid "AI request was blocked: %s"
+#~ msgstr "Yapay zeka isteği engellendi: %s"
+
+#~ msgid ""
+#~ "AI content generation was stopped due to safety reasons (candidate level)."
+#~ msgstr ""
+#~ "Yapay zeka içerik üretimi, güvenlik politikaları nedeniyle durduruldu."
+
+#~ msgid "Edit Audio Description"
+#~ msgstr "Sesli Betimlemeyi Düzenle"
+
+#~ msgid "Description text:"
+#~ msgstr "Betimleme metni:"
+
+#, python-format
+#~ msgid "[%(start).1fs - %(end).1fs] %(preview)s"
+#~ msgstr "[%(start).1fs - %(end).1fs] %(preview)s"
+
+#~ msgid "<Select a description from the list above to edit>"
+#~ msgstr "<Metni düzenlemek için yukarıdaki listeden bir betimleme seçin>"
+
+#, fuzzy
+#~ msgid "Character pre-analysis skipped by settings."
+#~ msgstr "Karakter sözlüğü ön analizi ayarlar nedeniyle atlandı."
+
+#, fuzzy
+#~ msgid ""
+#~ "Video chunking is disabled. Generating descriptions for entire video."
+#~ msgstr "İşleme tamamlandı, ancak hiçbir betimleme üretilmedi."
+
+#~ msgid "AI processing failed to provide descriptions."
+#~ msgstr "Yapay zeka işleme sonucunda betimleme sağlanamadı."
+
+#~ msgid "Description saved."
+#~ msgstr "Betimleme kaydedildi."
+
+#~ msgid "Description deleted."
+#~ msgstr "Betimleme silindi."
+
+#~ msgid "AI response structure is missing content or parts."
+#~ msgstr "Yapay zeka yanıtının yapısında içerik veya bölümler eksik."
+
+#, python-format
+#~ msgid "Failed to download from YouTube URL %s: %s"
+#~ msgstr "%s YouTube adresinden indirme başarısız oldu: %s"
+
+#~ msgid "Note: Video chunking is an experimental feature."
+#~ msgstr "Video parçalama deneysel bir özelliktir."
+
+#~ msgid "No descriptions to export."
+#~ msgstr "Dışa aktarılacak betimleme yok."
+
+#~ msgid "Save Descriptions as TXT"
+#~ msgstr "Betimlemeleri TXT Olarak Kaydet"
+
+#, python-format
+#~ msgid ""
+#~ "Audio Descriptions for: %s\n"
+#~ "-------------------------------------------------\n"
+#~ "\n"
+#~ msgstr ""
+#~ "%s\n"
+#~ " için betimleler.\n"
+
+#, python-format
+#~ msgid ""
+#~ "Descriptions exported to:\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Betimlemeler şuraya aktarıldı:\n"
+#~ "%s"
+
+#, python-format
+#~ msgid "Error saving file: %s"
+#~ msgstr "Dosya kaydedilirken hata oluştu: %s"
+
+#~ msgid "No descriptions available to export."
+#~ msgstr "Dışa aktarılacak betimleme mevcut değil."
+
+#~ msgid "Save Descriptions as SRT"
+#~ msgstr "Betimlemeleri SRT Olarak Kaydet"
+
+#~ msgid "SRT Subtitles (*.srt)|*.srt"
+#~ msgstr "SRT Altyazıları (*.srt)|*.srt"
+
+#~ msgid "No TTS engines are available. MP3 export is disabled."
+#~ msgstr "TTS motoru mevcut değil. MP3 dışa aktarma devre dışı bırakıldı."
+
+#~ msgid "TTS Engine Missing"
+#~ msgstr "TTS Motoru yok"
+
+#~ msgid ""
+#~ "Pydub audio library not found.\n"
+#~ "MP3 export with ducking is disabled."
+#~ msgstr ""
+#~ "Pydub ses kütüphanesi bulunamadı.\n"
+#~ "Ses azaltmalı MP3 dışa aktarma devre dışı bırakıldı."
+
+#~ msgid "Pydub Library Missing"
+#~ msgstr "Pydub Kütüphanesi Eksik"
+
+#~ msgid "FFmpeg not found. It is required for MP3 export."
+#~ msgstr "FFmpeg bulunamadı. MP3 dışa aktarma için gereklidir."
+
+#~ msgid "FFmpeg Not Found"
+#~ msgstr "FFmpeg Bulunamadı"
+
+#~ msgid "Save Described Audio as MP3"
+#~ msgstr "Betimlenmiş Sesi MP3 Olarak Kaydet"
+
+#~ msgid "MP3 Audio (*.mp3)|*.mp3"
+#~ msgstr "MP3 Ses Dosyası (*.mp3)|*.mp3"
+
+#~ msgid "Exporting Audio to MP3"
+#~ msgstr "Ses MP3 Olarak Dışa Aktarılıyor"
+
+#~ msgid "Starting..."
+#~ msgstr "Başlatılıyor..."
+
+#~ msgid "Extracting original audio..."
+#~ msgstr "Orijinal ses çıkarılıyor..."
+
+#, python-format
+#~ msgid "FFmpeg failed to extract audio to WAV: %s"
+#~ msgstr "FFmpeg sesi WAV'a çıkaramadı: %s"
+
+#, python-format
+#~ msgid "Synthesizing description %d of %d..."
+#~ msgstr "Betimleme sentezleniyor: %d/%d..."
+
+#, python-format
+#~ msgid "Failed to synthesize description #%d."
+#~ msgstr "%d. betimleme sentezlenemedi."
+
+#~ msgid "Correcting description overlaps..."
+#~ msgstr "Sesli betimlemeler işleniyor..."
+
+#~ msgid "Mixing audio tracks..."
+#~ msgstr "Parçalar miksleniyor..."
+
+#~ msgid "Saving to MP3..."
+#~ msgstr "Mp3e kaydediliyor..."
+
+#, python-format
+#~ msgid ""
+#~ "Unable to load video: %s\n"
+#~ "Ensure format is supported."
+#~ msgstr ""
+#~ "Video yüklenemedi: %s\n"
+#~ "Biçimin desteklendiğinden emin olun."
+
+#~ msgid "Error Loading Video"
+#~ msgstr "Video Yükleme Hatası"
+
+#~ msgid "Export to .SRT"
+#~ msgstr ".SRT Olarak Dışa Aktar"
+
+#~ msgid "Export Audio (MP3)"
+#~ msgstr "Sesi Dışa Aktar (MP3)"
+
+#~ msgid "MP3 Export Error"
+#~ msgstr "MP3 Dışa Aktarma Hatası"
+
+#, python-format
+#~ msgid ""
+#~ "Described audio successfully exported to:\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Betimlenmiş ses başarıyla şuraya aktarıldı:\n"
+#~ "%s"
+
+#~ msgid "MP3 Export Successful"
+#~ msgstr "MP3 Dışa Aktarma Başarılı"
+
+#~ msgid "Video is not ready. Please wait."
+#~ msgstr "Video hazır değil. Lütfen bekleyin."
+
+#~ msgid "Playback Issue"
+#~ msgstr "Oynatma Sorunu"
+
+#~ msgid "Could not start playback."
+#~ msgstr "Oynatma başlatılamadı."
+
+#~ msgid "Playback Error"
+#~ msgstr "Oynatma Hatası"
+
+#~ msgid "SAPI5 (Windows Built-in)"
+#~ msgstr "sapi5 (windows varsayılan)"
+
+#, fuzzy
+#~ msgid "Cancel"
+#~ msgstr "İptal Edildi"
+
+#~ msgid "English (Default)"
+#~ msgstr "İngilizce (Varsayılan)"
+
+#~ msgid "User cancelled the export."
+#~ msgstr "Dışa aktarım iptal edildi"
+
+#, python-format
+#~ msgid "Synthesizing description %(current)d of %(total)d..."
+#~ msgstr "Betimlemeler sentezleniyor %(current)d / %(total)d..."
+
+#, python-format
+#~ msgid "AI answer: %s"
+#~ msgstr "Cevap: %s"
+
+#~ msgid "Choose an audio description from the list to modify its text."
+#~ msgstr "Metnini değiştirmek için listeden bir sesli betimleme seçin."
+
+#~ msgid ""
+#~ "List of available audio descriptions. Use arrow keys to navigate, then "
+#~ "Tab to edit."
+#~ msgstr ""
+#~ "Mevcut sesli betimlemelerin listesi. Gezinmek için ok tuşlarını, "
+#~ "düzenlemek için Sekme tuşunu kullanın."
+
+#~ msgid "Editable text of the selected audio description."
+#~ msgstr "Seçili sesli betimlemenin düzenlenebilir metni."
+
+#~ msgid "Save the modified description text."
+#~ msgstr "Değiştirilmiş betimleme metnini kaydet."
+
+#~ msgid "Close this dialog without saving changes."
+#~ msgstr "Değişiklikleri kaydetmeden bu pencereyi kapat."
+
+#~ msgid "No valid description is currently selected for editing."
+#~ msgstr "Düzenleme için geçerli bir betimleme seçili değil."
+
+#~ msgid ""
+#~ "Speech synthesis library (pyttsx3) not found.\n"
+#~ "MP3 export function is disabled."
+#~ msgstr ""
+#~ "Konuşma sentezleme kütüphanesi (pyttsx3) bulunamadı.\n"
+#~ "MP3 dışa aktarma işlevi devre dışı bırakıldı."
+
+#~ msgid "Finalizing and exporting MP3..."
+#~ msgstr "MP3 dosyası sonlandırılıyor ve dışa aktarılıyor..."
+
+#~ msgid "MP3 export complete!"
+#~ msgstr "MP3 dışa aktarma tamamlandı!"
+
+#, python-format
+#~ msgid "An unexpected error occurred: %s"
+#~ msgstr "Beklenmedik bir hata oluştu: %s"
+
+#, python-format
+#~ msgid "Original video for silencing not found: %s"
+#~ msgstr "Sessizleştirilecek orijinal video bulunamadı: %s"
+
+#~ msgid "Creating silenced video copy for AI..."
+#~ msgstr "Yapay zeka için sessiz video kopyası oluşturuluyor..."
+
+#~ msgid "Silenced video copy created for AI."
+#~ msgstr "Yapay zeka için sessiz video kopyası oluşturuldu."
+
+#, fuzzy
+#~ msgid "Splitting video into smaller parts..."
+#~ msgstr "Video %d parçaya bölünüyor..."
+
+#~ msgid "Analyzing video segment {} of {}..."
+#~ msgstr "{} video bölümü analiz ediliyor..."
+
+#~ msgid "Glossary Pre-Analysis Tokens (Prompt/Output/Total): {}/{}/{}"
+#~ msgstr "Sözlük Ön Analiz Jetonları (İstem/Çıktı/Toplam): {}/{}/{}"
+
+#~ msgid "Description Generation Total (Prompt/Output/Total): {}/{}/{}"
+#~ msgstr "Betimleme Üretimi Toplamı (İstem/Çıktı/Toplam): {}/{}/{}"
+
+#~ msgid "No description generation token usage data."
+#~ msgstr "Betimleme üretimi jeton kullanım verisi yok."
+
+#~ msgid "VQA Query {}: Prompt/Output/Total: {}/{}/{}"
+#~ msgstr "Daha fazla Sorgusu {}: İstem/Çıktı/Toplam: {}/{}/{}"
+
+#~ msgid "Model Override (blank for default):"
+#~ msgstr "Model Belirt (varsayılan için boş bırakın):"
+
+#~ msgid "Splits long videos into smaller parts for more reliable analysis."
+#~ msgstr "Daha güvenilir analiz için uzun videoları küçük parçalara böler."
+
+#~ msgid ""
+#~ "The length of each video chunk in seconds. Shorter can be better for very "
+#~ "complex scenes."
+#~ msgstr ""
+#~ "Her bir video parçasının saniye cinsinden uzunluğu. Karmaşık sahneler "
+#~ "için daha kısa süreler daha iyi sonuç verebilir."
+
+#~ msgid ""
+#~ "Performs an initial pass to identify characters, which can improve naming "
+#~ "consistency in descriptions. Only applies if chunking is enabled."
+#~ msgstr ""
+#~ "Betimlemelerdeki isim tutarlılığını artırmak için karakterleri tanıyan "
+#~ "bir ön analiz yapar. Sadece parçalama etkinse geçerlidir."
+
+#~ msgid "Gemini AI"
+#~ msgstr "Gemini AI"
+
+#~ msgid "Spoken Description Voice (SAPI5):"
+#~ msgstr "Betimleme Sesi (SAPI5):"
+
+#~ msgid "Voice Speed (Relative):"
+#~ msgstr "Konuşma Hızı (Göreceli):"
+
+#~ msgid "Voice Volume (0-100%):"
+#~ msgstr "Konuşma Ses Seviyesi (%0-100):"
+
+#~ msgid "Temperature must be a number between 0.0 and 1.0."
+#~ msgstr "Sıcaklık 0.0 ile 1.0 arasında bir sayı olmalıdır."
+
+#~ msgid "Temperature must be a valid number."
+#~ msgstr "Sıcaklık geçerli bir sayı olmalıdır."
+
+#, fuzzy
+#~ msgid "Status Log:"
+#~ msgstr "Uygulama Durum Günlüğü:"
+
+#~ msgid "Application status and log messages."
+#~ msgstr "Uygulama durumu ve günlük mesajları."
+
+#~ msgid "Help Not Found"
+#~ msgstr "Yardım Bulunamadı"
+
+#, fuzzy
+#~ msgid "An error occurred while trying to open the help file."
+#~ msgstr "Yardım dosyasını açmaya çalışırken beklenmedik bir hata oluştu."
+
+#, fuzzy, python-format
+#~ msgid ""
+#~ "%(app_name)s v%(app_version)s\n"
+#~ "\n"
+#~ "An application to automatically generate audio descriptions for videos "
+#~ "using Gemini AI.\n"
+#~ "\n"
+#~ "Developed with accessibility in mind."
+#~ msgstr ""
+#~ "Gemini AI kullanarak videolar için otomatik sesli betimlemeler üreten bir "
+#~ "uygulama.\n"
+#~ "\n"
+
+#, fuzzy, python-format
+#~ msgid "The requested document '%s' could not be found."
+#~ msgstr "Yardım dosyası (doc/tr/help.html) bulunamadı."
+
+#, fuzzy
+#~ msgid "An error occurred while trying to open the document."
+#~ msgstr "Yardım dosyasını açmaya çalışırken beklenmedik bir hata oluştu."
+
+#, fuzzy
+#~ msgid "Changelog Not Found"
+#~ msgstr "Yardım Bulunamadı"
+
+#, python-brace-format
+#~ msgid ""
+#~ "This is a continuation of a previous video segment. Context of what just "
+#~ "happened: {context}\n"
+#~ "\n"
+#~ "Now, continue describing the new video segment."
+#~ msgstr ""
+#~ "Bu, önceki bir video bölümünün devamıdır. Az önce olanların bağlamı: "
+#~ "{context}\n"
+#~ "\n"
+#~ "Şimdi, yeni video bölümünü betimlemeye devam et."
+
+#~ msgid "Select Input Mode or use File Menu:"
+#~ msgstr "Giriş Modunu Seçin veya Dosya Menüsünü Kullanın:"
+
+#~ msgid "Opening local video file..."
+#~ msgstr "Yerel video dosyası açılıyor..."
+
+#, python-format
+#~ msgid "Selected: %s"
+#~ msgstr "Seçildi: %s"
+
+#~ msgid "Local file selection cancelled."
+#~ msgstr "Yerel dosya seçimi iptal edildi."
+
+#~ msgid "Opening direct video URL input..."
+#~ msgstr "Doğrudan video URL'si girişi açılıyor..."
+
+#, python-format
+#~ msgid "URL: %s"
+#~ msgstr "URL: %s"
+
+#~ msgid "Direct URL input cancelled."
+#~ msgstr "Doğrudan URL girişi iptal edildi."
+
+#, python-format
+#~ msgid "AI Core: %s"
+#~ msgstr "Yapay Zeka Çekirdeği: %s"
+
+#~ msgid ""
+#~ "Character glossary pre-analysis enabled but video chunking is disabled. "
+#~ "Glossary might have limited effect without chunking."
+#~ msgstr ""
+#~ "Karakter sözlüğü ön analizi etkin ancak video parçalama devre dışı. "
+#~ "Sözlüğün etkisi parçalama olmadan sınırlı olabilir."
+
+#~ msgid "Processing completed with no data and no specific error."
+#~ msgstr "İşlem, veri veya belirli bir hata olmadan tamamlandı."
+
+#~ msgid "Processing failed: No data."
+#~ msgstr "İşlem başarısız: Veri yok."
+
+#, python-format
+#~ msgid "Audio descriptions generated for %s! Count: %s"
+#~ msgstr "%s için sesli betimlemeler üretildi! Sayı: %s"
+
+#, python-format
+#~ msgid "Descriptions generated for %s"
+#~ msgstr "%s için betimlemeler üretildi"
+
+#, python-format
+#~ msgid ""
+#~ "No descriptions were generated for %s (Gemini might not have found "
+#~ "content to describe or parsing failed)."
+#~ msgstr ""
+#~ "%s için betimleme üretilmedi (Gemini betimleyecek içerik bulamamış veya "
+#~ "ayrıştırma başarısız olmuş olabilir)."
+
+#, python-format
+#~ msgid "No descriptions for %s."
+#~ msgstr "%s için betimleme yok."
+
+#~ msgid "Opening settings dialog..."
+#~ msgstr "Ayarlar penceresi açılıyor..."
+
+#~ msgid "Settings changes discarded."
+#~ msgstr "Ayarlardaki değişiklikler iptal edildi."
+
+#, python-format
+#~ msgid ""
+#~ "%(app_name)s v%(app_version)s\n"
+#~ "\n"
+#~ msgstr ""
+#~ "%(app_name)s v%(app_version)s\n"
+#~ "\n"
+
+#~ msgid "Developed with accessibility in mind."
+#~ msgstr "Erişilebilirlik göz önünde bulundurularak geliştirilmiştir."
+
+#, python-format
+#~ msgid "About %s dialog."
+#~ msgstr "%s Hakkında penceresi."
+
+#, python-format
+#~ msgid "Closing %s."
+#~ msgstr "%s kapatılıyor."
+
+#~ msgid "Error: AI processing could not be completed."
+#~ msgstr "Hata: Yapay zeka işlemi tamamlanamadı."
+
+#~ msgid "FFmpeg executable not found."
+#~ msgstr "FFmpeg uygulaması bulunamadı."
+
+#~ msgid "No video context available."
+#~ msgstr "Video bağlamı mevcut değil."
+
+#, python-format
+#~ msgid "FFmpeg failed to extract segment: %s"
+#~ msgstr "FFmpeg bölümü çıkaramadı: %s"
+
+#, python-format
+#~ msgid ""
+#~ "Error processing your question:\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Sorunuz işlenirken hata oluştu:\n"
+#~ "%s"
+
+#, python-brace-format
+#~ msgid "Extracting {duration}s clip..."
+#~ msgstr "{duration} saniyelik klip çıkarılıyor..."
+
+#~ msgid "No time remaining in the video to analyze from the selected point."
+#~ msgstr ""
+#~ "Seçilen noktadan itibaren analiz için videoda yeterli zaman kalmadı."
+
+#, python-format
+#~ msgid "FFmpeg failed to extract scene: %s"
+#~ msgstr "FFmpeg sahneyi çıkaramadı: %s"
+
+#~ msgid "Asking AI to analyze the scene... This may take a moment."
+#~ msgstr ""
+#~ "Yapay zekadan sahneyi analiz etmesi isteniyor... Bu işlem biraz sürebilir."
+
+#, python-format
+#~ msgid "An unexpected error occurred in Scene Explorer: %s"
+#~ msgstr "Sahne Gezgini'nde beklenmedik bir hata oluştu: %s"
+
+# --- v2.0 New Strings ---
+
+#: audio_describer/__app__real.py
+msgid "Settings Notice"
+msgstr "Ayarlar Bildirimi"
+
+#: audio_describer/__app__real.py
+msgid "Omni Describer Web Platform"
+msgstr "Omni Betimleyici Web Platformu"
+
+#: audio_describer/__app__real.py
+#, python-format
+msgid ""
+"Omni Describer is now available as a web platform!\n"
+"\n"
+"The desktop app will continue to work, but new features and improvements "
+"are now focused on the web version at:\n"
+"\n"
+"%(webapp_url)s\n"
+"\n"
+"The web platform requires no installation, no API keys, and works on "
+"all devices including Mac and mobile.\n"
+"\n"
+"Would you like to open the web platform now?\n"
+"\n"
+"(This message will only be shown once.)"
+msgstr ""
+"Omni Betimleyici artık bir web platformu olarak kullanılabilir!\n"
+"\n"
+"Masaüstü uygulama çalışmaya devam edecek, ancak yeni özellikler ve "
+"iyileştirmeler artık şu adresteki web sürümüne odaklanmaktadır:\n"
+"\n"
+"%(webapp_url)s\n"
+"\n"
+"Web platformu kurulum gerektirmez, API anahtarına ihtiyaç duymaz ve "
+"Mac ve mobil dahil tüm cihazlarda çalışır.\n"
+"\n"
+"Web platformunu şimdi açmak ister misiniz?\n"
+"\n"
+"(Bu mesaj yalnızca bir kez gösterilecektir.)"
+
+#: audio_describer/ui/main_window.py
+msgid "Open &Web Platform...\tCtrl+W"
+msgstr "Web &Platformunu Aç...\tCtrl+W"
+
+#: audio_describer/ui/main_window.py
+msgid "Open the Omni Describer web platform in your browser"
+msgstr "Omni Betimleyici web platformunu tarayıcınızda açın"
+
+#: audio_describer/ui/main_window.py
+msgid "Or try the web platform (no API key needed):"
+msgstr "Veya web platformunu deneyin (API anahtarı gerekmez):"
+
+#: audio_describer/ui/main_window.py
+msgid "Open &Web Platform"
+msgstr "Web &Platformunu Aç"
+
+#: audio_describer/ui/main_window.py
+#: audio_describer/core/audio_describer.py
+msgid "Processing video..."
+msgstr "Video işleniyor..."
+
+#: audio_describer/ui/settings_dialog.py
+msgid "1 FPS (Minimal cost, for static content)"
+msgstr "1 FPS (Minimum maliyet, statik içerik için)"
+
+#: audio_describer/core/audio_describer.py
+msgid "Video is shorter than chunk size, processing as single request."
+msgstr "Video parça boyutundan kısa, tek istek olarak işleniyor."
+
+#: audio_describer/core/audio_describer.py
+#, python-format
+msgid "Processing chunk %d of %d (%.0fs - %.0fs)..."
+msgstr "Parça %d / %d işleniyor (%.0fs - %.0fs)..."
+
+#: audio_describer/core/audio_describer.py
+#, python-format
+msgid "Chunk %d: parsed %d descriptions."
+msgstr "Parça %d: %d betimleme ayrıştırıldı."
+
+#: audio_describer/core/audio_describer.py
+#, python-format
+msgid "Chunked generation failed: %s"
+msgstr "Parçalı oluşturma başarısız oldu: %s"
+
+#: audio_describer/core/video_processor.py
+msgid "Pre-processing video for AI analysis (stripping audio)..."
+msgstr "Yapay zeka analizi için video ön işleniyor (ses kaldırılıyor)..."
+

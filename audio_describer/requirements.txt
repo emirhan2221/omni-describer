@@ -1,0 +1,11 @@
+wxPython>=4.0.0
+# For Gemini API - actual package name might vary
+google-generativeai
+accessible-output2
+yt-dlp
+pyttsx3
+pydub
+winsdk
+simpleaudio
+pygame
+cryptography==41.0.7

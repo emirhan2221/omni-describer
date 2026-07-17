@@ -1,0 +1,10 @@
+Contributors
+
+This project wouldn’t have existed without the amazing work of developers who created its foundational tools and support from some amaising people.
+
+ Special Thanks To: Nathan Smith of Nathan Tech, for teaching me important concepts, workflows and for providing guidance along the way.
+ Beta Testers: A heartfelt thank you to Burak Yüksek, Fatih Yüksek and Oleh Khokhlov for their thorough testing, bug reports, and fantastic suggestions that have shaped this application.
+ Translators: Russian: Fatih Yüksek. Spanish: Annabel vazkez. Ukrainian: Oleh Khokhlov. French: Renku Reiki. Italian: Ambrogio Riili. Portuguese: Ângelo Abrantes. Arabic: Linku Loulou. Vietnamese: Nguyễn Anh Đức.
+ Technology: And to the developers of the incredible tools that power Omni Describer, including Google Gemini, FFmpeg, and the many Python libraries that form its foundation.
+ And you: For using the application, and providing feedback. 
+  Thanks for using Omni Describer
