@@ -3,13 +3,17 @@
 
 # -*- mode: python ; coding: utf-8 -*-
 
-from PyInstaller.utils.hooks import collect_submodules, collect_all
+from PyInstaller.utils.hooks import collect_submodules, collect_all, copy_metadata
 
 # google.genai (the new SDK) is a namespace package with data files and lazily
 # imported submodules; collect_all grabs modules + data + binaries so the frozen
 # build can `from google import genai`. Missing this = "Gemini SDK could not be
 # loaded" at runtime.
 genai_datas, genai_binaries, genai_hiddenimports = collect_all('google.genai')
+# collect_all copies metadata by import name ('google.genai') and misses it —
+# the distribution is 'google-genai'. Add it explicitly so importlib.metadata
+# lookups resolve in the frozen build.
+genai_datas += copy_metadata('google-genai')
 
 # Part 1: Gather all the necessary Python modules.
 hidden_imports = [
@@ -22,7 +26,9 @@ hidden_imports = [
     'pygame._sdl2.font',
     'openai',
     'grpc._cython',
-    'accessible_output2'
+    'accessible_output2',
+    'vlc',  # python-vlc binding; imported lazily inside a try/except so add it
+            # explicitly. The libvlc runtime itself is bundled into bin/vlc by CI.
 ]
 
 # Part 2: Gather all the necessary data files and binaries.
